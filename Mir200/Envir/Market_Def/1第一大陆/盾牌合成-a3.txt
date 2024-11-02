@@ -1,0 +1,290 @@
+[@main]
+#IF
+CHECKLEVELEX > 0
+#ACT
+OPENMERCHANTBIGDLG 74 535 0 4 0 0 1 537 8
+#SAY
+\ \ \ \
+<           /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+<         /AUTOCOLOR=0><霸絕★羅網※鎖蒼穹/SCOLOR=254>    <需要/SCOLOR=70>    <1万逐鹿币 +帝炎★丹心※照汗青/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值2.0倍/@003>\
+<         /AUTOCOLOR=0><龍嘯★龍氣※憾九天/SCOLOR=254>    <需要/SCOLOR=70>    <2万逐鹿币 +霸絕★羅網※鎖蒼穹/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值2.5倍/@004>\
+<         /AUTOCOLOR=0><聖渊★鬼泣※驚天地/SCOLOR=254>    <需要/SCOLOR=70>    <3万逐鹿币 +龍嘯★龍氣※憾九天/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值3.0倍/@005>\
+<         /AUTOCOLOR=0><涅槃★神龍※數撚塵/SCOLOR=254>    <需要/SCOLOR=70>    <4万逐鹿币 +聖渊★鬼泣※驚天地/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值4.0倍/@006>\
+<         /AUTOCOLOR=0><天闕★浪淘※自天涯/SCOLOR=254>    <需要/SCOLOR=70>    <5万逐鹿币 +涅槃★神龍※數撚塵/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值5.0倍/@007>\
+<         /AUTOCOLOR=0><莫邪★帝矗※戟指天/SCOLOR=254>    <需要/SCOLOR=70>    <8万逐鹿币 +天闕★浪淘※自天涯/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值6.0倍/@008>\
+<         /AUTOCOLOR=0><奧義★霸殤※宇等閑/SCOLOR=254>    <需要/SCOLOR=70>    <10万逐鹿币+莫邪★帝矗※戟指天/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值8.0倍/@009>\
+<         /AUTOCOLOR=0><終極★金樽※空對月/SCOLOR=254>    <需要/SCOLOR=70>    <20万逐鹿币+奧義★霸殤※宇等閑/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值10.0倍/@010>\
+<         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+<         /AUTOCOLOR=0><終極★金樽※空對月,全身刀刀切割总值10.0倍,隐身隐藏./SCOLOR=253>   \
+
+[@003]
+#IF
+CHECKBAGSIZE 1
+#ACT
+#ELSEACT
+MESSAGEBOX [提示]：背包至少拥有一个空位！
+BREAK
+#IF
+CHECKGAMEGIRD < 10000
+#ACT
+MESSAGEBOX 你逐鹿币不足[10000]点
+BREAK
+
+#IF
+CHECKITEM 帝炎★丹心※照汗青 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上没有【帝炎★丹心※照汗青】。请领取Q群礼包在来合成！
+BREAK
+
+
+#IF
+CHECKGAMEGIRD > 9999
+CHECKITEM 帝炎★丹心※照汗青 1
+#ACT
+GAMEGIRD - 10000
+TAKE 帝炎★丹心※照汗青 1
+GIVE 霸絕★羅網※鎖蒼穹 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『霸絕★羅網※鎖蒼穹』！ 1 5
+GOTO @main
+BREAK
+
+
+[@004]
+#IF
+CHECKBAGSIZE 1
+#ACT
+#ELSEACT
+MESSAGEBOX [提示]：背包至少拥有一个空位！
+BREAK
+#IF
+CHECKGAMEGIRD < 20000
+#ACT
+MESSAGEBOX 你逐鹿币不足[20000]点
+BREAK
+
+#IF
+CHECKITEM 霸絕★羅網※鎖蒼穹 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上没有【帝炎★丹心※照汗青】。无法合成！
+BREAK
+
+
+#IF
+CHECKGAMEGIRD > 19999
+CHECKITEM 霸絕★羅網※鎖蒼穹 1
+#ACT
+GAMEGIRD - 20000
+TAKE 霸絕★羅網※鎖蒼穹 1
+GIVE 龍嘯★龍氣※憾九天 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『龍嘯★龍氣※憾九天』！ 1 5
+GOTO @main
+BREAK
+
+
+
+[@005]
+#IF
+CHECKBAGSIZE 1
+#ACT
+#ELSEACT
+MESSAGEBOX [提示]：背包至少拥有一个空位！
+BREAK
+#IF
+CHECKGAMEGIRD < 30000
+#ACT
+MESSAGEBOX 你逐鹿币不足[30000]点
+BREAK
+
+#IF
+CHECKITEM 龍嘯★龍氣※憾九天 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上没有【龍嘯★龍氣※憾九天】。无法合成！
+BREAK
+
+
+#IF
+CHECKGAMEGIRD > 29999
+CHECKITEM 龍嘯★龍氣※憾九天 1
+#ACT
+GAMEGIRD - 30000
+TAKE 龍嘯★龍氣※憾九天 1
+GIVE 聖渊★鬼泣※驚天地 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『聖渊★鬼泣※驚天地』！ 1 5
+GOTO @main
+BREAK
+
+
+
+[@006]
+#IF
+CHECKBAGSIZE 1
+#ACT
+#ELSEACT
+MESSAGEBOX [提示]：背包至少拥有一个空位！
+BREAK
+#IF
+CHECKGAMEGIRD < 40000
+#ACT
+MESSAGEBOX 你逐鹿币不足[40000]点
+BREAK
+
+#IF
+CHECKITEM 聖渊★鬼泣※驚天地 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上没有【聖渊★鬼泣※驚天地】。无法合成！
+BREAK
+
+
+#IF
+CHECKGAMEGIRD > 39999
+CHECKITEM 聖渊★鬼泣※驚天地 1
+#ACT
+GAMEGIRD - 40000
+TAKE 聖渊★鬼泣※驚天地 1
+GIVE 涅槃★神龍※數撚塵 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『涅槃★神龍※數撚塵』！ 1 5
+GOTO @main
+BREAK
+
+
+[@007]
+#IF
+CHECKBAGSIZE 1
+#ACT
+#ELSEACT
+MESSAGEBOX [提示]：背包至少拥有一个空位！
+BREAK
+#IF
+CHECKGAMEGIRD < 50000
+#ACT
+MESSAGEBOX 你逐鹿币不足[50000]点
+BREAK
+
+#IF
+CHECKITEM 涅槃★神龍※數撚塵 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上没有【涅槃★神龍※數撚塵】。无法合成！
+BREAK
+
+
+#IF
+CHECKGAMEGIRD > 49999
+CHECKITEM 涅槃★神龍※數撚塵 1
+#ACT
+GAMEGIRD - 50000
+TAKE 涅槃★神龍※數撚塵 1
+GIVE 天闕★浪淘※自天涯 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『天闕★浪淘※自天涯』！ 1 5
+GOTO @main
+BREAK
+
+
+
+[@008]
+#IF
+CHECKBAGSIZE 1
+#ACT
+#ELSEACT
+MESSAGEBOX [提示]：背包至少拥有一个空位！
+BREAK
+#IF
+CHECKGAMEGIRD < 80000
+#ACT
+MESSAGEBOX 你逐鹿币不足[80000]点
+BREAK
+
+#IF
+CHECKITEM 天闕★浪淘※自天涯 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上没有【天闕★浪淘※自天涯】。无法合成！
+BREAK
+
+
+#IF
+CHECKGAMEGIRD > 79999
+CHECKITEM 天闕★浪淘※自天涯 1
+#ACT
+GAMEGIRD - 80000
+TAKE 天闕★浪淘※自天涯 1
+GIVE 莫邪★帝矗※戟指天 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『莫邪★帝矗※戟指天』！ 1 5
+GOTO @main
+BREAK
+
+
+
+[@009]
+#IF
+CHECKBAGSIZE 1
+#ACT
+#ELSEACT
+MESSAGEBOX [提示]：背包至少拥有一个空位！
+BREAK
+#IF
+CHECKGAMEGIRD < 100000
+#ACT
+MESSAGEBOX 你逐鹿币不足[100000]点
+BREAK
+
+#IF
+CHECKITEM 莫邪★帝矗※戟指天 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上没有【莫邪★帝矗※戟指天】。无法合成！
+BREAK
+
+
+#IF
+CHECKGAMEGIRD > 99999
+CHECKITEM 莫邪★帝矗※戟指天 1
+#ACT
+GAMEGIRD - 100000
+TAKE 莫邪★帝矗※戟指天 1
+GIVE 奧義★霸殤※宇等閑 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『奧義★霸殤※宇等閑』！ 1 5
+GOTO @main
+BREAK
+
+
+
+[@010]
+#IF
+CHECKBAGSIZE 1
+#ACT
+#ELSEACT
+MESSAGEBOX [提示]：背包至少拥有一个空位！
+BREAK
+#IF
+CHECKGAMEGIRD < 200000
+#ACT
+MESSAGEBOX 你逐鹿币不足[200000]点
+BREAK
+
+#IF
+CHECKITEM 奧義★霸殤※宇等閑 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上没有【奧義★霸殤※宇等閑】。无法合成！
+BREAK
+
+
+#IF
+CHECKGAMEGIRD > 199999
+CHECKITEM 奧義★霸殤※宇等閑 1
+#ACT
+GAMEGIRD - 200000
+TAKE 奧義★霸殤※宇等閑 1
+GIVE 終極★金樽※空對月 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『終極★金樽※空對月』！ 1 5
+GOTO @main
+BREAK
+
+
+

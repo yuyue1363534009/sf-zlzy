@@ -1,0 +1,126 @@
+[@main]
+#ACT
+OPENMERCHANTBIGDLG 2 18 0 0 1 1 1 398 3
+#SAY
+\ \ \
+
+\<抱团方案一/SCOLOR=103>  <①(战点)/@战点1>    <②(战点)/@战点2>    <③(战点)/@战点3> \ \ \
+
+\<抱团方案二/SCOLOR=103>  <④(战点)/@战点4>    <⑤(战点)/@战点5>    <⑥(战点)/@战点6>     <皇宫门外预备点/@外预备点>\ \ \
+
+\<分散落点  /SCOLOR=103>  <⑦(战点)/@战点7>    <⑧(战点)/@战点8>    <⑨(战点)/@战点9> \ \ \
+
+
+[@外预备点]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD - 10
+MAPMOVE a3 632 276
+SENDMSG 0 [%s]一路狂飙，操上家伙直冲皇宫！沙城被其哥们围个水泄不通~!
+#ELSEACT
+MESSAGEBOX \\你没有10元宝作为车费的话你还是自己跑吧!!！
+BREAK
+
+
+[@战点9]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD - 10
+MAPMOVE 0150
+SENDMSG 0 [%s]一路狂飙，操上家伙直冲皇宫！沙城被其哥们围个水泄不通~!
+#ELSEACT
+MESSAGEBOX \\你没有10元宝作为车费的话你还是自己跑吧!!！
+BREAK
+
+[@战点8]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD - 10
+MAPMOVE 0150
+SENDMSG 0 [%s]一路狂飙，操上家伙直冲皇宫！沙城被其哥们围个水泄不通~!
+#ELSEACT
+MESSAGEBOX \\你没有10元宝作为车费的话你还是自己跑吧!!！
+BREAK
+
+[@战点7]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD - 10
+MAPMOVE 0150
+SENDMSG 0 [%s]一路狂飙，操上家伙直冲皇宫！沙城被其哥们围个水泄不通~!
+#ELSEACT
+MESSAGEBOX \\你没有10元宝作为车费的话你还是自己跑吧!!！
+BREAK
+
+
+[@战点6]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD - 10
+MAPMOVE 0150 19 13
+SENDMSG 0 [%s]一路狂飙，操上家伙直冲皇宫！沙城被其哥们围个水泄不通~!
+#ELSEACT
+MESSAGEBOX \\你没有10元宝作为车费的话你还是自己跑吧!!！
+BREAK
+
+
+[@战点5]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD - 10
+MAPMOVE 0150 17 10
+SENDMSG 0 [%s]一路狂飙，操上家伙直冲皇宫！沙城被其哥们围个水泄不通~!
+#ELSEACT
+MESSAGEBOX \\你没有10元宝作为车费的话你还是自己跑吧!!！
+BREAK
+
+[@战点4]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD - 10
+MAPMOVE 0150 9 12
+SENDMSG 0 [%s]一路狂飙，操上家伙直冲皇宫！沙城被其哥们围个水泄不通~!
+#ELSEACT
+MESSAGEBOX \\你没有10元宝作为车费的话你还是自己跑吧!!！
+BREAK
+
+[@战点3]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD - 10
+MAPMOVE 0150 7 19
+SENDMSG 0 [%s]一路狂飙，操上家伙直冲皇宫！沙城被其哥们围个水泄不通~!
+#ELSEACT
+MESSAGEBOX \\你没有10元宝作为车费的话你还是自己跑吧!!！
+BREAK
+
+
+[@战点2]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD - 10
+MAPMOVE 0150 6 17
+SENDMSG 0 [%s]一路狂飙，操上家伙直冲皇宫！沙城被其哥们围个水泄不通~!
+#ELSEACT
+MESSAGEBOX \\你没有10元宝作为车费的话你还是自己跑吧!!！
+BREAK
+
+[@战点1]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD - 10
+MAPMOVE 0150 4 19
+SENDMSG 0 [%s]一路狂飙，操上家伙直冲皇宫！沙城被其哥们围个水泄不通~!
+#ELSEACT
+MESSAGEBOX \\你没有10元宝作为车费的话你还是自己跑吧!!！
+BREAK

@@ -1,0 +1,10 @@
+1.需要64位系统才可以运行
+2.不支持DBC2000的数据库，只支持Access数据
+3.不支持32位的插件，如果使用插件也必须是64位的插件
+
+使用工具目录里“BDE数据库转换成Access数据库.exe”把怪物、技能、物品3个数据库都转成Access数据库
+
+使用前必须先安装“AccessDatabaseEngine_X64.exe” Access数据库64位系统驱动程序
+
+IPLocal-X64.dll 64位引擎专用的IP所在地查询插件
+ScriptClient-X64.dll 64位引擎专用的远程脚本读取插件

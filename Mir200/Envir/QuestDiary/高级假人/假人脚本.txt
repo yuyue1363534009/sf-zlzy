@@ -1,0 +1,98 @@
+[@假人脚本]
+{
+#IF
+ISDUMMY
+#ACT
+MOVR P8 318 338
+MOVR P7 324 344
+MAPMOVE a3 <$STR(P8)> <$STR(P7)>
+GETRANDOMLINETEXT ..\QuestDiary\高级假人\假人性别.txt <$STR(N$假人性别)>
+GETRANDOMLINETEXT ..\QuestDiary\高级假人\假人职业.txt <$STR(S$假人职业)>
+GOTO @执行性别
+
+
+
+
+[@执行性别]
+#IF
+ISDUMMY
+#ACT
+CHANGEGENDER <$STR(N$假人性别)>
+changejob <$STR(S$假人职业)>
+GOTO @分配记录值
+
+
+[@分配记录值]
+#IF
+CHECKjob warrior
+ISDUMMY
+#ACT
+SETDUMMYCONFIGFILENAME ..\QuestDiary\高级假人\智能陪练\男战士.txt
+LOADDUMMYCONFIGFILE
+GOTO @给假人装备
+
+
+
+
+
+[@给假人装备]
+#IF
+CHECKjob warrior
+#ACT
+ADDSKILL 基本剑术 3
+ADDSKILL 攻杀剑术 3
+ADDSKILL 刺杀剑术 3
+ADDSKILL 野蛮冲撞 3
+ADDSKILL 烈火剑法 3
+ADDSKILL 逐日剑法 3
+ADDSKILL 开天斩 3
+GIVE 我命由我不由天メ神剑 1
+GIVE 我命由我不由天メ神甲 1
+GIVE 我命由我不由天メ盔 1
+GIVE 我命由我不由天メ链 1
+GIVE 我命由我不由天メ镯 2
+GIVE 我命由我不由天メ戒 2
+GIVE 我命由我不由天メ带 1
+GIVE 我命由我不由天メ靴 1
+GIVE 盟重传送石 1
+GIVE 随机传送石 1
+AutoTAKEOnItem 我命由我不由天メ神甲 0
+AutoTAKEOnItem 我命由我不由天メ神剑 1
+AutoTAKEOnItem 我命由我不由天メ链 3
+AutoTAKEOnItem 我命由我不由天メ盔 4
+AutoTAKEOnItem 我命由我不由天メ镯 5
+AutoTAKEOnItem 我命由我不由天メ镯 6
+AutoTAKEOnItem 我命由我不由天メ戒 7
+AutoTAKEOnItem 我命由我不由天メ戒 8
+AutoTAKEOnItem 我命由我不由天メ带 10
+AutoTAKEOnItem 我命由我不由天メ靴 11
+MAP a3
+SENDMSG 6 提示：请按F12呼出游戏内挂
+GuildNOTiceMsg 251 5 √》【系统】：(*)天下英雄出我辈!欢迎[<$USERNAME>]来到〈<$SERVERNAME>〉!
+GuildNOTiceMsg 251 5 √》【系统】：(*)天下英雄出我辈!欢迎[<$USERNAME>]来到〈<$SERVERNAME>〉!
+CLOSE
+
+
+[@野外打怪]
+#IF
+ISDUMMY
+#ACT
+LOADDUMMYCONFIGFILE
+ChangeAttatckMode 6
+DUMMYSTOP
+
+MOVR P8 318 338
+MOVR P7 324 344
+MAPMOVE a3 <$STR(P8)> <$STR(P7)>
+
+MOVR P10 10 60
+MOVR P11 60 180
+MOVR P12 120 600
+
+SetOnTimer 211 <$STR(P10)>
+SetOnTimer 212 <$STR(P11)>
+SetOnTimer 213 <$STR(P12)>
+
+
+
+}

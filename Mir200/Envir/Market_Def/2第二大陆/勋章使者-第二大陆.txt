@@ -1,0 +1,351 @@
+[@main]
+#IF
+CHECKLEVELEX > 0
+#ACT
+OPENMERCHANTBIGDLG 74 497 1 0 0 10 1 618 7
+#SAY
+\ \ \ \
+;<IMGEX:74:194:195:196:488:-20/@EXIT>\
+<             /AUTOCOLOR=0><┅/SCOLOR=254> <┅/SCOLOR=250> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=250> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=250> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=250> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+<         /AUTOCOLOR=0><尚武★真英雄※【一品】/SCOLOR=250>  <需/SCOLOR=70>                <龍血※仙珠*100个/SCOLOR=254>     <购买1.0倍神力勋章|253#特殊属性：^-^250#暗神力1.0倍/@001>\
+<         /AUTOCOLOR=0><山河★風飄絮※【二品】/SCOLOR=250>  <需/SCOLOR=70><一品神力勋章*1+龍血※仙珠*300个/SCOLOR=254>      <合成1.1倍神力勋章|253#特殊属性：^-^250#暗神力1.1倍/@002>\
+<         /AUTOCOLOR=0><滿城★黃金甲※【三品】/SCOLOR=250>  <需/SCOLOR=70><二品神力勋章*1+龍血※仙珠*500个/SCOLOR=254>      <合成1.2倍神力勋章|253#特殊属性：^-^250#暗神力1.2倍/@003>\
+<         /AUTOCOLOR=0><碧血★猶無悔※【四品】/SCOLOR=250>  <需/SCOLOR=70><三品神力勋章*1+龍血※仙珠*1000个/SCOLOR=254>     <合成1.3倍神力勋章|253#特殊属性：^-^250#暗神力1.3倍/@004>\
+<         /AUTOCOLOR=0><我命★不由天※【五品】/SCOLOR=250>  <需/SCOLOR=70><四品神力勋章*1+龍血※仙珠*2000个/SCOLOR=254>     <合成1.4倍神力勋章|253#特殊属性：^-^250#暗神力1.4倍/@005>\
+<         /AUTOCOLOR=0><殺盡★負我人※【六品】/SCOLOR=250>  <需/SCOLOR=70><五品神力勋章*1+龍血※仙珠*3000个/SCOLOR=254>     <合成1.5倍神力勋章|253#特殊属性：^-^250#暗神力1.5倍/@006>\
+<         /AUTOCOLOR=0><橫刀★向天笑※【七品】/SCOLOR=250>  <需/SCOLOR=70><六品神力勋章*1+龍血※仙珠*5000个/SCOLOR=254>     <合成1.6倍神力勋章|253#特殊属性：^-^250#暗神力1.6倍/@007>\
+<         /AUTOCOLOR=0><雲霄★齊飛楊※【八品】/SCOLOR=250>  <需/SCOLOR=70><七品神力勋章*1+龍血※仙珠*8000个/SCOLOR=254>     <合成1.7倍神力勋章|253#特殊属性：^-^250#暗神力1.7倍/@008>\
+<         /AUTOCOLOR=0><天龍★震四方※【九品】/SCOLOR=250>  <需/SCOLOR=70><八品神力勋章*1+龍血※仙珠*10000个/SCOLOR=254>    <合成1.8倍神力勋章|253#特殊属性：^-^250#暗神力1.8倍/@0011>\
+<         /AUTOCOLOR=0><戮弒★神王命※【十品】/SCOLOR=250>  <需/SCOLOR=70><九品神力勋章*1+龍血※仙珠*20000个/SCOLOR=254>    <合成1.9倍神力勋章|253#特殊属性：^-^250#暗神力1.9倍/@0022>\
+<         /AUTOCOLOR=0><雪吟★山河盡※【無雙】/SCOLOR=250>  <需/SCOLOR=70><十品神力勋章*1+龍血※仙珠*30000个/SCOLOR=254>    <合成2.0倍神力勋章|253#特殊属性：^-^250#暗神力2.0倍/@0033>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+<         /AUTOCOLOR=0><您来这里可提供神力勋章的合成,增加攻击和生命，当然您要有龍血※仙珠../SCOLOR=251>     \
+<         /AUTOCOLOR=0><个人建议您，您可以打BOSS爆逐鹿宝箱.开宝箱直接可获得成品神力勋章.../SCOLOR=251>   \
+
+[@001]
+#IF
+CHECKITEM 龍血※仙珠 100
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【龍血※仙珠*100】。无法合成！
+BREAK
+
+
+#IF
+CHECKITEM 龍血※仙珠 100
+#ACT
+TAKE 龍血※仙珠 100
+GIVE 尚武★真英雄※【一品】 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{尚武★真英雄※【一品】|251:0:0}{】|249:0:0}~~
+GOTO @main
+BREAK
+
+
+
+
+
+[@002]
+#IF
+CHECKITEM 龍血※仙珠 300
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【龍血※仙珠*300】。无法合成！
+BREAK
+
+#IF
+CHECKITEM 尚武★真英雄※【一品】 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【尚武★真英雄※【一品】*1】。无法合成！
+BREAK
+
+
+#IF
+CHECKITEM 龍血※仙珠 300
+CHECKITEM 尚武★真英雄※【一品】 1
+#ACT
+TAKE 龍血※仙珠 300
+TAKE 尚武★真英雄※【一品】 1
+GIVE 山河★風飄絮※【二品】 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{山河★風飄絮※【二品】|251:0:0}{】|249:0:0}~~
+GOTO @main
+BREAK
+
+
+
+[@003]
+#IF
+CHECKITEM 龍血※仙珠 500
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【龍血※仙珠*500】。无法合成！
+BREAK
+
+#IF
+CHECKITEM 山河★風飄絮※【二品】 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【山河★風飄絮※【二品】*1】。无法合成！
+BREAK
+
+
+#IF
+CHECKITEM 龍血※仙珠 500
+CHECKITEM 山河★風飄絮※【二品】 1
+#ACT
+TAKE 龍血※仙珠 500
+TAKE 山河★風飄絮※【二品】 1
+GIVE 滿城★黃金甲※【三品】 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{滿城★黃金甲※【三品】|251:0:0}{】|249:0:0}~~
+GOTO @main
+BREAK
+
+
+
+[@004]
+#IF
+CHECKITEM 龍血※仙珠 1000
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【龍血※仙珠*1000】。无法合成！
+BREAK
+
+#IF
+CHECKITEM 滿城★黃金甲※【三品】 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【滿城★黃金甲※【三品】*1】。无法合成！
+BREAK
+
+
+#IF
+CHECKITEM 龍血※仙珠 1000
+CHECKITEM 滿城★黃金甲※【三品】 1
+#ACT
+TAKE 龍血※仙珠 1000
+TAKE 滿城★黃金甲※【三品】 1
+GIVE 碧血★猶無悔※【四品】 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{碧血★猶無悔※【四品】|251:0:0}{】|249:0:0}~~
+GOTO @main
+BREAK
+
+
+
+
+[@005]
+#IF
+CHECKITEM 龍血※仙珠 2000
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【龍血※仙珠*2000】。无法合成！
+BREAK
+
+#IF
+CHECKITEM 碧血★猶無悔※【四品】 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【碧血★猶無悔※【四品】*1】。无法合成！
+BREAK
+
+
+#IF
+CHECKITEM 龍血※仙珠 2000
+CHECKITEM 碧血★猶無悔※【四品】 1
+#ACT
+TAKE 龍血※仙珠 2000
+TAKE 碧血★猶無悔※【四品】 1
+GIVE 我命★不由天※【五品】 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{我命★不由天※【五品】|251:0:0}{】|249:0:0}~~
+GOTO @main
+BREAK
+
+
+
+
+
+[@006]
+#IF
+CHECKITEM 龍血※仙珠 3000
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【龍血※仙珠*3000】。无法合成！
+BREAK
+
+#IF
+CHECKITEM 我命★不由天※【五品】 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【我命★不由天※【五品】*1】。无法合成！
+BREAK
+
+
+#IF
+CHECKITEM 龍血※仙珠 3000
+CHECKITEM 我命★不由天※【五品】 1
+#ACT
+TAKE 龍血※仙珠 3000
+TAKE 我命★不由天※【五品】 1
+GIVE 殺盡★負我人※【六品】 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{殺盡★負我人※【六品】|251:0:0}{】|249:0:0}~~
+GOTO @main
+BREAK
+
+
+
+
+[@007]
+#IF
+CHECKITEM 龍血※仙珠 5000
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【龍血※仙珠*5000】。无法合成！
+BREAK
+
+#IF
+CHECKITEM 殺盡★負我人※【六品】 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【殺盡★負我人※【六品】*1】。无法合成！
+BREAK
+
+
+#IF
+CHECKITEM 龍血※仙珠 5000
+CHECKITEM 殺盡★負我人※【六品】 1
+#ACT
+TAKE 龍血※仙珠 5000
+TAKE 殺盡★負我人※【六品】 1
+GIVE 橫刀★向天笑※【七品】 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{橫刀★向天笑※【七品】|251:0:0}{】|249:0:0}~~
+GOTO @main
+BREAK
+
+
+
+
+[@008]
+#IF
+CHECKITEM 龍血※仙珠 8000
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【龍血※仙珠*8000】。无法合成！
+BREAK
+
+#IF
+CHECKITEM 橫刀★向天笑※【七品】 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【橫刀★向天笑※【七品】*1】。无法合成！
+BREAK
+
+
+#IF
+CHECKITEM 龍血※仙珠 8000
+CHECKITEM 橫刀★向天笑※【七品】 1
+#ACT
+TAKE 龍血※仙珠 8000
+TAKE 橫刀★向天笑※【七品】 1
+GIVE 雲霄★齊飛楊※【八品】 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{雲霄★齊飛楊※【八品】|251:0:0}{】|249:0:0}~~
+GOTO @main
+BREAK
+
+
+
+
+[@0011]
+#IF
+CHECKITEM 龍血※仙珠 10000
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【龍血※仙珠*10000】。无法合成！
+BREAK
+
+#IF
+CHECKITEM 雲霄★齊飛楊※【八品】 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【雲霄★齊飛楊※【八品】*1】。无法合成！
+BREAK
+
+
+#IF
+CHECKITEM 龍血※仙珠 10000
+CHECKITEM 雲霄★齊飛楊※【八品】 1
+#ACT
+TAKE 龍血※仙珠 10000
+TAKE 雲霄★齊飛楊※【八品】 1
+GIVE 天龍★震四方※【九品】 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{天龍★震四方※【九品】|251:0:0}{】|249:0:0}~~
+GOTO @main
+BREAK
+
+
+
+
+[@0022]
+#IF
+CHECKITEM 龍血※仙珠 20000
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【龍血※仙珠*20000】。无法合成！
+BREAK
+
+#IF
+CHECKITEM 天龍★震四方※【九品】 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【天龍★震四方※【九品】*1】。无法合成！
+BREAK
+
+
+#IF
+CHECKITEM 龍血※仙珠 20000
+CHECKITEM 天龍★震四方※【九品】 1
+#ACT
+TAKE 龍血※仙珠 20000
+TAKE 天龍★震四方※【九品】 1
+GIVE 戮弒★神王命※【十品】 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{戮弒★神王命※【十品】|251:0:0}{】|249:0:0}~~
+GOTO @main
+BREAK
+
+
+
+
+[@0033]
+#IF
+CHECKITEM 龍血※仙珠 30000
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【龍血※仙珠*30000】。无法合成！
+BREAK
+
+#IF
+CHECKITEM 戮弒★神王命※【十品】 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少【戮弒★神王命※【十品】*1】。无法合成！
+BREAK
+
+
+#IF
+CHECKITEM 龍血※仙珠 30000
+CHECKITEM 戮弒★神王命※【十品】 1
+#ACT
+TAKE 龍血※仙珠 30000
+TAKE 戮弒★神王命※【十品】 1
+GIVE 雪吟★山河盡※【無雙】 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{雪吟★山河盡※【無雙】|251:0:0}{】|249:0:0}~~
+GOTO @main
+BREAK
+
+
+
+
+
+
+
+
+

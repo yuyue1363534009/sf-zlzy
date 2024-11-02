@@ -1,0 +1,86 @@
+[@main]
+#IF
+#ACT
+CLOSEBigDialogBox
+MOV s1 <$GAMEGOLD>个
+MOV s2 <$YEAR>-<$MONTH>-<$DAY>　<$HOUR>:<$MINUTE>:<$SECOND>分
+SETStringBlank <$STR(s1)> 15 1
+SETStringBlank <$STR(s2)> 22 1
+#SAY
+<IMGEX:73:2571:2572:2573:420:-50/@EXIT>\
+<  /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<当前服务器时间:/SCOLOR=87>{<$STR(s2)>/SCOLOR=150}　<您进入游戏时间:/SCOLOR=87>{<$LOGINLONG>/SCOLOR=150}\
+<Img:159:7:-10:4>\
+　　　<城镇传送:/AUTOCOLOR=250>　<请选择您需要传送的地图/SCOLOR=161>　<[完全免费传送]/SCOLOR=249>\
+　\
+　　　  <盟重土城/@YASHU>    <白日天门/@SHADINDAO>    <苍月海岛/@HUANGCHENG>  　<新手小村/@HAIBIN>\
+　\
+　　　　<比 奇 城/@JIANAN>    <封魔神谷/@fmMOVe>    <毒蛇山谷/@FENGDI>  　<沙城区域/@sbkMOVe>\
+<Img:159:7:-10:4>\
+　　<您当前的元宝数量为:/SCOLOR=87>{<$STR(S1)>/SCOLOR=150}<您当前的逐鹿币为:/SCOLOR=87>{<$GAMEGIRD>点/SCOLOR=150}\
+<温馨提示:本服无任何管理人员,请玩家保管好自己的帐号请勿透露给他人/SCOLOR=70>
+
+
+
+
+
+
+
+[@FENGDI] 
+#IF
+#ACT
+MAPMOVE 2 500 485
+BREAK 
+
+[@SHADINDAO]
+#IF
+#ACT 
+MAPMOVE 11 177 324
+BREAK 
+
+[@xinren]
+#ACT
+MAPMOVE 0 650 629
+
+[@sbkMOVe]
+#IF 
+#ACT
+MAPMOVE a3 706 407
+BREAK 
+
+[@JIANAN]
+#IF
+#ACT
+TAKE 金币 1000
+MAPMOVE 0 333 268 
+BREAK 
+
+
+
+
+[@HAIBIN] 
+#IF
+#ACT
+MAPMOVE 0 288 615 
+BREAK 
+
+[@YASHU] 
+#IF
+#ACT
+MOVR P8 320 337
+MOVR P7 339 355
+MAPMOVE a3 <$STR(P8)> <$STR(P7)>
+CLOSE
+BREAK
+
+[@HUANGCHENG]
+#IF
+#ACT
+MAPMOVE 5 139 337
+BREAK 
+
+[@fmMOVe]
+#IF
+#ACT
+MAPMOVE 4 241 202
+BREAK

@@ -1,0 +1,230 @@
+[@提取货币]
+
+{
+#IF
+CHECKLEVELEX > 0
+#ACT
+OPENMERCHANTBIGDLG 74 488 0 0 0 10 1 618 7
+#SAY
+\ \ \ \
+<             /AUTOCOLOR=0><┅/SCOLOR=254> <┅/SCOLOR=250> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=250> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=250> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=250> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+<              /AUTOCOLOR=0><兑换说明：一个合理的服，要做到人人皆可终极.本服只要你有时间.你就是神./FCOLOR=250>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+<            /AUTOCOLOR=0><10W元宝兑换1000点逐鹿币/@001>　                        <100W元宝兑换1W点逐鹿币/@002>　　　　　\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+<            /AUTOCOLOR=0><1000W元宝兑换10W点逐鹿币/@003>　                       <1.0亿元宝兑换100W点逐鹿币/@004>　\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+<            /AUTOCOLOR=0><10W点逐鹿币兑换10W点战神币/@77>　                     <100W点逐鹿币兑换100W点战神币/@777>　　　　　\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+<            /AUTOCOLOR=0><10W点战神币兑换10W点逐鹿币/@88>　                     <100W点战神币兑换100W点逐鹿币/@888>　　　　　\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+<              /AUTOCOLOR=0><兑换说明：一个合理的服，要做到人人皆可终极.本服只要你有时间.你就是神./FCOLOR=250>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+<            /AUTOCOLOR=0><提取 1000逐鹿币/FCOLOR=254>      <点击提取|151#点击提取1000逐鹿币/@逐鹿币5>                    <提取  5000逐鹿币/FCOLOR=254>     <点击提取|151#点击提取5000逐鹿币/@逐鹿币6>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+<            /AUTOCOLOR=0><提取 10000逐鹿币/FCOLOR=254>     <点击提取|151#点击提取10000逐鹿币/@逐鹿币7>                    <提取  50000逐鹿币/FCOLOR=254>    <点击提取|151#点击提取50000逐鹿币/@逐鹿币8>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+<            /AUTOCOLOR=0><提取 100000逐鹿币/FCOLOR=254>    <点击提取|151#点击提取100000逐鹿币/@逐鹿币9>                    <提取  500000逐鹿币/FCOLOR=254>   <点击提取|151#点击提取500000逐鹿币/@逐鹿币10>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+<            /AUTOCOLOR=0><提取 1000000逐鹿币/FCOLOR=254>   <点击提取|151#点击提取1000000逐鹿币/@逐鹿币11>                    <提取  5000000逐鹿币/FCOLOR=254>  <点击提取|151#点击提取5000000逐鹿币/@逐鹿币12>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+<             /AUTOCOLOR=0><您当前战神币点为：/SCOLOR=250> [<$GAMEPOINT>]点（可兑换逐鹿币）    \
+
+
+[@逐鹿币12]
+#IF
+CHECKGAMEGIRD > 4999999
+#ACT
+GAMEGIRD - 5000000
+GIVE 5000000逐鹿币
+SENDMSG 5 提取5000000逐鹿币成功!
+BREAK
+#ELSEACT
+MESSAGEBOX [兑换失败]：你的逐鹿币不足5000000！
+BREAK
+
+[@逐鹿币11]
+#IF
+CHECKGAMEGIRD > 999999
+#ACT
+GAMEGIRD - 1000000
+GIVE 1000000逐鹿币
+SENDMSG 5 提取1000000逐鹿币成功!
+BREAK
+#ELSEACT
+MESSAGEBOX [兑换失败]：你的逐鹿币不足1000000！
+BREAK
+
+[@逐鹿币10]
+#IF
+CHECKGAMEGIRD > 499999
+#ACT
+GAMEGIRD - 500000
+GIVE 500000逐鹿币
+SENDMSG 5 提取500000逐鹿币成功!
+BREAK
+#ELSEACT
+MESSAGEBOX [兑换失败]：你的逐鹿币不足500000！
+BREAK
+
+[@逐鹿币9]
+#IF
+CHECKGAMEGIRD > 99999
+#ACT
+GAMEGIRD - 100000
+GIVE 100000逐鹿币
+SENDMSG 5 提取100000逐鹿币成功!
+BREAK
+#ELSEACT
+MESSAGEBOX [兑换失败]：你的逐鹿币不足100000！
+BREAK
+
+[@逐鹿币8]
+#IF
+CHECKGAMEGIRD > 49999
+#ACT
+GAMEGIRD - 50000
+GIVE 50000逐鹿币
+SENDMSG 5 提取50000逐鹿币成功!
+BREAK
+#ELSEACT
+MESSAGEBOX [兑换失败]：你的逐鹿币不足50000！
+BREAK
+
+[@逐鹿币7]
+#IF
+CHECKGAMEGIRD > 9999
+#ACT
+GAMEGIRD - 10000
+GIVE 10000逐鹿币
+SENDMSG 5 提取10000逐鹿币成功!
+BREAK
+#ELSEACT
+MESSAGEBOX [兑换失败]：你的逐鹿币不足10000！
+BREAK
+
+[@逐鹿币6]
+#IF
+CHECKGAMEGIRD > 4999
+#ACT
+GAMEGIRD - 5000
+GIVE 5000逐鹿币
+SENDMSG 5 提取5000逐鹿币成功!
+BREAK
+#ELSEACT
+MESSAGEBOX [兑换失败]：你的逐鹿币不足5000！
+BREAK
+
+[@逐鹿币5]
+#IF
+CHECKGAMEGIRD > 999
+#ACT
+GAMEGIRD - 1000
+GIVE 1000逐鹿币
+SENDMSG 5 提取1000逐鹿币成功!
+BREAK
+#ELSEACT
+MESSAGEBOX [兑换失败]：你的逐鹿币不足1000！
+BREAK
+
+[@888]
+#IF
+CHECKGAMEPOINT > 999999
+#ACT
+GAMEPOINT - 1000000
+GAMEGIRD + 1000000
+BREAK
+#ELSEACT
+MESSAGEBOX \\　　　你当前的战神币不足！！
+BREAK
+
+
+[@777]
+#IF
+CHECKGAMEGIRD > 999999
+#ACT
+GAMEGIRD - 1000000
+GAMEPOINT + 1000000
+BREAK
+#ELSEACT
+MESSAGEBOX \\　　　你当前的逐鹿币不足！！
+BREAK
+
+[@88]
+#IF
+CHECKGAMEPOINT > 99999
+#ACT
+GAMEPOINT - 100000
+GAMEGIRD + 100000
+BREAK
+#ELSEACT
+MESSAGEBOX \\　　　你当前的战神币不足！！
+BREAK
+
+[@77]
+#IF
+CHECKGAMEGIRD > 99999
+#ACT
+GAMEGIRD - 100000
+GAMEPOINT + 100000
+BREAK
+#ELSEACT
+MESSAGEBOX \\　　　你当前的逐鹿币不足！！
+BREAK
+
+
+
+[@001]
+#IF
+CHECKGAMEGOLD > 99999
+#ACT
+GAMEGOLD - 100000
+GAMEGIRD + 1000
+SENDMSG 5 兑换1000逐鹿币成功!
+BREAK
+#ELSEACT
+MESSAGEBOX [兑换失败]：你的元宝不足10W..！
+BREAK
+
+
+[@002]
+#IF
+CHECKGAMEGOLD > 999999
+#ACT
+GAMEGOLD - 1000000
+GAMEGIRD + 10000
+SENDMSG 5 兑换10000逐鹿币成功!
+BREAK
+#ELSEACT
+MESSAGEBOX [兑换失败]：你的元宝点不足1000000点..！
+BREAK
+
+[@003]
+#IF
+CHECKGAMEGOLD > 9999999
+#ACT
+GAMEGOLD - 10000000
+GAMEGIRD + 100000
+SENDMSG 5 兑换100000逐鹿币成功!
+BREAK
+#ELSEACT
+MESSAGEBOX [兑换失败]：你的元宝点不足10000000点..！
+BREAK
+
+
+[@004]
+#IF
+CHECKGAMEGOLD > 99999999
+#ACT
+GAMEGOLD - 100000000
+GAMEGIRD + 1000000
+SENDMSG 5 兑换1000000逐鹿币成功!
+BREAK
+#ELSEACT
+MESSAGEBOX [兑换失败]：你的元宝点不足100000000点..！
+BREAK
+
+
+
+}

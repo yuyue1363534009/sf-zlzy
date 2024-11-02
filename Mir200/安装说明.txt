@@ -1,0 +1,5 @@
+安装说明：
+
+将945Engine.dll复制并放在Mir200文件夹里面， 并在Mir200目录中的PlugList.txt文件中添加945Engine.dll即可。
+
+

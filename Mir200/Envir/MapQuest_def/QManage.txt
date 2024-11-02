@@ -1,0 +1,488 @@
+(@@SENDMSG @storage @getback @getnextpage @getPreviouspage @@offlinemsg @@InPutString @@InPutInteger)
+
+[@Startup]
+#IF
+EQUAL A1 
+#ACT
+MOV   A1 新区
+MOV   A2 <$SERVERNAME>
+
+#IF
+EQUAL A1 新区
+NOT EQUAL A2 <$SERVERNAME>
+#ACT
+MOV   A1 一合
+MOV   A2 <$SERVERNAME>
+
+#IF
+#ACT
+MOV G81 120
+MOV G82 300
+MOV G83 480
+MOV G84 720
+MOV G85 1440
+CLEARNAMELIST ..\QuestDiary\密保脚本\机器码.txt
+CLEARNAMELIST ..\QuestDiary\装备首爆\首爆数据.txt
+BREAK
+
+
+
+
+
+
+
+[@Login]
+#IF
+ISDUMMY
+#ACT
+#CALL [\高级假人\假人脚本.txt] @假人脚本
+
+#IF
+CHECKLEVELEX > 0
+#ACT
+HAIRSTYLE 0
+;新GOM开启大背包
+ChangeBagCount = 126
+
+;ESP激活自动战斗显示
+;#IF
+;#ACT
+;ESPOpenAutoPlayGame
+
+
+#IF
+CHECK [125] 1
+#ACT
+;ESP开启一键拾取开始
+;StartElf 1
+;STARTPICKUP
+;ESP开启一键拾取结束
+;新GOM开启一键拾取开始
+StartPickUp
+;新GOM开启一键拾取结束
+
+#IF
+#ACT
+SetOnTimer 102 1
+SetOnTimer 103 1
+SetOnTimer 4 1
+SetOnTimer 11 1
+SetOnTimer 19 15
+SetOnTimer 100 10
+SetOnTimer 23 1
+
+#IF
+#ACT
+#CALL [\游戏登陆\人物图录.txt] @人物图录
+#CALL [\游戏登陆\登陆脚本.txt] @登陆设置
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+#CALL [\游戏登陆\按钮检测.txt] @开始按钮A
+
+PLAYMAGICBALLEFFECT 6 1010 12 150 -1 0 1 0 -60 -100
+PLAYMAGICBALLEFFECT 6 1022 12 150 -1 1 1 0 -60 -100
+
+SETSTORAGEOPEN 20130801 20130802 20130803 20130804 2 20130806 20130807 20130808 1 20130810
+SETSTORAGEOPEN 20130801 20130802 20130803 20130804 3 20130806 20130807 20130808 1 20130810
+GOTO @非法血符
+
+#IF
+NOT EQUAL <$SHIELD>
+#ACT
+CHANGESPEED 2 5
+#IF
+CHECKLEVELEX > 220
+#ACT
+CHANGELEVEL  = 220
+#IF
+CHECKLEVELEX > 149
+#ACT
+GMEXECUTE ReleaseShutup self 
+SENDMSG 7 你等级已达到150级，系统已自动帮你解除禁言！
+
+
+[@OnTimer19]
+#IF
+CHECKITEMW 霸絕★羅網※鎖蒼穹
+#ACT
+ADDHPPER + 2
+SENDMSG 6 盾牌单件触发HP每15秒回血<2%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 龍嘯★龍氣※憾九天
+#ACT
+ADDHPPER + 4
+SENDMSG 6 盾牌单件触发HP每15秒回血<4%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 聖渊★鬼泣※驚天地
+#ACT
+ADDHPPER + 6
+SENDMSG 6 盾牌单件触发HP每15秒回血<6%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 涅槃★神龍※數撚塵
+#ACT
+ADDHPPER + 8
+SENDMSG 6 盾牌单件触发HP每15秒回血<8%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 天闕★浪淘※自天涯
+#ACT
+ADDHPPER + 10
+SENDMSG 6 盾牌单件触发HP每15秒回血<10%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 莫邪★帝矗※戟指天
+#ACT
+ADDHPPER + 12
+SENDMSG 6 盾牌单件触发HP每15秒回血<12%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 奧義★霸殤※宇等閑
+#ACT
+ADDHPPER + 14
+SENDMSG 6 盾牌单件触发HP每15秒回血<14%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 終極★金樽※空對月
+#ACT
+ADDHPPER + 16
+SENDMSG 6 盾牌单件触发HP每15秒回血<16%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 帝君卐中原◆終極审判の逐鹿盾
+#ACT
+ADDHPPER + 18
+SENDMSG 6 盾牌单件触发HP每15秒回血<18%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 金絲卐龍鱗◆君王斩天の中原盾
+#ACT
+ADDHPPER + 20
+SENDMSG 6 盾牌单件触发HP每15秒回血<20%>生命值！！！~~~~~~
+
+
+[@非法血符]
+#IF
+CHECKITEMTYPE 5 51
+CHECKBAGSIZE 1
+#ACT
+TAKEOffItem 5
+MESSAGEBOX 穿戴位置错误
+BREAK
+#IF
+CHECKITEMTYPE 5 25
+CHECKBAGSIZE 1
+#ACT
+TAKEOffItem 5
+MESSAGEBOX 穿戴位置错误
+BREAK
+#OR
+CHECKITEMTYPE 5 25
+CHECKITEMTYPE 5 51
+#ACT
+MESSAGEBOX 请尽快脱下你的<$ARMRING_L>，否则将掉线
+SetOnTimer 21 10
+
+;============================================================================
+
+[@OnTimer23]
+#IF
+CHECKGAMEGOLD > 1999999999
+#ACT
+GAMEGOLD      = 2000000000
+
+#IF
+NOT CHECKITEMW 《时装》赤心※巡天ゞ逍遥
+#ACT
+MOV S$复活冷却显示 不可用
+
+#IF
+CHECKITEMW 《时装》赤心※巡天ゞ逍遥
+LARGE U45 0
+#ACT
+DEC   U45 1
+MOV S$复活冷却显示 <$STR(U45)>秒
+
+#IF
+CHECKITEMW 《时装》赤心※巡天ゞ逍遥
+EQUAL U45 0
+#ACT
+MOV S$复活冷却显示 可复活
+#IF
+#ACT
+;ADDBUTTON 66 17 830 830 830 0 475 0 　当前复活时间：<$STR(S$复活冷却显示)>
+
+
+
+[@OnTimer4]
+#IF
+CHECKLEVELEX > 149
+#ACT
+SetOffTimer 4 1
+BREAK
+
+#IF
+CHECKLEVELEX < 150
+#ACT
+CHANGEEXP + 500000
+BREAK
+
+;============================================================================
+;==============================连=杀=变=量===================================
+;============================================================================
+
+[@OnTimer11]
+#IF
+LARGE U49 0
+#ACT
+DEC   U49 1
+BREAK
+
+#IF
+EQUAL U49 0
+#ACT
+SET [375] 0
+SET [376] 0
+SET [377] 0
+SET [378] 0
+SET [379] 0
+SET [380] 0
+SET [381] 0
+SET [382] 0
+SET [383] 0
+SET [384] 0
+SET [385] 0
+SET [386] 0
+
+;==============================活=动=弹=窗===================================
+
+[@逐鹿中原材料弹窗]
+#IF
+#ACT
+OPENMERCHANTBIGDLG 74 120 0 0 0 10 1 488 8
+#SAY
+<> \ \ \
+<       /AUTOCOLOR=0><><活动说明：每3小时开启一次/SCOLOR=254>\
+<       /AUTOCOLOR=0><><怪物说明：/SCOLOR=254><刷新1只逐鹿★材料BOSS/SCOLOR=249>\
+<       /AUTOCOLOR=0><><爆率说明：/SCOLOR=254><全服所有材料和货币/SCOLOR=249>\
+<       /AUTOCOLOR=0><><地图说明：/SCOLOR=254><爆率全开！毫无保留！/SCOLOR=249>\
+<       /AUTOCOLOR=0><> \
+<       /AUTOCOLOR=0><>                 <立即参加必爆材料活动/@杀年兽活动>  \
+
+[@杀年兽活动]
+#IF
+#ACT
+MAP HHZBHD
+SENDMSG 0 253 251 勇士{「<$USERNAME>」|254:0:1}参加了必爆材料活动，进入了{『<$MAPTITLE>』|250:0:1}！
+BREAK
+
+[@逐鹿中原装备弹窗]
+#IF
+#ACT
+OPENMERCHANTBIGDLG 74 120 0 0 0 10 1 488 8
+#SAY
+<> \ \ \
+<       /AUTOCOLOR=0><><活动说明：每90分钟开启一次/SCOLOR=254>\
+<       /AUTOCOLOR=0><><怪物说明：/SCOLOR=254><刷新1只逐鹿★装备BOSS/SCOLOR=249>\
+<       /AUTOCOLOR=0><><爆率说明：/SCOLOR=254><全服所有装备和道具/SCOLOR=249>\
+<       /AUTOCOLOR=0><><地图说明：/SCOLOR=254><爆率全开！毫无保留！/SCOLOR=249>\
+<       /AUTOCOLOR=0><> \
+<       /AUTOCOLOR=0><>                 <立即参加必爆装备活动/@杀年兽活动1>  \
+
+[@杀年兽活动1]
+#IF
+#ACT
+MAP WLMZHD
+SENDMSG 0 253 251 勇士{「<$USERNAME>」|254:0:1}参加了必爆装备活动，进入了{『<$MAPTITLE>』|250:0:1}！
+BREAK
+
+
+;---------------------------------------------------------------------------------------------------------------------
+
+
+[@OnTimer211]
+#IF
+ISDUMMY
+RANDOM 5
+ISONMAP 3
+#ACT
+MOVR P8 318 338
+MOVR P9 324 344
+GOTONow <$STR(P8)> <$STR(P9)>
+BREAK
+
+[@OnTimer102]
+#IF
+CHECK [124] 0
+#ACT
+BREAK
+#IF
+NOT ISONMAP 3
+CHECKTITLE 逐鹿※之力
+CHECK [124] 1
+#ACT
+#CALL [\装备回收\装备回收.txt] @回收
+BREAK
+
+[@OnTimer100]
+#OR
+EQUAL <$ARMRING_R> 含光※弄影づ腕
+EQUAL <$ARMRING_R> 降龍※伏虎づ腕
+EQUAL <$ARMRING_R> 龍騰※霸天づ腕
+EQUAL <$ARMRING_R> 不朽※之戀づ腕
+EQUAL <$ARMRING_R> 冷月※葬花づ腕
+EQUAL <$ARMRING_R> 赤明※九天づ腕
+EQUAL <$ARMRING_R> 仙劍※九歌づ腕
+EQUAL <$ARMRING_R> 神羅※天照づ腕
+EQUAL <$ARMRING_R> 紫辰※黎雲づ腕
+EQUAL <$ARMRING_R> 《1.0倍》醉情※霧影づ霸者腕
+EQUAL <$ARMRING_R> 《2.0倍》銀月※清歌づ鳳翼腕
+EQUAL <$ARMRING_R> 《3.0倍》末日※审判づ諸神腕
+EQUAL <$ARMRING_R> 《4.0倍》烈焰※永恒づ赤焰腕
+EQUAL <$ARMRING_R> 《5.0倍》碧血※清歌づ寒星腕
+EQUAL <$ARMRING_R> 《6.0倍》问鼎※誅天づ守護腕
+EQUAL <$ARMRING_R> 《7.0倍》暗噬※無痕づ領域腕
+EQUAL <$ARMRING_R> 《8.0倍》七寶※玲瓏づ幻夢腕
+EQUAL <$ARMRING_R> 《10.0倍》玄冥※慑天づ景霄腕
+EQUAL <$ARMRING_R> 《12.0倍》日月※乾坤づ莽荒腕
+EQUAL <$ARMRING_R> 《15.0倍》九耀※禦雷づ深藍腕
+EQUAL <$ARMRING_R> 《18.0倍》金麟※輪回づ天琊腕
+EQUAL <$ARMRING_R> 《22.0倍》幻滅※天使づ审判腕
+EQUAL <$ARMRING_R> 《25.0倍》冰霜※星魔づ夢棱腕
+EQUAL <$ARMRING_R> 《28.0倍》鐘靈※毓秀づ紫電腕
+EQUAL <$ARMRING_R> 《32.0倍》雷鳴※離火づ帝炎腕
+EQUAL <$ARMRING_R> 《36.0倍》天星※耀陽づ霸絕腕
+EQUAL <$ARMRING_R> 《40.0倍》神威※亢天づ龍嘯腕
+EQUAL <$ARMRING_R> 《45.0倍》魔神※之隕づ聖渊腕
+EQUAL <$ARMRING_R> 《50.0倍》神雷※天裁づ涅槃腕
+EQUAL <$ARMRING_R> 《55.0倍》龍血※戰神づ天闕腕
+EQUAL <$ARMRING_R> 《60.0倍》刀劍★神皇※莫邪腕
+EQUAL <$ARMRING_R> 《65.0倍》真靈★九變※奧義腕
+EQUAL <$ARMRING_R> 《70.0倍》龍王★無雙※終極腕
+EQUAL <$ARMRING_R> 《75.0倍》金絲★龍鱗※君王腕
+EQUAL <$ARMRING_R> 《80.0倍》赤心★巡天※逍遥腕
+EQUAL <$ARMRING_R> 《85.0倍》天刀★无疆※昊天腕
+#ACT
+KICK
+MESSAGEBOX \　\　　　　　左手位置卡手镯会一直掉线哦！！
+BREAK
+
+#OR
+EQUAL <$ARMRING_R> 含光※弄影づ指
+EQUAL <$ARMRING_R> 降龍※伏虎づ指
+EQUAL <$ARMRING_R> 龍騰※霸天づ指
+EQUAL <$ARMRING_R> 不朽※之戀づ指
+EQUAL <$ARMRING_R> 冷月※葬花づ指
+EQUAL <$ARMRING_R> 赤明※九天づ指
+EQUAL <$ARMRING_R> 仙劍※九歌づ指
+EQUAL <$ARMRING_R> 神羅※天照づ指
+EQUAL <$ARMRING_R> 紫辰※黎雲づ指
+EQUAL <$ARMRING_R> 《1.0倍》醉情※霧影づ霸者指
+EQUAL <$ARMRING_R> 《2.0倍》銀月※清歌づ鳳翼指
+EQUAL <$ARMRING_R> 《3.0倍》末日※审判づ諸神指
+EQUAL <$ARMRING_R> 《4.0倍》烈焰※永恒づ赤焰指
+EQUAL <$ARMRING_R> 《5.0倍》碧血※清歌づ寒星指
+EQUAL <$ARMRING_R> 《6.0倍》问鼎※誅天づ守護指
+EQUAL <$ARMRING_R> 《7.0倍》暗噬※無痕づ領域指
+EQUAL <$ARMRING_R> 《8.0倍》七寶※玲瓏づ幻夢指
+EQUAL <$ARMRING_R> 《10.0倍》玄冥※慑天づ景霄指
+EQUAL <$ARMRING_R> 《12.0倍》日月※乾坤づ莽荒指
+EQUAL <$ARMRING_R> 《15.0倍》九耀※禦雷づ深藍指
+EQUAL <$ARMRING_R> 《18.0倍》金麟※輪回づ天琊指
+EQUAL <$ARMRING_R> 《22.0倍》幻滅※天使づ审判指
+EQUAL <$ARMRING_R> 《25.0倍》冰霜※星魔づ夢棱指
+EQUAL <$ARMRING_R> 《28.0倍》鐘靈※毓秀づ紫電指
+EQUAL <$ARMRING_R> 《32.0倍》雷鳴※離火づ帝炎指
+EQUAL <$ARMRING_R> 《36.0倍》天星※耀陽づ霸絕指
+EQUAL <$ARMRING_R> 《40.0倍》神威※亢天づ龍嘯指
+EQUAL <$ARMRING_R> 《45.0倍》魔神※之隕づ聖渊指
+EQUAL <$ARMRING_R> 《50.0倍》神雷※天裁づ涅槃指
+EQUAL <$ARMRING_R> 《55.0倍》龍血※戰神づ天闕指
+EQUAL <$ARMRING_R> 《60.0倍》刀劍★神皇※莫邪指
+EQUAL <$ARMRING_R> 《65.0倍》真靈★九變※奧義指
+EQUAL <$ARMRING_R> 《70.0倍》龍王★無雙※終極指
+EQUAL <$ARMRING_R> 《75.0倍》金絲★龍鱗※君王指
+EQUAL <$ARMRING_R> 《80.0倍》赤心★巡天※逍遥指
+EQUAL <$ARMRING_R> 《85.0倍》天刀★无疆※昊天指
+#ACT
+KICK
+MESSAGEBOX \　\　　　　　左戒位置卡戒指会一直掉线哦！！
+BREAK
+
+
+
+
+
+[@OnTimer103]
+#IF
+INSAFEZONE
+#ACT
+BREAK
+
+
+#IF
+CHECKITEM 50元宝 1
+#ACT
+TAKE      50元宝 1
+GAMEGOLD + 50
+GuildNOTiceMsg 255 216 系统自动帮你吃元宝卷：元宝增加[50]个，总额[<$GAMEGOLD>]个...  SELF
+
+#IF
+CHECKITEM 100元宝 1
+#ACT
+TAKE      100元宝 1
+GAMEGOLD + 100
+GuildNOTiceMsg 255 216 系统自动帮你吃元宝卷：元宝增加[100]个，总额[<$GAMEGOLD>]个...  SELF
+
+#IF
+CHECKITEM 200元宝 1
+#ACT
+TAKE      200元宝 1
+GAMEGOLD + 200
+GuildNOTiceMsg 255 216 系统自动帮你吃元宝卷：元宝增加[200]个，总额[<$GAMEGOLD>]个...  SELF
+
+#IF
+CHECKITEM 500元宝 1
+#ACT
+TAKE      500元宝 1
+GAMEGOLD + 500
+GuildNOTiceMsg 255 216 系统自动帮你吃元宝卷：元宝增加[500]个，总额[<$GAMEGOLD>]个...  SELF
+
+#IF
+CHECKITEM 1000元宝 1
+#ACT
+TAKE      1000元宝 1
+GAMEGOLD + 1000
+GuildNOTiceMsg 255 216 系统自动帮你吃元宝卷：元宝增加[1000]个，总额[<$GAMEGOLD>]个...  SELF
+
+#IF
+CHECKITEM 2000元宝 1
+#ACT
+TAKE      2000元宝 1
+GAMEGOLD + 2000
+GuildNOTiceMsg 255 216 系统自动帮你吃元宝卷：元宝增加[2000]个，总额[<$GAMEGOLD>]个...  SELF
+
+#IF
+CHECKITEM 5000元宝 1
+#ACT
+TAKE      5000元宝 1
+GAMEGOLD + 5000
+GuildNOTiceMsg 255 216 系统自动帮你吃元宝卷：元宝增加[5000]个，总额[<$GAMEGOLD>]个...  SELF
+
+#IF
+CHECKITEM 10000元宝 1
+#ACT
+TAKE      10000元宝 1
+GAMEGOLD + 10000
+GuildNOTiceMsg 255 216 系统自动帮你吃元宝卷：元宝增加[10000]个，总额[<$GAMEGOLD>]个...  SELF
+
+#IF
+CHECKITEM 50000元宝 1
+#ACT
+TAKE      50000元宝 1
+GAMEGOLD + 50000
+GuildNOTiceMsg 255 216 系统自动帮你吃元宝卷：元宝增加[50000]个，总额[<$GAMEGOLD>]个...  SELF
+
+#IF
+CHECKITEM 100000元宝 1
+#ACT
+TAKE      100000元宝 1
+GAMEGOLD + 100000
+GuildNOTiceMsg 255 216 系统自动帮你吃元宝卷：元宝增加[100000]个，总额[<$GAMEGOLD>]个...  SELF
+
+[@全部杀死]
+#IF
+#ACT
+KICK

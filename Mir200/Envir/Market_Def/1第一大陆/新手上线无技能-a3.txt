@@ -1,0 +1,57 @@
+[@main]
+#IF
+CHECKLEVELEX > 0
+#ACT
+OPENMERCHANTBIGDLG 74 501 0 0 0 10 1 488 8
+#SAY
+<> \ \ \
+<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
+<       /AUTOCOLOR=0><>               <新人上线无技能，无新手装备，点这里领取！/SCOLOR=250>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
+<       /AUTOCOLOR=0><>               <新人上线无技能，无新手装备，点这里领取！/SCOLOR=250>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
+<       /AUTOCOLOR=0><>               <新人上线无技能，无新手装备，点这里领取！/SCOLOR=250>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
+<       /AUTOCOLOR=0><>                        <领取新人装备和技能/@1>\
+
+[@1]
+
+#IF
+CHECK [2] 0
+#ACT
+SET [2] 1
+ADDSKILL 基本剑术 3
+ADDSKILL 攻杀剑术 3
+ADDSKILL 刺杀剑术 3
+ADDSKILL 野蛮冲撞 3
+ADDSKILL 烈火剑法 3
+ADDSKILL 逐日剑法 3
+ADDSKILL 开天斩 3
+GIVE 我命由我不由天メ神剑 1
+GIVE 我命由我不由天メ神甲 1
+GIVE 我命由我不由天メ盔 1
+GIVE 我命由我不由天メ链 1
+GIVE 我命由我不由天メ镯 2
+GIVE 我命由我不由天メ戒 2
+GIVE 我命由我不由天メ带 1
+GIVE 我命由我不由天メ靴 1
+GIVE 盟重传送石 1
+GIVE 随机传送石 1
+AutoTAKEOnItem 我命由我不由天メ神甲 0
+AutoTAKEOnItem 我命由我不由天メ神剑 1
+AutoTAKEOnItem 我命由我不由天メ链 3
+AutoTAKEOnItem 我命由我不由天メ盔 4
+AutoTAKEOnItem 我命由我不由天メ镯 5
+AutoTAKEOnItem 我命由我不由天メ镯 6
+AutoTAKEOnItem 我命由我不由天メ戒 7
+AutoTAKEOnItem 我命由我不由天メ戒 8
+AutoTAKEOnItem 我命由我不由天メ带 10
+AutoTAKEOnItem 我命由我不由天メ靴 11
+MESSAGEBOX 领取成功
+BREAK
+#ELSEACT
+MESSAGEBOX 提示：你好像已经领取过了吧？
+BREAK
+
+

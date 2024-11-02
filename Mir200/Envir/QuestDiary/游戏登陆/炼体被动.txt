@@ -1,0 +1,306 @@
+[@被动]
+{
+
+
+#IF
+#ACT
+MOV N$爆率 100
+ChangeHumAbility 6 = 1 65535 
+
+
+#IF
+ISONMAP zz1
+#ACT
+INC N$爆率 20
+
+
+
+#IF
+NOT CHECKVAR GLOBAL JWJX-捐献第1名 = <$USERNAME>
+NOT CHECKVAR GLOBAL JWJX-捐献第2名 = <$USERNAME>
+NOT CHECKVAR GLOBAL JWJX-捐献第3名 = <$USERNAME>
+CHECKVAR HUMAN JWJX-个人捐献 > 9
+#ACT
+INC N$爆率 10
+MOV N$捐献 <$MAXDC>
+DIV N$捐献 <$MAXDC> 100
+MUL N$捐献 3
+ChangeHumAbility 6 + <$STR(N$捐献)> 65535 
+
+
+
+#IF
+CHECKVAR GLOBAL JWJX-捐献第1名 = <$USERNAME>
+#ACT
+INC N$爆率 10
+MOV N$捐献 <$MAXDC>
+DIV N$捐献 <$MAXDC> 100
+MUL N$捐献 20
+ChangeHumAbility 6 + <$STR(N$捐献)> 65535 
+
+#IF
+CHECKVAR GLOBAL JWJX-捐献第2名 = <$USERNAME>
+#ACT
+INC N$爆率 10
+MOV N$捐献 <$MAXDC>
+DIV N$捐献 <$MAXDC> 100
+MUL N$捐献 10
+ChangeHumAbility 6 + <$STR(N$捐献)> 65535 
+
+#IF
+CHECKVAR GLOBAL JWJX-捐献第3名 = <$USERNAME>
+#ACT
+INC N$爆率 10
+MOV N$捐献 <$MAXDC>
+DIV N$捐献 <$MAXDC> 100
+MUL N$捐献 5
+ChangeHumAbility 6 + <$STR(N$捐献)> 65535 
+
+
+#IF
+CHECK [059] 1
+#ACT
+ChangeHumAbility 5 + 555
+ChangeHumAbility 6 + 555
+SETICON 1 33 6600 0 -20 10 0 200 0
+INC N$爆率 20
+SENDMSG 5 恭喜你开启狂暴,暴率增加20%.
+
+
+#IF
+CHECK [060] 1
+#ACT
+ChangeHumAbility 5 + 999
+ChangeHumAbility 6 + 999
+SETICON 1 35 130 0 -40 14 0 200 0 
+INC N$爆率 30
+SENDMSG 5 恭喜你开启狂暴,暴率增加30%.
+
+
+#IF
+EQUAL u3 1
+#ACT
+MOV N$力量4 <$MAXDC>
+DIV N$力量4 <$MAXDC> 100
+MUL N$力量4 1
+ChangeHumAbility 6 + <$STR(N$力量4)> 65535 
+SENDMSG 6 炼体:强身等级1,增加1%攻击力,[<$STR(N$力量4)>]点!
+BREAK
+
+#IF
+EQUAL u3 2
+#ACT
+MOV N$力量4 <$MAXDC>
+MOV N$力量4 <$MAXDC>
+DIV N$力量4 <$MAXDC> 100
+MUL N$力量4 2
+ChangeHumAbility 6 + <$STR(N$力量4)> 65535 
+SENDMSG 6 炼体:强身等级2,增加2%攻击力,[<$STR(N$力量4)>]点!
+BREAK
+
+#IF
+EQUAL u3 3
+#ACT
+MOV N$力量4 <$MAXDC>
+DIV N$力量4 <$MAXDC> 100
+MUL N$力量4 3
+ChangeHumAbility 6 + <$STR(N$力量4)> 65535 
+SENDMSG 6 炼体:强身等级3,增加3%攻击力,[<$STR(N$力量4)>]点!
+BREAK
+
+#IF
+EQUAL u3 4
+#ACT
+MOV N$力量4 <$MAXDC>
+DIV N$力量4 <$MAXDC> 100
+MUL N$力量4 4
+ChangeHumAbility 6 + <$STR(N$力量4)> 65535 
+SENDMSG 6 炼体:强身等级4,增加4%攻击力,[<$STR(N$力量4)>]点!
+BREAK
+
+#IF
+EQUAL u3 5
+#ACT
+MOV N$力量4 <$MAXDC>
+DIV N$力量4 <$MAXDC> 100
+MUL N$力量4 5
+ChangeHumAbility 6 + <$STR(N$力量4)> 65535 
+SENDMSG 6 炼体:强身等级5,增加5%攻击力,[<$STR(N$力量4)>]点!
+BREAK
+
+#IF
+EQUAL u3 6
+#ACT
+MOV N$力量4 <$MAXDC>
+DIV N$力量4 <$MAXDC> 100
+MUL N$力量4 7
+ChangeHumAbility 6 + <$STR(N$力量4)> 65535 
+SENDMSG 6 炼体:强身等级6,增加7%攻击力,[<$STR(N$力量4)>]点!
+BREAK
+
+#IF
+EQUAL u3 7
+#ACT
+MOV N$力量4 <$MAXDC>
+DIV N$力量4 <$MAXDC> 100
+MUL N$力量4 9
+ChangeHumAbility 6 + <$STR(N$力量4)> 65535 
+SENDMSG 6 炼体:强身等级7,增加9%攻击力,[<$STR(N$力量4)>]点!
+BREAK
+
+#IF
+EQUAL u3 8
+#ACT
+MOV N$力量4 <$MAXDC>
+DIV N$力量4 <$MAXDC> 100
+MUL N$力量4 14
+ChangeHumAbility 6 + <$STR(N$力量4)> 65535 
+SENDMSG 6 炼体:强身等级8,增加14%攻击力,[<$STR(N$力量4)>]点!
+BREAK
+
+#IF
+EQUAL u3 9
+#ACT
+MOV N$力量4 <$MAXDC>
+DIV N$力量4 <$MAXDC> 100
+MUL N$力量4 19
+ChangeHumAbility 6 + <$STR(N$力量4)> 65535 
+SENDMSG 6 炼体:强身等级9,增加19%攻击力,[<$STR(N$力量4)>]点!
+BREAK
+
+#IF
+EQUAL u3 10
+#ACT
+MOV N$力量4 <$MAXDC>
+DIV N$力量4 <$MAXDC> 100
+MUL N$力量4 30
+ChangeHumAbility 6 + <$STR(N$力量4)> 65535 
+SENDMSG 6 炼体:强身等级10,增加30%攻击力,[<$STR(N$力量4)>]点!
+BREAK
+
+#IF
+EQUAL u3 11
+#ACT
+MOV N$力量4 <$MAXDC>
+DIV N$力量4 <$MAXDC> 100
+MUL N$力量4 50
+ChangeHumAbility 6 + <$STR(N$力量4)> 65535 
+SENDMSG 6 炼体:强身等级11,增加50%攻击力,[<$STR(N$力量4)>]点!
+BREAK
+}
+
+
+
+[@被动1]
+{
+#IF
+EQUAL u4 1
+#ACT
+MOV N$生命4 <$MAXHP>
+DIV N$生命4 <$MAXHP> 100
+MUL N$生命4 3
+ChangeHumAbility 11 + <$STR(N$生命4)> 65535 
+SENDMSG 6 炼体:健体等级1,增加3%生命值,[<$STR(N$生命4)>]点!
+BREAK
+
+#IF
+EQUAL u4 2
+#ACT
+MOV N$生命4 <$MAXHP>
+DIV N$生命4 <$MAXHP> 100
+MUL N$生命4 6
+ChangeHumAbility 11 + <$STR(N$生命4)> 65535 
+SENDMSG 6 炼体:健体等级2,增加6%生命值,[<$STR(N$生命4)>]点!
+BREAK
+
+#IF
+EQUAL u4 3
+#ACT
+MOV N$生命4 <$MAXHP>
+DIV N$生命4 <$MAXHP> 100
+MUL N$生命4 9
+ChangeHumAbility 11 + <$STR(N$生命4)> 65535 
+SENDMSG 6 炼体:健体等级3,增加9%生命值,[<$STR(N$生命4)>]点!
+BREAK
+
+#IF
+EQUAL u4 4
+#ACT
+MOV N$生命4 <$MAXHP>
+DIV N$生命4 <$MAXHP> 100
+MUL N$生命4 12
+ChangeHumAbility 11 + <$STR(N$生命4)> 65535 
+SENDMSG 6 炼体:健体等级4,增加12%生命值,[<$STR(N$生命4)>]点!
+BREAK
+
+#IF
+EQUAL u4 5
+#ACT
+MOV N$生命4 <$MAXHP>
+DIV N$生命4 <$MAXHP> 100
+MUL N$生命4 15
+ChangeHumAbility 11 + <$STR(N$生命4)> 65535 
+SENDMSG 6 炼体:健体等级5,增加15%生命值,[<$STR(N$生命4)>]点!
+BREAK
+
+#IF
+EQUAL u4 6
+#ACT
+MOV N$生命4 <$MAXHP>
+DIV N$生命4 <$MAXHP> 100
+MUL N$生命4 20
+ChangeHumAbility 11 + <$STR(N$生命4)> 65535 
+SENDMSG 6 炼体:健体等级6,增加20%生命值,[<$STR(N$生命4)>]点!
+BREAK
+
+#IF
+EQUAL u4 7
+#ACT
+MOV N$生命4 <$MAXHP>
+DIV N$生命4 <$MAXHP> 100
+MUL N$生命4 28
+ChangeHumAbility 11 + <$STR(N$生命4)> 65535 
+SENDMSG 6 炼体:健体等级7,增加28%生命值,[<$STR(N$生命4)>]点!
+BREAK
+
+#IF
+EQUAL u4 8
+#ACT
+MOV N$生命4 <$MAXHP>
+DIV N$生命4 <$MAXHP> 100
+MUL N$生命4 40
+ChangeHumAbility 11 + <$STR(N$生命4)> 65535 
+SENDMSG 6 炼体:健体等级8,增加40%生命值,[<$STR(N$生命4)>]点!
+BREAK
+
+#IF
+EQUAL u4 9
+#ACT
+MOV N$生命4 <$MAXHP>
+DIV N$生命4 <$MAXHP> 100
+MUL N$生命4 60
+ChangeHumAbility 11 + <$STR(N$生命4)> 65535 
+SENDMSG 6 炼体:健体等级9,增加60%生命值,[<$STR(N$生命4)>]点!
+BREAK
+
+#IF
+EQUAL u4 10
+#ACT
+MOV N$生命4 <$MAXHP>
+DIV N$生命4 <$MAXHP> 100
+MUL N$生命4 90
+ChangeHumAbility 11 + <$STR(N$生命4)> 65535 
+SENDMSG 6 炼体:健体等级10,增加90%生命值,[<$STR(N$生命4)>]点!
+BREAK
+
+#IF
+EQUAL u4 11
+#ACT
+MOV N$生命4 <$MAXHP>
+DIV N$生命4 <$MAXHP> 100
+MUL N$生命4 150
+ChangeHumAbility 11 + <$STR(N$生命4)> 65535 
+SENDMSG 6 炼体:健体等级11,增加150%生命值,[<$STR(N$生命4)>]点!
+BREAK
+}
+

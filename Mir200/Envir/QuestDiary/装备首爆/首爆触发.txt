@@ -1,0 +1,27 @@
+[@首爆触发]
+{
+
+#IF
+CHECKTextList ..\QuestDiary\装备首爆\首爆数据.txt <$CURRTEMNAME>
+#ACT
+BREAK
+
+
+
+#IF
+CHECKTextList ..\QuestDiary\装备首爆\首爆物品.txt <$CURRTEMNAME>
+#ACT
+GETSTRINGPOS  ..\QuestDiary\装备首爆\首爆物品.txt <$CURRTEMNAME>
+INC N0 1
+GETLISTSTRING ..\QuestDiary\装备首爆\首爆物品.txt <$STR(N0)> S$首爆金额 S$首爆变量
+
+
+#IF
+EQUAL A<$STR(S$首爆变量)>
+#ACT
+GAMEGIRD + <$STR(S$首爆金额)>
+MOV A<$STR(S$首爆变量)> <$USERNAME>
+AddTextList ..\QuestDiary\装备首爆\首爆数据.txt <$CURRTEMNAME>
+SENDMOVEMSG 0 251 0 200 1 【限时奖励】→恭喜『<$USERNAME>』本区第一位拾取【<$CURRTEMNAME>】获得(<$STR(S$首爆金额)>)逐鹿币，激动的快哭出来了！
+
+}

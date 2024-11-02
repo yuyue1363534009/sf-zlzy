@@ -1,0 +1,47 @@
+[@main]
+#IF
+CHECKLEVELEX > 0
+#ACT
+OPENMERCHANTBIGDLG 74 485 0 0 0 10 1 488 8
+#SAY
+<> \ \
+<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<        --------------------------------------------------------------------/SCOLOR=12>\
+<        /AUTOCOLOR=0>   <170级-175级/@突破1>                  <条件：逐鹿币*80000/SCOLOR=250> \
+<        --------------------------------------------------------------------/SCOLOR=12>\
+<        /AUTOCOLOR=0>   <175级-180级/@突破2>                  <条件：逐鹿币*100000/SCOLOR=250> \
+<        --------------------------------------------------------------------/SCOLOR=12>\
+<> \
+<        /AUTOCOLOR=0><提示声明：本服为长久服，所有装备全部靠爆出，充值纯属自愿！/SCOLOR=249>\
+
+[@突破1]
+#IF
+CHECKLEVELEX > 169
+CHECKLEVELEX < 175
+CHECKGAMEGIRD > 79999
+#ACT
+GAMEGIRD - 80000
+CHANGELEVEL + 1
+#ELSEACT 
+MESSAGEBOX \　\　　　突破失败！材料不足或者你已经超过175级咯！
+
+
+
+
+
+[@突破2]
+#IF
+CHECKLEVELEX > 174
+CHECKLEVELEX < 180
+CHECKGAMEGIRD > 99999
+#ACT
+GAMEGIRD - 100000
+CHANGELEVEL + 1
+#ELSEACT 
+MESSAGEBOX \　\　　　突破失败！材料不足或者你已经超过180级咯！
+
+
+
+
+
+

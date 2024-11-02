@@ -1,0 +1,136 @@
+[@main]
+#IF
+CHECKLEVELEX > 0
+#ACT
+BREAK
+
+#IF
+CHECKLEVELEX > 0
+#ACT
+OPENMERCHANTBIGDLG 57 890 0 4 0 0 1 452 32
+#SAY
+\ \ \
+<   /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=250> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+< /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+< >         <一个追逐梦想的传奇故事，一部史诗经典大作纵横江湖的渾源神器/SCOLOR=70>      \ \
+< >           <曾经的传奇威震江湖，已成传说，如今的一切正被世人所改写/SCOLOR=254>      \ \
+< >         <提示：/SCOLOR=253> <房间只能进入两个人，不可回城不可随机不死不回！/SCOLOR=250>      \ \
+< >         <提示：/SCOLOR=253> <不服的，是骡子还是马进去溜溜！/SCOLOR=250>      \
+< /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+< >            <进入PK①号房间|250#骚年要谨慎啊，进入地图需要500W攻击力！/@进1>       <进入PK②号房间|250#骚年要谨慎啊，进入地图需要500W攻击力！/@进2>       <进入PK③号房间|250#骚年要谨慎啊，进入地图需要500W攻击力！/@进3> \
+< /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+< >            <进入PK④号房间|250#骚年要谨慎啊，进入地图需要600W攻击力！/@进4>       <进入PK⑤号房间|250#骚年要谨慎啊，进入地图需要600W攻击力！/@进5>       <进入PK⑥号房间|250#骚年要谨慎啊，进入地图需要600W攻击力！/@进6> \
+< /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+< >            <进入PK⑦号房间|250#骚年要谨慎啊，进入地图需要700W攻击力！/@进7>       <进入PK⑧号房间|250#骚年要谨慎啊，进入地图需要700W攻击力！/@进8>       <进入PK⑨号房间|250#骚年要谨慎啊，进入地图需要700W攻击力！/@进9> \
+
+
+[@进9]
+#IF
+LARGE <$MAXDC> 6000000
+CHECKMAPHUMANCount DT9 < 2
+#ACT
+MAP DT9
+GuildNOTiceMsg 250 0 PK房最新消息：不怕死的[<$USERNAME>]进入了PK⑨号房间，跟他有仇去干死他！
+BREAK
+#ELSEACT
+MESSAGEBOX 骚年，正在PK中，下一个就是你了！
+BREAK
+
+[@进8]
+#IF
+LARGE <$MAXDC> 6000000
+CHECKMAPHUMANCount DT8 < 2
+#ACT
+MAP DT8
+GuildNOTiceMsg 250 0 PK房最新消息：不怕死的[<$USERNAME>]进入了PK⑧号房间，跟他有仇去干死他！
+BREAK
+#ELSEACT
+MESSAGEBOX 骚年，正在PK中，下一个就是你了！
+BREAK
+
+[@进7]
+#IF
+LARGE <$MAXDC> 6000000
+CHECKMAPHUMANCount DT7 < 2
+#ACT
+MAP DT7
+GuildNOTiceMsg 250 0 PK房最新消息：不怕死的[<$USERNAME>]进入了PK⑦号房间，跟他有仇去干死他！
+BREAK
+#ELSEACT
+MESSAGEBOX 骚年，正在PK中，下一个就是你了！
+BREAK
+
+[@进6]
+#IF
+LARGE <$MAXDC> 6000000
+CHECKMAPHUMANCount DT6 < 2
+#ACT
+MAP DT6
+GuildNOTiceMsg 250 0 PK房最新消息：不怕死的[<$USERNAME>]进入了PK⑥号房间，跟他有仇去干死他！
+BREAK
+#ELSEACT
+MESSAGEBOX 骚年，正在PK中，下一个就是你了！
+BREAK
+
+[@进5]
+#IF
+LARGE <$MAXDC> 6000000
+CHECKMAPHUMANCount DT5 < 2
+#ACT
+MAP DT5
+GuildNOTiceMsg 250 0 PK房最新消息：不怕死的[<$USERNAME>]进入了PK⑤号房间，跟他有仇去干死他！
+BREAK
+#ELSEACT
+MESSAGEBOX 骚年，正在PK中，下一个就是你了！
+BREAK
+
+[@进4]
+#IF
+LARGE <$MAXDC> 6000000
+CHECKMAPHUMANCount DT4 < 2
+#ACT
+MAP DT4
+GuildNOTiceMsg 250 0 PK房最新消息：不怕死的[<$USERNAME>]进入了PK④号房间，跟他有仇去干死他！
+BREAK
+#ELSEACT
+MESSAGEBOX 骚年，正在PK中，下一个就是你了！
+BREAK
+
+[@进3]
+#IF
+LARGE <$MAXDC> 5000000
+CHECKMAPHUMANCount DT3 < 2
+#ACT
+MAP DT3
+GuildNOTiceMsg 250 0 PK房最新消息：不怕死的[<$USERNAME>]进入了PK③号房间，跟他有仇去干死他！
+BREAK
+#ELSEACT
+MESSAGEBOX 骚年，正在PK中，下一个就是你了！
+BREAK
+
+[@进2]
+#IF
+LARGE <$MAXDC> 5000000
+CHECKMAPHUMANCount DT2 < 2
+#ACT
+MAP DT2
+GuildNOTiceMsg 250 0 PK房最新消息：不怕死的[<$USERNAME>]进入了PK②号房间，跟他有仇去干死他！
+BREAK
+#ELSEACT
+MESSAGEBOX 骚年，正在PK中，下一个就是你了！
+BREAK
+
+
+[@进1]
+#IF
+LARGE <$MAXDC> 5000000
+CHECKMAPHUMANCount DT1 < 2
+#ACT
+MAP DT1
+GuildNOTiceMsg 250 0 PK房最新消息：不怕死的[<$USERNAME>]进入了PK①号房间，跟他有仇去干死他！
+BREAK
+#ELSEACT
+MESSAGEBOX 骚年，正在PK中，下一个就是你了！
+BREAK
+
+

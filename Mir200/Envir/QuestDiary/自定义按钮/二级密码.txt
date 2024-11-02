@@ -1,0 +1,222 @@
+[@二级密码_68405131]
+{
+#IF
+#ACT
+CLOSEBigDialogBox
+#SAY
+\
+<> \
+<┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<--------------------------------------------------------------------/SCOLOR=12>\
+\
+<>    <二级密码/SCOLOR=254> <Hot~/SCOLOR=58> <强烈要求玩家设置二级密码,杜绝木马盗号。/SCOLOR=31>\
+<--------------------------------------------------------------------/SCOLOR=12>\
+\
+<>    <密保请设置为３－６个汉字，设置后可以随意修改/SCOLOR=239>\
+<--------------------------------------------------------------------/SCOLOR=12>\
+\
+<>    <设置密保后每次上线都需要输入密保，不输入掉线处理/SCOLOR=70>\
+<--------------------------------------------------------------------/SCOLOR=12>\
+\
+<>    <为了你的装备和元宝，建议你设置密保，请勿随便告诉他人！/SCOLOR=57>\
+<--------------------------------------------------------------------/SCOLOR=12>\
+<>            <设置二级密码|251#‘请设置为３－６个汉字’/@@InPutString97>               <修改二级密码|249#‘请输入原二级密码’/@@InPutString98(请输入旧密码)>  \
+
+
+
+[@InPutString98]
+#IF
+EQUAL T25 
+#ACT
+MESSAGEBOX 你还没有设置二级密码!
+BREAK
+
+#IF
+EQUAL S98 
+#ACT
+MESSAGEBOX 你没有输入任何信息!
+BREAK
+
+#IF
+EQUAL S98 <$STR(T25)>
+#ACT
+GOTO @修改密保
+MOV S98
+#ELSEACT
+MESSAGEBOX 原二级密码错误不能修改
+CLOSE
+
+
+[@修改密保]
+#IF
+#ACT
+OPENMERCHANTBIGDLG 57 490 0 4 0 0 1 400 9
+#SAY
+<PlayImg:58:0:20:150:45:-110:0>\ \
+\    <二级密码/SCOLOR=254> <Hot~/SCOLOR=58> <强烈要求玩家设置二级密码,杜绝木马盗号。/SCOLOR=31>\ \
+\    <密保请设置为３－６个汉字，设置后可以随意修改/SCOLOR=239>\ \
+\    <设置密保后每次上线都需要输入密保，不输入掉线处理/SCOLOR=70>\ \
+\    <为了你的装备和元宝，建议你设置密保，请勿随便告诉他人！/SCOLOR=57>\
+\ \
+<>                    <修改二级密码|251#‘请设置新二级密码’^-^254#必须为３－６个汉字/@@InPutString99>
+
+
+
+[@InPutString99]
+#IF
+CHECKStringlength <$STR(S99)> < 6
+#ACT
+MESSAGEBOX 密码最少输入3个汉字，最多6个汉字！
+BREAK
+
+#IF
+CHECKStringlength <$STR(S99)> > 12
+#ACT
+MESSAGEBOX 密码最少输入3个汉字，最多6个汉字！
+BREAK
+
+#OR
+CHECKContainsText <$STR(S99)> @
+CHECKContainsText <$STR(S99)> (
+CHECKContainsText <$STR(S99)> )
+CHECKContainsText <$STR(S99)> [
+CHECKContainsText <$STR(S99)> ]
+CHECKContainsText <$STR(S99)> {
+CHECKContainsText <$STR(S99)> }
+CHECKContainsText <$STR(S99)> *
+CHECKContainsText <$STR(S99)> /
+CHECKContainsText <$STR(S99)> \
+CHECKContainsText <$STR(S99)> $
+CHECKContainsText <$STR(S99)> &
+CHECKContainsText <$STR(S99)> 0
+CHECKContainsText <$STR(S99)> 1
+CHECKContainsText <$STR(S99)> 2
+CHECKContainsText <$STR(S99)> 3
+CHECKContainsText <$STR(S99)> 4
+CHECKContainsText <$STR(S99)> 5
+CHECKContainsText <$STR(S99)> 6
+CHECKContainsText <$STR(S99)> 7
+CHECKContainsText <$STR(S99)> 8
+CHECKContainsText <$STR(S99)> 9
+CHECKContainsText <$STR(S99)> a
+CHECKContainsText <$STR(S99)> b
+CHECKContainsText <$STR(S99)> c
+CHECKContainsText <$STR(S99)> d
+CHECKContainsText <$STR(S99)> e
+CHECKContainsText <$STR(S99)> f
+CHECKContainsText <$STR(S99)> g
+CHECKContainsText <$STR(S99)> h
+CHECKContainsText <$STR(S99)> i
+CHECKContainsText <$STR(S99)> j
+CHECKContainsText <$STR(S99)> k
+CHECKContainsText <$STR(S99)> l
+CHECKContainsText <$STR(S99)> m
+CHECKContainsText <$STR(S99)> n
+CHECKContainsText <$STR(S99)> o
+CHECKContainsText <$STR(S99)> p
+CHECKContainsText <$STR(S99)> q
+CHECKContainsText <$STR(S99)> r
+CHECKContainsText <$STR(S99)> s
+CHECKContainsText <$STR(S99)> t
+CHECKContainsText <$STR(S99)> u
+CHECKContainsText <$STR(S99)> v
+CHECKContainsText <$STR(S99)> w
+CHECKContainsText <$STR(S99)> x
+CHECKContainsText <$STR(S99)> y
+CHECKContainsText <$STR(S99)> z
+#ACT
+MESSAGEBOX 二级密码必须设置为汉字！！！
+BREAK
+
+#IF
+#ACT
+MOV T25 <$STR(S99)>
+MESSAGEBOX 【设置密保成功，请牢记您的密保：[<$STR(S99)>]】
+GuildNOTiceMsg 254 200 【设置密保成功，请牢记您的密保：[<$STR(S99)>] SELF
+GOTO @@InPutString98
+MOV S99
+CLOSE
+
+[@InPutString97]
+#IF
+CHECKStringlength <$STR(S97)> < 6
+#ACT
+MESSAGEBOX 密码最少输入3个汉字，最多6个汉字！
+BREAK
+
+#IF
+CHECKStringlength <$STR(S97)> > 12
+#ACT
+MESSAGEBOX 密码最少输入3个汉字，最多6个汉字！
+BREAK
+
+#OR
+CHECKContainsText <$STR(S97)> @
+CHECKContainsText <$STR(S97)> (
+CHECKContainsText <$STR(S97)> )
+CHECKContainsText <$STR(S97)> [
+CHECKContainsText <$STR(S97)> ]
+CHECKContainsText <$STR(S97)> {
+CHECKContainsText <$STR(S97)> }
+CHECKContainsText <$STR(S97)> *
+CHECKContainsText <$STR(S97)> /
+CHECKContainsText <$STR(S97)> \
+CHECKContainsText <$STR(S97)> $
+CHECKContainsText <$STR(S97)> &
+CHECKContainsText <$STR(S97)> 0
+CHECKContainsText <$STR(S97)> 1
+CHECKContainsText <$STR(S97)> 2
+CHECKContainsText <$STR(S97)> 3
+CHECKContainsText <$STR(S97)> 4
+CHECKContainsText <$STR(S97)> 5
+CHECKContainsText <$STR(S97)> 6
+CHECKContainsText <$STR(S97)> 7
+CHECKContainsText <$STR(S97)> 8
+CHECKContainsText <$STR(S97)> 9
+CHECKContainsText <$STR(S97)> a
+CHECKContainsText <$STR(S97)> b
+CHECKContainsText <$STR(S97)> c
+CHECKContainsText <$STR(S97)> d
+CHECKContainsText <$STR(S97)> e
+CHECKContainsText <$STR(S97)> f
+CHECKContainsText <$STR(S97)> g
+CHECKContainsText <$STR(S97)> h
+CHECKContainsText <$STR(S97)> i
+CHECKContainsText <$STR(S97)> j
+CHECKContainsText <$STR(S97)> k
+CHECKContainsText <$STR(S97)> l
+CHECKContainsText <$STR(S97)> m
+CHECKContainsText <$STR(S97)> n
+CHECKContainsText <$STR(S97)> o
+CHECKContainsText <$STR(S97)> p
+CHECKContainsText <$STR(S97)> q
+CHECKContainsText <$STR(S97)> r
+CHECKContainsText <$STR(S97)> s
+CHECKContainsText <$STR(S97)> t
+CHECKContainsText <$STR(S97)> u
+CHECKContainsText <$STR(S97)> v
+CHECKContainsText <$STR(S97)> w
+CHECKContainsText <$STR(S97)> x
+CHECKContainsText <$STR(S97)> y
+CHECKContainsText <$STR(S97)> z
+#ACT
+MESSAGEBOX 二级密码必须设置为汉字！！！
+BREAK
+
+#IF
+NOT EQUAL T25 
+#ACT
+MESSAGEBOX 　你已经设置过二级密码！！\　\　如果要修改密码请点击修改密码按钮！！
+BREAK
+
+#IF
+#ACT
+MOV T25 <$STR(S97)>
+MESSAGEBOX 【设置密保成功，请牢记您的密保：[<$STR(S97)>]】
+GuildNOTiceMsg 254 200 【设置密保成功，请牢记您的密保：[<$STR(S97)>] SELF
+MOV S97
+MOVR P8 318 338
+MOVR P7 324 344
+MAPMOVE a3 <$STR(P8)> <$STR(P7)>
+CLOSE
+}

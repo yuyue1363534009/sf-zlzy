@@ -1,0 +1,92 @@
+(@@InPutInteger)
+[@密保设置]
+{
+
+#IF
+ISDUMMY
+#ACT
+BREAK
+
+#IF
+CHECKOffline
+#ACT
+BREAK
+
+#IF
+ISNEWHUMAN
+#ACT
+BREAK
+
+
+
+#IF
+CHECKTEXTLIST ..\QuestDiary\密保脚本\机器码.txt <$USERNAME>:<$MACHINEID>
+#ACT
+ChangeModeEx 2 1
+ChangeModeEx 10 1
+BREAK
+#ELSEACT
+MOVR P8 22 32
+MOVR P7 26 35
+MAPMOVE ejmm <$STR(P8)> <$STR(P7)>
+MESSAGEBOX 【请设置二级密码】
+CLOSE
+;上面写你的小房间地图坐标
+
+
+
+#IF
+NOT EQUAL T25
+#ACT
+ChangeModeEx 2 500 1
+ChangeModeEx 10 1000
+DELayCall 30000 @密保验证下线
+GOTO @验证密保
+GuildNOTiceMsg 254 200 【当前处于无敌.隐身.锁定状态，30秒内输入密保后恢复正常,否则踢你下线】 SELF
+GuildNOTiceMsg 254 200 【当前处于无敌.隐身.锁定状态，30秒内输入密保后恢复正常,否则踢你下线】 SELF
+BREAK
+
+[@密保验证下线]
+#IF
+#ACT
+GuildNOTiceMsg 254 200 【三十秒时间也到，你没有输入正确密保，踢你下线】 SELF
+KICK
+
+[@验证密保]
+#IF
+#ACT
+MESSAGEBOX 【当前处于无敌.隐身.锁定状态，30秒内输入密保后恢复正常,否则踢你下线】\【当前处于无敌.隐身.锁定状态，30秒内输入密保后恢复正常,否则踢你下线】\【请输入你的密保验证你的账号】 @验证密保一 @EXIT
+
+[@验证密保一]
+#IF
+#ACT
+OPENMERCHANTBIGDLG 57 490 0 4 0 0 1 400 9
+#SAY
+<PlayImg:58:0:20:150:45:-110:0>\ \
+\    <二级密码/SCOLOR=254> <Hot~/SCOLOR=58> <强烈要求玩家设置二级密码,杜绝木马盗号。/SCOLOR=31>\ \
+\    <密保请设置为３－６个汉字，设置后可以随意修改/SCOLOR=239>\ \
+\    <设置密保后每次上线都需要输入密保，不输入掉线处理/SCOLOR=70>\ \
+\    <为了你的装备和元宝，建议你设置密保，请勿随便告诉他人！/SCOLOR=57>\  \
+\
+<>                    <进行密码验证|251#请输入二级密码‘进行密码验证’/@@InPutString2>
+
+
+[@InPutString2]
+#IF
+EQUAL S2 <$STR(T25)>
+#ACT
+CLEARDELAYGOTO
+ChangeModeEx 2 1
+ChangeModeEx 10 1
+AddTextList ..\QuestDiary\密保脚本\机器码.txt <$USERNAME>:<$MACHINEID>
+MOVR P8 319 339
+MOVR P7 321 341
+MAPMOVE a3 <$STR(P8)> <$STR(P7)>
+MESSAGEBOX 【您的账号已经解锁，可以正常游戏】
+CLOSE
+BREAK
+#ELSEACT
+MESSAGEBOX 【密保输入错误,请重新输入！】
+BREAK
+
+}

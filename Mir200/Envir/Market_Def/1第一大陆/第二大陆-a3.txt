@@ -1,0 +1,70 @@
+[@MAIN]
+#IF
+#ACT
+GetRandomText ..\QuestDiary\数据文件\地图NPC展示装备列表.txt S$随机专属名字1
+GetRandomText ..\QuestDiary\数据文件\地图NPC展示装备列表.txt S$随机专属名字2
+GetRandomText ..\QuestDiary\数据文件\地图NPC展示装备列表.txt S$随机专属名字3
+GetRandomText ..\QuestDiary\数据文件\地图NPC展示装备列表.txt S$随机专属名字4
+GetRandomText ..\QuestDiary\数据文件\地图NPC展示装备列表.txt S$随机专属名字5
+GetRandomText ..\QuestDiary\数据文件\地图NPC展示装备列表.txt S$随机专属名字6
+GetDBItemFieldValue <$STR(S$随机专属名字1)> idx S$专属展示1
+GetDBItemFieldValue <$STR(S$随机专属名字2)> idx S$专属展示2
+GetDBItemFieldValue <$STR(S$随机专属名字3)> idx S$专属展示3
+GetDBItemFieldValue <$STR(S$随机专属名字4)> idx S$专属展示4
+GetDBItemFieldValue <$STR(S$随机专属名字5)> idx S$专属展示5
+GetDBItemFieldValue <$STR(S$随机专属名字6)> idx S$专属展示6
+
+OPENMERCHANTBIGDLG 84 370 1 4 0 -80 1 616 4
+#SAY
+<>\<>\
+<><PlayImg:83:360:20:100:-20:-52:0:0>\
+<>\
+<><Img:397:84:160:255>\
+<><ImgEx:84:379:380:380:510:230|^250#天空之城：^-^7#      “天空之城才是真正的开始”^-^7#上千件专属“Ｎ张未知大陆”等您探索^-^249#进入条件：150等级^-^249#温馨提示：我命由我不由天BOSS出一切！/@轮回战场>\
+<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\
+<>                           <ItemShow:<$STR(S$专属展示1)>:0:0:-25:1:0:1:40> <ItemShow:<$STR(S$专属展示2)>:0:0:-25:1:0:1:40> <ItemShow:<$STR(S$专属展示3)>:0:0:-25:1:-25:1:40> <ItemShow:<$STR(S$专属展示4)>:0:0:-25:1:0:1:40> <ItemShow:<$STR(S$专属展示5)>:0:0:-25:1:0:1:40> <ItemShow:<$STR(S$专属展示6)>:0:0:-25:1:0:1:40><>\<>\
+<>                           <〖温馨提示〗/AUTOCOLOR=250>：<危险指数/AUTOCOLOR=249> <PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>\
+
+
+;[@main]
+;#IF
+;#ACT
+;OPENMERCHANTBIGDLG 74 136 0 0 0 10 1 488 8
+;#SAY
+;<PlayImg:69:1158:20:150:-20:-16:0>\
+;<> \
+;<> \
+;<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+;\
+;<>  \
+;<       /AUTOCOLOR=0>〖<地图名称/AUTOCOLOR=243>〗：<第二大陆/AUTOCOLOR=243>\
+;<       /AUTOCOLOR=0>〖<怪物爆率/AUTOCOLOR=253>〗：<本服独家首创.散人朋友也可玩，只要脸好一切可逆袭./AUTOCOLOR=253>\
+;<       /AUTOCOLOR=0>〖<进入条件/AUTOCOLOR=254>〗：<150级级玩家免费进入/AUTOCOLOR=254>\
+;<       /AUTOCOLOR=0>〖<温馨提示/AUTOCOLOR=250>〗：<一切看脸..装备越好打的越快，爆率倍数越高越走运哦../AUTOCOLOR=250>\
+;<       /AUTOCOLOR=0>〖<危险指数/AUTOCOLOR=249>〗：<PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>\
+;\
+;<> \
+;<> \
+;<         /AUTOCOLOR=0>　     <点击进入地图/@轮回战场>                         <关闭×/@EXIT>\
+;
+
+
+
+[@轮回战场]
+#IF
+CHECKLEVELEX > 149
+#ACT
+MAPMOVE 第二大陆 109 105
+GuildNOTiceMsg 250 0 玩家{“<$USERNAME>”|150:0:1}闯入{“第二大陆”|254:0:1}...！！
+BREAK
+#ELSEACT
+MESSAGEBOX 等级不足.无法进入地图...
+BREAK
+
+
+
+
+
+
+
+

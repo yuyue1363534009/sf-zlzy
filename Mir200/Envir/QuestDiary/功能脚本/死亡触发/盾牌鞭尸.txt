@@ -1,0 +1,58 @@
+[@鞭尸触发]
+{
+#OR
+CHECKTextList ..\QuestDiary\功能脚本\死亡触发\禁止怪物.txt <$CURRRTARGETNAME>
+#ACT
+BREAK
+#IF
+#ACT
+MOV M90 0
+
+
+
+
+#IF
+CHECKITEMW 帝君卐中原◆終極审判の逐鹿盾 1
+#ACT
+MOV M90 20
+
+#IF
+CHECKITEMW 金絲卐龍鱗◆君王斩天の中原盾 1
+#ACT
+MOV M90 20
+
+
+#IF
+EQUAL M90 0
+#ACT
+BREAK
+
+
+#IF
+#ACT
+MOVR M91 150
+
+
+#IF
+SMALL M91 <$STR(M90)>
+#ACT
+DELayGOTO 2000 @鞭尸延时触发
+
+
+
+[@鞭尸延时触发]
+#OR
+CHECKTextList ..\QuestDiary\功能脚本\死亡触发\禁止怪物.txt <$CURRRTARGETNAME>
+#ACT
+BREAK
+#IF
+#ACT
+;ESP鞭尸怪物(让怪物在爆一次)开始
+;ESPMonItems
+;ESP鞭尸怪物(让怪物在爆一次)结束
+;新GOM鞭尸怪物(让怪物在爆一次)开始
+MonItems
+;新GOM鞭尸怪物(让怪物在爆一次)结束
+SENDMSG 0 [<$CURRRTARGETNAME>]在[<$MAPTitle>]被玩家[<$USERNAME>]杀死,[<$USERNAME>]出发了神奇的鞭尸功能此怪又爆一次....
+SENDMSG 0 [<$CURRRTARGETNAME>]在[<$MAPTitle>]被玩家[<$USERNAME>]杀死,[<$USERNAME>]出发了神奇的鞭尸功能此怪又爆一次....
+}

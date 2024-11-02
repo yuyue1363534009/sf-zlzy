@@ -1,0 +1,155 @@
+[@登陆设置]
+{
+#IF
+gender WOman
+#ACT
+CHANGEGENDER 0
+
+#IF
+CHECKjob warrior
+ISNEWHUMAN
+#ACT
+ADDSKILL 基本剑术 3
+ADDSKILL 攻杀剑术 3
+ADDSKILL 刺杀剑术 3
+ADDSKILL 野蛮冲撞 3
+ADDSKILL 烈火剑法 3
+ADDSKILL 逐日剑法 3
+ADDSKILL 开天斩 3
+GIVE 我命由我不由天メ神剑 1
+GIVE 我命由我不由天メ神甲 1
+GIVE 我命由我不由天メ盔 1
+GIVE 我命由我不由天メ链 1
+GIVE 我命由我不由天メ镯 2
+GIVE 我命由我不由天メ戒 2
+GIVE 我命由我不由天メ带 1
+GIVE 我命由我不由天メ靴 1
+GIVE 盟重传送石 1
+GIVE 随机传送石 1
+AutoTAKEOnItem 我命由我不由天メ神甲 0
+AutoTAKEOnItem 我命由我不由天メ神剑 1
+AutoTAKEOnItem 我命由我不由天メ链 3
+AutoTAKEOnItem 我命由我不由天メ盔 4
+AutoTAKEOnItem 我命由我不由天メ镯 5
+AutoTAKEOnItem 我命由我不由天メ镯 6
+AutoTAKEOnItem 我命由我不由天メ戒 7
+AutoTAKEOnItem 我命由我不由天メ戒 8
+AutoTAKEOnItem 我命由我不由天メ带 10
+AutoTAKEOnItem 我命由我不由天メ靴 11
+SENDMSG 6 提示：请按F12呼出游戏内挂
+MAP EJMM
+GuildNOTiceMsg 251 5 √》【系统】：(*)天下英雄出我辈!欢迎[<$USERNAME>]来到〈<$SERVERNAME>〉!
+GuildNOTiceMsg 251 5 √》【系统】：(*)天下英雄出我辈!欢迎[<$USERNAME>]来到〈<$SERVERNAME>〉!
+CLOSE
+
+#IF
+ISCASTLEMASTER
+#ACT
+SENDMSG 0 号令天下的沙城主『<$USERNAME>』进入游戏!
+CHANGENAMECOLOR 253
+
+#IF
+ISCASTLEMASTER
+#ACT
+SENDMSG 0 号令天下的沙城主『<$USERNAME>』进入了<$SERVERNAME>!
+BREAK
+
+#IF
+CHECKLEVELEX < 150
+#ACT
+GMEXECUTE Shutup self 99999
+SENDMSG 5 [提示]：你的等级低于150级，所以被禁言了，快去升级吧。
+
+#IF
+dayofweek sun
+CHECK [250] 0
+#ACT
+SET [250] 1
+SET [251] 0
+SET [252] 0
+SET [253] 0
+SET [254] 0
+SET [255] 0
+SET [256] 0
+MOV U35 0
+
+#IF
+dayofweek mon
+CHECK [251] 0
+#ACT
+SET [250] 0
+SET [251] 1
+SET [252] 0
+SET [253] 0
+SET [254] 0
+SET [255] 0
+SET [256] 0
+MOV U35 0
+
+
+#IF
+dayofweek tue
+CHECK [252] 0
+#ACT
+SET [250] 0
+SET [251] 0
+SET [252] 1
+SET [253] 0
+SET [254] 0
+SET [255] 0
+SET [256] 0
+MOV U35 0
+
+
+#IF
+dayofweek wed
+CHECK [253] 0
+#ACT
+SET [250] 0
+SET [251] 0
+SET [252] 0
+SET [253] 1
+SET [254] 0
+SET [255] 0
+SET [256] 0
+MOV U35 0
+
+#IF
+dayofweek thu
+CHECK [254] 0
+#ACT
+SET [250] 0
+SET [251] 0
+SET [252] 0
+SET [253] 0
+SET [254] 1
+SET [255] 0
+SET [256] 0
+MOV U35 0
+
+#IF
+dayofweek fri
+CHECK [255] 0
+#ACT
+SET [250] 0
+SET [251] 0
+SET [252] 0
+SET [253] 0
+SET [254] 0
+SET [255] 1
+SET [256] 0
+MOV U35 0
+
+#IF
+dayofweek sat
+CHECK [256] 0
+#ACT
+SET [250] 0
+SET [251] 0
+SET [252] 0
+SET [253] 0
+SET [254] 0
+SET [255] 0
+SET [256] 1
+MOV U35 0
+}

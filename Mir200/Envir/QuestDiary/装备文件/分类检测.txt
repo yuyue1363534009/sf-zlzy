@@ -1,0 +1,472 @@
+[@戒指分类]
+{
+
+#IF
+EQUAL <$RING_R> 含光※弄影づ指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 降龍※伏虎づ指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 龍騰※霸天づ指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 不朽※之戀づ指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 冷月※葬花づ指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 赤明※九天づ指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 仙劍※九歌づ指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 神羅※天照づ指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 紫辰※黎雲づ指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《1.0倍》醉情※霧影づ霸者指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《2.0倍》銀月※清歌づ鳳翼指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《3.0倍》末日※审判づ諸神指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《4.0倍》烈焰※永恒づ赤焰指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《5.0倍》碧血※清歌づ寒星指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《6.0倍》问鼎※誅天づ守護指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《7.0倍》暗噬※無痕づ領域指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《8.0倍》七寶※玲瓏づ幻夢指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《10.0倍》玄冥※慑天づ景霄指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《12.0倍》日月※乾坤づ莽荒指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《15.0倍》九耀※禦雷づ深藍指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《18.0倍》金麟※輪回づ天琊指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《22.0倍》幻滅※天使づ审判指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《25.0倍》冰霜※星魔づ夢棱指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《28.0倍》鐘靈※毓秀づ紫電指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+#IF
+EQUAL <$RING_R> 《32.0倍》雷鳴※離火づ帝炎指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+
+#IF
+EQUAL <$RING_R> 《36.0倍》天星※耀陽づ霸絕指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+
+#IF
+EQUAL <$RING_R> 《40.0倍》神威※亢天づ龍嘯指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+
+#IF
+EQUAL <$RING_R> 《45.0倍》魔神※之隕づ聖渊指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+
+#IF
+EQUAL <$RING_R> 《50.0倍》神雷※天裁づ涅槃指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+
+#IF
+EQUAL <$RING_R> 《55.0倍》龍血※戰神づ天闕指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+
+#IF
+EQUAL <$RING_R> 《60.0倍》刀劍★神皇※莫邪指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+
+#IF
+EQUAL <$RING_R> 《65.0倍》真靈★九變※奧義指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+
+#IF
+EQUAL <$RING_R> 《70.0倍》龍王★無雙※終極指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+
+#IF
+EQUAL <$RING_R> 《75.0倍》金絲★龍鱗※君王指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+
+#IF
+EQUAL <$RING_R> 《80.0倍》赤心★巡天※逍遥指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+
+#IF
+EQUAL <$RING_R> 《85.0倍》天刀★无疆※昊天指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+
+}
+
+
+[@手镯分类]
+{
+
+#IF
+EQUAL <$ARMRING_R> 含光※弄影づ腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 降龍※伏虎づ腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 龍騰※霸天づ腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 不朽※之戀づ腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 冷月※葬花づ腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 赤明※九天づ腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 仙劍※九歌づ腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 神羅※天照づ腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 紫辰※黎雲づ腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 《1.0倍》醉情※霧影づ霸者腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 《2.0倍》銀月※清歌づ鳳翼腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 《3.0倍》末日※审判づ諸神腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 《4.0倍》烈焰※永恒づ赤焰腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 《5.0倍》碧血※清歌づ寒星腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 《6.0倍》问鼎※誅天づ守護腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 《7.0倍》暗噬※無痕づ領域腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 《8.0倍》七寶※玲瓏づ幻夢腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 《10.0倍》玄冥※慑天づ景霄腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 《12.0倍》日月※乾坤づ莽荒腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 《15.0倍》九耀※禦雷づ深藍腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 《18.0倍》金麟※輪回づ天琊腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+#IF
+EQUAL <$ARMRING_R> 《22.0倍》幻滅※天使づ审判腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 《25.0倍》冰霜※星魔づ夢棱腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 《28.0倍》鐘靈※毓秀づ紫電腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 《32.0倍》雷鳴※離火づ帝炎腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 《36.0倍》天星※耀陽づ霸絕腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 《40.0倍》神威※亢天づ龍嘯腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 《45.0倍》魔神※之隕づ聖渊腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 《50.0倍》神雷※天裁づ涅槃腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 《55.0倍》龍血※戰神づ天闕腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 《60.0倍》刀劍★神皇※莫邪腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 《65.0倍》真靈★九變※奧義腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 《70.0倍》龍王★無雙※終極腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 《75.0倍》金絲★龍鱗※君王腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 《80.0倍》赤心★巡天※逍遥腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 《85.0倍》天刀★无疆※昊天腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+
+
+
+}

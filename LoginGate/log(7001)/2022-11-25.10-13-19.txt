@@ -1,0 +1,7 @@
+[11/25/22 10:13:19] 服务已启动成功...
+[11/25/22 10:13:19] 文件 LoginGate\Data\LoginPlugin.wil 读取成功，MD5值：1D1DF4A8E9C357A43FAA073DAADF5920
+[11/25/22 10:13:19] 正在加载插件设置，如果不希望下发插件，请删除 LoginGate\Data\Client.ini 文件。
+[11/25/22 10:13:19] 插件 Data\DunClient.Pak 加载成功，MD5值：ACB8CD98ADAC36EE5722768D6107B81A
+[11/25/22 10:13:19] 文件 ResourceDir\Data\星盾素材.Pak 加载成功，MD5值：AE04B7C55CB5452BE1F656BD46278479
+[11/25/22 10:13:19] 文件 ResourceDir\Data\扩展素材.Pak 加载成功，MD5值：A713269FC43DF12209634D508F47F06F
+[11/25/22 10:13:19] Connected to Login Server.

@@ -1,0 +1,30 @@
+[11/24/22 23:38:52] 服务已启动成功...
+[11/24/22 23:38:52] 文件 LoginGate\Data\LoginPlugin.wil 读取成功，MD5值：1D1DF4A8E9C357A43FAA073DAADF5920
+[11/24/22 23:38:52] 正在加载插件设置，如果不希望下发插件，请删除 LoginGate\Data\Client.ini 文件。
+[11/24/22 23:38:52] 插件 Data\DunClient.Pak 加载成功，MD5值：ACB8CD98ADAC36EE5722768D6107B81A
+[11/24/22 23:38:52] 文件 ResourceDir\Data\星盾素材.Pak 加载成功，MD5值：AE04B7C55CB5452BE1F656BD46278479
+[11/24/22 23:38:52] 文件 ResourceDir\Data\扩展素材.Pak 加载成功，MD5值：A713269FC43DF12209634D508F47F06F
+[11/24/22 23:38:52] Connected to Login Server.
+[11/24/22 23:41:02] 机器 3C43CBB999CP6YG327DGFCQ9F 插件不是最新的，正在重发插件文件 Data\DunClient.Pak ！
+[11/24/22 23:41:02] 机器 3C43CBB999CP6YG327DGFCQ9F 安装插件成功！
+[11/24/22 23:41:02] 机器 3C43CBB999CP6YG327DGFCQ9F 文件 ResourceDir\Data\星盾素材.Pak 不是最新的，正在重发！
+[11/24/22 23:41:02] 机器 3C43CBB999CP6YG327DGFCQ9F 文件 ResourceDir\Data\扩展素材.Pak 不是最新的，正在重发！
+[11/24/22 23:41:03] 机器 3C43CBB999CP6YG327DGFCQ9F 发送文件 ResourceDir\Data\星盾素材.Pak 成功！
+[11/24/22 23:41:03] 机器 3C43CBB999CP6YG327DGFCQ9F 发送文件 ResourceDir\Data\扩展素材.Pak 成功！
+[11/24/22 23:43:39] 机器 P7TRDCB9XD2WCD8GHRT4KYRBF 插件不是最新的，正在重发插件文件 Data\DunClient.Pak ！
+[11/24/22 23:43:39] 机器 P7TRDCB9XD2WCD8GHRT4KYRBF 安装插件成功！
+[11/24/22 23:43:39] 机器 P7TRDCB9XD2WCD8GHRT4KYRBF 文件 ResourceDir\Data\星盾素材.Pak 不是最新的，正在重发！
+[11/24/22 23:43:39] 机器 P7TRDCB9XD2WCD8GHRT4KYRBF 文件 ResourceDir\Data\扩展素材.Pak 不是最新的，正在重发！
+[11/24/22 23:43:41] 机器 P7TRDCB9XD2WCD8GHRT4KYRBF 发送文件 ResourceDir\Data\星盾素材.Pak 成功！
+[11/24/22 23:43:41] 机器 P7TRDCB9XD2WCD8GHRT4KYRBF 发送文件 ResourceDir\Data\扩展素材.Pak 成功！
+[11/24/22 23:44:06] 机器 3C43CBB999CP6YG327DGFCQ9F 插件不是最新的，正在重发插件文件 Data\DunClient.Pak ！
+[11/24/22 23:44:06] 机器 3C43CBB999CP6YG327DGFCQ9F 安装插件成功！
+[11/24/22 23:44:06] 机器 3C43CBB999CP6YG327DGFCQ9F 文件 ResourceDir\Data\星盾素材.Pak 不是最新的，正在重发！
+[11/24/22 23:44:06] 机器 3C43CBB999CP6YG327DGFCQ9F 文件 ResourceDir\Data\扩展素材.Pak 不是最新的，正在重发！
+[11/24/22 23:44:07] 机器 3C43CBB999CP6YG327DGFCQ9F 发送文件 ResourceDir\Data\星盾素材.Pak 成功！
+[11/24/22 23:44:07] 机器 3C43CBB999CP6YG327DGFCQ9F 发送文件 ResourceDir\Data\扩展素材.Pak 成功！
+[11/25/22 00:01:39] 机器 3C43CBB999CP6YG327DGFCQ9F 登录密码错误！已经累计错误 1 次！
+[11/25/22 00:01:39] 机器 3C43CBB999CP6YG327DGFCQ9F 操作错误！已经累计错误 1 次！
+[11/25/22 00:01:39] 地址 115.57.131.242 登录密码错误！已经连续错误 1 次！
+[11/25/22 00:01:39] 地址 115.57.131.242 登录密码错误！已经累计错误 1 次！
+[11/25/22 00:01:39] 地址 115.57.131.242 操作错误！已经累计错误 1 次！

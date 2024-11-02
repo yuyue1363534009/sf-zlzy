@@ -1,0 +1,61 @@
+[@冰冻触发_]
+{
+#IF
+RANDOM 100
+CHECKCURRTARGETRACE = 0
+CHECKITEMW 〈刀劍◆神皇〉·莫邪ゞ神印 1
+#ACT
+<$CURRRTARGETNAME>.MAKEPOSION 12 2
+SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈刀劍◆神皇〉·莫邪ゞ神印成功触发冰冻属性，敌人被冰冻1秒！！
+
+
+#IF
+RANDOM 80
+CHECKCURRTARGETRACE = 0
+CHECKITEMW 〈真靈◆九變〉·奧義ゞ神印 1
+#ACT
+<$CURRRTARGETNAME>.MAKEPOSION 12 2
+SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈真靈◆九變〉·奧義ゞ神印成功触发冰冻属性，敌人被冰冻1秒！！
+
+#IF
+RANDOM 70
+CHECKCURRTARGETRACE = 0
+CHECKITEMW 〈龍王◆無雙〉·終極ゞ神印 1
+#ACT
+<$CURRRTARGETNAME>.MAKEPOSION 12 3
+SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈龍王◆無雙〉·終極ゞ神印成功触发冰冻属性，敌人被冰冻2秒！！
+
+#IF
+RANDOM 60
+CHECKCURRTARGETRACE = 0
+CHECKITEMW 〈金絲◆龍鱗〉·君王ゞ神印 1
+#ACT
+<$CURRRTARGETNAME>.MAKEPOSION 12 3
+SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈金絲◆龍鱗〉·君王ゞ神印成功触发冰冻属性，敌人被冰冻2秒！！
+
+
+#IF
+RANDOM 50
+CHECKCURRTARGETRACE = 0
+CHECKITEMW 〈赤心◆巡天〉·逍遥ゞ神印 1
+#ACT
+<$CURRRTARGETNAME>.MAKEPOSION 12 3
+SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈赤心◆巡天〉·逍遥ゞ神印成功触发冰冻属性，敌人被冰冻2秒！！
+
+
+#IF
+RANDOM 30
+CHECKCURRTARGETRACE = 0
+CHECKITEMW 〈天刀◆无疆〉·昊天ゞ神印 1
+#ACT
+<$CURRRTARGETNAME>.MAKEPOSION 12 4
+SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈天刀◆无疆〉·昊天ゞ神印成功触发冰冻属性，敌人被冰冻3秒！！
+
+
+
+
+
+
+
+
+}

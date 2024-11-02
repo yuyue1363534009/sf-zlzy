@@ -1,0 +1,27 @@
+;SEC：按秒运行
+;MIN：按分运行
+;HOUR：按小时运行
+;DAY：按天运行
+;RunOnDay：按每天什么时候运行
+;RUNONWEEK：按星期几及时间运行
+;#AutoRun NPC RUNONWEEK 5:15:55 @SendRedMsg
+;星期五15点55分运行
+
+
+
+#AutoRun NPC RUNONDAY 23:59 @开区天数
+#AutoRun NPC RUNONDAY 19:50 @攻沙设置
+#AutoRun NPC RUNONDAY 19:00 @攻沙喊话
+#AutoRun NPC RUNONDAY 18:00 @攻沙喊话
+#AutoRun NPC RUNONDAY 19:50 @攻沙清理
+#AutoRun NPC RUNONDAY 22:10 @攻沙恢复
+;#AutoRun NPC RUNONDAY 22:00 @奖励开启
+;#AutoRun NPC RUNONDAY 23:00 @奖励关闭
+#AutoRun NPC RUNONDAY 23:59 @清理沙奖励
+
+#AutoRun NPC MIN 1 @世界BOSS刷新倒计时
+
+#AutoRun NPC MIN 1 @活动计时
+
+;假人上线
+#AutoRun NPC SEC 1 @假人上线

@@ -1,0 +1,79 @@
+;1.76仿盛大基础版本
+[@main]
+沙巴克是在 <$OWNERGUILD> 的管理下。并且受约束于 <$LORD>\
+城堡的总黄金是: <$CASTLEGOLD>\
+今天的收入是: <$TODAYINCOME>\ \
+ <收回现金/@@withdrawal>        <控制城门/@treatdoor>        <聘用防御护卫/@guardcmd>\
+ <贮藏现金/@@receipts>        <修理城堡/@repaircastle>        <护卫防御方式/@commandorder>\ \
+ <关闭/@EXIT>
+
+
+[@treatdoor]
+城堡的门现在是 <$CASTLEDOORSTATE> 的。\ \
+ <关闭城门/@CLOSEmaindoor>\
+ <打开城门/@openmaindoor>\ \
+ <返回/@main>\
+
+[@openmaindoor]
+城门已打开.\ \
+ <返回/@treatdoor>\
+
+[@CLOSEmaindoor]
+城门已关闭.\ \
+ <返回/@treatdoor>\
+
+[@repaircastle]
+你想要修复什么?\ \
+ <修复城门/@repairdoor>\
+ <修复皇宫/@repairwalls>\
+ <返回/@main>\
+
+[@repairdoor]
+将要把 <$REPAIRDOORGOLD> 现金用于修理城门!\ \
+ <马上修复城门/@repairdoornow>\ \
+ <返回/@repaircastle>\
+
+[@repairwalls]
+将要把 <$REPAIRWALLGOLD> 现金用于修理皇宫城墙!\ \
+ <修复城墙一/@repairwallnow1>\
+ <修复城墙二/@repairwallnow2>\
+ <修复城墙三/@repairwallnow3>\
+ <返回/@repaircastle>\
+
+[@guardcmd]
+你想你要聘用守卫吗?\ \
+<聘用流动护卫/@hireguards>\
+<聘用固定弓箭手/@hirearchers>\ \
+<返回/@main>
+
+
+[@hireguards]
+你想聘用流动护卫吗?\
+你要用<$GUARDFEE>现金来支付他们的工作费用。\ \
+可选择是<一号/@hireguardnow1>, <二号/@hireguardnow2>\
+也可以选择<三号/@hireguardnow3>, <四号/@hireguardnow4>\
+<返回/@guardcmd>\
+
+[@hirearchers]
+弓箭护卫们帮助你防守城堡，他们来去是自由的。\
+你应该付一些租金给他们，他们每个要<$ARCHERFEE>现金。\ \
+聘用<一号弓箭手/@hirearchernow1>, <二号弓箭手/@hirearchernow2>, <三号弓箭手/@hirearchernow3>\
+聘用<四号弓箭手/@hirearchernow4>, <五号弓箭手/@hirearchernow5>, <六号弓箭手/@hirearchernow6>\
+聘用<七号弓箭手/@hirearchernow7>, <八号弓箭手/@hirearchernow8>\
+聘用<九号弓箭手/@hirearchernow9>, <十号弓箭手/@hirearchernow10>\
+聘用<十一号弓箭手/@hirearchernow11>, <十二号弓箭手/@hirearchernow12>\
+<返回/@main>\
+
+[@commandorder]
+守卫们正在进行沙巴克的防御工作,你想改变他们?\ \
+ <正常防守/@guardrule_normalnow>\
+ <进攻PK者/@guardrule_pkattack>\
+ <返回/@guardcmd>\
+
+[@guardrule_normalnow]
+防守方式已经更改，守卫们已经目前处于正常防御状态.\ \
+<返回/@guardcmd>\
+
+[@guardrule_pkattack]
+防守方式已经更改，守卫们已经目前处于对来犯者进攻状态.\ \
+<返回/@guardcmd>\

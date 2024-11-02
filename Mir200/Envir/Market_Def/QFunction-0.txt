@@ -1,0 +1,1266 @@
+(@@InPutInteger @@InPutString @@useitemname @@OffLineMsg @@dealgold @storage @getback @ReclaimItem )
+
+;ESP开启自动挂机
+;[@ESPStartAutoPlayGame]
+;新GOM开启自动挂机
+[@StartAutoPlayGame]
+
+#IF
+CHECKLEVELEX > 184
+#ACT
+;ESP开启自动挂机
+;ESPStartAutoPlayGame
+;新GOM开启自动挂机
+;StartAutoPlayGame 100 60 1
+StartAutoPlayGame 1000 600 2
+SENDMSG 6 ....开始挂机，使用快捷键“~”停止挂机！
+#ELSEACT
+MESSAGEBOX 你的等级低于185级无法挂机！
+BREAK
+
+;ESP暂停自动挂机
+;[@ESPStopAutoPlayGame]
+;新GOM暂停自动挂机
+[@StopAutoPlayGame]
+#ACT
+SENDMSG 6 .....挂机结束，使用快捷键“~”开启自动挂机 
+
+ 
+
+[@OnKillMob]
+#IF
+#ACT
+#CALL [\功能脚本\死亡触发\盾牌鞭尸.txt] @鞭尸触发
+
+[@PickUpItemEx]
+#IF
+#ACT
+LINKPICKUPITEM
+SENDUPGRADEITEM
+
+
+#OR
+CHECKContainsText <$SERVERNAME> 01区
+CHECKContainsText <$SERVERNAME> 02区
+CHECKContainsText <$SERVERNAME> 03区
+CHECKContainsText <$SERVERNAME> 04区
+CHECKContainsText <$SERVERNAME> 05区
+CHECKContainsText <$SERVERNAME> 06区
+CHECKContainsText <$SERVERNAME> 07区
+CHECKContainsText <$SERVERNAME> 08区
+CHECKContainsText <$SERVERNAME> 09区
+CHECKContainsText <$SERVERNAME> 10区
+#ACT
+#CALL [\装备首爆\首爆触发.txt] @首爆触发
+
+
+;=========================================================================================
+
+[@OpenSndaItemBox]
+#ACT
+SETSndaItemBox 1 2 8888 4 5 6 7 8 6666 9 10
+SENDMSG 6 已开启
+
+[@ButtonClick1]
+#IF
+#ACT
+DELBUTTON 1 0
+DELBUTTON 2 0
+DELBUTTON 3 0
+DELBUTTON 4 0
+DELBUTTON 5 0
+DELBUTTON 6 0
+DELBUTTON 7 0
+DELBUTTON 8 0
+ADDBUTTON 74 10 504 506 504 0 3 0 -1 \254/点击展开所有图标
+BREAK
+
+[@ButtonClick2]
+#IF
+#ACT
+#CALL [\自定义按钮\遮天攻略.txt] @遮天攻略_
+BREAK
+
+
+[@ButtonClick3]
+#OR
+CHECKMAPNAME ejmm
+CHECKMAPNAME kq
+#ACT
+MESSAGEBOX 当前无法使用!
+BREAK
+#IF
+#ACT
+#CALL [\自定义按钮\世界Boss.txt] @世界Boss_
+BREAK
+[@ButtonClick4]
+#OR
+CHECKMAPNAME ejmm
+CHECKMAPNAME kq
+#ACT
+MESSAGEBOX 当前无法使用!
+BREAK
+#IF
+#ACT
+#CALL [\自定义按钮\狂爆模式.txt] @狂爆模式_
+BREAK
+[@ButtonClick5]
+#OR
+CHECKMAPNAME ejmm
+CHECKMAPNAME kq
+#ACT
+MESSAGEBOX 当前无法使用!
+BREAK
+#IF
+#ACT
+#CALL [\自定义按钮\限时奖励.txt] @限时奖励界面
+BREAK
+[@ButtonClick6]
+#OR
+CHECKMAPNAME ejmm
+CHECKMAPNAME kq
+#ACT
+MESSAGEBOX 当前无法使用!
+BREAK
+#IF
+#ACT
+#CALL [\装备回收\装备回收.txt] @回收开始了_
+BREAK
+[@ButtonClick7]
+#OR
+CHECKMAPNAME ejmm
+CHECKMAPNAME kq
+#ACT
+MESSAGEBOX 当前无法使用!
+BREAK
+#IF
+#ACT
+#CALL [\自定义按钮\装备重定.txt] @装备重定
+BREAK
+[@ButtonClick8]
+#OR
+CHECKMAPNAME ejmm
+CHECKMAPNAME kq
+#ACT
+MESSAGEBOX 当前无法使用!
+BREAK
+#IF
+#ACT
+#CALL [\自定义按钮\智能开箱.txt] @智能开箱
+BREAK
+[@ButtonClick10]
+#IF
+#ACT
+DELBUTTON 10 0
+ADDBUTTON 74 1 503 505 503   0 3  0 -1 \254/点击收起所有图标
+ADDBUTTON 74 2 507 508 509  60 0  0 -1 \254/点击打开逐鹿攻略
+ADDBUTTON 74 3 510 511 512 140 0  0 -1 \254/点击查看世界BOSS
+ADDBUTTON 74 4 513 514 515 220 0  0 -1 \254/点击查看狂暴之力
+ADDBUTTON 74 5 516 517 518 300 0  0 -1 \254/点击查看首爆奖励
+ADDBUTTON 74 6 519 520 521 380 0  0 -1 \254/点击打开装备回收
+ADDBUTTON 74 7 522 523 524 460 0  0 -1 \254/点击查看装备重鉴
+ADDBUTTON 74 8 470 471 472 540 10  0 -1 \254/点击查看智能开箱
+[@Usercmd0]
+#OR
+CHECKMAPNAME ejmm
+CHECKMAPNAME kq
+#ACT
+MESSAGEBOX 当前无法使用!
+BREAK
+#IF
+#ACT
+#CALL [\装备回收\装备回收.txt] @回收开始了_
+BREAK
+[@ItemBagButtonClick1]
+#OR
+CHECKMAPNAME ejmm
+CHECKMAPNAME kq
+#ACT
+MESSAGEBOX 当前无法使用!
+BREAK
+#IF
+#ACT
+#CALL [\装备回收\装备回收.txt] @回收开始了_
+BREAK
+[@ItemBagButtonClick2]
+#IF
+CHECK [266] 0
+#ACT
+SET   [266] 1
+FILTERGLOBALMSG 1
+SENDMSG 6 关闭掉物品提示信息成功，你不再接受脚本命令发送的全服提示信息.
+MESSAGEBOX \\当前全服提示信息已经<关闭>！！\\如需<天启>请再次点击此开关！！
+BREAK
+#ELSEACT
+SET   [266] 0
+FILTERGLOBALMSG 0
+SENDMSG 6 开启掉物品提示信息成功，你已接受脚本命令发送的全服提示信息。
+MESSAGEBOX \\当前全服提示信息已经<开启>！！\\如需<关闭>请再次点击此开关
+BREAK
+[@ItemBagButtonClick3]
+#OR
+CHECKMAPNAME ejmm
+CHECKMAPNAME kq
+#ACT
+MESSAGEBOX 当前无法使用!
+BREAK
+#IF
+#ACT
+#CALL [\自定义按钮\货币提取.txt] @提取货币
+BREAK
+[@ItemBagButtonClick4]
+#OR
+CHECKMAPNAME ejmm
+CHECKMAPNAME kq
+#ACT
+MESSAGEBOX 当前无法使用!
+BREAK
+#IF
+#ACT
+#CALL [\自定义按钮\装备重鉴.txt] @装备重鉴
+BREAK
+
+;-------------------------------------------------主动攻击触发
+[@Attack]
+
+#IF
+RANDOM 20
+CHECKITEMW [聖皇]以吾之名★恩赐尔等·一死
+CHECKCURRTARGETRACE = 0
+#ACT
+<$CURRRTARGETNAME>.CHANGEPKPOINT + 200
+SENDMSG 6 触发红名BUFF，敌人红名了赶紧干死她！ 255 253
+
+
+#IF
+RANDOM 20
+CHECKITEMW 「王者·归来」誰與争锋·帝尊
+CHECKCURRTARGETRACE = 0
+#ACT
+<$CURRRTARGETNAME>.TAKE 随机传送石 46
+<$CURRRTARGETNAME>.TAKE 盟重传送石 46
+<$CURRRTARGETNAME>.SENDMSG 6 你被对手夺取了所有的回城,随机物品！ 255 253
+SENDMSG 6 你的夺取技能夺取了对方身上所有的回城，随机物品！ 255 253
+
+#IF
+#ACT
+GETHUMCUSTOMITEMVALUE 7 9 N20 N21
+HUMANHP + <$STR(N20)>
+#IF
+#ACT
+#CALL [\功能脚本\攻击触发\攻击触发.txt] @攻击触发_
+#CALL [\功能脚本\攻击触发\冰冻触发.txt] @冰冻触发_
+#CALL [\功能脚本\攻击触发\重伤触发.txt] @重伤触发_
+#IF
+InSafeZone
+#ACT
+BREAK
+#IF
+S0.InSafeZone
+#ACT
+BREAK
+;-------------------------------------------------被动触发
+[@Struck]
+#IF
+CHECKCURRTARGETRACE = 0
+#ACT
+#CALL [\功能脚本\被攻击触发\伤害吸收.txt] @伤害吸收
+
+
+
+;----------------------------------------------------------------------------------------------------------
+[@ShopStall]
+#IF 
+#ACT
+MESSAGEBOX 物品上架即可，不需要摆摊！
+BREAK
+
+
+[@QueryMyShopFail]
+#IF 
+#ACT
+MESSAGEBOX 你还没有个人商店，是否创建你的个人商店？\\点击确定创建个人商店。\\创建前请仔细查看个人商店说明!很重要! @创建个人商店 @取消
+[@创建个人商店]
+#IF 
+#ACT
+CLOSEBigDialogBox
+#SAY
+由于引擎限制，个人商店内无法添加逐鹿币为交易货币。\ \
+所以我们将创建了商店专用的交易货币<【交易逐鹿币】/SCOLOR=250>\ \
+玩家在个人商店可选择<【交易逐鹿币】/SCOLOR=250>为货币。交易后可到土城\ \
+右侧兑换成<【逐鹿币】/SCOLOR=254>  右兑换比例为<【1:1】/SCOLOR=254>\ \
+<>  <我要开店(点击输入你喜欢的店铺名称)/@@InputString4>\
+[@InputString4]
+
+
+#IF 
+CHECKMYSHOP
+#ACT
+CLOSEBigDialogBox
+MESSAGEBOX 你已经有店铺了
+BREAK
+#IF 
+CHECKSHOPNAME <$STR(S$4)>
+#ACT
+MESSAGEBOX <$STR(S$4)>店铺名称已经存在，请重新选择一个
+BREAK
+#IF 
+#ACT
+CREATEMYSHOP <$STR(S$4)>
+[@CreateMyShopOK]
+#IF
+#ACT
+CLOSEBigDialogBox
+#SAY
+<>\ \
+你的店铺创建成功
+[@CreateMyShopFail]
+#IF 
+#ACT
+CLOSEBigDialogBox
+#SAY
+<>\ \
+你的店铺创建失败
+[@PlayOffLine]
+#IF
+CHECKhum 3 100
+#ACT
+BREAK
+#ELSEACT
+CLEARDELAYGOTO 1
+MAPMOVE a3 330 331
+SetOffTimer 1
+SetOffTimer 2
+CLOSEClientBuff 1
+CLOSEClientBuff 2
+CLOSEClientBuff 3
+SetOffTimer 4
+SetOffTimer 5
+MOVR P8 319 339
+MOVR P7 321 341
+MAPMOVE a3 <$STR(P8)> <$STR(P7)>
+Offline 3 1
+BREAK
+;----------------------------------------------------
+;----------------------------------------------------
+[@StdModeFunc6]
+#IF
+	NOT CHECKUSEITEM 3
+#ACT
+	GIVE 项链祝福油 1
+	MESSAGEBOX [升级失败]:\　\　　　　　　您没有佩戴“项链”！
+	BREAK
+#IF
+	CHECKITEMADDVALUE 3 1 > 2
+#ACT
+	GIVE 项链祝福油 1
+	MESSAGEBOX [升级失败]:\　\　　　　　　你的项链已经是幸运+3，无法再升级幸运！
+	BREAK
+#IF
+	CHECKITEMADDVALUE 3 1 < 3
+#ACT
+	CHANGEITEMADDVALUE 3 1 + 1
+	MESSAGEBOX [升级成功]:\　\　　　　　　项链“<$NECKLACE>”幸运获得+1！
+	GuildNOTiceMsg 132 255 {[系统]：恭喜|116:0:1}{“<$USERNAME>”|242:0:1}{成功将|116:0:1}{“<$NECKLACE>”|242:0:1}{幸运+1|116:0:1}
+	BREAK
+#IF
+#ACT
+
+;千里传音
+[@StdModeFunc7]
+#IF
+#ACT
+CLOSEBigDialogBox
+#SAY
+<>\
+<我要发布信息(点击输入您要喊话的内容)/@@InputString7>\
+[@InputString7]
+#OR
+CHECKContainsText <$STR(S7)> 跑路
+CHECKContainsText <$STR(S7)> 战火公益
+CHECKContainsText <$STR(S7)> 渾源神器
+CHECKContainsText <$STR(S7)> 垃圾服
+CHECKContainsText <$STR(S7)> 官方
+CHECKContainsText <$STR(S7)> 管理
+CHECKContainsText <$STR(S7)> 管理
+CHECKContainsText <$STR(S7)> Ｇ
+CHECKContainsText <$STR(S7)> G
+CHECKContainsText <$STR(S7)> M
+CHECKContainsText <$STR(S7)> 管
+CHECKContainsText <$STR(S7)> 理
+CHECKContainsText <$STR(S7)> Ｍ
+CHECKContainsText <$STR(S7)> ＊
+CHECKContainsText <$STR(S7)> 内
+CHECKContainsText <$STR(S7)> 客服
+CHECKContainsText <$STR(S7)> 通知
+CHECKContainsText <$STR(S7)> 通告
+CHECKContainsText <$STR(S7)> 系统
+CHECKContainsText <$STR(S7)> 公告
+CHECKContainsText <$STR(S7)> 系统
+CHECKContainsText <$STR(S7)> 提示
+CHECKContainsText <$STR(S7)> 活动
+CHECKContainsText <$STR(S7)> 传送
+CHECKContainsText <$STR(S7)> 别玩了
+#ACT
+MESSAGEBOX 输入的字符无法发送！
+BREAK
+#IF
+CHECKStringlength <$STR(S7)> < 6
+#ACT
+MESSAGEBOX 千里传音最少输入3个汉字，最多6个汉字！
+BREAK
+#IF
+CHECKStringlength <$STR(S7)> > 100
+#ACT
+MESSAGEBOX 千里传音最少输入3个汉字，最多40个汉字！
+BREAK
+#IF 
+#ACT
+SENDMOVEMSG 0 253 255 70 1 <千里传音：/FCOLOR=250>玩家<【<$USERNAME>】/FCOLOR=251>说：{<$STR(S7)>/FCOLOR=254}
+CLOSE
+BREAK
+
+[@StdModeFunc8]
+#IF
+#ACT
+give 金币 1000000
+GuildNOTiceMsg 250 216 [系统提示]金币增加100w个.您当前的金币为：<$GOLDCOUNT>个 SELF
+#ELSEACT
+MESSAGEBOX 您当前的金币为：<$GOLDCOUNT>个，没有金条！
+BREAK
+
+[@StdModeFunc9]
+#IF
+#ACT
+SHOWPROGRESSBARDLG 2 @采集完成 正在回城,进度%d%... 1 @采集中断
+BREAK
+[@采集完成]
+#IF
+#ACT
+CLEARDELAYGOTO 1
+MOVR P8 318 338
+MOVR P7 324 344
+MAPMOVE a3 <$STR(P8)> <$STR(P7)>
+BREAK
+
+[@采集中断]
+#ACT
+SENDMSG 5 回城被中断
+BREAK
+
+
+[@StdModeFunc10]
+#IF
+CHECKITEMADDVALUE 1 3 < 7
+#ACT
+UPGRADEITEMEX 1 3 0 1 0
+SENDMSG 6 你的武器获得祝福.！！ 
+#ELSEACT
+SENDMSG 5 武器幸运已经+7了，无法再次使用！
+GIVE 超级祝福油 1
+BREAK
+[@StdModeFunc11]
+#IF
+#ACT
+CHANGEPKPOINT - 200
+SENDMSG 7 您的PK值已经减少了200点！
+BREAK
+;============================================================================
+;=================================元=宝=触=发================================
+;============================================================================
+;==============50元宝=============
+[@StdModeFunc100]
+#IF
+#ACT
+GAMEGOLD  +  50
+GuildNOTiceMsg 250 216 [系统提示]元宝增加50个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============100元宝=============
+[@StdModeFunc101]
+#IF
+#ACT
+GAMEGOLD  +  100
+GuildNOTiceMsg 250 216 [系统提示]元宝增加100个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============200元宝=============
+[@StdModeFunc102]
+#IF
+#ACT
+GAMEGOLD  +  200
+GuildNOTiceMsg 250 216 [系统提示]元宝增加200个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============500元宝=============
+[@StdModeFunc103]
+#IF
+#ACT
+GAMEGOLD  +  500
+GuildNOTiceMsg 250 216 [系统提示]元宝增加500个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============1000元宝=============
+[@StdModeFunc104]
+#IF
+#ACT
+GAMEGOLD  +  1000
+GuildNOTiceMsg 250 216 [系统提示]元宝增加1000个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============2000元宝=============
+[@StdModeFunc105]
+#IF
+#ACT
+GAMEGOLD  +  2000
+GuildNOTiceMsg 250 216 [系统提示]元宝增加2000个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============5000元宝=============
+[@StdModeFunc106]
+#IF
+#ACT
+GAMEGOLD  +  5000
+GuildNOTiceMsg 250 216 [系统提示]元宝增加5000个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============10000元宝=============
+[@StdModeFunc107]
+#IF
+#ACT
+GAMEGOLD  +  10000
+GuildNOTiceMsg 250 216 [系统提示]元宝增加10000个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============50000元宝=============
+[@StdModeFunc108]
+#IF
+#ACT
+GAMEGOLD  +  50000
+GuildNOTiceMsg 250 216 [系统提示]元宝增加50000个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============100000元宝=============
+[@StdModeFunc109]
+#IF
+#ACT
+GAMEGOLD  +  100000
+GuildNOTiceMsg 250 216 [系统提示]元宝增加100000个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============200000元宝=============
+[@StdModeFunc110]
+#IF
+#ACT
+GAMEGOLD  +  200000
+GuildNOTiceMsg 250 216 [系统提示]元宝增加200000个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============500000元宝=============
+[@StdModeFunc111]
+#IF
+#ACT
+GAMEGOLD  +  500000
+GuildNOTiceMsg 250 216 [系统提示]元宝增加500000个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============1000000元宝=============
+[@StdModeFunc112]
+#IF
+#ACT
+GAMEGOLD  +  1000000
+GuildNOTiceMsg 250 216 [系统提示]元宝增加1000000个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============2000000元宝=============
+[@StdModeFunc113]
+#IF
+#ACT
+GAMEGOLD  +  2000000
+GuildNOTiceMsg 250 216 [系统提示]元宝增加2000000个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============5000000元宝=============
+[@StdModeFunc114]
+#IF
+#ACT
+GAMEGOLD  +  5000000
+GuildNOTiceMsg 250 216 [系统提示]元宝增加50000000个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+;==============10000000元宝=============
+[@StdModeFunc115]
+#IF
+#ACT
+GAMEGOLD  +  10000000
+GuildNOTiceMsg 250 216 [系统提示]元宝增加10000000个.您当前的元宝为：<$GAMEGOLD>个 SELF
+BREAK
+
+;============================================================================
+;=================================钻=石=触=发================================
+;============================================================================
+;==============1逐鹿币=============
+[@StdModeFunc116]
+#IF
+#ACT
+GAMEGIRD + 1
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加1个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============5逐鹿币=============
+[@StdModeFunc117]
+#IF
+#ACT
+GAMEGIRD + 5
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加5个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============10逐鹿币=============
+[@StdModeFunc118]
+#IF
+#ACT
+GAMEGIRD + 10
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加10个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============20逐鹿币=============
+[@StdModeFunc119]
+#IF
+#ACT
+GAMEGIRD + 20
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加20个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============50逐鹿币=============
+[@StdModeFunc120]
+#IF
+#ACT
+GAMEGIRD + 50
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加50个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============100逐鹿币=============
+[@StdModeFunc121]
+#IF
+#ACT
+GAMEGIRD + 100
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加100个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============200逐鹿币=============
+[@StdModeFunc122]
+#IF
+#ACT
+GAMEGIRD + 200
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加200个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============500逐鹿币=============
+[@StdModeFunc123]
+#IF
+#ACT
+GAMEGIRD + 500
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加500个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============1000逐鹿币=============
+[@StdModeFunc124]
+#IF
+#ACT
+GAMEGIRD + 1000
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加1000个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============5000逐鹿币=============
+[@StdModeFunc125]
+#IF
+#ACT
+GAMEGIRD + 5000
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加5000个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============10000逐鹿币=============
+[@StdModeFunc126]
+#IF
+#ACT
+GAMEGIRD + 10000
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加10000个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============50000逐鹿币=============
+[@StdModeFunc127]
+#IF
+#ACT
+GAMEGIRD + 50000
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加50000个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============100000逐鹿币=============
+[@StdModeFunc128]
+#IF
+#ACT
+GAMEGIRD + 100000
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加100000个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============500000逐鹿币=============
+[@StdModeFunc129]
+#IF
+#ACT
+GAMEGIRD + 500000
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加500000个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============1000000逐鹿币=============
+[@StdModeFunc130]
+#IF
+#ACT
+GAMEGIRD + 1000000
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加1000000个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============5000000逐鹿币=============
+[@StdModeFunc131]
+#IF
+#ACT
+GAMEGIRD + 5000000
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加5000000个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============1元充值卷=============
+[@StdModeFunc151]
+#IF
+#ACT
+GAMEGIRD + 1000
+[@StdModeFunc152]
+#IF
+#ACT
+GAMEGIRD + 2000
+[@StdModeFunc153]
+#IF
+#ACT
+GAMEGIRD + 5000
+[@StdModeFunc154]
+#IF
+#ACT
+GAMEGIRD + 10000
+[@StdModeFunc155]
+#IF
+#ACT
+GAMEGIRD + 20000
+[@StdModeFunc156]
+#IF
+#ACT
+GAMEGIRD + 50000
+[@StdModeFunc157]
+#IF
+#ACT
+GAMEGIRD + 100000
+;============================================================================
+;================================经=验=卷=触=发==============================
+;============================================================================
+;==============经验卷(10万)=============
+[@StdModeFunc135]
+#IF
+CHECKLEVELEX < 119
+#ACT
+CHANGEEXP + 100000
+SENDMSG 0 255 4 {[温馨提示]》|251:235:0}恭喜玩家{「%s」|251:249:0}使用{[经验卷(10万)]|255:253:0}{[经验瞬间增加100000]|250:249:0}
+BREAK
+#ELSEACT
+GIVE 经验卷(10万) 1
+MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
+;==============经验卷(20万)=============
+[@StdModeFunc136]
+#IF
+CHECKLEVELEX < 119
+#ACT
+CHANGEEXP + 200000
+SENDMSG 0 255 4 {[温馨提示]》|251:235:0}恭喜玩家{「%s」|251:249:0}使用{[经验卷(20万)]|255:253:0}{[经验瞬间增加200000]|250:249:0}
+BREAK
+#ELSEACT
+GIVE 经验卷(20万) 1
+MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
+;==============经验卷(30万)=============
+[@StdModeFunc137]
+#IF
+CHECKLEVELEX < 119
+#ACT
+CHANGEEXP + 300000
+SENDMSG 0 255 4 {[温馨提示]》|251:235:0}恭喜玩家{「%s」|251:249:0}使用{[经验卷(30万)]|255:253:0}{[经验瞬间增加300000]|250:249:0}
+BREAK
+#ELSEACT
+GIVE 经验卷(30万) 1
+MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
+;==============经验卷(50万)=============
+[@StdModeFunc138]
+#IF
+CHECKLEVELEX < 119
+#ACT
+CHANGEEXP + 500000
+SENDMSG 0 255 4 {[温馨提示]》|251:235:0}恭喜玩家{「%s」|251:249:0}使用{[经验卷(50万)]|255:253:0}{[经验瞬间增加500000]|250:249:0}
+BREAK
+#ELSEACT
+GIVE 经验卷(50万) 1
+MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
+;==============经验卷(100万)=============
+[@StdModeFunc139]
+#IF
+CHECKLEVELEX < 119
+#ACT
+CHANGEEXP + 1000000
+SENDMSG 0 255 4 {[温馨提示]》|251:235:0}恭喜玩家{「%s」|251:249:0}使用{[经验卷(100万)]|255:253:0}{[经验瞬间增加1000000]|250:249:0}
+BREAK
+#ELSEACT
+GIVE 经验卷(100万) 1
+MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
+;==============经验卷(200万)=============
+[@StdModeFunc140]
+#IF
+CHECKLEVELEX < 119
+#ACT
+CHANGEEXP + 2000000
+SENDMSG 0 255 4 {[温馨提示]》|251:235:0}恭喜玩家{「%s」|251:249:0}使用{[经验卷(200万)]|255:253:0}{[经验瞬间增加2000000]|250:249:0}
+BREAK
+#ELSEACT
+GIVE 经验卷(200万) 1
+MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
+;==============经验卷(500万)=============
+[@StdModeFunc141]
+#IF
+CHECKLEVELEX < 119
+#ACT
+CHANGEEXP + 5000000
+SENDMSG 0 255 4 {[温馨提示]》|251:235:0}恭喜玩家{「%s」|251:249:0}使用{[经验卷(500万)]|255:253:0}{[经验瞬间增加5000000]|250:249:0}
+BREAK
+#ELSEACT
+GIVE 经验卷(500万) 1
+MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
+;==============经验卷(1000万)=============
+[@StdModeFunc142]
+#IF
+CHECKLEVELEX < 119
+#ACT
+CHANGEEXP + 10000000
+SENDMSG 0 255 4 {[温馨提示]》|251:235:0}恭喜玩家{「%s」|251:249:0}使用{[经验卷(1000万)]|255:253:0}{[经验瞬间增加10000000]|250:249:0}
+BREAK
+#ELSEACT
+GIVE 经验卷(1000万) 1
+MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
+;==============经验卷(2000万)=============
+[@StdModeFunc143]
+#IF
+CHECKLEVELEX < 119
+#ACT
+CHANGEEXP + 20000000
+SENDMSG 0 255 4 {[温馨提示]》|251:235:0}恭喜玩家{「%s」|251:249:0}使用{[经验卷(2000万)]|255:253:0}{[经验瞬间增加20000000]|250:249:0}
+BREAK
+#ELSEACT
+GIVE 经验卷(2000万) 1
+MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
+;==============经验卷(5000万)=============
+[@StdModeFunc144]
+#IF
+CHECKLEVELEX < 119
+#ACT
+CHANGEEXP + 50000000
+SENDMSG 0 255 4 {[温馨提示]》|251:235:0}恭喜玩家{「%s」|251:249:0}使用{[经验卷(5000万)]|255:253:0}{[经验瞬间增加50000000]|250:249:0}
+BREAK
+#ELSEACT
+GIVE 经验卷(5000万) 1
+MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
+;==============经验卷(1亿)=============
+[@StdModeFunc145]
+#IF
+CHECKLEVELEX < 119
+#ACT
+CHANGEEXP + 100000000
+SENDMSG 0 255 4 {[温馨提示]》|251:235:0}恭喜玩家{「%s」|251:249:0}使用{[经验卷(1亿)]|255:253:0}{[经验瞬间增加100000000]|250:249:0}
+BREAK
+#ELSEACT
+GIVE 经验卷(1亿) 1
+MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
+;==============经验卷(2亿)=============
+[@StdModeFunc146]
+#IF
+CHECKLEVELEX < 119
+#ACT
+CHANGEEXP + 200000000
+SENDMSG 0 255 4 {[温馨提示]》|251:235:0}恭喜玩家{「%s」|251:249:0}使用{[经验卷(2亿)]|255:253:0}{[经验瞬间增加200000000]|250:249:0}
+BREAK
+#ELSEACT
+GIVE 经验卷(2亿) 1
+MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
+;==============经验卷(5亿)=============
+[@StdModeFunc147]
+#IF
+CHECKLEVELEX < 119
+#ACT
+CHANGEEXP + 500000000
+SENDMSG 0 255 4 {[温馨提示]》|251:235:0}恭喜玩家{「%s」|251:249:0}使用{[经验卷(5亿)]|255:253:0}{[经验瞬间增加500000000]|250:249:0}
+BREAK
+#ELSEACT
+GIVE 经验卷(5亿) 1
+MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
+;==============经验卷(10亿)=============
+[@StdModeFunc148]
+#IF
+CHECKLEVELEX < 119
+#ACT
+CHANGEEXP + 1000000000
+SENDMSG 0 255 4 {[温馨提示]》|251:235:0}恭喜玩家{「%s」|251:249:0}使用{[经验卷(10亿)]|255:253:0}{[经验瞬间增加1000000000]|250:249:0}
+BREAK
+#ELSEACT
+GIVE 经验卷(10亿) 1
+MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
+;==============材料包=============
+[@StdModeFunc181]
+#IF
+#ACT
+GIVE 龍血※仙珠 5
+[@StdModeFunc182]
+#IF
+#ACT
+GIVE 龍血※仙珠 10
+[@StdModeFunc183]
+#IF
+#ACT
+GIVE 龍血※仙珠 15
+[@StdModeFunc184]
+#IF
+#ACT
+GIVE 龍血※仙珠 20
+;============================================================================
+;=================================技=能=触=发================================
+;============================================================================
+[@StdModeFunc40]
+#IF
+#ACT
+ADDSKILL 隐身术 3
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：隐身术
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：隐身术
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：隐身术
+[@StdModeFunc41]
+#IF
+#ACT
+ADDSKILL 魔法盾 3
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：魔法盾
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：魔法盾
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：魔法盾
+[@StdModeFunc42]
+#IF
+#ACT
+ADDSKILL 护体神盾 3
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：护体神盾
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：护体神盾
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：护体神盾
+[@StdModeFunc43]
+#IF
+#ACT
+ADDSKILL 十步一杀 3
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：十步一杀
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：十步一杀
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：十步一杀
+[@StdModeFunc44]
+#IF
+#ACT
+ADDSKILL 冰霜群雨 3
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：冰霜群雨
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：冰霜群雨
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：冰霜群雨
+[@StdModeFunc45]
+#IF
+#ACT
+ADDSKILL 死亡之眼 3
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：死亡之眼
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：死亡之眼
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：死亡之眼
+[@StdModeFunc46]
+#IF
+#ACT
+ADDSKILL 施毒术 3
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：施毒术
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：施毒术
+GuildNOTiceMsg 151 0 恭喜恭喜，“%S”成功修炼上乘技能：施毒术
+
+;----------------------------装备佩戴鉴定----------------------------------
+[@TAKEon1]
+#IF
+CHECKLuckPoint > 9
+CHECKjob warrior
+#ACT
+SENDMSG 0 玩家【%s】全身幸运+10的触发人物最佳状态,各位小心此人物危险. 
+[@TAKEOFF1]
+
+
+
+[@TAKEON2]
+#IF
+#ACT
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+
+[@TAKEOFF2]
+#IF
+#ACT
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+
+
+[@TAKEON3]
+#IF
+CHECKLuckPoint > 9
+#ACT
+SENDMSG 0 玩家【%s】全身幸运+10的触发人物最佳状态,各位小心此人物危险. 
+BREAK
+
+[@TAKEOff5]
+
+[@TAKEOn5]
+#ACT
+HCALL <$USERNAME> @非法血符
+
+[@TAKEOn6]
+#CALL [\装备文件\分类检测.txt] @手镯分类
+[@TAKEOn8]
+#CALL [\装备文件\分类检测.txt] @戒指分类
+
+[@TAKEON16]
+#IF
+NOT EQUAL <$SHIELD>
+#ACT
+CHANGESPEED 2 5
+
+#IF
+#ACT
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+
+[@TAKEOFF16]
+#IF
+#ACT
+CHANGESPEED 2 0
+SENDMSG 6 没攻速~~~~~~~~~~~~~~~~~~~~
+
+#IF
+#ACT
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+
+[@TAKEON40]
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+[@TAKEOFF40]
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+
+;===========================================================================================
+
+[@PlayDie]
+#IF
+CHECKTITLE   逐鹿※之力
+CHECKCURRTARGETRACE = 0
+#ACT
+DEPRIVETITLE 逐鹿※之力
+SETICON 1 -1
+SET   [270] 0
+<$KILLER>.GAMEPOINT + 50000
+GuildNOTiceMsg 116 0 [系统]“{<$KILLER>|21:0:1}”成功击杀携带逐鹿之力的“{<$USERNAME>|146:0:1}”获得50000逐鹿币“{5|242:0:1}” 
+GuildNOTiceMsg 116 0 [系统]“{<$KILLER>|21:0:1}”成功击杀携带逐鹿之力的“{<$USERNAME>|146:0:1}”获得50000逐鹿币“{5|242:0:1}”
+GuildNOTiceMsg 116 0 [系统]“{<$KILLER>|21:0:1}”成功击杀携带逐鹿之力的“{<$USERNAME>|146:0:1}”获得50000逐鹿币“{5|242:0:1}” 
+
+#IF
+#ACT
+MESSAGEBOX 是否想回城复活？ @回城复活 @EXIT
+BREAK
+
+[@回城复活]
+#IF
+#ACT
+MAPMOVE a3 330 330
+REALIVE
+ADDHPPER + 100
+
+;===========================================================================================
+
+[@KillPlay]
+#IF
+CHECKLEVELEX > 0
+#ACT
+INC U1 1
+#IF
+CHECK [375] 0
+#ACT
+SET   [375] 1
+MOV U49 60
+PLAYSOUND Wav\魅影1.wav 1 0
+PLAYEFFECT 0 0 10 1 150 1
+#CALL [\游戏登陆\封号刷新.TXT] @封号new
+BREAK
+#IF
+CHECK [375] 1
+CHECK [376] 0
+#ACT
+SET   [376] 1
+MOV U49 60
+PLAYEFFECT 0 10 10 1 150 1
+PLAYSOUND Wav\魅影2.wav 1 0
+#CALL [\游戏登陆\封号刷新.TXT] @封号new
+BREAK
+#IF
+CHECK [376] 1
+CHECK [377] 0
+#ACT
+SET   [377] 1
+MOV U49 60
+PLAYEFFECT 0 20 10 1 150 1
+PLAYSOUND Wav\魅影3.wav 1 0
+#CALL [\游戏登陆\封号刷新.TXT] @封号new
+BREAK
+#IF
+CHECK [377] 1
+CHECK [378] 0
+#ACT
+SET   [378] 1
+MOV U49 60
+PLAYSOUND Wav\魅影4.wav 1 0
+PLAYEFFECT 0 30 10 1 100 1
+#CALL [\游戏登陆\封号刷新.TXT] @封号new
+BREAK
+#IF
+CHECK [378] 1
+CHECK [379] 0
+#ACT
+SET   [379] 1
+MOV U49 60
+PLAYEFFECT 0 40 10 1 100 1
+PLAYSOUND Wav\魅影5.wav 1 0
+#CALL [\游戏登陆\封号刷新.TXT] @封号new
+BREAK
+#IF
+CHECK [379] 1
+CHECK [380] 0
+#ACT
+SET   [380] 1
+MOV U49 60
+PLAYEFFECT 0 50 10 1 100 1
+PLAYSOUND Wav\魅影6.wav 1 0
+#CALL [\游戏登陆\封号刷新.TXT] @封号new
+BREAK
+#IF
+CHECK [380] 1
+CHECK [381] 0
+#ACT
+SET   [381] 1
+MOV U49 60
+PLAYEFFECT 0 60 10 1 100 1
+PLAYSOUND Wav\魅影7.wav 1 0
+#CALL [\游戏登陆\封号刷新.TXT] @封号new
+BREAK
+#IF
+CHECK [381] 1
+CHECK [382] 0
+#ACT
+SET   [382] 1
+MOV U49 60
+PLAYEFFECT 0 70 10 1 100 1
+PLAYSOUND Wav\魅影8.wav 1 0
+#CALL [\游戏登陆\封号刷新.TXT] @封号new
+BREAK
+#IF
+CHECK [382] 1
+CHECK [383] 0
+#ACT
+SET   [383] 1
+MOV U49 60
+PLAYEFFECT 0 80 10 1 100 1
+PLAYSOUND Wav\魅影8.wav 1 0
+#CALL [\游戏登陆\封号刷新.TXT] @封号new
+BREAK
+#IF
+CHECK [383] 1
+CHECK [384] 0
+#ACT
+SET   [384] 1
+MOV U49 60
+PLAYEFFECT 0 90 10 1 100 1
+PLAYSOUND Wav\魅影8.wav 1 0
+#CALL [\游戏登陆\封号刷新.TXT] @封号new
+BREAK
+#IF
+CHECK [384] 1
+CHECK [385] 0
+#ACT
+SET   [385] 1
+MOV U49 60
+PLAYEFFECT 0 100 10 1 100 1
+PLAYSOUND Wav\魅影8.wav 1 0
+#CALL [\游戏登陆\封号刷新.TXT] @封号new
+BREAK
+#IF
+CHECK [385] 1
+CHECK [386] 0
+#ACT
+SET   [386] 1
+MOV U49 60
+PLAYEFFECT 0 110 10 1 100 1
+PLAYSOUND Wav\魅影8.wav 1 0
+#CALL [\游戏登陆\封号刷新.TXT] @封号new
+BREAK
+#IF
+CHECK [386] 1
+#ACT
+MOV U49 60
+PLAYEFFECT 0 110 10 1 100 1
+PLAYSOUND Wav\魅影8.wav 1 0
+#CALL [\游戏登陆\封号刷新.TXT] @封号new
+BREAK
+
+;----------------------------------------------------------
+
+[@GroupItemOn35]
+#IF
+#ACT
+ADDSKILL 护体神盾 3
+
+[@GroupItemOFF35]
+#IF
+#ACT
+DELSKILL 护体神盾
+
+[@GroupItemOn11]
+#IF
+#ACT
+ADDSKILL 魔法盾 3
+[@GroupItemOFF11]
+#IF
+#ACT
+DELSKILL 魔法盾
+
+[@GroupItemOn43]
+#IF
+#ACT
+ADDSKILL 十步一杀 3
+[@GroupItemOFF43]
+#IF
+#ACT
+DELSKILL 十步一杀
+
+[@GroupItemOn24]
+#IF
+#ACT
+ChangeModeEx 16 65535
+
+[@GroupItemOFF24]
+#IF
+#ACT
+ChangeModeEx 16 1
+
+[@GroupItemOn64]
+#IF
+#ACT
+ChangeModeEx 16 65535
+
+#IF
+EQUAL U45 0
+#ACT
+SETClientBuff 71 1 1199 -1 　 -60 60
+#ELSEACT
+SETClientBuff 71 1 1200 <$STR(U45)> 　 -60 60
+
+[@GroupItemOFF64]
+#IF
+#ACT
+ChangeModeEx 16 1
+CLOSEClientBuff 1
+
+[@Revival]
+#IF
+#ACT
+MOV U45 <$REVIVALTIME>
+SETClientBuff 71 1 1200 <$STR(U45)> 　 -60 60
+
+[@CLOSEClientBuff1]
+#IF
+#ACT
+SETClientBuff 71 1 1199 -1  　 -60 60
+
+[@StartAutoPlayGame]
+#IF
+CHECKLEVELEX < 185
+#ACT
+MESSAGEBOX \\挂机失败，需要185级才能使用该功能!!
+BREAK
+#IF
+#ACT
+StartAutoPlayGame 1000 600 2
+SENDMSG 6 开始挂机，使用快捷键“CTRL+ALT+X”停止挂机
+
+[@StopAutoPlayGame]
+#ACT
+SENDMSG 6 挂机结束，使用快捷键“CTRL+ALT+X”开始挂机
+
+

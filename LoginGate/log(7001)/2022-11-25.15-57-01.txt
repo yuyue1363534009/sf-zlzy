@@ -1,0 +1,19 @@
+[11/25/22 15:57:02] 服务已启动成功...
+[11/25/22 15:57:02] 文件 LoginGate\Data\LoginPlugin.wil 读取成功，MD5值：1D1DF4A8E9C357A43FAA073DAADF5920
+[11/25/22 15:57:02] 正在加载插件设置，如果不希望下发插件，请删除 LoginGate\Data\Client.ini 文件。
+[11/25/22 15:57:02] 插件 Data\DunClient.Pak 加载成功，MD5值：ACB8CD98ADAC36EE5722768D6107B81A
+[11/25/22 15:57:02] 文件 ResourceDir\Data\星盾素材.Pak 加载成功，MD5值：AE04B7C55CB5452BE1F656BD46278479
+[11/25/22 15:57:02] 文件 ResourceDir\Data\扩展素材.Pak 加载成功，MD5值：A713269FC43DF12209634D508F47F06F
+[11/25/22 15:57:02] Connected to Login Server.
+[11/25/22 16:23:56] 机器 Y3VM6BB9XD2WCDG984CTY9RTD 插件不是最新的，正在重发插件文件 Data\DunClient.Pak ！
+[11/25/22 16:23:57] 机器 Y3VM6BB9XD2WCDG984CTY9RTD 安装插件成功！
+[11/25/22 16:23:57] 机器 Y3VM6BB9XD2WCDG984CTY9RTD 文件 ResourceDir\Data\星盾素材.Pak 不是最新的，正在重发！
+[11/25/22 16:23:57] 机器 Y3VM6BB9XD2WCDG984CTY9RTD 文件 ResourceDir\Data\扩展素材.Pak 不是最新的，正在重发！
+[11/25/22 16:23:58] 机器 Y3VM6BB9XD2WCDG984CTY9RTD 发送文件 ResourceDir\Data\星盾素材.Pak 成功！
+[11/25/22 16:23:58] 机器 Y3VM6BB9XD2WCDG984CTY9RTD 发送文件 ResourceDir\Data\扩展素材.Pak 成功！
+[11/25/22 16:25:06] 账号 wq8308 登录密码错误！已经连续错误 1 次！
+[11/25/22 16:25:06] 机器 Y3VM6BB9XD2WCDG984CTY9RTD 登录密码错误！已经累计错误 1 次！
+[11/25/22 16:25:06] 机器 Y3VM6BB9XD2WCDG984CTY9RTD 操作错误！已经累计错误 1 次！
+[11/25/22 16:25:06] 地址 59.63.1.162 登录密码错误！已经连续错误 1 次！
+[11/25/22 16:25:06] 地址 59.63.1.162 登录密码错误！已经累计错误 1 次！
+[11/25/22 16:25:06] 地址 59.63.1.162 操作错误！已经累计错误 1 次！

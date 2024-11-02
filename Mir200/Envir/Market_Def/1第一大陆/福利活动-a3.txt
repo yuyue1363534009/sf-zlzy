@@ -1,0 +1,33 @@
+(@storage @getback)
+[@main]
+#IF
+#ACT
+OPENMERCHANTBIGDLG 74 120 0 0 0 10 1 488 8
+#SAY
+<> \ \ \
+<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
+<       /AUTOCOLOR=0><>      <必爆装备活动/SCOLOR=253>      <开区 每90分钟开启一次/SCOLOR=70>       <进入√必爆装备/@222> \
+<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
+<       /AUTOCOLOR=0><>      <必爆材料活动/SCOLOR=253>      <开区 每3小时开启一次/SCOLOR=70>        <进入√必爆材料/@333>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\ \
+<       /AUTOCOLOR=0><>                            <仓库存取/@storage>\
+<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
+
+
+
+[@222]
+#IF
+#ACT
+MAP WLMZHD
+SENDMSG 0 253 251 勇士{「<$USERNAME>」|254:0:1}参加了必爆装备活动，进入了{『<$MAPTITLE>』|250:0:1}！
+BREAK
+
+[@333]
+
+#IF
+#ACT
+MAP HHZBHD
+SENDMSG 0 253 251 勇士{「<$USERNAME>」|254:0:1}参加了必爆材料活动，进入了{『<$MAPTITLE>』|250:0:1}！
+BREAK
+

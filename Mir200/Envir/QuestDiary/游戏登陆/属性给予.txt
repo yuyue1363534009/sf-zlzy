@@ -1,0 +1,635 @@
+[@人物属性]
+{
+#IF
+#ACT
+DELBUTTON 18 0
+DELBUTTON 19 0
+DELBUTTON 20 0
+
+#IF
+#ACT
+MOV S$人物基础封号 〝┈━━逐鹿╰★╮中原═━━┈〞
+
+#IF
+#ACT
+MOV S$人物斩杀封号 『斩杀∶(<$STR(U1)>)人』
+
+
+#IF
+#ACT
+MOV N$切割倍数 100
+MOV N$赞助切割 0
+MOV N$战火切割 0
+MOV N$装备切割 0
+MOV N$公益切割 0
+MOV N$切割倍数 0
+MOV N$赞助爆率 0
+MOV N$战火爆率 0
+MOV N$称号爆率 0
+MOV N$盾牌爆率 0
+MOV N$压万爆率 0
+MOV N$遮天爆率 0
+MOV N$本区爆率 0
+MOV N$勋章倍数 0
+MOV N$轮回倍数 0
+
+MOV N$新加爆率 0
+MOV N$新加切割 0
+
+
+
+#IF
+CHECKTITLE 沙城捐献
+#ACT
+MOV N$新加切割 388888
+
+
+
+#IF
+CHECK [200] 1
+#ACT
+MOV N$赞助切割 1000
+
+#IF
+CHECK [201] 1
+#ACT
+MOV N$赞助切割 3000
+
+#IF
+CHECK [202] 1
+#ACT
+MOV N$赞助切割 5000
+
+#IF
+CHECK [203] 1
+#ACT
+MOV N$赞助切割 10000
+
+#IF
+CHECK [204] 1
+#ACT
+MOV N$赞助切割 20000
+
+#IF
+CHECKTITLE 战火之力
+#ACT
+MOV N$战火切割 2000
+
+#IF
+#ACT
+GETHUMCUSTOMITEMVALUE 6 8 N10 N11
+MOV N$装备切割 <$STR(N10)>
+
+
+#OR
+CHECKContainsText <$SERVERNAME> 01区
+
+#ACT
+MOV N$本区爆率 10
+
+
+#OR
+CHECKContainsText <$SERVERNAME> 02区
+
+#ACT
+MOV N$本区爆率 20
+
+
+#OR
+CHECKContainsText <$SERVERNAME> 03区
+
+#ACT
+MOV N$本区爆率 30
+
+
+#OR
+CHECKContainsText <$SERVERNAME> 04区
+
+#ACT
+MOV N$本区爆率 40
+
+
+#OR
+CHECKContainsText <$SERVERNAME> 05区
+
+#ACT
+MOV N$本区爆率 50
+
+
+#OR
+CHECKContainsText <$SERVERNAME> 06区
+
+#ACT
+MOV N$本区爆率 60
+
+
+#OR
+CHECKContainsText <$SERVERNAME> 07区
+
+#ACT
+MOV N$本区爆率 70
+
+
+#OR
+CHECKContainsText <$SERVERNAME> 08区
+
+#ACT
+MOV N$本区爆率 80
+
+
+
+#OR
+CHECKContainsText <$SERVERNAME> 09区
+
+#ACT
+MOV N$本区爆率 90
+
+
+#OR
+CHECKContainsText <$SERVERNAME> 10区
+
+#ACT
+MOV N$本区爆率 100
+
+#IF
+CHECKTITLE 九品★教头
+#ACT
+MOV N$称号爆率 5
+SETICON 7 73 0 120 -65 14 0 150 0
+
+#IF
+CHECKTITLE 八品★骁骑
+#ACT
+MOV N$称号爆率 10
+SETICON 7 73 20 120 -65 14 0 150 0
+
+#IF
+CHECKTITLE 七品★侍卫
+#ACT
+MOV N$称号爆率 15
+SETICON 7 73 40 120 -65 14 0 150 0
+
+#IF
+CHECKTITLE 六品★都督
+#ACT
+MOV N$称号爆率 20
+SETICON 7 73 60 120 -65 14 0 150 0
+
+#IF
+CHECKTITLE 五品★太守
+#ACT
+MOV N$称号爆率 25
+SETICON 7 73 80 120 -65 14 0 150 0
+
+#IF
+CHECKTITLE 四品★刺史
+#ACT
+MOV N$称号爆率 30
+SETICON 7 73 100 120 -65 14 0 150 0
+
+#IF
+CHECKTITLE 三品★司马
+#ACT
+MOV N$称号爆率 40
+SETICON 7 73 120 120 -65 14 0 150 0
+
+#IF
+CHECKTITLE 二品★太尉
+#ACT
+MOV N$称号爆率 50
+SETICON 7 73 140 120 -65 14 0 150 0
+
+#IF
+CHECKTITLE 一品★将军
+#ACT
+MOV N$称号爆率 60
+SETICON 7 73 160 120 -65 14 0 150 0
+
+#IF
+CHECKTITLE 九五★至尊
+#ACT
+MOV N$称号爆率 70
+SETICON 7 73 220 120 -65 14 0 150 0
+
+#IF
+CHECKTITLE 雄霸★天下
+#ACT
+MOV N$称号爆率 80
+SETICON 7 73 180 120 -65 14 0 150 0
+
+#IF
+CHECKTITLE ·不屈★战魂·
+#ACT
+MOV N$称号爆率 100
+SETICON 7 62 7712 -5 -90 10 0 150 0
+
+#IF
+CHECKTITLE ·无畏★先驱·
+#ACT
+MOV N$称号爆率 130
+SETICON 7 62 7722 -5 -90 10 0 150 0
+
+#IF
+CHECKTITLE ·秩序★之光·
+#ACT
+MOV N$称号爆率 160
+SETICON 7 62 7732 -5 -90 10 0 150 0
+
+#IF
+CHECKTITLE ·命运★之轮·
+#ACT
+MOV N$称号爆率 200
+SETICON 7 62 7742 -5 -90 10 0 150 0
+
+#IF
+CHECKTITLE ·裁决★之印·
+#ACT
+MOV N$称号爆率 250
+SETICON 7 62 7752 -5 -90 10 0 150 0
+
+#IF
+CHECKTITLE ·踏破★天穹·
+#ACT
+MOV N$称号爆率 300
+SETICON 7 62 7772 -5 -90 10 0 150 0
+
+
+#IF
+CHECKTITLE ·无敌★王者·
+#ACT
+MOV N$称号爆率 400
+SETICON 7 62 7782 -5 -90 10 0 150 0
+
+#IF
+CHECK [328] 1
+CHECK [329] 1
+CHECK [330] 1
+CHECK [331] 1
+#ACT
+INC N$称号爆率 100
+
+
+#IF
+CHECKITEMW 帝君卐中原◆終極审判の逐鹿盾
+#ACT
+MOV N$盾牌爆率 20
+
+#IF
+CHECKITEMW 金絲卐龍鱗◆君王斩天の中原盾
+#ACT
+MOV N$盾牌爆率 50
+
+
+
+#IF
+CHECKITEMW 逐『王』鹿※戟★ 
+#ACT
+MOV N$遮天爆率 50
+
+#IF
+CHECKITEMW 逐『王』鹿※戟★★★ 
+#ACT
+MOV N$遮天爆率 100
+
+#IF
+CHECKITEMW 逐『王』鹿※戟★★★★★
+#ACT
+MOV N$遮天爆率 200
+
+
+#IF
+CHECKTITLE 逐鹿※之力
+#ACT
+MOV N$战火爆率 70
+SETICON 1 58 1290 76 75 11 0 100 0
+
+
+#IF
+CHECK [200] 1
+#ACT
+MOV N$赞助爆率 30
+SETICON 8 5 841 -40 -28 21 0 150 0
+
+#IF
+CHECK [201] 1
+#ACT
+MOV N$赞助爆率 60
+SETICON 8 5 862 -40 -28 21 0 150 0
+
+#IF
+CHECK [202] 1
+#ACT
+MOV N$赞助爆率 100
+SETICON 8 5 913 -40 -28 30 0 150 0
+
+#IF
+CHECK [203] 1
+#ACT
+MOV N$赞助爆率 200
+SETICON 8 5 1070 -40 -28 21 0 150 0
+
+#IF
+CHECK [204] 1
+#ACT
+MOV N$赞助爆率 300
+SETICON 8 73 2116 -38 -3 11 0 150 0
+
+#IF
+CHECKRENEWLEVEL = 0
+#ACT
+MOV S$人物轮回显示 『转生：０级』
+
+#IF
+CHECKRENEWLEVEL = 1
+#ACT
+MOV N$轮回倍数 1
+MOV S$人物轮回显示 『转生：一转轮回』
+
+#IF
+CHECKRENEWLEVEL = 2
+#ACT
+MOV N$轮回倍数 2
+MOV S$人物轮回显示 『转生：二转轮回』
+
+#IF
+CHECKRENEWLEVEL = 3
+#ACT
+MOV N$轮回倍数 3
+MOV S$人物轮回显示 『转生：三转轮回』
+
+#IF
+CHECKRENEWLEVEL = 4
+#ACT
+MOV N$轮回倍数 4
+MOV S$人物轮回显示 『转生：四转轮回』
+
+#IF
+CHECKRENEWLEVEL = 5
+#ACT
+MOV N$轮回倍数 5
+MOV S$人物轮回显示 『转生：五转轮回』
+
+#IF
+CHECKRENEWLEVEL = 6
+#ACT
+MOV N$轮回倍数 6
+MOV S$人物轮回显示 『转生：六转轮回』
+
+#IF
+CHECKRENEWLEVEL = 7
+#ACT
+MOV N$轮回倍数 7
+MOV S$人物轮回显示 『转生：七转轮回』
+
+
+#IF
+CHECKRENEWLEVEL = 8
+#ACT
+MOV N$轮回倍数 8
+MOV S$人物轮回显示 『转生：八转轮回』
+
+#IF
+CHECKRENEWLEVEL = 9
+#ACT
+MOV N$轮回倍数 9
+MOV S$人物轮回显示 『转生：九转轮回』
+
+#IF
+CHECKRENEWLEVEL = 10
+#ACT
+MOV N$轮回倍数 10
+MOV S$人物轮回显示 『转生：十转轮回』
+
+#IF
+CHECKRENEWLEVEL = 11
+#ACT
+MOV N$轮回倍数 12
+MOV S$人物轮回显示 『转生：11转轮回』
+
+#IF
+CHECKRENEWLEVEL = 12
+#ACT
+MOV N$轮回倍数 15
+MOV S$人物轮回显示 『转生：12转轮回』
+
+#IF
+CHECKRENEWLEVEL = 13
+#ACT
+MOV N$轮回倍数 20
+MOV S$人物轮回显示 『转生：13转轮回』
+
+#IF
+CHECKRENEWLEVEL = 14
+#ACT
+MOV N$轮回倍数 25
+MOV S$人物轮回显示 『转生：14转轮回』
+
+#IF
+CHECKRENEWLEVEL = 15
+#ACT
+MOV N$轮回倍数 30
+MOV S$人物轮回显示 『转生：15转轮回』
+
+
+#IF
+CHECKRENEWLEVEL = 16
+#ACT
+MOV N$轮回倍数 16
+MOV S$人物轮回显示 『转生：16转轮回』
+
+#IF
+CHECKRENEWLEVEL = 17
+#ACT
+MOV N$轮回倍数 16
+MOV S$人物轮回显示 『转生：17转轮回』
+
+#IF
+CHECKRENEWLEVEL = 18
+#ACT
+MOV N$轮回倍数 26
+MOV S$人物轮回显示 『转生：18转轮回』
+
+#IF
+CHECKRENEWLEVEL = 19
+#ACT
+MOV N$轮回倍数 28
+MOV S$人物轮回显示 『转生：19转轮回』
+
+#IF
+CHECKRENEWLEVEL = 20
+#ACT
+MOV N$轮回倍数 30
+MOV S$人物轮回显示 『转生：20转轮回』
+
+
+#IF
+CHECKITEMW 尚武★真英雄※【一品】
+#ACT
+MOV N$勋章倍数 5
+
+#IF
+CHECKITEMW 山河★風飄絮※【二品】
+#ACT
+MOV N$勋章倍数 10
+
+#IF
+CHECKITEMW 滿城★黃金甲※【三品】
+#ACT
+MOV N$勋章倍数 15
+
+#IF
+CHECKITEMW 碧血★猶無悔※【四品】
+#ACT
+MOV N$勋章倍数 20
+
+#IF
+CHECKITEMW 我命★不由天※【五品】
+#ACT
+MOV N$勋章倍数 25
+
+#IF
+CHECKITEMW 殺盡★負我人※【六品】
+#ACT
+MOV N$勋章倍数 30
+
+#IF
+CHECKITEMW 橫刀★向天笑※【七品】
+#ACT
+MOV N$勋章倍数 35
+
+#IF
+CHECKITEMW 雲霄★齊飛楊※【八品】
+#ACT
+MOV N$勋章倍数 40
+
+#IF
+CHECKITEMW 天龍★震四方※【九品】
+#ACT
+MOV N$勋章倍数 45
+
+#IF
+CHECKITEMW 戮弒★神王命※【十品】
+#ACT
+MOV N$勋章倍数 50
+
+#IF
+CHECKITEMW 雪吟★山河盡※【無雙】
+#ACT
+MOV N$勋章倍数 60
+
+#IF
+CHECKITEMW 「圣卐章」風卷残雲·雄霸兲下
+#ACT
+MOV N$勋章倍数 80
+
+#IF
+CHECKITEMW 卧榻之侧の岂容他人酣睡·圣章
+#ACT
+MOV N$勋章倍数 100
+
+
+
+
+
+#IF
+#ACT
+MOV N$总切割 0
+MOV N$切割倍数 100
+INC N$总切割 <$STR(N$赞助切割)>
+INC N$总切割 <$STR(N$战火切割)>
+INC N$总切割 <$STR(N$装备切割)>
+INC N$总切割 <$STR(N$公益切割)>
+INC N$总切割 <$STR(N$新加切割)>
+
+
+#IF
+#ACT
+MOV N$总爆率 100
+INC N$总爆率 <$STR(N$赞助爆率)>
+INC N$总爆率 <$STR(N$战火爆率)>
+INC N$总爆率 <$STR(N$称号爆率)>
+INC N$总爆率 <$STR(N$公益爆率)>
+INC N$总爆率 <$STR(N$盾牌爆率)>
+INC N$总爆率 <$STR(N$遮天爆率)>
+INC N$总爆率 <$STR(N$本区爆率)>
+INC N$总爆率 <$STR(N$新加爆率)>
+
+#IF
+#ACT
+MOV N$总倍数 100
+INC N$总倍数 <$STR(N$轮回倍数)>
+INC N$总倍数 <$STR(N$勋章倍数)>
+INC N$总倍数 <$STR(N$称号倍数)>
+
+
+#IF
+CHECKITEMW 帝炎★丹心※照汗青
+#ACT
+INC N$切割倍数 50
+
+#IF
+CHECKITEMW 霸絕★羅網※鎖蒼穹
+#ACT
+INC N$切割倍数 100
+
+#IF
+CHECKITEMW 龍嘯★龍氣※憾九天
+#ACT
+INC N$切割倍数 150
+
+#IF
+CHECKITEMW 聖渊★鬼泣※驚天地
+#ACT
+INC N$切割倍数 200
+
+#IF
+CHECKITEMW 涅槃★神龍※數撚塵
+#ACT
+INC N$切割倍数 300
+
+#IF
+CHECKITEMW 天闕★浪淘※自天涯
+#ACT
+INC N$切割倍数 400
+
+#IF
+CHECKITEMW 莫邪★帝矗※戟指天
+#ACT
+INC N$切割倍数 500
+
+#IF
+CHECKITEMW 奧義★霸殤※宇等閑
+#ACT
+INC N$切割倍数 700
+
+#IF
+CHECKITEMW 終極★金樽※空對月
+#ACT
+INC N$切割倍数 900
+
+#IF
+CHECKITEMW 帝君卐中原◆終極审判の逐鹿盾
+#ACT
+INC N$切割倍数 1200
+
+#IF
+CHECKITEMW 金絲卐龍鱗◆君王斩天の中原盾
+#ACT
+INC N$切割倍数 1400
+
+
+
+#IF
+#ACT
+DIV N$总切割 100
+MUL N$总切割 N$切割倍数
+ADDBUTTON 74 18 169 169 169 0 400 0 　<$STR(N$总爆率)>%
+ADDBUTTON 74 19 170 170 170 0 425 0 　<$STR(N$总倍数)>%
+ADDBUTTON 74 20 171 171 171 0 450 0 　<$STR(N$总切割)>
+POWERRATE <$STR(N$总倍数)> 999999
+KILLMONBURSTRATE 20140220 20140221 <$STR(N$总爆率)> 20140223 20140224 20140225 20140226 65535 20140227 20140228
+SETRANKLEVELNAME %s\<$STR(S$人物基础封号)>\∞神力∶<$POWERRATE>倍攻击\<$STR(S$人物轮回显示)>\<$STR(S$人物斩杀封号)>\╰　　　　　　　　╯\
+
+
+
+}
