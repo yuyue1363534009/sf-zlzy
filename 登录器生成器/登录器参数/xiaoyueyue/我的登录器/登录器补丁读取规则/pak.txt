@@ -220,7 +220,17 @@ E:\热血传奇\zl666\Data\转生素材.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\连杀特效.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\雷劫.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\首饰特效.pak|军哥版本库jungebbk.com|0
-E:\热血传奇\zl666\Data\对话框888 - 副本.pak|gameofmir|0
+E:\热血传奇\zl666\Data\Objects161.Pak|xiaoyue|0
+E:\热血传奇\zl666\Data\Objects162.Pak|xiaoyue|0
+E:\热血传奇\zl666\Data\Objects163.Pak|xiaoyue|0
+E:\热血传奇\zl666\Data\Objects164.Pak|xiaoyue|0
+E:\热血传奇\zl666\Data\Objects165.Pak|xiaoyue|0
+E:\热血传奇\zl666\Data\smTiles116.Pak|xiaoyue|0
+E:\热血传奇\zl666\Data\smTiles117.Pak|xiaoyue|0
+E:\热血传奇\zl666\Data\SmTiles118.Pak|xiaoyue|0
+E:\热血传奇\zl666\Data\Tiles178.Pak|xiaoyue|0
+E:\热血传奇\zl666\Data\Tiles179.Pak|xiaoyue|0
+E:\热血传奇\zl666\Data\Tiles141.Pak|xiaoyue|0
 E:\热血传奇\zl666\Graphics\Human\1018.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Graphics\Human\1019.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Graphics\Human\1020.pak|军哥版本库jungebbk.com|0

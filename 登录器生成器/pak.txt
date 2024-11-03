@@ -371,6 +371,15 @@ E:\热血传奇\zl666\Graphics\Weapon\7099.pak|军哥版本库jungebbk.com
 E:\热血传奇\zl666\Graphics\Weapon\7100.pak|军哥版本库jungebbk.com
 E:\热血传奇\zl666\Graphics\Weapon\7101.pak|军哥版本库jungebbk.com
 E:\热血传奇\zl666\Graphics\Weapon\7102.pak|军哥版本库jungebbk.com
-E:\热血传奇\NewopUI.Pak|www.ruciwan.com
 E:\热血传奇\zl666\Data\NewopUI.Pak|www.ruciwan.com
-E:\热血传奇\zl666\Data\对话框888 - 副本.pak|gameofmir
+E:\热血传奇\zl666\Data\Objects161.Pak|xiaoyue
+E:\热血传奇\zl666\Data\Objects162.Pak|xiaoyue
+E:\热血传奇\zl666\Data\Objects163.Pak|xiaoyue
+E:\热血传奇\zl666\Data\Objects164.Pak|xiaoyue
+E:\热血传奇\zl666\Data\Objects165.Pak|xiaoyue
+E:\热血传奇\zl666\Data\smTiles116.Pak|xiaoyue
+E:\热血传奇\zl666\Data\smTiles117.Pak|xiaoyue
+E:\热血传奇\zl666\Data\SmTiles118.Pak|xiaoyue
+E:\热血传奇\zl666\Data\Tiles178.Pak|xiaoyue
+E:\热血传奇\zl666\Data\Tiles179.Pak|xiaoyue
+E:\热血传奇\zl666\Data\Tiles141.Pak|xiaoyue
