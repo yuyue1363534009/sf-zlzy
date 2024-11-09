@@ -1,1 +1,5 @@
-DBServer/
+.DBServer/*
+.LoginGate/*
+.LoginSrv/*
+.LogServer/*
+.RunGate/*
