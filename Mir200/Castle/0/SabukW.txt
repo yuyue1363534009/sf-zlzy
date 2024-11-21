@@ -1,11 +1,11 @@
 [Setup]
 CastleName=沙城
-ChangeDate=2024/10/27 14:50:39
-WarDate=2024/11/9 20:00:09
-IncomeToday=2024/11/10 0:00:09
+ChangeDate=2024/11/11 21:53:18
+WarDate=2024/11/21 20:00:04
+IncomeToday=2024/11/22 0:00:07
 TotalGold=500
 TodayIncome=500
-OwnGuild=
+OwnGuild=一生一世我爱你
 [Defense]
 CastleMapList=0151,0152,0153,0154,0155,0156,
 CastleMap=A3
@@ -162,7 +162,7 @@ Guard_8_Y=322
 Guard_8_Name=守卫
 Guard_8_HP=1000
 MainDoorOpen=1
-MainDoorHP=4144
-LeftWallHP=3139
-CenterWallHP=3139
-RightWallHP=3206
+MainDoorHP=2000
+LeftWallHP=2000
+CenterWallHP=2000
+RightWallHP=2000
