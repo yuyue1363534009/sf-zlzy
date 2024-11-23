@@ -385,11 +385,13 @@ E:\热血传奇\zl666\Graphics\Weapon\7101.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Graphics\Weapon\7102.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\特殊斗笠特效20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\特殊盾牌特效20241120.pak|xiaoyue
+E:\热血传奇\zl666\Data\特殊盾牌背包特效20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\特殊魂珠特效20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\特殊灵符特效20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\特殊血石特效20241120.Pak|xiaoyue
 E:\热血传奇\zl666\Data\特殊勋章特效20241120.Pak|xiaoyue
 E:\热血传奇\zl666\Data\特殊雨伞特效20241120.Pak|xiaoyue
 E:\热血传奇\zl666\Data\特殊战斧特效20241120.Pak|xiaoyue
+E:\热血传奇\zl666\Data\特殊天书特效20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\DnItems6.Pak|xiaoyue
 E:\热血传奇\zl666\Data\Items6.Pak|xiaoyue

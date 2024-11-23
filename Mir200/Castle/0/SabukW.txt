@@ -1,8 +1,8 @@
 [Setup]
 CastleName=沙城
 ChangeDate=2024/11/11 21:53:18
-WarDate=2024/11/21 20:00:04
-IncomeToday=2024/11/22 0:00:07
+WarDate=2024/11/22 20:00:05
+IncomeToday=2024/11/23 0:00:09
 TotalGold=500
 TodayIncome=500
 OwnGuild=一生一世我爱你
