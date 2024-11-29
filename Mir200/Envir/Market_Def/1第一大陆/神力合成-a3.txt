@@ -7,13 +7,13 @@ OPENMERCHANTBIGDLG 74 486 0 4 0 0 1 537 8
 \ \ \ \
 <           /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
 <         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><《魂石》龍血◆戰神ゞ天闕/SCOLOR=254>    <需要/SCOLOR=70>    <10W元宝购买/SCOLOR=250>                 <点击合成|253#特殊属性：^-^250#全身攻击1.1倍/@001>\
-<         /AUTOCOLOR=0><《魂石》刀劍◆神皇ゞ莫邪/SCOLOR=254>    <需要/SCOLOR=70>    <1.1倍神力神器*1+20w元宝/SCOLOR=250>     <点击合成|253#特殊属性：^-^250#全身攻击1.2倍/@002>\
-<         /AUTOCOLOR=0><《魂石》真靈◆九變ゞ奧義/SCOLOR=254>    <需要/SCOLOR=70>    <1.2倍神力神器*1+30w元宝/SCOLOR=250>     <点击合成|253#特殊属性：^-^250#全身攻击1.3倍/@003>\
-<         /AUTOCOLOR=0><《魂石》龍王◆無雙ゞ終極/SCOLOR=254>    <需要/SCOLOR=70>    <1.3倍神力神器*1+50w元宝/SCOLOR=250>     <点击合成|253#特殊属性：^-^250#全身攻击1.4倍/@004>\
-<         /AUTOCOLOR=0><《魂石》金絲◆龍鱗ゞ君王/SCOLOR=254>    <需要/SCOLOR=70>    <1.4倍神力神器*1+80w元宝/SCOLOR=250>     <点击合成|253#特殊属性：^-^250#全身攻击1.6倍/@005>\
-<         /AUTOCOLOR=0><《魂石》赤心◆巡天ゞ逍遥/SCOLOR=254>    <需要/SCOLOR=70>    <1.6倍神力神器*1+100w元宝/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身攻击1.8倍/@006>\
-<         /AUTOCOLOR=0><《魂石》天刀◆无疆ゞ昊天/SCOLOR=254>    <需要/SCOLOR=70>    <1.8倍神力神器*1+300w元宝/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身攻击2.0倍/@007>\
+<         /AUTOCOLOR=0><《魔伞》龍血◆戰神ゞ天闕/SCOLOR=254>    <需要/SCOLOR=70>    <10W元宝购买/SCOLOR=250>                 <点击合成|253#特殊属性：^-^250#全身攻击1.1倍/@001>\
+<         /AUTOCOLOR=0><《魔伞》刀劍◆神皇ゞ莫邪/SCOLOR=254>    <需要/SCOLOR=70>    <1.1倍神力神器*1+20w元宝/SCOLOR=250>     <点击合成|253#特殊属性：^-^250#全身攻击1.2倍/@002>\
+<         /AUTOCOLOR=0><《魔伞》真靈◆九變ゞ奧義/SCOLOR=254>    <需要/SCOLOR=70>    <1.2倍神力神器*1+30w元宝/SCOLOR=250>     <点击合成|253#特殊属性：^-^250#全身攻击1.3倍/@003>\
+<         /AUTOCOLOR=0><《魔伞》龍王◆無雙ゞ終極/SCOLOR=254>    <需要/SCOLOR=70>    <1.3倍神力神器*1+50w元宝/SCOLOR=250>     <点击合成|253#特殊属性：^-^250#全身攻击1.4倍/@004>\
+<         /AUTOCOLOR=0><《魔伞》金絲◆龍鱗ゞ君王/SCOLOR=254>    <需要/SCOLOR=70>    <1.4倍神力神器*1+80w元宝/SCOLOR=250>     <点击合成|253#特殊属性：^-^250#全身攻击1.6倍/@005>\
+<         /AUTOCOLOR=0><《魔伞》赤心◆巡天ゞ逍遥/SCOLOR=254>    <需要/SCOLOR=70>    <1.6倍神力神器*1+100w元宝/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身攻击1.8倍/@006>\
+<         /AUTOCOLOR=0><《魔伞》天刀◆无疆ゞ昊天/SCOLOR=254>    <需要/SCOLOR=70>    <1.8倍神力神器*1+300w元宝/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身攻击2.0倍/@007>\
 <         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
 <         /AUTOCOLOR=0><提示声明：本服为长久服，所有装备全部靠爆出，只要脸好一切可逆袭！/SCOLOR=249>
 
@@ -30,8 +30,8 @@ BREAK
 CHECKGAMEGOLD > 99999
 #ACT
 GAMEGOLD - 100000
-GIVE 《魂石》龍血◆戰神ゞ天闕 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『《魂石》龍血◆戰神ゞ天闕』！ 0 5
+GIVE 《魔伞》龍血◆戰神ゞ天闕 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『《魔伞》龍血◆戰神ゞ天闕』！ 0 5
 BREAK
 
 
@@ -43,18 +43,18 @@ MESSAGEBOX 你元宝不足[200000]点！
 BREAK
 
 #IF
-NOT CHECKITEM 《魂石》龍血◆戰神ゞ天闕 1
+NOT CHECKITEM 《魔伞》龍血◆戰神ゞ天闕 1
 #ACT
-MESSAGEBOX 你身上缺少【《魂石》龍血◆戰神ゞ天闕*1】。无法合成！！
+MESSAGEBOX 你身上缺少【《魔伞》龍血◆戰神ゞ天闕*1】。无法合成！！
 BREAK
 
 #IF
-CHECKITEM 《魂石》龍血◆戰神ゞ天闕 1
+CHECKITEM 《魔伞》龍血◆戰神ゞ天闕 1
 #ACT
 GAMEGOLD - 200000
-TAKE 《魂石》龍血◆戰神ゞ天闕 1
-GIVE 《魂石》刀劍◆神皇ゞ莫邪 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『《魂石》刀劍◆神皇ゞ莫邪』！ 0 5
+TAKE 《魔伞》龍血◆戰神ゞ天闕 1
+GIVE 《魔伞》刀劍◆神皇ゞ莫邪 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『《魔伞》刀劍◆神皇ゞ莫邪』！ 0 5
 BREAK
 
 
@@ -69,18 +69,18 @@ MESSAGEBOX 你元宝不足[300000]点！
 BREAK
 
 #IF
-NOT CHECKITEM 《魂石》刀劍◆神皇ゞ莫邪 1
+NOT CHECKITEM 《魔伞》刀劍◆神皇ゞ莫邪 1
 #ACT
-MESSAGEBOX 你身上缺少【《魂石》刀劍◆神皇ゞ莫邪*1】。无法合成！！
+MESSAGEBOX 你身上缺少【《魔伞》刀劍◆神皇ゞ莫邪*1】。无法合成！！
 BREAK
 
 #IF
-CHECKITEM 《魂石》刀劍◆神皇ゞ莫邪 1
+CHECKITEM 《魔伞》刀劍◆神皇ゞ莫邪 1
 #ACT
 GAMEGOLD - 300000
-TAKE 《魂石》刀劍◆神皇ゞ莫邪 1
-GIVE 《魂石》真靈◆九變ゞ奧義 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『《魂石》真靈◆九變ゞ奧義』！ 0 5
+TAKE 《魔伞》刀劍◆神皇ゞ莫邪 1
+GIVE 《魔伞》真靈◆九變ゞ奧義 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『《魔伞》真靈◆九變ゞ奧義』！ 0 5
 BREAK
 
 
@@ -94,18 +94,18 @@ MESSAGEBOX 你元宝不足[500000]点！
 BREAK
 
 #IF
-NOT CHECKITEM 《魂石》真靈◆九變ゞ奧義 1
+NOT CHECKITEM 《魔伞》真靈◆九變ゞ奧義 1
 #ACT
-MESSAGEBOX 你身上缺少【《魂石》真靈◆九變ゞ奧義*1】。无法合成！！
+MESSAGEBOX 你身上缺少【《魔伞》真靈◆九變ゞ奧義*1】。无法合成！！
 BREAK
 
 #IF
-CHECKITEM 《魂石》真靈◆九變ゞ奧義 1
+CHECKITEM 《魔伞》真靈◆九變ゞ奧義 1
 #ACT
 GAMEGOLD - 500000
-TAKE 《魂石》真靈◆九變ゞ奧義 1
-GIVE 《魂石》龍王◆無雙ゞ終極 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『《魂石》龍王◆無雙ゞ終極』！ 0 5
+TAKE 《魔伞》真靈◆九變ゞ奧義 1
+GIVE 《魔伞》龍王◆無雙ゞ終極 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『《魔伞》龍王◆無雙ゞ終極』！ 0 5
 BREAK
 
 
@@ -119,18 +119,18 @@ MESSAGEBOX 你元宝不足[800000]点！
 BREAK
 
 #IF
-NOT CHECKITEM 《魂石》龍王◆無雙ゞ終極 1
+NOT CHECKITEM 《魔伞》龍王◆無雙ゞ終極 1
 #ACT
-MESSAGEBOX 你身上缺少【《魂石》龍王◆無雙ゞ終極*1】。无法合成！！
+MESSAGEBOX 你身上缺少【《魔伞》龍王◆無雙ゞ終極*1】。无法合成！！
 BREAK
 
 #IF
-CHECKITEM 《魂石》龍王◆無雙ゞ終極 1
+CHECKITEM 《魔伞》龍王◆無雙ゞ終極 1
 #ACT
 GAMEGOLD - 800000
-TAKE 《魂石》龍王◆無雙ゞ終極 1
-GIVE 《魂石》金絲◆龍鱗ゞ君王 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『《魂石》金絲◆龍鱗ゞ君王』！ 0 5
+TAKE 《魔伞》龍王◆無雙ゞ終極 1
+GIVE 《魔伞》金絲◆龍鱗ゞ君王 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『《魔伞》金絲◆龍鱗ゞ君王』！ 0 5
 BREAK
 
 
@@ -145,18 +145,18 @@ MESSAGEBOX 你元宝不足[1000000]点！
 BREAK
 
 #IF
-NOT CHECKITEM 《魂石》金絲◆龍鱗ゞ君王 1
+NOT CHECKITEM 《魔伞》金絲◆龍鱗ゞ君王 1
 #ACT
-MESSAGEBOX 你身上缺少【《魂石》金絲◆龍鱗ゞ君王*1】。无法合成！！
+MESSAGEBOX 你身上缺少【《魔伞》金絲◆龍鱗ゞ君王*1】。无法合成！！
 BREAK
 
 #IF
-CHECKITEM 《魂石》金絲◆龍鱗ゞ君王 1
+CHECKITEM 《魔伞》金絲◆龍鱗ゞ君王 1
 #ACT
 GAMEGOLD - 1000000
-TAKE 《魂石》金絲◆龍鱗ゞ君王 1
-GIVE 《魂石》赤心◆巡天ゞ逍遥 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『《魂石》赤心◆巡天ゞ逍遥』！ 0 5
+TAKE 《魔伞》金絲◆龍鱗ゞ君王 1
+GIVE 《魔伞》赤心◆巡天ゞ逍遥 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『《魔伞》赤心◆巡天ゞ逍遥』！ 0 5
 BREAK
 
 
@@ -170,18 +170,18 @@ MESSAGEBOX 你元宝不足[3000000]点！
 BREAK
 
 #IF
-NOT CHECKITEM 《魂石》赤心◆巡天ゞ逍遥 1
+NOT CHECKITEM 《魔伞》赤心◆巡天ゞ逍遥 1
 #ACT
-MESSAGEBOX 你身上缺少【《魂石》赤心◆巡天ゞ逍遥*1】。无法合成！！
+MESSAGEBOX 你身上缺少【《魔伞》赤心◆巡天ゞ逍遥*1】。无法合成！！
 BREAK
 
 #IF
-CHECKITEM 《魂石》赤心◆巡天ゞ逍遥 1
+CHECKITEM 《魔伞》赤心◆巡天ゞ逍遥 1
 #ACT
 GAMEGOLD - 3000000
-TAKE 《魂石》赤心◆巡天ゞ逍遥 1
-GIVE 《魂石》天刀◆无疆ゞ昊天 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『《魂石》天刀◆无疆ゞ昊天』！ 0 5
+TAKE 《魔伞》赤心◆巡天ゞ逍遥 1
+GIVE 《魔伞》天刀◆无疆ゞ昊天 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『《魔伞》天刀◆无疆ゞ昊天』！ 0 5
 BREAK
 
 

@@ -1708,7 +1708,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 逐鹿★斗笠※【一品】 100 1000 0 0 0 N1 0
+TAKEBagItem 乱世逐鹿★斗笠※【一品】 100 1000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1718,7 +1718,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 逐鹿★斗笠※【二品】 100 3000 0 0 0 N1 0
+TAKEBagItem 乱世逐鹿★斗笠※【二品】 100 3000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1728,7 +1728,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 逐鹿★斗笠※【三品】 100 5000 0 0 0 N1 0
+TAKEBagItem 乱世逐鹿★斗笠※【三品】 100 5000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1738,7 +1738,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 逐鹿★斗笠※【四品】 100 7000 0 0 0 N1 0
+TAKEBagItem 乱世逐鹿★斗笠※【四品】 100 7000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1748,7 +1748,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 逐鹿★斗笠※【五品】 100 10000 0 0 0 N1 0
+TAKEBagItem 乱世逐鹿★斗笠※【五品】 100 10000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1758,7 +1758,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 逐鹿★斗笠※【六品】 100 15000 0 0 0 N1 0
+TAKEBagItem 乱世逐鹿★斗笠※【六品】 100 15000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1768,7 +1768,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 逐鹿★斗笠※【七品】 100 20000 0 0 0 N1 0
+TAKEBagItem 乱世逐鹿★斗笠※【七品】 100 20000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1778,7 +1778,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 逐鹿★斗笠※【八品】 100 30000 0 0 0 N1 0
+TAKEBagItem 乱世逐鹿★斗笠※【八品】 100 30000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1788,7 +1788,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 逐鹿★斗笠※【九品】 100 50000 0 0 0 N1 0
+TAKEBagItem 乱世逐鹿★斗笠※【九品】 100 50000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1821,7 +1821,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 《天符》魔神灬之隕ゞ聖渊 100 20000 0 0 0 N1 0
+TAKEBagItem 《战斧》魔神灬之隕ゞ聖渊 100 20000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1831,7 +1831,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 《天符》神雷灬天裁ゞ涅槃 100 50000 0 0 0 N1 0
+TAKEBagItem 《战斧》神雷灬天裁ゞ涅槃 100 50000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1841,7 +1841,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 《天符》龍血灬戰神ゞ天闕 100 80000 0 0 0 N1 0
+TAKEBagItem 《战斧》龍血灬戰神ゞ天闕 100 80000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1851,7 +1851,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 《天符》刀劍灬神皇ゞ莫邪 100 100000 0 0 0 N1 0
+TAKEBagItem 《战斧》刀劍灬神皇ゞ莫邪 100 100000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1861,7 +1861,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 《天符》真靈灬九變ゞ奧義 100 300000 0 0 0 N1 0
+TAKEBagItem 《战斧》真靈灬九變ゞ奧義 100 300000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1872,7 +1872,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 《天符》龍王灬無雙ゞ終極 100 500000 0 0 0 N1 0
+TAKEBagItem 《战斧》龍王灬無雙ゞ終極 100 500000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1882,7 +1882,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 《天符》金絲灬龍鱗ゞ君王 100 600000 0 0 0 N1 0
+TAKEBagItem 《战斧》金絲灬龍鱗ゞ君王 100 600000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1892,7 +1892,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 《天符》赤心灬巡天ゞ逍遥 100 700000 0 0 0 N1 0
+TAKEBagItem 《战斧》赤心灬巡天ゞ逍遥 100 700000 0 0 0 N1 0
 
 #IF
 LARGE N1 0
@@ -1902,7 +1902,7 @@ SENDMSG 0 玩家回收了[<$STR(N1)>]件装备.获得[<$STR(N$回收元宝)>]元宝.
 
 #IF
 #ACT
-TAKEBagItem 《天符》天刀灬无疆ゞ昊天 100 800000 0 0 0 N1 0
+TAKEBagItem 《战斧》天刀灬无疆ゞ昊天 100 800000 0 0 0 N1 0
 
 #IF
 LARGE N1 0

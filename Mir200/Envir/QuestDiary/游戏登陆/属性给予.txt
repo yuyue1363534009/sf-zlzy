@@ -463,67 +463,67 @@ MOV S$人物轮回显示 『转生：20转轮回』
 
 
 #IF
-CHECKITEMW 尚武★真英雄※【一品】
+CHECKITEMW 真英雄※章【一品】
 #ACT
 MOV N$勋章倍数 5
 
 #IF
-CHECKITEMW 山河★風飄絮※【二品】
+CHECKITEMW 風飄絮※章【二品】
 #ACT
 MOV N$勋章倍数 10
 
 #IF
-CHECKITEMW 滿城★黃金甲※【三品】
+CHECKITEMW 黃金甲※章【三品】
 #ACT
 MOV N$勋章倍数 15
 
 #IF
-CHECKITEMW 碧血★猶無悔※【四品】
+CHECKITEMW 猶無悔※章【四品】
 #ACT
 MOV N$勋章倍数 20
 
 #IF
-CHECKITEMW 我命★不由天※【五品】
+CHECKITEMW 不由天※章【五品】
 #ACT
 MOV N$勋章倍数 25
 
 #IF
-CHECKITEMW 殺盡★負我人※【六品】
+CHECKITEMW 負我人※章【六品】
 #ACT
 MOV N$勋章倍数 30
 
 #IF
-CHECKITEMW 橫刀★向天笑※【七品】
+CHECKITEMW 向天笑※章【七品】
 #ACT
 MOV N$勋章倍数 35
 
 #IF
-CHECKITEMW 雲霄★齊飛楊※【八品】
+CHECKITEMW 齊飛楊※章【八品】
 #ACT
 MOV N$勋章倍数 40
 
 #IF
-CHECKITEMW 天龍★震四方※【九品】
+CHECKITEMW 震四方※章【九品】
 #ACT
 MOV N$勋章倍数 45
 
 #IF
-CHECKITEMW 戮弒★神王命※【十品】
+CHECKITEMW 神王命※章【十品】
 #ACT
 MOV N$勋章倍数 50
 
 #IF
-CHECKITEMW 雪吟★山河盡※【無雙】
+CHECKITEMW 山河盡※章【逐鹿】
 #ACT
 MOV N$勋章倍数 60
 
 #IF
-CHECKITEMW 「圣卐章」風卷残雲·雄霸兲下
+CHECKITEMW 風卷·雄霸兲下「尊卐章」
 #ACT
 MOV N$勋章倍数 80
 
 #IF
-CHECKITEMW 卧榻之侧の岂容他人酣睡·圣章
+CHECKITEMW 魑魅魍魉の卧榻「圣卐章」
 #ACT
 MOV N$勋章倍数 100
 
