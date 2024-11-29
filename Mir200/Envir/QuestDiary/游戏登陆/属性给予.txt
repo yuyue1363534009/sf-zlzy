@@ -282,17 +282,17 @@ MOV N$盾牌爆率 50
 
 
 #IF
-CHECKITEMW 逐『王』鹿※戟★ 
+CHECKITEMW 乱『王』世※戟★ 
 #ACT
 MOV N$遮天爆率 50
 
 #IF
-CHECKITEMW 逐『王』鹿※戟★★★ 
+CHECKITEMW 乱『王』世※戟★★★ 
 #ACT
 MOV N$遮天爆率 100
 
 #IF
-CHECKITEMW 逐『王』鹿※戟★★★★★
+CHECKITEMW 乱『王』世※戟★★★★★
 #ACT
 MOV N$遮天爆率 200
 
