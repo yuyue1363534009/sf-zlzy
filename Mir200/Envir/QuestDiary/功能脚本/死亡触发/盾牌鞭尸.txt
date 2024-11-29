@@ -12,12 +12,12 @@ MOV M90 0
 
 
 #IF
-CHECKITEMW 帝君卐中原◆終極审判の逐鹿盾 1
+CHECKITEMW [王◆器]·皇图霸业ヾ暴力盾·杀 1
 #ACT
 MOV M90 20
 
 #IF
-CHECKITEMW 金絲卐龍鱗◆君王斩天の中原盾 1
+CHECKITEMW [聖◆器]·逐鹿中原ヾ逆天盾·斩 1
 #ACT
 MOV M90 20
 

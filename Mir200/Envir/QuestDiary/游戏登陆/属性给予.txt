@@ -270,12 +270,12 @@ INC N$称号爆率 100
 
 
 #IF
-CHECKITEMW 帝君卐中原◆終極审判の逐鹿盾
+CHECKITEMW [王◆器]·皇图霸业ヾ暴力盾·杀
 #ACT
 MOV N$盾牌爆率 20
 
 #IF
-CHECKITEMW 金絲卐龍鱗◆君王斩天の中原盾
+CHECKITEMW [聖◆器]·逐鹿中原ヾ逆天盾·斩
 #ACT
 MOV N$盾牌爆率 50
 
@@ -563,57 +563,57 @@ INC N$总倍数 <$STR(N$称号倍数)>
 
 
 #IF
-CHECKITEMW 帝炎★丹心※照汗青
+CHECKITEMW [行じ器]·群雄争霸ヾ中原盾
 #ACT
 INC N$切割倍数 50
 
 #IF
-CHECKITEMW 霸絕★羅網※鎖蒼穹
+CHECKITEMW [毒じ器]·决战云巅ヾ超越盾
 #ACT
 INC N$切割倍数 100
 
 #IF
-CHECKITEMW 龍嘯★龍氣※憾九天
+CHECKITEMW [帝じ器]·琼华紫金ヾ傲天盾
 #ACT
 INC N$切割倍数 150
 
 #IF
-CHECKITEMW 聖渊★鬼泣※驚天地
+CHECKITEMW [神じ器]·霸世金典ヾ伏羲盾
 #ACT
 INC N$切割倍数 200
 
 #IF
-CHECKITEMW 涅槃★神龍※數撚塵
+CHECKITEMW [魔じ器]·九死生杀ヾ彩云盾
 #ACT
 INC N$切割倍数 300
 
 #IF
-CHECKITEMW 天闕★浪淘※自天涯
+CHECKITEMW [仙じ器]·一手遮天ヾ风火盾
 #ACT
 INC N$切割倍数 400
 
 #IF
-CHECKITEMW 莫邪★帝矗※戟指天
+CHECKITEMW [天じ器]·无敌盖世ヾ天地盾
 #ACT
 INC N$切割倍数 500
 
 #IF
-CHECKITEMW 奧義★霸殤※宇等閑
+CHECKITEMW [地じ器]·雄霸天下ヾ绝世盾
 #ACT
 INC N$切割倍数 700
 
 #IF
-CHECKITEMW 終極★金樽※空對月
+CHECKITEMW [乱じ器]·傲视群雄ヾ绝顶盾
 #ACT
 INC N$切割倍数 900
 
 #IF
-CHECKITEMW 帝君卐中原◆終極审判の逐鹿盾
+CHECKITEMW [王◆器]·皇图霸业ヾ暴力盾·杀
 #ACT
 INC N$切割倍数 1200
 
 #IF
-CHECKITEMW 金絲卐龍鱗◆君王斩天の中原盾
+CHECKITEMW [聖◆器]·逐鹿中原ヾ逆天盾·斩
 #ACT
 INC N$切割倍数 1400
 

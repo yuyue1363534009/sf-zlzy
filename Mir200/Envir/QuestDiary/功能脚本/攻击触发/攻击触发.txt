@@ -408,7 +408,7 @@ SENDMSG 6 你的武器附带BUFF攻了【<$CURRRTARGETNAME>】，怪物掉血【1.20E】
 
 #IF
 RANDOMEx 5 100
-CHECKITEMW 帝君卐中原◆終極审判の逐鹿盾  1
+CHECKITEMW [王◆器]·皇图霸业ヾ暴力盾·杀  1
 #ACT
 MOV N$掉血百分比 2
 GOTO @盾牌几率触发A
@@ -416,7 +416,7 @@ BREAK
 
 #IF
 RANDOMEx 5 100
-CHECKITEMW 金絲卐龍鱗◆君王斩天の中原盾 1
+CHECKITEMW [聖◆器]·逐鹿中原ヾ逆天盾·斩 1
 #ACT
 MOV N$掉血百分比 5
 GOTO @盾牌几率触发A

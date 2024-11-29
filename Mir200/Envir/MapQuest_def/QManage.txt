@@ -102,52 +102,52 @@ SENDMSG 7 你等级已达到150级，系统已自动帮你解除禁言！
 
 [@OnTimer19]
 #IF
-CHECKITEMW 霸絕★羅網※鎖蒼穹
+CHECKITEMW [毒じ器]·决战云巅ヾ超越盾
 #ACT
 ADDHPPER + 2
 SENDMSG 6 盾牌单件触发HP每15秒回血<2%>生命值！！！~~~~~~
 #IF
-CHECKITEMW 龍嘯★龍氣※憾九天
+CHECKITEMW [帝じ器]·琼华紫金ヾ傲天盾
 #ACT
 ADDHPPER + 4
 SENDMSG 6 盾牌单件触发HP每15秒回血<4%>生命值！！！~~~~~~
 #IF
-CHECKITEMW 聖渊★鬼泣※驚天地
+CHECKITEMW [神じ器]·霸世金典ヾ伏羲盾
 #ACT
 ADDHPPER + 6
 SENDMSG 6 盾牌单件触发HP每15秒回血<6%>生命值！！！~~~~~~
 #IF
-CHECKITEMW 涅槃★神龍※數撚塵
+CHECKITEMW [魔じ器]·九死生杀ヾ彩云盾
 #ACT
 ADDHPPER + 8
 SENDMSG 6 盾牌单件触发HP每15秒回血<8%>生命值！！！~~~~~~
 #IF
-CHECKITEMW 天闕★浪淘※自天涯
+CHECKITEMW [仙じ器]·一手遮天ヾ风火盾
 #ACT
 ADDHPPER + 10
 SENDMSG 6 盾牌单件触发HP每15秒回血<10%>生命值！！！~~~~~~
 #IF
-CHECKITEMW 莫邪★帝矗※戟指天
+CHECKITEMW [天じ器]·无敌盖世ヾ天地盾
 #ACT
 ADDHPPER + 12
 SENDMSG 6 盾牌单件触发HP每15秒回血<12%>生命值！！！~~~~~~
 #IF
-CHECKITEMW 奧義★霸殤※宇等閑
+CHECKITEMW [地じ器]·雄霸天下ヾ绝世盾
 #ACT
 ADDHPPER + 14
 SENDMSG 6 盾牌单件触发HP每15秒回血<14%>生命值！！！~~~~~~
 #IF
-CHECKITEMW 終極★金樽※空對月
+CHECKITEMW [乱じ器]·傲视群雄ヾ绝顶盾
 #ACT
 ADDHPPER + 16
 SENDMSG 6 盾牌单件触发HP每15秒回血<16%>生命值！！！~~~~~~
 #IF
-CHECKITEMW 帝君卐中原◆終極审判の逐鹿盾
+CHECKITEMW [王◆器]·皇图霸业ヾ暴力盾·杀
 #ACT
 ADDHPPER + 18
 SENDMSG 6 盾牌单件触发HP每15秒回血<18%>生命值！！！~~~~~~
 #IF
-CHECKITEMW 金絲卐龍鱗◆君王斩天の中原盾
+CHECKITEMW [聖◆器]·逐鹿中原ヾ逆天盾·斩
 #ACT
 ADDHPPER + 20
 SENDMSG 6 盾牌单件触发HP每15秒回血<20%>生命值！！！~~~~~~
