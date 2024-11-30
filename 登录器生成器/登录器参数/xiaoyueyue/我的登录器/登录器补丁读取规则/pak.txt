@@ -396,3 +396,4 @@ E:\热血传奇\zl666\Data\特殊天书特效20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\特殊生肖特效20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\DnItems6.Pak|xiaoyue
 E:\热血传奇\zl666\Data\Items6.Pak|xiaoyue
+E:\热血传奇\zl666\Data\装备悬浮框特效20241120.pak|xiaoyue
