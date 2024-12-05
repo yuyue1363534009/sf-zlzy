@@ -270,12 +270,12 @@ INC N$称号爆率 100
 
 
 #IF
-CHECKITEMW [王◆器]·皇图霸业ヾ暴力盾·杀
+CHECKITEMW 《乱世逐鹿》「殺」卐盾
 #ACT
 MOV N$盾牌爆率 20
 
 #IF
-CHECKITEMW [聖◆器]·逐鹿中原ヾ逆天盾·斩
+CHECKITEMW 【堅如磐石】埋骨何须桑梓地★盾
 #ACT
 MOV N$盾牌爆率 50
 
@@ -463,67 +463,67 @@ MOV S$人物轮回显示 『转生：20转轮回』
 
 
 #IF
-CHECKITEMW 真英雄※章【一品】
+CHECKITEMW 〈群雄争霸〉Lv1ゞ章
 #ACT
 MOV N$勋章倍数 5
 
 #IF
-CHECKITEMW 風飄絮※章【二品】
+CHECKITEMW 〈决战云巅〉Lv2ゞ章
 #ACT
 MOV N$勋章倍数 10
 
 #IF
-CHECKITEMW 黃金甲※章【三品】
+CHECKITEMW 〈琼华紫金〉Lv3ゞ章
 #ACT
 MOV N$勋章倍数 15
 
 #IF
-CHECKITEMW 猶無悔※章【四品】
+CHECKITEMW 〈霸世金典〉Lv4ゞ章
 #ACT
 MOV N$勋章倍数 20
 
 #IF
-CHECKITEMW 不由天※章【五品】
+CHECKITEMW 〈九死生杀〉Lv5ゞ章
 #ACT
 MOV N$勋章倍数 25
 
 #IF
-CHECKITEMW 負我人※章【六品】
+CHECKITEMW 〈一手遮天〉Lv6ゞ章
 #ACT
 MOV N$勋章倍数 30
 
 #IF
-CHECKITEMW 向天笑※章【七品】
+CHECKITEMW 〈无敌盖世〉Lv7ゞ章
 #ACT
 MOV N$勋章倍数 35
 
 #IF
-CHECKITEMW 齊飛楊※章【八品】
+CHECKITEMW 〈雄霸天下〉Lv8ゞ章
 #ACT
 MOV N$勋章倍数 40
 
 #IF
-CHECKITEMW 震四方※章【九品】
+CHECKITEMW 〈傲视群雄〉Lv9ゞ章
 #ACT
 MOV N$勋章倍数 45
 
 #IF
-CHECKITEMW 神王命※章【十品】
+CHECKITEMW 〈皇图霸业〉Lv10ゞ章
 #ACT
 MOV N$勋章倍数 50
 
 #IF
-CHECKITEMW 山河盡※章【逐鹿】
+CHECKITEMW 〈魑魅魍魉〉「尊」卐章
 #ACT
 MOV N$勋章倍数 60
 
 #IF
-CHECKITEMW 風卷·雄霸兲下「尊卐章」
+CHECKITEMW 《拳拳到肉》「圣」卐章
 #ACT
 MOV N$勋章倍数 80
 
 #IF
-CHECKITEMW 魑魅魍魉の卧榻「圣卐章」
+CHECKITEMW 【不講武德】古来征战几人回★章
 #ACT
 MOV N$勋章倍数 100
 
@@ -563,57 +563,57 @@ INC N$总倍数 <$STR(N$称号倍数)>
 
 
 #IF
-CHECKITEMW [行じ器]·群雄争霸ヾ中原盾
+CHECKITEMW 〈神威亢天〉Lv1ヾ盾
 #ACT
 INC N$切割倍数 50
 
 #IF
-CHECKITEMW [毒じ器]·决战云巅ヾ超越盾
+CHECKITEMW 〈魔神之隕〉Lv2ヾ盾
 #ACT
 INC N$切割倍数 100
 
 #IF
-CHECKITEMW [帝じ器]·琼华紫金ヾ傲天盾
+CHECKITEMW 〈神雷天裁〉Lv3ヾ盾
 #ACT
 INC N$切割倍数 150
 
 #IF
-CHECKITEMW [神じ器]·霸世金典ヾ伏羲盾
+CHECKITEMW 〈龍血戰神〉Lv4ヾ盾
 #ACT
 INC N$切割倍数 200
 
 #IF
-CHECKITEMW [魔じ器]·九死生杀ヾ彩云盾
+CHECKITEMW 〈刀劍神皇〉Lv5ヾ盾
 #ACT
 INC N$切割倍数 300
 
 #IF
-CHECKITEMW [仙じ器]·一手遮天ヾ风火盾
+CHECKITEMW 〈真靈九變〉Lv6ヾ盾
 #ACT
 INC N$切割倍数 400
 
 #IF
-CHECKITEMW [天じ器]·无敌盖世ヾ天地盾
+CHECKITEMW 〈龍王無雙〉Lv7ヾ盾
 #ACT
 INC N$切割倍数 500
 
 #IF
-CHECKITEMW [地じ器]·雄霸天下ヾ绝世盾
+CHECKITEMW 〈金絲龍鱗〉Lv8ヾ盾
 #ACT
 INC N$切割倍数 700
 
 #IF
-CHECKITEMW [乱じ器]·傲视群雄ヾ绝顶盾
+CHECKITEMW 〈赤心巡天〉Lv9ヾ盾
 #ACT
 INC N$切割倍数 900
 
 #IF
-CHECKITEMW [王◆器]·皇图霸业ヾ暴力盾·杀
+CHECKITEMW 《乱世逐鹿》「殺」卐盾
 #ACT
 INC N$切割倍数 1200
 
 #IF
-CHECKITEMW [聖◆器]·逐鹿中原ヾ逆天盾·斩
+CHECKITEMW 【堅如磐石】埋骨何须桑梓地★盾
 #ACT
 INC N$切割倍数 1400
 

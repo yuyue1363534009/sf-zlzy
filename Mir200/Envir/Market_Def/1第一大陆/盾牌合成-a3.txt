@@ -45,16 +45,16 @@ OPENMERCHANTBIGDLG 74 535 0 4 0 0 1 537 8
 \ \ \ \
 <           /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
 <         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><[毒じ器]·决战云巅ヾ超越盾/SCOLOR=254>    <需要/SCOLOR=70>    <1万逐鹿币 +[行じ器]·群雄争霸ヾ中原盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值2.0倍/@003>\
-<         /AUTOCOLOR=0><[帝じ器]·琼华紫金ヾ傲天盾/SCOLOR=254>    <需要/SCOLOR=70>    <2万逐鹿币 +[毒じ器]·决战云巅ヾ超越盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值2.5倍/@004>\
-<         /AUTOCOLOR=0><[神じ器]·霸世金典ヾ伏羲盾/SCOLOR=254>    <需要/SCOLOR=70>    <3万逐鹿币 +[帝じ器]·琼华紫金ヾ傲天盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值3.0倍/@005>\
-<         /AUTOCOLOR=0><[魔じ器]·九死生杀ヾ彩云盾/SCOLOR=254>    <需要/SCOLOR=70>    <4万逐鹿币 +[神じ器]·霸世金典ヾ伏羲盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值4.0倍/@006>\
-<         /AUTOCOLOR=0><[仙じ器]·一手遮天ヾ风火盾/SCOLOR=254>    <需要/SCOLOR=70>    <5万逐鹿币 +[魔じ器]·九死生杀ヾ彩云盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值5.0倍/@007>\
-<         /AUTOCOLOR=0><[天じ器]·无敌盖世ヾ天地盾/SCOLOR=254>    <需要/SCOLOR=70>    <8万逐鹿币 +[仙じ器]·一手遮天ヾ风火盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值6.0倍/@008>\
-<         /AUTOCOLOR=0><[地じ器]·雄霸天下ヾ绝世盾/SCOLOR=254>    <需要/SCOLOR=70>    <10万逐鹿币+[天じ器]·无敌盖世ヾ天地盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值8.0倍/@009>\
-<         /AUTOCOLOR=0><[乱じ器]·傲视群雄ヾ绝顶盾/SCOLOR=254>    <需要/SCOLOR=70>    <20万逐鹿币+[地じ器]·雄霸天下ヾ绝世盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值10.0倍/@010>\
+<         /AUTOCOLOR=0><〈魔神之隕〉Lv2ヾ盾/SCOLOR=254>    <需要/SCOLOR=70>    <1万逐鹿币 +〈神威亢天〉Lv1ヾ盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值2.0倍/@003>\
+<         /AUTOCOLOR=0><〈神雷天裁〉Lv3ヾ盾/SCOLOR=254>    <需要/SCOLOR=70>    <2万逐鹿币 +〈魔神之隕〉Lv2ヾ盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值2.5倍/@004>\
+<         /AUTOCOLOR=0><〈龍血戰神〉Lv4ヾ盾/SCOLOR=254>    <需要/SCOLOR=70>    <3万逐鹿币 +〈神雷天裁〉Lv3ヾ盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值3.0倍/@005>\
+<         /AUTOCOLOR=0><〈刀劍神皇〉Lv5ヾ盾/SCOLOR=254>    <需要/SCOLOR=70>    <4万逐鹿币 +〈龍血戰神〉Lv4ヾ盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值4.0倍/@006>\
+<         /AUTOCOLOR=0><〈真靈九變〉Lv6ヾ盾/SCOLOR=254>    <需要/SCOLOR=70>    <5万逐鹿币 +〈刀劍神皇〉Lv5ヾ盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值5.0倍/@007>\
+<         /AUTOCOLOR=0><〈龍王無雙〉Lv7ヾ盾/SCOLOR=254>    <需要/SCOLOR=70>    <8万逐鹿币 +〈真靈九變〉Lv6ヾ盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值6.0倍/@008>\
+<         /AUTOCOLOR=0><〈金絲龍鱗〉Lv8ヾ盾/SCOLOR=254>    <需要/SCOLOR=70>    <10万逐鹿币+〈龍王無雙〉Lv7ヾ盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值8.0倍/@009>\
+<         /AUTOCOLOR=0><〈赤心巡天〉Lv9ヾ盾/SCOLOR=254>    <需要/SCOLOR=70>    <20万逐鹿币+〈金絲龍鱗〉Lv8ヾ盾/SCOLOR=250>    <点击合成|253#特殊属性：^-^250#全身刀刀切割总值10.0倍/@010>\
 <         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><[乱じ器]·傲视群雄ヾ绝顶盾,全身刀刀切割总值10.0倍,隐身隐藏./SCOLOR=253>   \
+<         /AUTOCOLOR=0><〈赤心巡天〉Lv9ヾ盾,全身刀刀切割总值10.0倍,隐身隐藏./SCOLOR=253>   \
 
 [@003]
 #IF
@@ -70,21 +70,21 @@ MESSAGEBOX 你逐鹿币不足[10000]点
 BREAK
 
 #IF
-CHECKITEM [行じ器]·群雄争霸ヾ中原盾 1
+CHECKITEM 〈神威亢天〉Lv1ヾ盾 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上没有【[行じ器]·群雄争霸ヾ中原盾】。请领取Q群礼包在来合成！
+MESSAGEBOX 你身上没有【〈神威亢天〉Lv1ヾ盾】。请领取Q群礼包在来合成！
 BREAK
 
 
 #IF
 CHECKGAMEGIRD > 9999
-CHECKITEM [行じ器]·群雄争霸ヾ中原盾 1
+CHECKITEM 〈神威亢天〉Lv1ヾ盾 1
 #ACT
 GAMEGIRD - 10000
-TAKE [行じ器]·群雄争霸ヾ中原盾 1
-GIVE [毒じ器]·决战云巅ヾ超越盾 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『[毒じ器]·决战云巅ヾ超越盾』！ 1 5
+TAKE 〈神威亢天〉Lv1ヾ盾 1
+GIVE 〈魔神之隕〉Lv2ヾ盾 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『〈魔神之隕〉Lv2ヾ盾』！ 1 5
 GOTO @main
 BREAK
 
@@ -103,21 +103,21 @@ MESSAGEBOX 你逐鹿币不足[20000]点
 BREAK
 
 #IF
-CHECKITEM [毒じ器]·决战云巅ヾ超越盾 1
+CHECKITEM 〈魔神之隕〉Lv2ヾ盾 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上没有【[行じ器]·群雄争霸ヾ中原盾】。无法合成！
+MESSAGEBOX 你身上没有【〈神威亢天〉Lv1ヾ盾】。无法合成！
 BREAK
 
 
 #IF
 CHECKGAMEGIRD > 19999
-CHECKITEM [毒じ器]·决战云巅ヾ超越盾 1
+CHECKITEM 〈魔神之隕〉Lv2ヾ盾 1
 #ACT
 GAMEGIRD - 20000
-TAKE [毒じ器]·决战云巅ヾ超越盾 1
-GIVE [帝じ器]·琼华紫金ヾ傲天盾 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『[帝じ器]·琼华紫金ヾ傲天盾』！ 1 5
+TAKE 〈魔神之隕〉Lv2ヾ盾 1
+GIVE 〈神雷天裁〉Lv3ヾ盾 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『〈神雷天裁〉Lv3ヾ盾』！ 1 5
 GOTO @main
 BREAK
 
@@ -137,21 +137,21 @@ MESSAGEBOX 你逐鹿币不足[30000]点
 BREAK
 
 #IF
-CHECKITEM [帝じ器]·琼华紫金ヾ傲天盾 1
+CHECKITEM 〈神雷天裁〉Lv3ヾ盾 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上没有【[帝じ器]·琼华紫金ヾ傲天盾】。无法合成！
+MESSAGEBOX 你身上没有【〈神雷天裁〉Lv3ヾ盾】。无法合成！
 BREAK
 
 
 #IF
 CHECKGAMEGIRD > 29999
-CHECKITEM [帝じ器]·琼华紫金ヾ傲天盾 1
+CHECKITEM 〈神雷天裁〉Lv3ヾ盾 1
 #ACT
 GAMEGIRD - 30000
-TAKE [帝じ器]·琼华紫金ヾ傲天盾 1
-GIVE [神じ器]·霸世金典ヾ伏羲盾 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『[神じ器]·霸世金典ヾ伏羲盾』！ 1 5
+TAKE 〈神雷天裁〉Lv3ヾ盾 1
+GIVE 〈龍血戰神〉Lv4ヾ盾 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『〈龍血戰神〉Lv4ヾ盾』！ 1 5
 GOTO @main
 BREAK
 
@@ -171,21 +171,21 @@ MESSAGEBOX 你逐鹿币不足[40000]点
 BREAK
 
 #IF
-CHECKITEM [神じ器]·霸世金典ヾ伏羲盾 1
+CHECKITEM 〈龍血戰神〉Lv4ヾ盾 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上没有【[神じ器]·霸世金典ヾ伏羲盾】。无法合成！
+MESSAGEBOX 你身上没有【〈龍血戰神〉Lv4ヾ盾】。无法合成！
 BREAK
 
 
 #IF
 CHECKGAMEGIRD > 39999
-CHECKITEM [神じ器]·霸世金典ヾ伏羲盾 1
+CHECKITEM 〈龍血戰神〉Lv4ヾ盾 1
 #ACT
 GAMEGIRD - 40000
-TAKE [神じ器]·霸世金典ヾ伏羲盾 1
-GIVE [魔じ器]·九死生杀ヾ彩云盾 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『[魔じ器]·九死生杀ヾ彩云盾』！ 1 5
+TAKE 〈龍血戰神〉Lv4ヾ盾 1
+GIVE 〈刀劍神皇〉Lv5ヾ盾 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『〈刀劍神皇〉Lv5ヾ盾』！ 1 5
 GOTO @main
 BREAK
 
@@ -204,21 +204,21 @@ MESSAGEBOX 你逐鹿币不足[50000]点
 BREAK
 
 #IF
-CHECKITEM [魔じ器]·九死生杀ヾ彩云盾 1
+CHECKITEM 〈刀劍神皇〉Lv5ヾ盾 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上没有【[魔じ器]·九死生杀ヾ彩云盾】。无法合成！
+MESSAGEBOX 你身上没有【〈刀劍神皇〉Lv5ヾ盾】。无法合成！
 BREAK
 
 
 #IF
 CHECKGAMEGIRD > 49999
-CHECKITEM [魔じ器]·九死生杀ヾ彩云盾 1
+CHECKITEM 〈刀劍神皇〉Lv5ヾ盾 1
 #ACT
 GAMEGIRD - 50000
-TAKE [魔じ器]·九死生杀ヾ彩云盾 1
-GIVE [仙じ器]·一手遮天ヾ风火盾 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『[仙じ器]·一手遮天ヾ风火盾』！ 1 5
+TAKE 〈刀劍神皇〉Lv5ヾ盾 1
+GIVE 〈真靈九變〉Lv6ヾ盾 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『〈真靈九變〉Lv6ヾ盾』！ 1 5
 GOTO @main
 BREAK
 
@@ -238,21 +238,21 @@ MESSAGEBOX 你逐鹿币不足[80000]点
 BREAK
 
 #IF
-CHECKITEM [仙じ器]·一手遮天ヾ风火盾 1
+CHECKITEM 〈真靈九變〉Lv6ヾ盾 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上没有【[仙じ器]·一手遮天ヾ风火盾】。无法合成！
+MESSAGEBOX 你身上没有【〈真靈九變〉Lv6ヾ盾】。无法合成！
 BREAK
 
 
 #IF
 CHECKGAMEGIRD > 79999
-CHECKITEM [仙じ器]·一手遮天ヾ风火盾 1
+CHECKITEM 〈真靈九變〉Lv6ヾ盾 1
 #ACT
 GAMEGIRD - 80000
-TAKE [仙じ器]·一手遮天ヾ风火盾 1
-GIVE [天じ器]·无敌盖世ヾ天地盾 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『[天じ器]·无敌盖世ヾ天地盾』！ 1 5
+TAKE 〈真靈九變〉Lv6ヾ盾 1
+GIVE 〈龍王無雙〉Lv7ヾ盾 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『〈龍王無雙〉Lv7ヾ盾』！ 1 5
 GOTO @main
 BREAK
 
@@ -272,21 +272,21 @@ MESSAGEBOX 你逐鹿币不足[100000]点
 BREAK
 
 #IF
-CHECKITEM [天じ器]·无敌盖世ヾ天地盾 1
+CHECKITEM 〈龍王無雙〉Lv7ヾ盾 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上没有【[天じ器]·无敌盖世ヾ天地盾】。无法合成！
+MESSAGEBOX 你身上没有【〈龍王無雙〉Lv7ヾ盾】。无法合成！
 BREAK
 
 
 #IF
 CHECKGAMEGIRD > 99999
-CHECKITEM [天じ器]·无敌盖世ヾ天地盾 1
+CHECKITEM 〈龍王無雙〉Lv7ヾ盾 1
 #ACT
 GAMEGIRD - 100000
-TAKE [天じ器]·无敌盖世ヾ天地盾 1
-GIVE [地じ器]·雄霸天下ヾ绝世盾 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『[地じ器]·雄霸天下ヾ绝世盾』！ 1 5
+TAKE 〈龍王無雙〉Lv7ヾ盾 1
+GIVE 〈金絲龍鱗〉Lv8ヾ盾 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『〈金絲龍鱗〉Lv8ヾ盾』！ 1 5
 GOTO @main
 BREAK
 
@@ -306,21 +306,21 @@ MESSAGEBOX 你逐鹿币不足[200000]点
 BREAK
 
 #IF
-CHECKITEM [地じ器]·雄霸天下ヾ绝世盾 1
+CHECKITEM 〈金絲龍鱗〉Lv8ヾ盾 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上没有【[地じ器]·雄霸天下ヾ绝世盾】。无法合成！
+MESSAGEBOX 你身上没有【〈金絲龍鱗〉Lv8ヾ盾】。无法合成！
 BREAK
 
 
 #IF
 CHECKGAMEGIRD > 199999
-CHECKITEM [地じ器]·雄霸天下ヾ绝世盾 1
+CHECKITEM 〈金絲龍鱗〉Lv8ヾ盾 1
 #ACT
 GAMEGIRD - 200000
-TAKE [地じ器]·雄霸天下ヾ绝世盾 1
-GIVE [乱じ器]·傲视群雄ヾ绝顶盾 1
-SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『[乱じ器]·傲视群雄ヾ绝顶盾』！ 1 5
+TAKE 〈金絲龍鱗〉Lv8ヾ盾 1
+GIVE 〈赤心巡天〉Lv9ヾ盾 1
+SENDCENTERMSG 253 4 玩家「<$USERNAME>」成功打造了1个『〈赤心巡天〉Lv9ヾ盾』！ 1 5
 GOTO @main
 BREAK
 

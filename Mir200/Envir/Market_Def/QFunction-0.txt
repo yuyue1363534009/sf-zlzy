@@ -225,7 +225,7 @@ BREAK
 
 #IF
 RANDOM 20
-CHECKITEMW [魔伞]以吾之名★恩赐尔等·一死
+CHECKITEMW 【未雨绸缪】我以我血荐轩辕★伞
 CHECKCURRTARGETRACE = 0
 #ACT
 <$CURRRTARGETNAME>.CHANGEPKPOINT + 200
@@ -234,7 +234,7 @@ SENDMSG 6 触发红名BUFF，敌人红名了赶紧干死她！ 255 253
 
 #IF
 RANDOM 20
-CHECKITEMW 「逐鹿·归来」誰與争锋·帝尊
+CHECKITEMW 【無法無天】岂因祸福避趋之★笠
 CHECKCURRTARGETRACE = 0
 #ACT
 <$CURRRTARGETNAME>.TAKE 随机传送石 46
@@ -886,19 +886,19 @@ MESSAGEBOX \\您的等级已经到达120级，无法继续使用！
 [@StdModeFunc181]
 #IF
 #ACT
-GIVE 龍血※仙珠 5
+GIVE 王者◆水晶 5
 [@StdModeFunc182]
 #IF
 #ACT
-GIVE 龍血※仙珠 10
+GIVE 王者◆水晶 10
 [@StdModeFunc183]
 #IF
 #ACT
-GIVE 龍血※仙珠 15
+GIVE 王者◆水晶 15
 [@StdModeFunc184]
 #IF
 #ACT
-GIVE 龍血※仙珠 20
+GIVE 王者◆水晶 20
 ;============================================================================
 ;=================================技=能=触=发================================
 ;============================================================================

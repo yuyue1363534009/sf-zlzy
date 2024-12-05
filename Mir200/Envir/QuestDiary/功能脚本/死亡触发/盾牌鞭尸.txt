@@ -12,12 +12,12 @@ MOV M90 0
 
 
 #IF
-CHECKITEMW [王◆器]·皇图霸业ヾ暴力盾·杀 1
+CHECKITEMW 《乱世逐鹿》「殺」卐盾 1
 #ACT
 MOV M90 20
 
 #IF
-CHECKITEMW [聖◆器]·逐鹿中原ヾ逆天盾·斩 1
+CHECKITEMW 【堅如磐石】埋骨何须桑梓地★盾 1
 #ACT
 MOV M90 20
 

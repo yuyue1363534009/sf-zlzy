@@ -2,228 +2,228 @@
 {
 
 #IF
-EQUAL <$RING_R> 含光※弄影づ指
+EQUAL <$RING_R> 皓月◆不死不灭の指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 降龍※伏虎づ指
+EQUAL <$RING_R> 摘星◆鬼王蚀日の指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 龍騰※霸天づ指
+EQUAL <$RING_R> 星痕◆九阴勾魂の指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 不朽※之戀づ指
+EQUAL <$RING_R> 浮生◆五虎断魂の指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 冷月※葬花づ指
+EQUAL <$RING_R> 龙鸣◆刑天之逆の指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 赤明※九天づ指
+EQUAL <$RING_R> 浩气◆雷动八荒の指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 仙劍※九歌づ指
+EQUAL <$RING_R> 飞龙◆十方诛魔の指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 神羅※天照づ指
+EQUAL <$RING_R> 倚天◆毁天灭地の指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 紫辰※黎雲づ指
+EQUAL <$RING_R> 诸天◆我欲封天の指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《1.0倍》醉情※霧影づ霸者指
+EQUAL <$RING_R> 山有木兮木有枝≮1.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《2.0倍》銀月※清歌づ鳳翼指
+EQUAL <$RING_R> 心悦君兮君不知≮2.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《3.0倍》末日※审判づ諸神指
+EQUAL <$RING_R> 曾经沧海难为水≮3.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《4.0倍》烈焰※永恒づ赤焰指
+EQUAL <$RING_R> 除却巫山不是云≮4.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《5.0倍》碧血※清歌づ寒星指
+EQUAL <$RING_R> 玲珑骰子安红豆≮5.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《6.0倍》问鼎※誅天づ守護指
+EQUAL <$RING_R> 入骨相思知不知≮10.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《7.0倍》暗噬※無痕づ領域指
+EQUAL <$RING_R> 两情若是久长时≮20.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《8.0倍》七寶※玲瓏づ幻夢指
+EQUAL <$RING_R> 又岂在朝朝暮暮≮30.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《10.0倍》玄冥※慑天づ景霄指
+EQUAL <$RING_R> 身无彩凤双飞翼≮40.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《12.0倍》日月※乾坤づ莽荒指
+EQUAL <$RING_R> 心有灵犀一点通≮50.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《15.0倍》九耀※禦雷づ深藍指
+EQUAL <$RING_R> 愿得此身长报国≮60.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《18.0倍》金麟※輪回づ天琊指
+EQUAL <$RING_R> 何须生入玉门关≮70.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《22.0倍》幻滅※天使づ审判指
+EQUAL <$RING_R> 山回路转不见君≮80.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《25.0倍》冰霜※星魔づ夢棱指
+EQUAL <$RING_R> 雪上空留马行处≮90.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《28.0倍》鐘靈※毓秀づ紫電指
+EQUAL <$RING_R> 侯门一入深如海≮100.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 #IF
-EQUAL <$RING_R> 《32.0倍》雷鳴※離火づ帝炎指
-#ACT
-AutoTAKEOffItem  8
-MESSAGEBOX 该装备只能佩戴在右戒位置！！
-BREAK
-
-#IF
-EQUAL <$RING_R> 《36.0倍》天星※耀陽づ霸絕指
+EQUAL <$RING_R> 从此萧郎是路人≮110.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 
 #IF
-EQUAL <$RING_R> 《40.0倍》神威※亢天づ龍嘯指
+EQUAL <$RING_R> 莫言贫贱即可欺≮120.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 
 #IF
-EQUAL <$RING_R> 《45.0倍》魔神※之隕づ聖渊指
+EQUAL <$RING_R> 桃李春风一杯酒≮130.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 
 #IF
-EQUAL <$RING_R> 《50.0倍》神雷※天裁づ涅槃指
+EQUAL <$RING_R> 江湖夜雨十年灯≮140.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 
 #IF
-EQUAL <$RING_R> 《55.0倍》龍血※戰神づ天闕指
+EQUAL <$RING_R> 劝君莫惜金缕衣≮150.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 
 #IF
-EQUAL <$RING_R> 《60.0倍》刀劍★神皇※莫邪指
+EQUAL <$RING_R> 劝君惜取少年时≮160.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 
 #IF
-EQUAL <$RING_R> 《65.0倍》真靈★九變※奧義指
+EQUAL <$RING_R> 采得百花成蜜后≮170.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 
 #IF
-EQUAL <$RING_R> 《70.0倍》龍王★無雙※終極指
+EQUAL <$RING_R> 为谁辛苦为谁甜≮180.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 
 #IF
-EQUAL <$RING_R> 《75.0倍》金絲★龍鱗※君王指
+EQUAL <$RING_R> 宁可枝头抱香死≮190.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 
 #IF
-EQUAL <$RING_R> 《80.0倍》赤心★巡天※逍遥指
+EQUAL <$RING_R> 何曾吹落北风中≮200.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
 BREAK
 
 #IF
-EQUAL <$RING_R> 《85.0倍》天刀★无疆※昊天指
+EQUAL <$RING_R> 人生若只如初见≮210.0倍≯指
+#ACT
+AutoTAKEOffItem  8
+MESSAGEBOX 该装备只能佩戴在右戒位置！！
+BREAK
+
+#IF
+EQUAL <$RING_R> 天地合乃敢与君绝≮220.0倍≯指
 #ACT
 AutoTAKEOffItem  8
 MESSAGEBOX 该装备只能佩戴在右戒位置！！
@@ -236,231 +236,231 @@ BREAK
 {
 
 #IF
-EQUAL <$ARMRING_R> 含光※弄影づ腕
+EQUAL <$ARMRING_R> 皓月◆不死不灭の腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 降龍※伏虎づ腕
+EQUAL <$ARMRING_R> 摘星◆鬼王蚀日の腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 龍騰※霸天づ腕
+EQUAL <$ARMRING_R> 星痕◆九阴勾魂の腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 不朽※之戀づ腕
+EQUAL <$ARMRING_R> 浮生◆五虎断魂の腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 冷月※葬花づ腕
+EQUAL <$ARMRING_R> 龙鸣◆刑天之逆の腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 赤明※九天づ腕
+EQUAL <$ARMRING_R> 浩气◆雷动八荒の腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 仙劍※九歌づ腕
+EQUAL <$ARMRING_R> 飞龙◆十方诛魔の腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 神羅※天照づ腕
+EQUAL <$ARMRING_R> 倚天◆毁天灭地の腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 紫辰※黎雲づ腕
+EQUAL <$ARMRING_R> 诸天◆我欲封天の腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 《1.0倍》醉情※霧影づ霸者腕
+EQUAL <$ARMRING_R> 山有木兮木有枝≮1.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 《2.0倍》銀月※清歌づ鳳翼腕
+EQUAL <$ARMRING_R> 心悦君兮君不知≮2.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 《3.0倍》末日※审判づ諸神腕
+EQUAL <$ARMRING_R> 曾经沧海难为水≮3.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 《4.0倍》烈焰※永恒づ赤焰腕
+EQUAL <$ARMRING_R> 除却巫山不是云≮4.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 《5.0倍》碧血※清歌づ寒星腕
+EQUAL <$ARMRING_R> 玲珑骰子安红豆≮5.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 《6.0倍》问鼎※誅天づ守護腕
+EQUAL <$ARMRING_R> 入骨相思知不知≮10.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 《7.0倍》暗噬※無痕づ領域腕
+EQUAL <$ARMRING_R> 两情若是久长时≮20.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 《8.0倍》七寶※玲瓏づ幻夢腕
+EQUAL <$ARMRING_R> 又岂在朝朝暮暮≮30.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 《10.0倍》玄冥※慑天づ景霄腕
+EQUAL <$ARMRING_R> 身无彩凤双飞翼≮40.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 《12.0倍》日月※乾坤づ莽荒腕
+EQUAL <$ARMRING_R> 心有灵犀一点通≮50.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 《15.0倍》九耀※禦雷づ深藍腕
+EQUAL <$ARMRING_R> 愿得此身长报国≮60.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 《18.0倍》金麟※輪回づ天琊腕
+EQUAL <$ARMRING_R> 何须生入玉门关≮70.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 #IF
-EQUAL <$ARMRING_R> 《22.0倍》幻滅※天使づ审判腕
-#ACT
-TAKEOffItem 6
-MESSAGEBOX 该装备只能佩戴在右手位置！！
-BREAK
-
-#IF
-EQUAL <$ARMRING_R> 《25.0倍》冰霜※星魔づ夢棱腕
+EQUAL <$ARMRING_R> 山回路转不见君≮80.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 
 #IF
-EQUAL <$ARMRING_R> 《28.0倍》鐘靈※毓秀づ紫電腕
+EQUAL <$ARMRING_R> 雪上空留马行处≮90.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 
 #IF
-EQUAL <$ARMRING_R> 《32.0倍》雷鳴※離火づ帝炎腕
+EQUAL <$ARMRING_R> 侯门一入深如海≮100.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 
 #IF
-EQUAL <$ARMRING_R> 《36.0倍》天星※耀陽づ霸絕腕
+EQUAL <$ARMRING_R> 从此萧郎是路人≮110.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 
 #IF
-EQUAL <$ARMRING_R> 《40.0倍》神威※亢天づ龍嘯腕
+EQUAL <$ARMRING_R> 莫言贫贱即可欺≮120.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 
 #IF
-EQUAL <$ARMRING_R> 《45.0倍》魔神※之隕づ聖渊腕
+EQUAL <$ARMRING_R> 桃李春风一杯酒≮130.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 
 #IF
-EQUAL <$ARMRING_R> 《50.0倍》神雷※天裁づ涅槃腕
+EQUAL <$ARMRING_R> 江湖夜雨十年灯≮140.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 
 #IF
-EQUAL <$ARMRING_R> 《55.0倍》龍血※戰神づ天闕腕
+EQUAL <$ARMRING_R> 劝君莫惜金缕衣≮150.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 
 #IF
-EQUAL <$ARMRING_R> 《60.0倍》刀劍★神皇※莫邪腕
+EQUAL <$ARMRING_R> 劝君惜取少年时≮160.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 
 #IF
-EQUAL <$ARMRING_R> 《65.0倍》真靈★九變※奧義腕
+EQUAL <$ARMRING_R> 采得百花成蜜后≮170.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 
 #IF
-EQUAL <$ARMRING_R> 《70.0倍》龍王★無雙※終極腕
+EQUAL <$ARMRING_R> 为谁辛苦为谁甜≮180.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 
 #IF
-EQUAL <$ARMRING_R> 《75.0倍》金絲★龍鱗※君王腕
+EQUAL <$ARMRING_R> 宁可枝头抱香死≮190.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 
 #IF
-EQUAL <$ARMRING_R> 《80.0倍》赤心★巡天※逍遥腕
+EQUAL <$ARMRING_R> 何曾吹落北风中≮200.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！
 BREAK
 
 #IF
-EQUAL <$ARMRING_R> 《85.0倍》天刀★无疆※昊天腕
+EQUAL <$ARMRING_R> 人生若只如初见≮210.0倍≯腕
+#ACT
+TAKEOffItem 6
+MESSAGEBOX 该装备只能佩戴在右手位置！！
+BREAK
+
+#IF
+EQUAL <$ARMRING_R> 天地合乃敢与君绝≮220.0倍≯腕
 #ACT
 TAKEOffItem 6
 MESSAGEBOX 该装备只能佩戴在右手位置！！

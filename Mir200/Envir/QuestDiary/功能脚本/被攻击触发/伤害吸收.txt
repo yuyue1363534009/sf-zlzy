@@ -3,56 +3,56 @@
 
 
 #IF
-CHECKITEMW 《85.0倍》天刀★无疆※昊天斬 1
-CHECKITEMW 《85.0倍》天刀★无疆※昊天甲 1
+CHECKITEMW 天地合乃敢与君绝≮220.0倍≯斬 1
+CHECKITEMW 天地合乃敢与君绝≮220.0倍≯甲 1
 #ACT
 SETSuckDamage + 2000000000 900 100
 
 #IF
-CHECKITEMW 《80.0倍》赤心★巡天※逍遥斬 1
-CHECKITEMW 《80.0倍》赤心★巡天※逍遥甲 1
+CHECKITEMW 人生若只如初见≮210.0倍≯斬 1
+CHECKITEMW 人生若只如初见≮210.0倍≯甲 1
 #ACT
 SETSuckDamage + 2000000000 800 100
 
 #IF
-CHECKITEMW 《75.0倍》金絲★龍鱗※君王斬 1
-CHECKITEMW 《75.0倍》金絲★龍鱗※君王甲 1
+CHECKITEMW 何曾吹落北风中≮200.0倍≯斬 1
+CHECKITEMW 何曾吹落北风中≮200.0倍≯甲 1
 #ACT
 SETSuckDamage + 2000000000 700 100
 
 #IF
-CHECKITEMW 《70.0倍》龍王★無雙※終極斬 1
-CHECKITEMW 《70.0倍》龍王★無雙※終極甲 1
+CHECKITEMW 宁可枝头抱香死≮190.0倍≯斬 1
+CHECKITEMW 宁可枝头抱香死≮190.0倍≯甲 1
 #ACT
 SETSuckDamage + 2000000000 600 100
 
 #IF
-CHECKITEMW 《65.0倍》真靈★九變※奧義斬 1
-CHECKITEMW 《65.0倍》真靈★九變※奧義甲 1
+CHECKITEMW 为谁辛苦为谁甜≮180.0倍≯斬 1
+CHECKITEMW 为谁辛苦为谁甜≮180.0倍≯甲 1
 #ACT
 SETSuckDamage + 2000000000 500 100
 
 #IF
-CHECKITEMW 《60.0倍》刀劍★神皇※莫邪斬 1
-CHECKITEMW 《60.0倍》刀劍★神皇※莫邪甲 1
+CHECKITEMW 采得百花成蜜后≮170.0倍≯斬 1
+CHECKITEMW 采得百花成蜜后≮170.0倍≯甲 1
 #ACT
 SETSuckDamage + 2000000000 400 100
 
 #IF
-CHECKITEMW 《55.0倍》龍血※戰神づ天闕斬 1
-CHECKITEMW 《55.0倍》龍血※戰神づ天闕甲
+CHECKITEMW 劝君惜取少年时≮160.0倍≯斬 1
+CHECKITEMW 劝君惜取少年时≮160.0倍≯甲
 #ACT
 SETSuckDamage + 2000000000 300 100
 
 #IF
-CHECKITEMW 《50.0倍》神雷※天裁づ涅槃斬 1
-CHECKITEMW 《50.0倍》神雷※天裁づ涅槃甲 1
+CHECKITEMW 劝君莫惜金缕衣≮150.0倍≯斬 1
+CHECKITEMW 劝君莫惜金缕衣≮150.0倍≯甲 1
 #ACT
 SETSuckDamage + 2000000000 200 100
 
 #IF
-CHECKITEMW 《45.0倍》魔神※之隕づ聖渊斬 1
-CHECKITEMW 《45.0倍》魔神※之隕づ聖渊甲 1
+CHECKITEMW 江湖夜雨十年灯≮140.0倍≯斬 1
+CHECKITEMW 江湖夜雨十年灯≮140.0倍≯甲 1
 #ACT
 SETSuckDamage + 2000000000 100 100
 

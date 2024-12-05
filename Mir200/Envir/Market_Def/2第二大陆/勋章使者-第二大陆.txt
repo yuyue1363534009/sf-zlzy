@@ -8,36 +8,36 @@ OPENMERCHANTBIGDLG 74 497 1 0 0 10 1 618 7
 ;<IMGEX:74:194:195:196:488:-20/@EXIT>\
 <             /AUTOCOLOR=0><┅/SCOLOR=254> <┅/SCOLOR=250> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=250> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=250> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=250> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243>\
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><真英雄※章【一品】/SCOLOR=250>  <需/SCOLOR=70>                <龍血※仙珠*100个/SCOLOR=254>     <购买1.0倍神力勋章|253#特殊属性：^-^250#暗神力1.0倍/@001>\
-<         /AUTOCOLOR=0><風飄絮※章【二品】/SCOLOR=250>  <需/SCOLOR=70><一品神力勋章*1+龍血※仙珠*300个/SCOLOR=254>      <合成1.1倍神力勋章|253#特殊属性：^-^250#暗神力1.1倍/@002>\
-<         /AUTOCOLOR=0><黃金甲※章【三品】/SCOLOR=250>  <需/SCOLOR=70><二品神力勋章*1+龍血※仙珠*500个/SCOLOR=254>      <合成1.2倍神力勋章|253#特殊属性：^-^250#暗神力1.2倍/@003>\
-<         /AUTOCOLOR=0><猶無悔※章【四品】/SCOLOR=250>  <需/SCOLOR=70><三品神力勋章*1+龍血※仙珠*1000个/SCOLOR=254>     <合成1.3倍神力勋章|253#特殊属性：^-^250#暗神力1.3倍/@004>\
-<         /AUTOCOLOR=0><不由天※章【五品】/SCOLOR=250>  <需/SCOLOR=70><四品神力勋章*1+龍血※仙珠*2000个/SCOLOR=254>     <合成1.4倍神力勋章|253#特殊属性：^-^250#暗神力1.4倍/@005>\
-<         /AUTOCOLOR=0><負我人※章【六品】/SCOLOR=250>  <需/SCOLOR=70><五品神力勋章*1+龍血※仙珠*3000个/SCOLOR=254>     <合成1.5倍神力勋章|253#特殊属性：^-^250#暗神力1.5倍/@006>\
-<         /AUTOCOLOR=0><向天笑※章【七品】/SCOLOR=250>  <需/SCOLOR=70><六品神力勋章*1+龍血※仙珠*5000个/SCOLOR=254>     <合成1.6倍神力勋章|253#特殊属性：^-^250#暗神力1.6倍/@007>\
-<         /AUTOCOLOR=0><齊飛楊※章【八品】/SCOLOR=250>  <需/SCOLOR=70><七品神力勋章*1+龍血※仙珠*8000个/SCOLOR=254>     <合成1.7倍神力勋章|253#特殊属性：^-^250#暗神力1.7倍/@008>\
-<         /AUTOCOLOR=0><震四方※章【九品】/SCOLOR=250>  <需/SCOLOR=70><八品神力勋章*1+龍血※仙珠*10000个/SCOLOR=254>    <合成1.8倍神力勋章|253#特殊属性：^-^250#暗神力1.8倍/@0011>\
-<         /AUTOCOLOR=0><神王命※章【十品】/SCOLOR=250>  <需/SCOLOR=70><九品神力勋章*1+龍血※仙珠*20000个/SCOLOR=254>    <合成1.9倍神力勋章|253#特殊属性：^-^250#暗神力1.9倍/@0022>\
-<         /AUTOCOLOR=0><山河盡※章【逐鹿】/SCOLOR=250>  <需/SCOLOR=70><十品神力勋章*1+龍血※仙珠*30000个/SCOLOR=254>    <合成2.0倍神力勋章|253#特殊属性：^-^250#暗神力2.0倍/@0033>\
+<         /AUTOCOLOR=0><〈群雄争霸〉Lv1ゞ章/SCOLOR=250>  <需/SCOLOR=70>                <王者◆水晶*100个/SCOLOR=254>     <购买1.0倍神力勋章|253#特殊属性：^-^250#暗神力1.0倍/@001>\
+<         /AUTOCOLOR=0><〈决战云巅〉Lv2ゞ章/SCOLOR=250>  <需/SCOLOR=70><一品神力勋章*1+王者◆水晶*300个/SCOLOR=254>      <合成1.1倍神力勋章|253#特殊属性：^-^250#暗神力1.1倍/@002>\
+<         /AUTOCOLOR=0><〈琼华紫金〉Lv3ゞ章/SCOLOR=250>  <需/SCOLOR=70><二品神力勋章*1+王者◆水晶*500个/SCOLOR=254>      <合成1.2倍神力勋章|253#特殊属性：^-^250#暗神力1.2倍/@003>\
+<         /AUTOCOLOR=0><〈霸世金典〉Lv4ゞ章/SCOLOR=250>  <需/SCOLOR=70><三品神力勋章*1+王者◆水晶*1000个/SCOLOR=254>     <合成1.3倍神力勋章|253#特殊属性：^-^250#暗神力1.3倍/@004>\
+<         /AUTOCOLOR=0><〈九死生杀〉Lv5ゞ章/SCOLOR=250>  <需/SCOLOR=70><四品神力勋章*1+王者◆水晶*2000个/SCOLOR=254>     <合成1.4倍神力勋章|253#特殊属性：^-^250#暗神力1.4倍/@005>\
+<         /AUTOCOLOR=0><〈一手遮天〉Lv6ゞ章/SCOLOR=250>  <需/SCOLOR=70><五品神力勋章*1+王者◆水晶*3000个/SCOLOR=254>     <合成1.5倍神力勋章|253#特殊属性：^-^250#暗神力1.5倍/@006>\
+<         /AUTOCOLOR=0><〈无敌盖世〉Lv7ゞ章/SCOLOR=250>  <需/SCOLOR=70><六品神力勋章*1+王者◆水晶*5000个/SCOLOR=254>     <合成1.6倍神力勋章|253#特殊属性：^-^250#暗神力1.6倍/@007>\
+<         /AUTOCOLOR=0><〈雄霸天下〉Lv8ゞ章/SCOLOR=250>  <需/SCOLOR=70><七品神力勋章*1+王者◆水晶*8000个/SCOLOR=254>     <合成1.7倍神力勋章|253#特殊属性：^-^250#暗神力1.7倍/@008>\
+<         /AUTOCOLOR=0><〈傲视群雄〉Lv9ゞ章/SCOLOR=250>  <需/SCOLOR=70><八品神力勋章*1+王者◆水晶*10000个/SCOLOR=254>    <合成1.8倍神力勋章|253#特殊属性：^-^250#暗神力1.8倍/@0011>\
+<         /AUTOCOLOR=0><〈皇图霸业〉Lv10ゞ章/SCOLOR=250>  <需/SCOLOR=70><九品神力勋章*1+王者◆水晶*20000个/SCOLOR=254>    <合成1.9倍神力勋章|253#特殊属性：^-^250#暗神力1.9倍/@0022>\
+<         /AUTOCOLOR=0><〈魑魅魍魉〉「尊」卐章/SCOLOR=250>  <需/SCOLOR=70><十品神力勋章*1+王者◆水晶*30000个/SCOLOR=254>    <合成2.0倍神力勋章|253#特殊属性：^-^250#暗神力2.0倍/@0033>\
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><您来这里可提供神力勋章的合成,增加攻击和生命，当然您要有龍血※仙珠../SCOLOR=251>     \
+<         /AUTOCOLOR=0><您来这里可提供神力勋章的合成,增加攻击和生命，当然您要有王者◆水晶../SCOLOR=251>     \
 <         /AUTOCOLOR=0><个人建议您，您可以打BOSS爆逐鹿宝箱.开宝箱直接可获得成品神力勋章.../SCOLOR=251>   \
 
 [@001]
 #IF
-CHECKITEM 龍血※仙珠 100
+CHECKITEM 王者◆水晶 100
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【龍血※仙珠*100】。无法合成！
+MESSAGEBOX 你身上缺少【王者◆水晶*100】。无法合成！
 BREAK
 
 
 #IF
-CHECKITEM 龍血※仙珠 100
+CHECKITEM 王者◆水晶 100
 #ACT
-TAKE 龍血※仙珠 100
-GIVE 真英雄※章【一品】 1
-SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{真英雄※章【一品】|251:0:0}{】|249:0:0}~~
+TAKE 王者◆水晶 100
+GIVE 〈群雄争霸〉Lv1ゞ章 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{〈群雄争霸〉Lv1ゞ章|251:0:0}{】|249:0:0}~~
 GOTO @main
 BREAK
 
@@ -47,28 +47,28 @@ BREAK
 
 [@002]
 #IF
-CHECKITEM 龍血※仙珠 300
+CHECKITEM 王者◆水晶 300
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【龍血※仙珠*300】。无法合成！
+MESSAGEBOX 你身上缺少【王者◆水晶*300】。无法合成！
 BREAK
 
 #IF
-CHECKITEM 真英雄※章【一品】 1
+CHECKITEM 〈群雄争霸〉Lv1ゞ章 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【真英雄※章【一品】*1】。无法合成！
+MESSAGEBOX 你身上缺少【〈群雄争霸〉Lv1ゞ章*1】。无法合成！
 BREAK
 
 
 #IF
-CHECKITEM 龍血※仙珠 300
-CHECKITEM 真英雄※章【一品】 1
+CHECKITEM 王者◆水晶 300
+CHECKITEM 〈群雄争霸〉Lv1ゞ章 1
 #ACT
-TAKE 龍血※仙珠 300
-TAKE 真英雄※章【一品】 1
-GIVE 風飄絮※章【二品】 1
-SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{風飄絮※章【二品】|251:0:0}{】|249:0:0}~~
+TAKE 王者◆水晶 300
+TAKE 〈群雄争霸〉Lv1ゞ章 1
+GIVE 〈决战云巅〉Lv2ゞ章 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{〈决战云巅〉Lv2ゞ章|251:0:0}{】|249:0:0}~~
 GOTO @main
 BREAK
 
@@ -76,28 +76,28 @@ BREAK
 
 [@003]
 #IF
-CHECKITEM 龍血※仙珠 500
+CHECKITEM 王者◆水晶 500
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【龍血※仙珠*500】。无法合成！
+MESSAGEBOX 你身上缺少【王者◆水晶*500】。无法合成！
 BREAK
 
 #IF
-CHECKITEM 風飄絮※章【二品】 1
+CHECKITEM 〈决战云巅〉Lv2ゞ章 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【風飄絮※章【二品】*1】。无法合成！
+MESSAGEBOX 你身上缺少【〈决战云巅〉Lv2ゞ章*1】。无法合成！
 BREAK
 
 
 #IF
-CHECKITEM 龍血※仙珠 500
-CHECKITEM 風飄絮※章【二品】 1
+CHECKITEM 王者◆水晶 500
+CHECKITEM 〈决战云巅〉Lv2ゞ章 1
 #ACT
-TAKE 龍血※仙珠 500
-TAKE 風飄絮※章【二品】 1
-GIVE 黃金甲※章【三品】 1
-SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{黃金甲※章【三品】|251:0:0}{】|249:0:0}~~
+TAKE 王者◆水晶 500
+TAKE 〈决战云巅〉Lv2ゞ章 1
+GIVE 〈琼华紫金〉Lv3ゞ章 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{〈琼华紫金〉Lv3ゞ章|251:0:0}{】|249:0:0}~~
 GOTO @main
 BREAK
 
@@ -105,28 +105,28 @@ BREAK
 
 [@004]
 #IF
-CHECKITEM 龍血※仙珠 1000
+CHECKITEM 王者◆水晶 1000
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【龍血※仙珠*1000】。无法合成！
+MESSAGEBOX 你身上缺少【王者◆水晶*1000】。无法合成！
 BREAK
 
 #IF
-CHECKITEM 黃金甲※章【三品】 1
+CHECKITEM 〈琼华紫金〉Lv3ゞ章 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【黃金甲※章【三品】*1】。无法合成！
+MESSAGEBOX 你身上缺少【〈琼华紫金〉Lv3ゞ章*1】。无法合成！
 BREAK
 
 
 #IF
-CHECKITEM 龍血※仙珠 1000
-CHECKITEM 黃金甲※章【三品】 1
+CHECKITEM 王者◆水晶 1000
+CHECKITEM 〈琼华紫金〉Lv3ゞ章 1
 #ACT
-TAKE 龍血※仙珠 1000
-TAKE 黃金甲※章【三品】 1
-GIVE 猶無悔※章【四品】 1
-SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{猶無悔※章【四品】|251:0:0}{】|249:0:0}~~
+TAKE 王者◆水晶 1000
+TAKE 〈琼华紫金〉Lv3ゞ章 1
+GIVE 〈霸世金典〉Lv4ゞ章 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{〈霸世金典〉Lv4ゞ章|251:0:0}{】|249:0:0}~~
 GOTO @main
 BREAK
 
@@ -135,28 +135,28 @@ BREAK
 
 [@005]
 #IF
-CHECKITEM 龍血※仙珠 2000
+CHECKITEM 王者◆水晶 2000
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【龍血※仙珠*2000】。无法合成！
+MESSAGEBOX 你身上缺少【王者◆水晶*2000】。无法合成！
 BREAK
 
 #IF
-CHECKITEM 猶無悔※章【四品】 1
+CHECKITEM 〈霸世金典〉Lv4ゞ章 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【猶無悔※章【四品】*1】。无法合成！
+MESSAGEBOX 你身上缺少【〈霸世金典〉Lv4ゞ章*1】。无法合成！
 BREAK
 
 
 #IF
-CHECKITEM 龍血※仙珠 2000
-CHECKITEM 猶無悔※章【四品】 1
+CHECKITEM 王者◆水晶 2000
+CHECKITEM 〈霸世金典〉Lv4ゞ章 1
 #ACT
-TAKE 龍血※仙珠 2000
-TAKE 猶無悔※章【四品】 1
-GIVE 不由天※章【五品】 1
-SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{不由天※章【五品】|251:0:0}{】|249:0:0}~~
+TAKE 王者◆水晶 2000
+TAKE 〈霸世金典〉Lv4ゞ章 1
+GIVE 〈九死生杀〉Lv5ゞ章 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{〈九死生杀〉Lv5ゞ章|251:0:0}{】|249:0:0}~~
 GOTO @main
 BREAK
 
@@ -166,28 +166,28 @@ BREAK
 
 [@006]
 #IF
-CHECKITEM 龍血※仙珠 3000
+CHECKITEM 王者◆水晶 3000
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【龍血※仙珠*3000】。无法合成！
+MESSAGEBOX 你身上缺少【王者◆水晶*3000】。无法合成！
 BREAK
 
 #IF
-CHECKITEM 不由天※章【五品】 1
+CHECKITEM 〈九死生杀〉Lv5ゞ章 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【不由天※章【五品】*1】。无法合成！
+MESSAGEBOX 你身上缺少【〈九死生杀〉Lv5ゞ章*1】。无法合成！
 BREAK
 
 
 #IF
-CHECKITEM 龍血※仙珠 3000
-CHECKITEM 不由天※章【五品】 1
+CHECKITEM 王者◆水晶 3000
+CHECKITEM 〈九死生杀〉Lv5ゞ章 1
 #ACT
-TAKE 龍血※仙珠 3000
-TAKE 不由天※章【五品】 1
-GIVE 負我人※章【六品】 1
-SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{負我人※章【六品】|251:0:0}{】|249:0:0}~~
+TAKE 王者◆水晶 3000
+TAKE 〈九死生杀〉Lv5ゞ章 1
+GIVE 〈一手遮天〉Lv6ゞ章 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{〈一手遮天〉Lv6ゞ章|251:0:0}{】|249:0:0}~~
 GOTO @main
 BREAK
 
@@ -196,28 +196,28 @@ BREAK
 
 [@007]
 #IF
-CHECKITEM 龍血※仙珠 5000
+CHECKITEM 王者◆水晶 5000
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【龍血※仙珠*5000】。无法合成！
+MESSAGEBOX 你身上缺少【王者◆水晶*5000】。无法合成！
 BREAK
 
 #IF
-CHECKITEM 負我人※章【六品】 1
+CHECKITEM 〈一手遮天〉Lv6ゞ章 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【負我人※章【六品】*1】。无法合成！
+MESSAGEBOX 你身上缺少【〈一手遮天〉Lv6ゞ章*1】。无法合成！
 BREAK
 
 
 #IF
-CHECKITEM 龍血※仙珠 5000
-CHECKITEM 負我人※章【六品】 1
+CHECKITEM 王者◆水晶 5000
+CHECKITEM 〈一手遮天〉Lv6ゞ章 1
 #ACT
-TAKE 龍血※仙珠 5000
-TAKE 負我人※章【六品】 1
-GIVE 向天笑※章【七品】 1
-SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{向天笑※章【七品】|251:0:0}{】|249:0:0}~~
+TAKE 王者◆水晶 5000
+TAKE 〈一手遮天〉Lv6ゞ章 1
+GIVE 〈无敌盖世〉Lv7ゞ章 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{〈无敌盖世〉Lv7ゞ章|251:0:0}{】|249:0:0}~~
 GOTO @main
 BREAK
 
@@ -226,28 +226,28 @@ BREAK
 
 [@008]
 #IF
-CHECKITEM 龍血※仙珠 8000
+CHECKITEM 王者◆水晶 8000
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【龍血※仙珠*8000】。无法合成！
+MESSAGEBOX 你身上缺少【王者◆水晶*8000】。无法合成！
 BREAK
 
 #IF
-CHECKITEM 向天笑※章【七品】 1
+CHECKITEM 〈无敌盖世〉Lv7ゞ章 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【向天笑※章【七品】*1】。无法合成！
+MESSAGEBOX 你身上缺少【〈无敌盖世〉Lv7ゞ章*1】。无法合成！
 BREAK
 
 
 #IF
-CHECKITEM 龍血※仙珠 8000
-CHECKITEM 向天笑※章【七品】 1
+CHECKITEM 王者◆水晶 8000
+CHECKITEM 〈无敌盖世〉Lv7ゞ章 1
 #ACT
-TAKE 龍血※仙珠 8000
-TAKE 向天笑※章【七品】 1
-GIVE 齊飛楊※章【八品】 1
-SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{齊飛楊※章【八品】|251:0:0}{】|249:0:0}~~
+TAKE 王者◆水晶 8000
+TAKE 〈无敌盖世〉Lv7ゞ章 1
+GIVE 〈雄霸天下〉Lv8ゞ章 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{〈雄霸天下〉Lv8ゞ章|251:0:0}{】|249:0:0}~~
 GOTO @main
 BREAK
 
@@ -256,28 +256,28 @@ BREAK
 
 [@0011]
 #IF
-CHECKITEM 龍血※仙珠 10000
+CHECKITEM 王者◆水晶 10000
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【龍血※仙珠*10000】。无法合成！
+MESSAGEBOX 你身上缺少【王者◆水晶*10000】。无法合成！
 BREAK
 
 #IF
-CHECKITEM 齊飛楊※章【八品】 1
+CHECKITEM 〈雄霸天下〉Lv8ゞ章 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【齊飛楊※章【八品】*1】。无法合成！
+MESSAGEBOX 你身上缺少【〈雄霸天下〉Lv8ゞ章*1】。无法合成！
 BREAK
 
 
 #IF
-CHECKITEM 龍血※仙珠 10000
-CHECKITEM 齊飛楊※章【八品】 1
+CHECKITEM 王者◆水晶 10000
+CHECKITEM 〈雄霸天下〉Lv8ゞ章 1
 #ACT
-TAKE 龍血※仙珠 10000
-TAKE 齊飛楊※章【八品】 1
-GIVE 震四方※章【九品】 1
-SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{震四方※章【九品】|251:0:0}{】|249:0:0}~~
+TAKE 王者◆水晶 10000
+TAKE 〈雄霸天下〉Lv8ゞ章 1
+GIVE 〈傲视群雄〉Lv9ゞ章 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{〈傲视群雄〉Lv9ゞ章|251:0:0}{】|249:0:0}~~
 GOTO @main
 BREAK
 
@@ -286,28 +286,28 @@ BREAK
 
 [@0022]
 #IF
-CHECKITEM 龍血※仙珠 20000
+CHECKITEM 王者◆水晶 20000
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【龍血※仙珠*20000】。无法合成！
+MESSAGEBOX 你身上缺少【王者◆水晶*20000】。无法合成！
 BREAK
 
 #IF
-CHECKITEM 震四方※章【九品】 1
+CHECKITEM 〈傲视群雄〉Lv9ゞ章 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【震四方※章【九品】*1】。无法合成！
+MESSAGEBOX 你身上缺少【〈傲视群雄〉Lv9ゞ章*1】。无法合成！
 BREAK
 
 
 #IF
-CHECKITEM 龍血※仙珠 20000
-CHECKITEM 震四方※章【九品】 1
+CHECKITEM 王者◆水晶 20000
+CHECKITEM 〈傲视群雄〉Lv9ゞ章 1
 #ACT
-TAKE 龍血※仙珠 20000
-TAKE 震四方※章【九品】 1
-GIVE 神王命※章【十品】 1
-SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{神王命※章【十品】|251:0:0}{】|249:0:0}~~
+TAKE 王者◆水晶 20000
+TAKE 〈傲视群雄〉Lv9ゞ章 1
+GIVE 〈皇图霸业〉Lv10ゞ章 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{〈皇图霸业〉Lv10ゞ章|251:0:0}{】|249:0:0}~~
 GOTO @main
 BREAK
 
@@ -316,28 +316,28 @@ BREAK
 
 [@0033]
 #IF
-CHECKITEM 龍血※仙珠 30000
+CHECKITEM 王者◆水晶 30000
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【龍血※仙珠*30000】。无法合成！
+MESSAGEBOX 你身上缺少【王者◆水晶*30000】。无法合成！
 BREAK
 
 #IF
-CHECKITEM 神王命※章【十品】 1
+CHECKITEM 〈皇图霸业〉Lv10ゞ章 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上缺少【神王命※章【十品】*1】。无法合成！
+MESSAGEBOX 你身上缺少【〈皇图霸业〉Lv10ゞ章*1】。无法合成！
 BREAK
 
 
 #IF
-CHECKITEM 龍血※仙珠 30000
-CHECKITEM 神王命※章【十品】 1
+CHECKITEM 王者◆水晶 30000
+CHECKITEM 〈皇图霸业〉Lv10ゞ章 1
 #ACT
-TAKE 龍血※仙珠 30000
-TAKE 神王命※章【十品】 1
-GIVE 山河盡※章【逐鹿】 1
-SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{山河盡※章【逐鹿】|251:0:0}{】|249:0:0}~~
+TAKE 王者◆水晶 30000
+TAKE 〈皇图霸业〉Lv10ゞ章 1
+GIVE 〈魑魅魍魉〉「尊」卐章 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{〈魑魅魍魉〉「尊」卐章|251:0:0}{】|249:0:0}~~
 GOTO @main
 BREAK
 

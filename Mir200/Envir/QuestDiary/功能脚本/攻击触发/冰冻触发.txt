@@ -3,53 +3,53 @@
 #IF
 RANDOM 100
 CHECKCURRTARGETRACE = 0
-CHECKITEMW 〈艾欧◆尼亚〉·莫邪ゞ天书 1
+CHECKITEMW 〈无畏先锋〉Lv1ゞ天书 1
 #ACT
 <$CURRRTARGETNAME>.MAKEPOSION 12 2
-SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈艾欧◆尼亚〉·莫邪ゞ天书成功触发冰冻属性，敌人被冰冻1秒！！
+SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈无畏先锋〉Lv1ゞ天书成功触发冰冻属性，敌人被冰冻1秒！！
 
 
 #IF
 RANDOM 80
 CHECKCURRTARGETRACE = 0
-CHECKITEMW 〈德玛◆西亚〉·奧義ゞ天书 1
+CHECKITEMW 〈战无不胜〉Lv2ゞ天书 1
 #ACT
 <$CURRRTARGETNAME>.MAKEPOSION 12 2
-SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈德玛◆西亚〉·奧義ゞ天书成功触发冰冻属性，敌人被冰冻1秒！！
+SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈战无不胜〉Lv2ゞ天书成功触发冰冻属性，敌人被冰冻1秒！！
 
 #IF
 RANDOM 70
 CHECKCURRTARGETRACE = 0
-CHECKITEMW 〈无谓◆先锋〉·終極ゞ天书 1
+CHECKITEMW 〈鸿弑炎魔〉Lv3ゞ天书 1
 #ACT
 <$CURRRTARGETNAME>.MAKEPOSION 12 3
-SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈无谓◆先锋〉·終極ゞ天书成功触发冰冻属性，敌人被冰冻2秒！！
+SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈鸿弑炎魔〉Lv3ゞ天书成功触发冰冻属性，敌人被冰冻2秒！！
 
 #IF
 RANDOM 60
 CHECKCURRTARGETRACE = 0
-CHECKITEMW 〈无敌◆寂寞〉·君王ゞ天书 1
+CHECKITEMW 〈紫电青霜〉Lv4ゞ天书 1
 #ACT
 <$CURRRTARGETNAME>.MAKEPOSION 12 3
-SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈无敌◆寂寞〉·君王ゞ天书成功触发冰冻属性，敌人被冰冻2秒！！
+SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈紫电青霜〉Lv4ゞ天书成功触发冰冻属性，敌人被冰冻2秒！！
 
 
 #IF
 RANDOM 50
 CHECKCURRTARGETRACE = 0
-CHECKITEMW 〈战无◆不胜〉·逍遥ゞ天书 1
+CHECKITEMW 〈为侠为魔〉Lv5ゞ天书 1
 #ACT
 <$CURRRTARGETNAME>.MAKEPOSION 12 3
-SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈战无◆不胜〉·逍遥ゞ天书成功触发冰冻属性，敌人被冰冻2秒！！
+SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈为侠为魔〉Lv5ゞ天书成功触发冰冻属性，敌人被冰冻2秒！！
 
 
 #IF
 RANDOM 30
 CHECKCURRTARGETRACE = 0
-CHECKITEMW 〈乱世◆逐鹿〉·昊天ゞ天书 1
+CHECKITEMW 【聲東擊西】何须马革裹尸还★书 1
 #ACT
 <$CURRRTARGETNAME>.MAKEPOSION 12 4
-SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了〈乱世◆逐鹿〉·昊天ゞ天书成功触发冰冻属性，敌人被冰冻3秒！！
+SENDMSG 0 [新闻]:玩家『<$USERNAME>』因为佩戴了【聲東擊西】何须马革裹尸还★书成功触发冰冻属性，敌人被冰冻3秒！！
 
 
 

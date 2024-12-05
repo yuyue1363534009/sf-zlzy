@@ -7,9 +7,9 @@ OPENMERCHANTBIGDLG 74 496 0 4 0 0 1 537 8
 \ \ \ \
 <           /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
 <         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
-<                         /AUTOCOLOR=0>         <魑魅魍魉の卧榻「圣卐章」/FCOLOR=251>\
+<                         /AUTOCOLOR=0>         <【不講武德】古来征战几人回★章/FCOLOR=251>\
 <         /AUTOCOLOR=0<---------------------------------------------------------------------------/SCOLOR=12>\
-<               /AUTOCOLOR=0<合成需求：/FCOLOR=253>  <風卷·雄霸兲下「尊卐章」+888个鸿蒙★天羽+888w逐鹿币/FCOLOR=253>\
+<               /AUTOCOLOR=0<合成需求：/FCOLOR=253>  <《拳拳到肉》「圣」卐章+888个荣耀★水晶+888w逐鹿币/FCOLOR=253>\
 <         /AUTOCOLOR=0<---------------------------------------------------------------------------/SCOLOR=12>\
 <               /AUTOCOLOR=0<勋章属性：/FCOLOR=250>  <暗神力5.0倍.自身附带加血属性..隐藏功魔道提升500%..防冰冻防爆/FCOLOR=254>\
 <         /AUTOCOLOR=0<---------------------------------------------------------------------------/SCOLOR=12>\
@@ -35,28 +35,28 @@ MESSAGEBOX 你逐鹿币不足888W...
 BREAK
 
 #IF
-CHECKITEM 風卷·雄霸兲下「尊卐章」 1
+CHECKITEM 《拳拳到肉》「圣」卐章 1
 #ACT
 #ELSEACT
-MESSAGEBOX 你身上没有【風卷·雄霸兲下「尊卐章」】。无法合成！
+MESSAGEBOX 你身上没有【《拳拳到肉》「圣」卐章】。无法合成！
 BREAK
 
 #IF
-CHECKITEM 鸿蒙★天羽 888
+CHECKITEM 荣耀★水晶 888
 #ELSEACT
-MESSAGEBOX 你鸿蒙★天羽不足888个...
+MESSAGEBOX 你荣耀★水晶不足888个...
 BREAK
 
 #IF
 CHECKGAMEGIRD ? 8880000
-CHECKITEM 風卷·雄霸兲下「尊卐章」 1
-CHECKITEM 鸿蒙★天羽 888
+CHECKITEM 《拳拳到肉》「圣」卐章 1
+CHECKITEM 荣耀★水晶 888
 #ACT
-TAKE 鸿蒙★天羽 888
+TAKE 荣耀★水晶 888
 GAMEGIRD - 8880000
-TAKE 風卷·雄霸兲下「尊卐章」 1
-GIVE 魑魅魍魉の卧榻「圣卐章」 1
-SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{魑魅魍魉の卧榻「圣卐章」|251:0:0}{】|249:0:0}~~
+TAKE 《拳拳到肉》「圣」卐章 1
+GIVE 【不講武德】古来征战几人回★章 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{【不講武德】古来征战几人回★章|251:0:0}{】|249:0:0}~~
 GOTO @main
 BREAK
 
