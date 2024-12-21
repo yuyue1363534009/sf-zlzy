@@ -7,22 +7,22 @@ OPENMERCHANTBIGDLG 74 491 1 4 0 0 1 537 8
 \ \ \ \
 <           /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
 <         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
-<            /AUTOCOLOR=0><·不屈★战魂·/SCOLOR=253>  <需要10万逐鹿币/SCOLOR=250>  <属性:爆率+100% 刀刀切割58W/SCOLOR=70>   <称号提升/@称号提升2000>\
-<            /AUTOCOLOR=0><·无畏★先驱·/SCOLOR=253>  <需要20万逐鹿币/SCOLOR=250>  <属性:爆率+130% 刀刀切割88W/SCOLOR=70>   <称号提升/@称号提升2001>\
-<            /AUTOCOLOR=0><·秩序★之光·/SCOLOR=253>  <需要30万逐鹿币/SCOLOR=250>  <属性:爆率+160% 刀刀切割188W/SCOLOR=70>  <称号提升/@称号提升2002>\
-<            /AUTOCOLOR=0><·命运★之轮·/SCOLOR=253>  <需要50万逐鹿币/SCOLOR=250>  <属性:爆率+200% 刀刀切割388W/SCOLOR=70>  <称号提升/@称号提升2003>\
+<            /AUTOCOLOR=0><·炉火★纯青·/SCOLOR=253>  <需要10万逐鹿币/SCOLOR=250>  <属性:爆率+100% 刀刀切割58W/SCOLOR=70>   <称号提升/@称号提升2000>\
+<            /AUTOCOLOR=0><·名扬★四海·/SCOLOR=253>  <需要20万逐鹿币/SCOLOR=250>  <属性:爆率+130% 刀刀切割88W/SCOLOR=70>   <称号提升/@称号提升2001>\
+<            /AUTOCOLOR=0><·谁与★争锋·/SCOLOR=253>  <需要30万逐鹿币/SCOLOR=250>  <属性:爆率+160% 刀刀切割188W/SCOLOR=70>  <称号提升/@称号提升2002>\
+<            /AUTOCOLOR=0><·登峰★造极·/SCOLOR=253>  <需要50万逐鹿币/SCOLOR=250>  <属性:爆率+200% 刀刀切割388W/SCOLOR=70>  <称号提升/@称号提升2003>\
 <         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
-<            /AUTOCOLOR=0><·裁决★之印·/SCOLOR=253>  <需要100万逐鹿币/SCOLOR=250> <属性:爆率+250% 刀刀切割588W/SCOLOR=70>  <称号提升/@称号提升2004>\
-<            /AUTOCOLOR=0><·踏破★天穹·/SCOLOR=253>  <需要200万逐鹿币/SCOLOR=250> <属性:爆率+300% 刀刀切割888W/SCOLOR=70>  <称号提升/@称号提升2005>\
-<            /AUTOCOLOR=0><·无敌★王者·/SCOLOR=253>  <需要300万逐鹿币/SCOLOR=250> <属性:爆率+400% 刀刀切割1288W/SCOLOR=70> <称号提升/@称号提升2006>\
+<            /AUTOCOLOR=0><·凤翔★九天·/SCOLOR=253>  <需要100万逐鹿币/SCOLOR=250> <属性:爆率+250% 刀刀切割588W/SCOLOR=70>  <称号提升/@称号提升2004>\
+<            /AUTOCOLOR=0><·无人★能挡·/SCOLOR=253>  <需要200万逐鹿币/SCOLOR=250> <属性:爆率+300% 刀刀切割888W/SCOLOR=70>  <称号提升/@称号提升2005>\
+<            /AUTOCOLOR=0><·逐鹿★群雄·/SCOLOR=253>  <需要300万逐鹿币/SCOLOR=250> <属性:爆率+400% 刀刀切割1288W/SCOLOR=70> <称号提升/@称号提升2006>\
 <         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
-<              /AUTOCOLOR=0><提示声明：需要把土城雄霸★天下称号升满，在来升级以上超级称号！/SCOLOR=251>\
+<              /AUTOCOLOR=0><提示声明：需要把土城武神★天尊称号升满，在来升级以上超级称号！/SCOLOR=251>\
 
 [@称号提升2000]
 #IF
 SMALL U2 11
 #ACT
-MESSAGEBOX 请先升满土城雄霸★天下称号升满，在来升级以上超级称号！
+MESSAGEBOX 请先升满土城武神★天尊称号升满，在来升级以上超级称号！
 BREAK
 
 #IF
@@ -37,10 +37,10 @@ CHECKGAMEGIRD > 99999
 #ACT
 INC U2 1
 GAMEGIRD - 100000
-DEPRIVETITLE 雄霸★天下
-CONFERTITLE ·不屈★战魂· 1
+DEPRIVETITLE 武神★天尊
+CONFERTITLE ·炉火★纯青· 1
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMSG 6 已成功升级，·不屈★战魂·称号...！
+SENDMSG 6 已成功升级，·炉火★纯青·称号...！
 BREAK
 
 
@@ -65,10 +65,10 @@ CHECKGAMEGIRD > 199999
 #ACT
 INC U2 1
 GAMEGIRD - 200000
-DEPRIVETITLE ·不屈★战魂·
-CONFERTITLE ·无畏★先驱· 1
+DEPRIVETITLE ·炉火★纯青·
+CONFERTITLE ·名扬★四海· 1
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMSG 6 已成功升级，·无畏★先驱·称号...！
+SENDMSG 6 已成功升级，·名扬★四海·称号...！
 BREAK
 
 
@@ -92,10 +92,10 @@ CHECKGAMEGIRD > 299999
 #ACT
 INC U2 1
 GAMEGIRD - 300000
-DEPRIVETITLE ·无畏★先驱·
-CONFERTITLE ·秩序★之光· 1
+DEPRIVETITLE ·名扬★四海·
+CONFERTITLE ·谁与★争锋· 1
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMSG 6 已成功升级，·秩序★之光·称号...！
+SENDMSG 6 已成功升级，·谁与★争锋·称号...！
 BREAK
 
 
@@ -120,10 +120,10 @@ CHECKGAMEGIRD > 499999
 #ACT
 INC U2 1
 GAMEGIRD - 500000
-DEPRIVETITLE ·秩序★之光·
-CONFERTITLE ·命运★之轮· 1
+DEPRIVETITLE ·谁与★争锋·
+CONFERTITLE ·登峰★造极· 1
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMSG 6 已成功升级，·命运★之轮·称号...！
+SENDMSG 6 已成功升级，·登峰★造极·称号...！
 BREAK
 
 
@@ -148,10 +148,10 @@ CHECKGAMEGIRD > 999999
 #ACT
 INC U2 1
 GAMEGIRD - 1000000
-DEPRIVETITLE ·命运★之轮·
-CONFERTITLE ·裁决★之印· 1
+DEPRIVETITLE ·登峰★造极·
+CONFERTITLE ·凤翔★九天· 1
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMSG 6 已成功升级，·裁决★之印·称号...！
+SENDMSG 6 已成功升级，·凤翔★九天·称号...！
 BREAK
 
 
@@ -175,10 +175,10 @@ CHECKGAMEGIRD > 1999999
 #ACT
 INC U2 1
 GAMEGIRD - 2000000
-DEPRIVETITLE ·裁决★之印·
-CONFERTITLE ·踏破★天穹· 1
+DEPRIVETITLE ·凤翔★九天·
+CONFERTITLE ·无人★能挡· 1
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMSG 6 已成功升级，·踏破★天穹·称号...！
+SENDMSG 6 已成功升级，·无人★能挡·称号...！
 BREAK
 
 
@@ -201,10 +201,10 @@ CHECKGAMEGIRD > 2999999
 #ACT
 INC U2 1
 GAMEGIRD - 3000000
-DEPRIVETITLE ·踏破★天穹·
-CONFERTITLE ·无敌★王者· 1
+DEPRIVETITLE ·无人★能挡·
+CONFERTITLE ·逐鹿★群雄· 1
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMSG 6 已成功升级，·无敌★王者·称号...！
+SENDMSG 6 已成功升级，·逐鹿★群雄·称号...！
 BREAK
 
 

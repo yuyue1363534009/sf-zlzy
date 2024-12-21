@@ -2,7 +2,7 @@
 #IF
 LARGE U2 10
 #ACT
-MESSAGEBOX 你的称号已经达到雄霸★天下以上,不能在点开
+MESSAGEBOX 你的称号已经达到武神★天尊以上,不能在点开
 BREAK
 
 #IF
@@ -12,27 +12,27 @@ OPENMERCHANTBIGDLG 74 484 1 0 0 10 1 618 7
 \ \ \ \
 <             /AUTOCOLOR=0><┅/SCOLOR=254> <┅/SCOLOR=250> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=250> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=250> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=250> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243>\
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><九品★教头/SCOLOR=250>       <需要10000元宝/SCOLOR=70>      <攻魔道5-5 爆率增加5%  /SCOLOR=254>           <点击提升/@称号提升2001>  \
+<         /AUTOCOLOR=0><初学★子弟/SCOLOR=250>       <需要10000元宝/SCOLOR=70>      <攻魔道5-5 爆率增加5%  /SCOLOR=254>           <点击提升/@称号提升2001>  \
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><八品★骁骑/SCOLOR=250>       <需要30000元宝/SCOLOR=70>      <攻魔道10-10 爆率增加10% /SCOLOR=254>         <点击提升/@称号提升2002>  \
+<         /AUTOCOLOR=0><初窥★武学/SCOLOR=250>       <需要30000元宝/SCOLOR=70>      <攻魔道10-10 爆率增加10% /SCOLOR=254>         <点击提升/@称号提升2002>  \
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><七品★侍卫/SCOLOR=250>       <需要50000元宝/SCOLOR=70>      <攻魔道15-15 爆率增加15% /SCOLOR=254>         <点击提升/@称号提升2003>  \
+<         /AUTOCOLOR=0><天资★过人/SCOLOR=250>       <需要50000元宝/SCOLOR=70>      <攻魔道15-15 爆率增加15% /SCOLOR=254>         <点击提升/@称号提升2003>  \
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><六品★都督/SCOLOR=250>       <需要70000元宝/SCOLOR=70>      <攻魔道20-20 爆率增加20% /SCOLOR=254>         <点击提升/@称号提升2004>  \
+<         /AUTOCOLOR=0><锋芒★毕露/SCOLOR=250>       <需要70000元宝/SCOLOR=70>      <攻魔道20-20 爆率增加20% /SCOLOR=254>         <点击提升/@称号提升2004>  \
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><五品★太守/SCOLOR=250>       <需要100000元宝/SCOLOR=70>     <攻魔道30-30 爆率增加25% /SCOLOR=254>         <点击提升/@称号提升2005>  \
+<         /AUTOCOLOR=0><涉足★江湖/SCOLOR=250>       <需要100000元宝/SCOLOR=70>     <攻魔道30-30 爆率增加25% /SCOLOR=254>         <点击提升/@称号提升2005>  \
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><四品★刺史/SCOLOR=250>       <需要150000元宝/SCOLOR=70>     <攻魔道40-40 爆率增加30% /SCOLOR=254>         <点击提升/@称号提升2006>  \
+<         /AUTOCOLOR=0><杀戮★武林/SCOLOR=250>       <需要150000元宝/SCOLOR=70>     <攻魔道40-40 爆率增加30% /SCOLOR=254>         <点击提升/@称号提升2006>  \
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><三品★司马/SCOLOR=250>       <需要200000元宝/SCOLOR=70>     <攻魔道50-50 爆率增加40% /SCOLOR=254>         <点击提升/@称号提升2007>  \
+<         /AUTOCOLOR=0><名震★江湖/SCOLOR=250>       <需要200000元宝/SCOLOR=70>     <攻魔道50-50 爆率增加40% /SCOLOR=254>         <点击提升/@称号提升2007>  \
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><二品★太尉/SCOLOR=250>       <需要300000元宝/SCOLOR=70>     <攻魔道60-60 爆率增加50% /SCOLOR=254>         <点击提升/@称号提升2008>  \
+<         /AUTOCOLOR=0><开山★立派/SCOLOR=250>       <需要300000元宝/SCOLOR=70>     <攻魔道60-60 爆率增加50% /SCOLOR=254>         <点击提升/@称号提升2008>  \
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><一品★将军/SCOLOR=250>       <需要400000元宝/SCOLOR=70>     <攻魔道80-80 爆率增加60% /SCOLOR=254>         <点击提升/@称号提升2009>  \
+<         /AUTOCOLOR=0><武林★泰斗/SCOLOR=250>       <需要400000元宝/SCOLOR=70>     <攻魔道80-80 爆率增加60% /SCOLOR=254>         <点击提升/@称号提升2009>  \
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><九五★至尊/SCOLOR=250>       <需要500000元宝/SCOLOR=70>     <攻魔道90-90 爆率增加70% /SCOLOR=254>         <点击提升/@称号提升2010>  \
+<         /AUTOCOLOR=0><浩瀚★灭天/SCOLOR=250>       <需要500000元宝/SCOLOR=70>     <攻魔道90-90 爆率增加70% /SCOLOR=254>         <点击提升/@称号提升2010>  \
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0><雄霸★天下/SCOLOR=250>       <需要700000元宝/SCOLOR=70>     <攻魔道100-100 爆率增加80% /SCOLOR=254>       <点击提升/@称号提升2011>  \
+<         /AUTOCOLOR=0><武神★天尊/SCOLOR=250>       <需要700000元宝/SCOLOR=70>     <攻魔道100-100 爆率增加80% /SCOLOR=254>       <点击提升/@称号提升2011>  \
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
 
 
@@ -55,8 +55,8 @@ CHECKGAMEGOLD > 9999
 #ACT
 INC U2 1
 GAMEGOLD - 10000
-CONFERTITLE 九品★教头 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{九品★教头|250:0:1}.
+CONFERTITLE 初学★子弟 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{初学★子弟|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -79,9 +79,9 @@ CHECKGAMEGOLD > 29999
 #ACT
 INC U2 1
 GAMEGOLD - 30000
-DEPRIVETITLE 九品★教头
-CONFERTITLE 八品★骁骑 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{八品★骁骑|250:0:1}.
+DEPRIVETITLE 初学★子弟
+CONFERTITLE 初窥★武学 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{初窥★武学|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -104,9 +104,9 @@ CHECKGAMEGOLD > 49999
 #ACT
 INC U2 1
 GAMEGOLD - 50000
-DEPRIVETITLE 八品★骁骑
-CONFERTITLE 七品★侍卫 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{七品★侍卫|250:0:1}.
+DEPRIVETITLE 初窥★武学
+CONFERTITLE 天资★过人 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{天资★过人|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -129,9 +129,9 @@ CHECKGAMEGOLD > 69999
 #ACT
 INC U2 1
 GAMEGOLD - 70000
-DEPRIVETITLE 七品★侍卫
-CONFERTITLE 六品★都督 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{六品★都督|250:0:1}.
+DEPRIVETITLE 天资★过人
+CONFERTITLE 锋芒★毕露 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{锋芒★毕露|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -154,9 +154,9 @@ CHECKGAMEGOLD > 99999
 #ACT
 INC U2 1
 GAMEGOLD - 100000
-DEPRIVETITLE 六品★都督
-CONFERTITLE 五品★太守 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{五品★太守|250:0:1}.
+DEPRIVETITLE 锋芒★毕露
+CONFERTITLE 涉足★江湖 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{涉足★江湖|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -179,9 +179,9 @@ CHECKGAMEGOLD > 149999
 #ACT
 INC U2 1
 GAMEGOLD - 150000
-DEPRIVETITLE 五品★太守
-CONFERTITLE 四品★刺史 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{四品★刺史|250:0:1}.
+DEPRIVETITLE 涉足★江湖
+CONFERTITLE 杀戮★武林 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{杀戮★武林|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -204,9 +204,9 @@ CHECKGAMEGOLD > 199999
 #ACT
 INC U2 1
 GAMEGOLD - 200000
-DEPRIVETITLE 四品★刺史
-CONFERTITLE 三品★司马 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{三品★司马|250:0:1}.
+DEPRIVETITLE 杀戮★武林
+CONFERTITLE 名震★江湖 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{名震★江湖|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -229,9 +229,9 @@ CHECKGAMEGOLD > 299999
 #ACT
 INC U2 1
 GAMEGOLD - 300000
-DEPRIVETITLE 三品★司马
-CONFERTITLE 二品★太尉 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{二品★太尉|250:0:1}.
+DEPRIVETITLE 名震★江湖
+CONFERTITLE 开山★立派 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{开山★立派|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -254,9 +254,9 @@ CHECKGAMEGOLD > 399999
 #ACT
 INC U2 1
 GAMEGOLD - 400000
-DEPRIVETITLE 二品★太尉
-CONFERTITLE 一品★将军 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{一品★将军|250:0:1}.
+DEPRIVETITLE 开山★立派
+CONFERTITLE 武林★泰斗 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{武林★泰斗|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -279,9 +279,9 @@ CHECKGAMEGOLD > 499999
 #ACT
 INC U2 1
 GAMEGOLD - 500000
-DEPRIVETITLE 一品★将军
-CONFERTITLE 九五★至尊 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{九五★至尊|250:0:1}.
+DEPRIVETITLE 武林★泰斗
+CONFERTITLE 浩瀚★灭天 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{浩瀚★灭天|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -304,8 +304,8 @@ CHECKGAMEGOLD > 699999
 #ACT
 INC U2 1
 GAMEGOLD - 700000
-DEPRIVETITLE 九五★至尊
-CONFERTITLE 雄霸★天下 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{雄霸★天下|250:0:1}.
+DEPRIVETITLE 浩瀚★灭天
+CONFERTITLE 武神★天尊 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{武神★天尊|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
