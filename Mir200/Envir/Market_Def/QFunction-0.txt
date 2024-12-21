@@ -1027,7 +1027,7 @@ CHECKCURRTARGETRACE = 0
 DEPRIVETITLE 逐鹿※之力
 SETICON 1 -1
 SET   [270] 0
-<$KILLER>.GAMEPOINT + 50000
+<$KILLER>.GAMEGIRD + 50000
 GuildNOTiceMsg 116 0 [系统]“{<$KILLER>|21:0:1}”成功击杀携带逐鹿之力的“{<$USERNAME>|146:0:1}”获得50000逐鹿币“{5|242:0:1}” 
 GuildNOTiceMsg 116 0 [系统]“{<$KILLER>|21:0:1}”成功击杀携带逐鹿之力的“{<$USERNAME>|146:0:1}”获得50000逐鹿币“{5|242:0:1}”
 GuildNOTiceMsg 116 0 [系统]“{<$KILLER>|21:0:1}”成功击杀携带逐鹿之力的“{<$USERNAME>|146:0:1}”获得50000逐鹿币“{5|242:0:1}” 
