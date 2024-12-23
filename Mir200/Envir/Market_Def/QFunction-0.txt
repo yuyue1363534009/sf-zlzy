@@ -299,10 +299,76 @@ CHECKMYSHOP
 MESSAGEBOX \　\　　　　　你已经有店铺了
 BREAK
 
+#OR
+CheckContainsText <$STR(S1)> @
+CheckContainsText <$STR(S1)> ~
+CheckContainsText <$STR(S1)> [
+CheckContainsText <$STR(S1)> ]
+CheckContainsText <$STR(S1)> <
+CheckContainsText <$STR(S1)> >
+CheckContainsText <$STR(S1)> {
+CheckContainsText <$STR(S1)> }
+CheckContainsText <$STR(S1)> 【
+CheckContainsText <$STR(S1)> 】
+CheckContainsText <$STR(S1)> 微
+CheckContainsText <$STR(S1)> 信
+CheckContainsText <$STR(S1)> 垃圾
+CheckContainsText <$STR(S1)> 托
+CheckContainsText <$STR(S1)> 拖
+CheckContainsText <$STR(S1)> 待遇
+CheckContainsText <$STR(S1)> 垃
+CheckContainsText <$STR(S1)> 提现
+CheckContainsText <$STR(S1)> 提
+CheckContainsText <$STR(S1)> 现
+CheckContainsText <$STR(S1)> 操
+CheckContainsText <$STR(S1)> 妈
+CheckContainsText <$STR(S1)> q
+CheckContainsText <$STR(S1)> Q
+CheckContainsText <$STR(S1)> vx
+CheckContainsText <$STR(S1)> VX
+CheckContainsText <$STR(S1)> 手机
+CheckContainsText <$STR(S1)> 联系
+CheckContainsText <$STR(S1)> 1
+CheckContainsText <$STR(S1)> 2
+CheckContainsText <$STR(S1)> 3
+CheckContainsText <$STR(S1)> 4
+CheckContainsText <$STR(S1)> 5
+CheckContainsText <$STR(S1)> 6
+CheckContainsText <$STR(S1)> 7
+CheckContainsText <$STR(S1)> 8
+CheckContainsText <$STR(S1)> 9
+CheckContainsText <$STR(S1)> 0
+CheckContainsText <$STR(S1)> GM
+CheckContainsText <$STR(S1)> gm
+CheckContainsText <$STR(S1)> 草
+CheckContainsText <$STR(S1)> 泥马
+CheckContainsText <$STR(S1)> 一
+CheckContainsText <$STR(S1)> 二
+CheckContainsText <$STR(S1)> 三
+CheckContainsText <$STR(S1)> 四
+CheckContainsText <$STR(S1)> 五
+CheckContainsText <$STR(S1)> 六
+CheckContainsText <$STR(S1)> 七
+CheckContainsText <$STR(S1)> 八
+CheckContainsText <$STR(S1)> 九
+CheckContainsText <$STR(S1)> 零
+CheckContainsText <$STR(S1)> ①
+CheckContainsText <$STR(S1)> ②
+CheckContainsText <$STR(S1)> ③
+CheckContainsText <$STR(S1)> ④
+CheckContainsText <$STR(S1)> ⑤
+CheckContainsText <$STR(S1)> ⑥
+CheckContainsText <$STR(S1)> ⑦
+CheckContainsText <$STR(S1)> ⑧
+CheckContainsText <$STR(S1)> ⑨
+#ACT
+MESSAGEBOX \　\　　　　　有禁止字符，请重新输入！
+BREAK
+
 #IF
 CHECKSHOPNAME <$STR(S1)>
 #ACT
-MESSAGEBOX \　\　　　　　<$STR(S1)>店铺名称已经存在，请重新选择一个
+MESSAGEBOX \　\　　　　　<$STR(S1)>店铺名称已经存在，请重新选择一个！
 BREAK
 
 #IF
@@ -312,12 +378,12 @@ CREATEMYSHOP <$STR(S1)>
 [@CreateMyShopOK]
 #SAY
 <>\ \
-你的店铺创建成功
+你的店铺创建成功！
 
 [@CreateMyShopFail]
 #SAY
 <>\ \
-你的店铺创建失败
+你的店铺创建失败！
 
 [@PlayOffLine]
 #IF
