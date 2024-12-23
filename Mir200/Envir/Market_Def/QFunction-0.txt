@@ -277,50 +277,48 @@ BREAK
 
 
 [@QueryMyShopFail]
-#IF 
 #ACT
-MESSAGEBOX 你还没有个人商店，是否创建你的个人商店？\\点击确定创建个人商店。\\创建前请仔细查看个人商店说明!很重要! @创建个人商店 @取消
+MESSAGEBOX 你还没有个人商店，是否创建你的个人商店？\\点击确定创建个人商店。 @创建个人商店 @取消
+
 [@创建个人商店]
-#IF 
-#ACT
-CLOSEBigDialogBox
-#SAY
-由于引擎限制，个人商店内无法添加逐鹿币为交易货币。\ \
-所以我们将创建了商店专用的交易货币<【交易逐鹿币】/SCOLOR=250>\ \
-玩家在个人商店可选择<【交易逐鹿币】/SCOLOR=250>为货币。交易后可到土城\ \
-右侧兑换成<【逐鹿币】/SCOLOR=254>  右兑换比例为<【1:1】/SCOLOR=254>\ \
-<>  <我要开店(点击输入你喜欢的店铺名称)/@@InputString4>\
-[@InputString4]
+\ \ \
+亲爱的玩家你好。这里可以申请开店。\
+你可以把你的物品放到你的店铺里出售，游戏中的玩家可以查询到你要出售的物品。\
+也可以把不用的物品放到店铺的仓库里。\
+点击客户端中'市场'就可以进入到你的店铺中,也可以查询其他用户的店铺和物品，\
+可以很方便的把仓库物品和出售的物品相互转移。\ \
+玩家在个人商店交易货币可选择<【战神币】/SCOLOR=250>\ 
+<【战神币】和【逐鹿币】/SCOLOR=254> 兑换比例为 <【1:1】/SCOLOR=254>\ \
+<我要开店(点击输入你喜欢的店铺名称)/@@InputString1>\
 
 
-#IF 
+[@InputString1]
+#IF
 CHECKMYSHOP
 #ACT
-CLOSEBigDialogBox
-MESSAGEBOX 你已经有店铺了
+MESSAGEBOX \　\　　　　　你已经有店铺了
 BREAK
-#IF 
-CHECKSHOPNAME <$STR(S$4)>
+
+#IF
+CHECKSHOPNAME <$STR(S1)>
 #ACT
-MESSAGEBOX <$STR(S$4)>店铺名称已经存在，请重新选择一个
+MESSAGEBOX \　\　　　　　<$STR(S1)>店铺名称已经存在，请重新选择一个
 BREAK
-#IF 
-#ACT
-CREATEMYSHOP <$STR(S$4)>
-[@CreateMyShopOK]
+
 #IF
 #ACT
-CLOSEBigDialogBox
+CREATEMYSHOP <$STR(S1)>
+
+[@CreateMyShopOK]
 #SAY
 <>\ \
 你的店铺创建成功
+
 [@CreateMyShopFail]
-#IF 
-#ACT
-CLOSEBigDialogBox
 #SAY
 <>\ \
 你的店铺创建失败
+
 [@PlayOffLine]
 #IF
 CHECKhum 3 100
