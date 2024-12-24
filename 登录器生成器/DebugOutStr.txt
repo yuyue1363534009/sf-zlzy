@@ -165,3 +165,6 @@
 [2024/11/30 6:01:42] OnDeviceDestroy
 [2024/12/22 2:32:05] OnDeviceLost
 [2024/12/22 2:32:05] OnDeviceCreate
+[2024/12/22 17:14:38] OnDeviceLost
+[2024/12/22 17:14:38] OnDeviceCreate
+[2024/12/22 17:14:38] OnDeviceDestroy
