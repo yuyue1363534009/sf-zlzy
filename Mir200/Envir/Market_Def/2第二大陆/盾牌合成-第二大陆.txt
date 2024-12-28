@@ -2,12 +2,15 @@
 #IF
 CHECKLEVELEX > 0
 #ACT
+GetDBItemFieldValue 《乱世逐鹿》「殺」卐盾 idx S$专属展示1
 OPENMERCHANTBIGDLG 74 535 1 4 0 0 1 537 8
 #SAY
-\ \ \ \
+<><PlayImg:97:8:7:100:15:5:0:0>\
+\ \ \
 <           /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
 <         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
-<         /AUTOCOLOR=0>　　                   <《乱世逐鹿》「殺」卐盾/FCOLOR=254>\
+<         /AUTOCOLOR=0>　　 <ItemShow:<$STR(S$专属展示1)>:0:0:-10:1:0:1:50>\
+<         /AUTOCOLOR=0>　           <《乱世逐鹿》「殺」卐盾/FCOLOR=70>\
 <         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
 <         /AUTOCOLOR=0>　　 <散人合成：/FCOLOR=250> <〈赤心巡天〉Lv9ヾ盾+88W逐鹿币合成/FCOLOR=254>\
 <         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\

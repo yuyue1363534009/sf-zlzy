@@ -8,82 +8,104 @@ CHECK [303] 1
 CHECK [304] 1
 CHECK [305] 1
 CHECK [306] 1
-CHECK [307] 1
-NOT CHECKTITLE 同门之谊
+NOT CHECKTITLE 首座之力
 #ACT
-CONFERTITLE 同门之谊
+CONFERTITLE 首座之力
 
+#IF
+CHECKTITLE  首座之力
+#ACT
+MOV S$激活状态 <><Img:27:101:530:270>
+#ELSEACT
+MOV S$激活状态 <><Img:26:101:530:270>
 
 #IF
 CHECK [301] 0
 #ACT
-MOV S$激活1 <未激活/FCOLOR=56>
+MOV S$激活1 <><Img:0:102:40:54|^249#尚未提交^250#点击提交卡片/@田灵儿>\
 #ELSEACT
-MOV S$激活1 <已经激活/FCOLOR=250>
+MOV S$激活1 <><PlayImg:102:1:9:150:40:54:0:0|^250#卡片已提交>\
 
 #IF
 CHECK [302] 0
 #ACT
-MOV S$激活2 <未激活/FCOLOR=56>
+MOV S$激活2 <><Img:10:102:160:54|^249#尚未激活^250#点击提交卡片/@宋大仁>\
 #ELSEACT
-MOV S$激活2 <已经激活/FCOLOR=250>
+MOV S$激活2 <><PlayImg:102:11:9:150:160:54:0:0|^250#卡片已提交>\
 
 #IF
 CHECK [303] 0
 #ACT
-MOV S$激活3 <未激活/FCOLOR=56>
+MOV S$激活3 <><Img:20:102:280:54|^249#尚未激活^250#点击提交卡片/@吴大义>\
 #ELSEACT
-MOV S$激活3 <已经激活/FCOLOR=250>
+MOV S$激活3 <><PlayImg:102:21:9:150:280:54:0:0|^250#卡片已提交>\
 
 #IF
 CHECK [304] 0
 #ACT
-MOV S$激活4 <未激活/FCOLOR=56>
+MOV S$激活4 <><Img:30:102:400:38|^249#尚未激活^250#点击提交卡片/@郑大礼>\
 #ELSEACT
-MOV S$激活4 <已经激活/FCOLOR=250>
+MOV S$激活4 <><PlayImg:102:31:9:150:400:38:0:0|^250#卡片已提交>\
 
 #IF
 CHECK [305] 0
 #ACT
-MOV S$激活5 <未激活/FCOLOR=56>
+MOV S$激活5 <><Img:40:102:520:6|^249#尚未激活^250#点击提交卡片/@何大智>\
 #ELSEACT
-MOV S$激活5 <已经激活/FCOLOR=250>
+MOV S$激活5 <><PlayImg:102:41:9:150:520:6:0:0|^250#卡片已提交>\
 
 #IF
 CHECK [306] 0
 #ACT
-MOV S$激活6 <未激活/FCOLOR=56>
+MOV S$激活6 <><Img:50:102:640:-26|^249#尚未激活^250#点击提交卡片/@吕大信>\
 #ELSEACT
-MOV S$激活6 <已经激活/FCOLOR=250>
-
-#IF
-CHECK [307] 0
-#ACT
-MOV S$激活7 <未激活/FCOLOR=56>
-#ELSEACT
-MOV S$激活7 <已经激活/FCOLOR=250>
+MOV S$激活6 <><PlayImg:102:51:9:150:640:-26:0:|^250#卡片已提交>\
 
 #IF
 #ACT
-OPENMERCHANTBIGDLG 74 489 0 0 0 10 1 488 8
+OPENMERCHANTBIGDLG 101 59 0 4 0 -100 0
 #SAY
-\ \ \ \
-<        /AUTOCOLOR=0><> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
-<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
-<       /AUTOCOLOR=0><>         <田灵儿/@田灵儿>         <激活程度/FCOLOR=254>:         <$STR(S$激活1)>\
-<       /AUTOCOLOR=0><>         <宋大仁/@宋大仁>         <激活程度/FCOLOR=254>:         <$STR(S$激活2)>\
-<       /AUTOCOLOR=0><>         <吴大义/@吴大义>         <激活程度/FCOLOR=254>:         <$STR(S$激活3)>\
-<       /AUTOCOLOR=0><>         <郑大礼/@郑大礼>         <激活程度/FCOLOR=254>:         <$STR(S$激活4)>\
-<       /AUTOCOLOR=0><>         <何大智/@何大智>         <激活程度/FCOLOR=254>:         <$STR(S$激活5)>\
-<       /AUTOCOLOR=0><>         <吕大信/@吕大信>         <激活程度/FCOLOR=254>:         <$STR(S$激活6)>\
-<       /AUTOCOLOR=0><>         <杜必书/@杜必书>         <激活程度/FCOLOR=254>:         <$STR(S$激活7)>\
-<>                   <全部激活称号属性查看|250#每激活一个奖励永久HP+1000,攻击+100,^250#7个全部激活触发增加称号：同门之谊>          <下一页/@下一页1>\
+<><PlayImg:101:59:24:100:-20:-52:0:0>\
+<><Img:83:101:520:-100>\
+<><Img:8:101:760:-10|/@关闭对话框>\
+<><Img:84:101:330:340>\
+<><Img:92:101:100:351>\
+<><Img:91:101:470:338|^250#名荡八荒：^-^253#人物体力值+300000^-^253#攻魔道+588>\
+<$STR(S$激活状态)>\
+;<><Img:26:101:530:270>\
+;<><Img:27:101:530:270>\
+<><ImgEx:101:53:54:55:325:310|/@下一页6>\
+<><ImgEx:101:56:57:58:405:294|/@下一页1>\
+
+<$STR(S$激活1)>
+;<><Img:0:102:40:54|^249#尚未提交^250#点击提交卡片/@田灵儿>\
+;<><PlayImg:102:1:9:150:40:54:0:0|^250#卡片已提交>\
+
+<$STR(S$激活2)>
+;<><Img:10:102:160:54|^249#尚未激活^250#点击提交卡片/@宋大仁>\
+;<><PlayImg:102:11:9:150:160:54:0:0|^250#卡片已提交>\
+
+<$STR(S$激活3)>
+;<><Img:20:102:280:54|^249#尚未激活^250#点击提交卡片/@吴大义>\
+;<><PlayImg:102:21:9:150:280:54:0:0|^250#卡片已提交>\
+
+<$STR(S$激活4)>
+;<><Img:30:102:400:38|^249#尚未激活^250#点击提交卡片/@郑大礼>\
+;<><PlayImg:102:31:9:150:400:38:0:0|^250#卡片已提交>\
+
+<$STR(S$激活5)>
+;<><Img:40:102:520:6|^249#尚未激活^250#点击提交卡片/@何大智>\
+;<><PlayImg:102:41:9:150:520:6:0:0|^250#卡片已提交>\
+
+<$STR(S$激活6)>
+;<><Img:50:102:640:-26|^249#尚未激活^250#点击提交卡片/@吕大信>\
+;<><PlayImg:102:51:9:150:640:-26:0:|^250#卡片已提交>\
 
 [@田灵儿]
 #IF
 CHECK [301] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -97,7 +119,7 @@ USEBONUSPOINT 6 + 1000
 GOTO @main
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【田灵儿】..
+MESSAGEBOX 友情提示:\您没有人物图卡【田灵儿】..
 BREAK
 
 
@@ -105,7 +127,7 @@ BREAK
 #IF
 CHECK [302] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -119,7 +141,7 @@ USEBONUSPOINT 6 + 1000
 GOTO @main
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【宋大仁】..
+MESSAGEBOX 友情提示:\您没有人物图卡【宋大仁】..
 BREAK
 
 
@@ -127,7 +149,7 @@ BREAK
 #IF
 CHECK [303] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -141,7 +163,7 @@ USEBONUSPOINT 6 + 1000
 GOTO @main
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【吴大义】..
+MESSAGEBOX 友情提示:\您没有人物图卡【吴大义】..
 BREAK
 
 
@@ -149,7 +171,7 @@ BREAK
 #IF
 CHECK [304] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -163,7 +185,7 @@ USEBONUSPOINT 6 + 1000
 GOTO @main
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【郑大礼】..
+MESSAGEBOX 友情提示:\您没有人物图卡【郑大礼】..
 BREAK
 
 
@@ -172,7 +194,7 @@ BREAK
 #IF
 CHECK [305] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -186,7 +208,7 @@ USEBONUSPOINT 6 + 1000
 GOTO @main
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【何大智】..
+MESSAGEBOX 友情提示:\您没有人物图卡【何大智】..
 BREAK
 
 
@@ -194,7 +216,7 @@ BREAK
 #IF
 CHECK [306] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -208,34 +230,8 @@ USEBONUSPOINT 6 + 1000
 GOTO @main
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【吕大信】..
+MESSAGEBOX 友情提示:\您没有人物图卡【吕大信】..
 BREAK
-
-
-
-[@杜必书]
-#IF
-CHECK [307] 1
-#ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
-BREAK
-
-#IF
-CHECKITEM 杜必书 1
-CHECK [307] 0
-#ACT
-TAKE 杜必书 1
-SET [307] 1
-USEBONUSPOINT 1 + 200
-USEBONUSPOINT 6 + 1000
-GOTO @main
-BREAK
-#ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【杜必书】..
-BREAK
-
-
-
 
 [@下一页1]
 #IF
@@ -243,56 +239,85 @@ CHECK [308] 1
 CHECK [309] 1
 CHECK [310] 1
 CHECK [311] 1
-NOT CHECKTITLE 年少奇才
+CHECK [336] 1
+CHECK [337] 1
+NOT CHECKTITLE 正魔之争
 #ACT
-CONFERTITLE 年少奇才
+CONFERTITLE 正魔之争
+
+#IF
+CHECKTITLE  正魔之争
+#ACT
+MOV S$激活状态 <><Img:27:101:530:270>
+#ELSEACT
+MOV S$激活状态 <><Img:26:101:530:270>
 
 #IF
 CHECK [308] 0
 #ACT
-MOV S$激活1 <未激活/FCOLOR=56>
+MOV S$激活1 <><Img:60:102:40:54|^249#尚未提交^250#点击提交卡片/@萧逸才>\
 #ELSEACT
-MOV S$激活1 <已经激活/FCOLOR=250>
+MOV S$激活1 <><PlayImg:102:61:9:150:40:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [309] 0
 #ACT
-MOV S$激活2 <未激活/FCOLOR=56>
+MOV S$激活2 <><Img:70:102:160:54|^249#尚未激活^250#点击提交卡片/@齐昊>\
 #ELSEACT
-MOV S$激活2 <已经激活/FCOLOR=250>
+MOV S$激活2 <><PlayImg:102:71:9:150:160:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [310] 0
 #ACT
-MOV S$激活3 <未激活/FCOLOR=56>
+MOV S$激活3 <><Img:80:102:280:54|^249#尚未激活^250#点击提交卡片/@曾书书>\
 #ELSEACT
-MOV S$激活3 <已经激活/FCOLOR=250>
+MOV S$激活3 <><PlayImg:102:81:9:150:280:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [311] 0
 #ACT
-MOV S$激活4 <未激活/FCOLOR=56>
+MOV S$激活4 <><Img:90:102:400:38|^249#尚未激活^250#点击提交卡片/@文敏>\
 #ELSEACT
-MOV S$激活4 <已经激活/FCOLOR=250>
+MOV S$激活4 <><PlayImg:102:91:9:150:400:38:0:0|^250#卡片已提交>\
+
+#IF
+CHECK [336] 0
+#ACT
+MOV S$激活5 <><Img:100:102:520:6|^249#尚未激活^250#点击提交卡片/@光明★法则>\
+#ELSEACT
+MOV S$激活5 <><PlayImg:102:101:9:150:520:6:0:0|^250#卡片已提交>\
+
+#IF
+CHECK [337] 0
+#ACT
+MOV S$激活6 <><Img:110:102:640:-26|^249#尚未激活^250#点击提交卡片/@黑暗★法则>\
+#ELSEACT
+MOV S$激活6 <><PlayImg:102:111:9:150:640:-26:0:|^250#卡片已提交>\
+
 #IF
 #ACT
 #SAY
-\ \ \ \
-<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
-<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
-<       /AUTOCOLOR=0><>         <萧逸才/@萧逸才>        <激活程度/FCOLOR=254>:       <$STR(S$激活1)>\
-<> \
-<       /AUTOCOLOR=0><>         <齐昊/@齐昊>          <激活程度/FCOLOR=254>:       <$STR(S$激活2)>\
-<> \
-<       /AUTOCOLOR=0><>         <曾书书/@曾书书>        <激活程度/FCOLOR=254>:       <$STR(S$激活3)>\
-<> \
-<       /AUTOCOLOR=0><>         <文敏/@文敏>          <激活程度/FCOLOR=254>:       <$STR(S$激活4)>\
-<>                   <全部激活称号属性查看|250#每激活一个奖励永久HP+3000,攻击+150,^250#4个全部激活触发增加称号：年少奇才>          <下一页/@下一页2>\
-
-
+<><PlayImg:101:59:24:100:-20:-52:0:0>\
+<><Img:83:101:520:-100>\
+<><Img:8:101:760:-10|/@关闭对话框>\
+<><Img:85:101:330:340>\
+<><Img:92:101:100:351>\
+<><Img:91:101:470:338|^250#超今冠古：^-^253#人物体力值+400000^-^253#攻魔道+888>\
+<$STR(S$激活状态)>\
+<><ImgEx:101:53:54:55:325:310|/@main>\
+<><ImgEx:101:56:57:58:405:294|/@下一页2>\
+<$STR(S$激活1)>
+<$STR(S$激活2)>
+<$STR(S$激活3)>
+<$STR(S$激活4)>
+<$STR(S$激活5)>
+<$STR(S$激活6)>
 
 [@萧逸才]
 #IF
 CHECK [308] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -306,7 +331,7 @@ USEBONUSPOINT 6 + 3000
 GOTO @下一页1
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【萧逸才】..
+MESSAGEBOX 友情提示:\您没有人物图卡【萧逸才】..
 BREAK
 
 
@@ -314,7 +339,7 @@ BREAK
 #IF
 CHECK [309] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -328,7 +353,7 @@ USEBONUSPOINT 6 + 3000
 GOTO @下一页1
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【齐昊】..
+MESSAGEBOX 友情提示:\您没有人物图卡【齐昊】..
 BREAK
 
 
@@ -336,7 +361,7 @@ BREAK
 #IF
 CHECK [310] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -350,7 +375,7 @@ USEBONUSPOINT 6 + 3000
 GOTO @下一页1
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【曾书书】..
+MESSAGEBOX 友情提示:\您没有人物图卡【曾书书】..
 BREAK
 
 
@@ -358,7 +383,7 @@ BREAK
 #IF
 CHECK [311] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -372,9 +397,54 @@ USEBONUSPOINT 6 + 3000
 GOTO @下一页1
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【文敏】..
+MESSAGEBOX 友情提示:\您没有人物图卡【文敏】..
 BREAK
 
+
+[@光明★法则]
+#IF
+CHECK [336] 1
+#ACT
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
+BREAK
+
+
+#IF
+CHECKITEM 光明★法则 1
+CHECK [336] 0
+#ACT
+TAKE 光明★法则 1
+SET [336] 1
+USEBONUSPOINT 1 + 300
+USEBONUSPOINT 6 + 3000
+GOTO  @下一页1
+BREAK
+#ELSEACT
+MESSAGEBOX 友情提示:\您没有人物图卡【光明★法则】..
+BREAK
+
+
+[@黑暗★法则]
+#IF
+CHECK [337] 1
+#ACT
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
+BREAK
+
+
+#IF
+CHECKITEM 黑暗★法则 1
+CHECK [337] 0
+#ACT
+TAKE 黑暗★法则 1
+SET [337] 1
+USEBONUSPOINT 1 + 300
+USEBONUSPOINT 6 + 3000
+GOTO  @下一页1
+BREAK
+#ELSEACT
+MESSAGEBOX 友情提示:\您没有人物图卡【黑暗★法则】..
+BREAK
 
 
 [@下一页2]
@@ -385,67 +455,83 @@ CHECK [314] 1
 CHECK [315] 1
 CHECK [316] 1
 CHECK [317] 1
-NOT CHECKTITLE 首座之力
+NOT CHECKTITLE 风尘戏天下
 #ACT
-CONFERTITLE 首座之力
+CONFERTITLE 风尘戏天下
+
+#IF
+CHECKTITLE  风尘戏天下
+#ACT
+MOV S$激活状态 <><Img:27:101:530:270>
+#ELSEACT
+MOV S$激活状态 <><Img:26:101:530:270>
 
 #IF
 CHECK [312] 0
 #ACT
-MOV S$激活1 <未激活/FCOLOR=56>
+MOV S$激活1 <><Img:120:102:40:54|^249#尚未提交^250#点击提交卡片/@田不易>\
 #ELSEACT
-MOV S$激活1 <已经激活/FCOLOR=250>
+MOV S$激活1 <><PlayImg:102:121:9:150:40:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [313] 0
 #ACT
-MOV S$激活2 <未激活/FCOLOR=56>
+MOV S$激活2 <><Img:130:102:160:54|^249#尚未激活^250#点击提交卡片/@苏茹>\
 #ELSEACT
-MOV S$激活2 <已经激活/FCOLOR=250>
+MOV S$激活2 <><PlayImg:102:131:9:150:160:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [314] 0
 #ACT
-MOV S$激活3 <未激活/FCOLOR=56>
+MOV S$激活3 <><Img:140:102:280:54|^249#尚未激活^250#点击提交卡片/@曾叔常>\
 #ELSEACT
-MOV S$激活3 <已经激活/FCOLOR=250>
+MOV S$激活3 <><PlayImg:102:141:9:150:280:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [315] 0
 #ACT
-MOV S$激活4 <未激活/FCOLOR=56>
+MOV S$激活4 <><Img:150:102:400:38|^249#尚未激活^250#点击提交卡片/@商正梁>\
 #ELSEACT
-MOV S$激活4 <已经激活/FCOLOR=250>
+MOV S$激活4 <><PlayImg:102:151:9:150:400:38:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [316] 0
 #ACT
-MOV S$激活5 <未激活/FCOLOR=56>
+MOV S$激活5 <><Img:160:102:520:6|^249#尚未激活^250#点击提交卡片/@天云道人>\
 #ELSEACT
-MOV S$激活5 <已经激活/FCOLOR=250>
+MOV S$激活5 <><PlayImg:102:161:9:150:520:6:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [317] 0
 #ACT
-MOV S$激活6 <未激活/FCOLOR=56>
+MOV S$激活6 <><Img:170:102:640:-26|^249#尚未激活^250#点击提交卡片/@水月大师>\
 #ELSEACT
-MOV S$激活6 <已经激活/FCOLOR=250>
-
+MOV S$激活6 <><PlayImg:102:171:9:150:640:-26:0:|^250#卡片已提交>\
 
 #IF
 #ACT
 #SAY
-\ \ \ \
-<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
-<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
-<       /AUTOCOLOR=0><>         <田不易/@田不易>        <激活程度/FCOLOR=254>:     <$STR(S$激活1)>\
-<       /AUTOCOLOR=0><>         <苏茹/@苏茹>          <激活程度/FCOLOR=254>:     <$STR(S$激活2)>\
-<       /AUTOCOLOR=0><>         <曾叔常/@曾叔常>        <激活程度/FCOLOR=254>:     <$STR(S$激活3)>\
-<       /AUTOCOLOR=0><>         <商正梁/@商正梁>        <激活程度/FCOLOR=254>:     <$STR(S$激活4)>\
-<       /AUTOCOLOR=0><>         <天云道人/@天云道人>      <激活程度/FCOLOR=254>:     <$STR(S$激活5)>\
-<       /AUTOCOLOR=0><>         <水月大师/@水月大师>      <激活程度/FCOLOR=254>:     <$STR(S$激活6)>\
-<>                   <全部激活称号属性查看|250#每激活一个奖励永久HP+4000,攻击+200,^250#6个全部激活触发增加称号：首座之力>          <下一页/@下一页3>\
+<><PlayImg:101:59:24:100:-20:-52:0:0>\
+<><Img:83:101:520:-100>\
+<><Img:8:101:760:-10|/@关闭对话框>\
+<><Img:86:101:330:340>\
+<><Img:92:101:100:351>\
+<><Img:91:101:470:338|^250#至高无上：^-^253#人物体力值+600000^-^253#攻魔道+1288>\
+<$STR(S$激活状态)>\
+<><ImgEx:101:53:54:55:325:310|/@下一页1>\
+<><ImgEx:101:56:57:58:405:294|/@下一页3>\
+<$STR(S$激活1)>
+<$STR(S$激活2)>
+<$STR(S$激活3)>
+<$STR(S$激活4)>
+<$STR(S$激活5)>
+<$STR(S$激活6)>
 
 [@田不易]
 #IF
 CHECK [312] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -459,14 +545,14 @@ USEBONUSPOINT 6 + 4000
 GOTO @下一页2
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【田不易】..
+MESSAGEBOX 友情提示:\您没有人物图卡【田不易】..
 BREAK
 
 [@苏茹]
 #IF
 CHECK [313] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -480,7 +566,7 @@ USEBONUSPOINT 6 + 4000
 GOTO @下一页2
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【苏茹】..
+MESSAGEBOX 友情提示:\您没有人物图卡【苏茹】..
 BREAK
 
 
@@ -489,7 +575,7 @@ BREAK
 #IF
 CHECK [314] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -503,7 +589,7 @@ USEBONUSPOINT 6 + 4000
 GOTO @下一页2
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【曾叔常】..
+MESSAGEBOX 友情提示:\您没有人物图卡【曾叔常】..
 BREAK
 
 
@@ -513,7 +599,7 @@ BREAK
 #IF
 CHECK [315] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -527,7 +613,7 @@ USEBONUSPOINT 6 + 4000
 GOTO @下一页2
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【商正梁】..
+MESSAGEBOX 友情提示:\您没有人物图卡【商正梁】..
 BREAK
 
 
@@ -535,7 +621,7 @@ BREAK
 #IF
 CHECK [316] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -549,7 +635,7 @@ USEBONUSPOINT 6 + 4000
 GOTO @下一页2
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【天云道人】..
+MESSAGEBOX 友情提示:\您没有人物图卡【天云道人】..
 BREAK
 
 
@@ -558,7 +644,7 @@ BREAK
 #IF
 CHECK [317] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -572,7 +658,7 @@ USEBONUSPOINT 6 + 4000
 GOTO @下一页2
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【水月大师】..
+MESSAGEBOX 友情提示:\您没有人物图卡【水月大师】..
 BREAK
 
 
@@ -585,65 +671,83 @@ CHECK [320] 1
 CHECK [321] 1
 CHECK [322] 1
 CHECK [323] 1
-NOT CHECKTITLE 正魔之争
+NOT CHECKTITLE 今生再难遇卿随
 #ACT
-CONFERTITLE 正魔之争
+CONFERTITLE 今生再难遇卿随
+
+#IF
+CHECKTITLE  今生再难遇卿随
+#ACT
+MOV S$激活状态 <><Img:27:101:530:270>
+#ELSEACT
+MOV S$激活状态 <><Img:26:101:530:270>
 
 #IF
 CHECK [318] 0
 #ACT
-MOV S$激活1 <未激活/FCOLOR=56>
+MOV S$激活1 <><Img:180:102:40:54|^249#尚未提交^250#点击提交卡片/@道玄真人>\
 #ELSEACT
-MOV S$激活1 <已经激活/FCOLOR=250>
+MOV S$激活1 <><PlayImg:102:181:9:150:40:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [319] 0
 #ACT
-MOV S$激活2 <未激活/FCOLOR=56>
+MOV S$激活2 <><Img:190:102:160:54|^249#尚未激活^250#点击提交卡片/@普泓>\
 #ELSEACT
-MOV S$激活2 <已经激活/FCOLOR=250>
+MOV S$激活2 <><PlayImg:102:191:9:150:160:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [320] 0
 #ACT
-MOV S$激活3 <未激活/FCOLOR=56>
+MOV S$激活3 <><Img:200:102:280:54|^249#尚未激活^250#点击提交卡片/@云易岚>\
 #ELSEACT
-MOV S$激活3 <已经激活/FCOLOR=250>
+MOV S$激活3 <><PlayImg:102:201:9:150:280:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [321] 0
 #ACT
-MOV S$激活4 <未激活/FCOLOR=56>
+MOV S$激活4 <><Img:210:102:400:38|^249#尚未激活^250#点击提交卡片/@鬼王>\
 #ELSEACT
-MOV S$激活4 <已经激活/FCOLOR=250>
+MOV S$激活4 <><PlayImg:102:211:9:150:400:38:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [322] 0
 #ACT
-MOV S$激活5 <未激活/FCOLOR=56>
+MOV S$激活5 <><Img:220:102:520:6|^249#尚未激活^250#点击提交卡片/@毒神>\
 #ELSEACT
-MOV S$激活5 <已经激活/FCOLOR=250>
+MOV S$激活5 <><PlayImg:102:221:9:150:520:6:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [323] 0
 #ACT
-MOV S$激活6 <未激活/FCOLOR=56>
+MOV S$激活6 <><Img:230:102:640:-26|^249#尚未激活^250#点击提交卡片/@三妙夫人>\
 #ELSEACT
-MOV S$激活6 <已经激活/FCOLOR=250>
+MOV S$激活6 <><PlayImg:102:231:9:150:640:-26:0:|^250#卡片已提交>\
+
 #IF
 #ACT
 #SAY
-\ \ \ \
-<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
-<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
-<       /AUTOCOLOR=0><>         <道玄真人/@道玄真人>     <激活程度/FCOLOR=254>:      <$STR(S$激活1)>\
-<       /AUTOCOLOR=0><>         <普泓/@普泓>         <激活程度/FCOLOR=254>:      <$STR(S$激活2)>\
-<       /AUTOCOLOR=0><>         <云易岚/@云易岚>       <激活程度/FCOLOR=254>:      <$STR(S$激活3)>\
-<       /AUTOCOLOR=0><>         <鬼王/@鬼王>         <激活程度/FCOLOR=254>:      <$STR(S$激活4)>\
-<       /AUTOCOLOR=0><>         <毒神/@毒神>         <激活程度/FCOLOR=254>:      <$STR(S$激活5)>\
-<       /AUTOCOLOR=0><>         <三妙夫人/@三妙夫人>     <激活程度/FCOLOR=254>:      <$STR(S$激活6)>\
-<>                   <全部激活称号属性查看|250#每激活一个奖励永久HP+5000,攻击+250,^250#6个全部激活触发增加称号：正魔之争>          <下一页/@下一页4>\
+<><PlayImg:101:59:24:100:-20:-52:0:0>\
+<><Img:83:101:520:-100>\
+<><Img:8:101:760:-10|/@关闭对话框>\
+<><Img:87:101:330:340>\
+<><Img:92:101:100:351>\
+<><Img:91:101:470:338|^250#唯我独醉：^-^253#人物体力值+800000^-^253#攻魔道+1588>\
+<$STR(S$激活状态)>\
+<><ImgEx:101:53:54:55:325:310|/@下一页2>\
+<><ImgEx:101:56:57:58:405:294|/@下一页4>\
+<$STR(S$激活1)>
+<$STR(S$激活2)>
+<$STR(S$激活3)>
+<$STR(S$激活4)>
+<$STR(S$激活5)>
+<$STR(S$激活6)>
 
 [@道玄真人]
 #IF
 CHECK [318] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -657,14 +761,14 @@ USEBONUSPOINT 6 + 5000
 GOTO @下一页3
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【道玄真人】..
+MESSAGEBOX 友情提示:\您没有人物图卡【道玄真人】..
 BREAK
 
 [@普泓]
 #IF
 CHECK [319] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -678,7 +782,7 @@ USEBONUSPOINT 6 + 5000
 GOTO @下一页3
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【普泓】..
+MESSAGEBOX 友情提示:\您没有人物图卡【普泓】..
 BREAK
 
 
@@ -687,7 +791,7 @@ BREAK
 #IF
 CHECK [320] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -701,7 +805,7 @@ USEBONUSPOINT 6 + 5000
 GOTO @下一页3
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【云易岚】..
+MESSAGEBOX 友情提示:\您没有人物图卡【云易岚】..
 BREAK
 
 
@@ -710,7 +814,7 @@ BREAK
 #IF
 CHECK [321] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -724,7 +828,7 @@ USEBONUSPOINT 6 + 5000
 GOTO @下一页3
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【鬼王】..
+MESSAGEBOX 友情提示:\您没有人物图卡【鬼王】..
 BREAK
 
 
@@ -733,7 +837,7 @@ BREAK
 #IF
 CHECK [322] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -747,7 +851,7 @@ USEBONUSPOINT 6 + 5000
 GOTO @下一页3
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【毒神】..
+MESSAGEBOX 友情提示:\您没有人物图卡【毒神】..
 BREAK
 
 
@@ -756,7 +860,7 @@ BREAK
 #IF
 CHECK [323] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -770,7 +874,7 @@ USEBONUSPOINT 6 + 5000
 GOTO @下一页3
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【三妙夫人】..
+MESSAGEBOX 友情提示:\您没有人物图卡【三妙夫人】..
 BREAK
 
 
@@ -781,54 +885,72 @@ CHECK [324] 1
 CHECK [325] 1
 CHECK [326] 1
 CHECK [327] 1
-NOT CHECKTITLE 风尘戏天下
+NOT CHECKTITLE 述一段悲情
 #ACT
-CONFERTITLE 风尘戏天下
+CONFERTITLE 述一段悲情
+
+#IF
+CHECKTITLE  述一段悲情
+#ACT
+MOV S$激活状态 <><Img:27:101:530:270>
+#ELSEACT
+MOV S$激活状态 <><Img:26:101:530:270>
+
+#IF
+#ACT
+MOV S$激活1 <>\
 
 #IF
 CHECK [324] 0
 #ACT
-MOV S$激活1 <未激活/FCOLOR=56>
+MOV S$激活2 <><Img:240:102:120:54|^249#尚未激活^250#点击提交卡片/@万剑一>\
 #ELSEACT
-MOV S$激活1 <已经激活/FCOLOR=250>
+MOV S$激活2 <><PlayImg:102:241:9:150:120:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [325] 0
 #ACT
-MOV S$激活2 <未激活/FCOLOR=56>
+MOV S$激活3 <><Img:250:102:260:54|^249#尚未激活^250#点击提交卡片/@周一仙>\
 #ELSEACT
-MOV S$激活2 <已经激活/FCOLOR=250>
+MOV S$激活3 <><PlayImg:102:251:9:150:260:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [326] 0
 #ACT
-MOV S$激活3 <未激活/FCOLOR=56>
+MOV S$激活4 <><Img:260:102:420:38|^249#尚未激活^250#点击提交卡片/@鬼先生>\
 #ELSEACT
-MOV S$激活3 <已经激活/FCOLOR=250>
+MOV S$激活4 <><PlayImg:102:261:9:150:420:38:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [327] 0
 #ACT
-MOV S$激活4 <未激活/FCOLOR=56>
+MOV S$激活5 <><Img:270:102:560:6|^249#尚未激活^250#点击提交卡片/@黑心老人>\
 #ELSEACT
-MOV S$激活4 <已经激活/FCOLOR=250>
+MOV S$激活5 <><PlayImg:102:271:9:150:560:6:0:0|^250#卡片已提交>\
+
 #IF
 #ACT
 #SAY
-\ \ \ \
-<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
-<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
-<       /AUTOCOLOR=0><>         <万剑一/@万剑一>       <激活程度/FCOLOR=254>:      <$STR(S$激活1)>\
-<> \
-<       /AUTOCOLOR=0><>         <周一仙/@周一仙>       <激活程度/FCOLOR=254>:      <$STR(S$激活2)>\
-<> \
-<       /AUTOCOLOR=0><>         <鬼先生/@鬼先生>       <激活程度/FCOLOR=254>:      <$STR(S$激活3)>\
-<> \
-<       /AUTOCOLOR=0><>         <黑心老人/@黑心老人>     <激活程度/FCOLOR=254>:      <$STR(S$激活4)>\
-<>                   <全部激活称号属性查看|250#每激活一个奖励永久HP+6000,攻击+300,^250#4个全部激活触发增加称号：风尘戏天下>          <下一页/@下一页5>\
+<><PlayImg:101:59:24:100:-20:-52:0:0>\
+<><Img:83:101:520:-100>\
+<><Img:8:101:760:-10|/@关闭对话框>\
+<><Img:88:101:330:340>\
+<><Img:92:101:100:351>\
+<><Img:91:101:470:338|^250#举世无双：^-^253#人物体力值+1000000^-^253#攻魔道+1888>\
+<$STR(S$激活状态)>\
+<><ImgEx:101:53:54:55:325:310|/@下一页3>\
+<><ImgEx:101:56:57:58:405:294|/@下一页5>\
+<$STR(S$激活1)>
+<$STR(S$激活2)>
+<$STR(S$激活3)>
+<$STR(S$激活4)>
+<$STR(S$激活5)>
 
 [@万剑一]
 #IF
 CHECK [324] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -842,17 +964,14 @@ USEBONUSPOINT 6 + 6000
 GOTO @下一页4
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【万剑一】..
+MESSAGEBOX 友情提示:\您没有人物图卡【万剑一】..
 BREAK
-
-
-
 
 [@周一仙]
 #IF
 CHECK [325] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -866,16 +985,14 @@ USEBONUSPOINT 6 + 6000
 GOTO @下一页4
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【周一仙】..
+MESSAGEBOX 友情提示:\您没有人物图卡【周一仙】..
 BREAK
-
-
 
 [@鬼先生]
 #IF
 CHECK [326] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -889,16 +1006,14 @@ USEBONUSPOINT 6 + 6000
 GOTO @下一页4
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【鬼先生】..
+MESSAGEBOX 友情提示:\您没有人物图卡【鬼先生】..
 BREAK
-
-
 
 [@黑心老人]
 #IF
 CHECK [327] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -912,9 +1027,8 @@ USEBONUSPOINT 6 + 6000
 GOTO @下一页4
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【黑心老人】..
+MESSAGEBOX 友情提示:\您没有人物图卡【黑心老人】..
 BREAK
-
 
 
 [@下一页5]
@@ -923,54 +1037,72 @@ CHECK [328] 1
 CHECK [329] 1
 CHECK [330] 1
 CHECK [331] 1
-NOT CHECKTITLE 今生再难遇卿随
+NOT CHECKTITLE 至高★主宰
 #ACT
-CONFERTITLE 今生再难遇卿随
+CONFERTITLE 至高★主宰
+
+#IF
+CHECKTITLE  至高★主宰
+#ACT
+MOV S$激活状态 <><Img:27:101:530:270>
+#ELSEACT
+MOV S$激活状态 <><Img:26:101:530:270>
+
+#IF
+#ACT
+MOV S$激活1 <>\
 
 #IF
 CHECK [328] 0
 #ACT
-MOV S$激活1 <未激活/FCOLOR=56>
+MOV S$激活2 <><Img:280:102:120:54|^249#尚未激活^250#点击提交卡片/@陆雪琪>\
 #ELSEACT
-MOV S$激活1 <已经激活/FCOLOR=250>
+MOV S$激活2 <><PlayImg:102:281:9:150:120:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [329] 0
 #ACT
-MOV S$激活2 <未激活/FCOLOR=56>
+MOV S$激活3 <><Img:290:102:260:54|^249#尚未激活^250#点击提交卡片/@碧瑶>\
 #ELSEACT
-MOV S$激活2 <已经激活/FCOLOR=250>
+MOV S$激活3 <><PlayImg:102:291:9:150:260:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [330] 0
 #ACT
-MOV S$激活3 <未激活/FCOLOR=56>
+MOV S$激活4 <><Img:300:102:420:38|^249#尚未激活^250#点击提交卡片/@小白>\
 #ELSEACT
-MOV S$激活3 <已经激活/FCOLOR=250>
+MOV S$激活4 <><PlayImg:102:301:9:150:420:38:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [331] 0
 #ACT
-MOV S$激活4 <未激活/FCOLOR=56>
+MOV S$激活5 <><Img:310:102:560:6|^249#尚未激活^250#点击提交卡片/@林惊羽>\
 #ELSEACT
-MOV S$激活4 <已经激活/FCOLOR=250>
+MOV S$激活5 <><PlayImg:102:311:9:150:560:6:0:0|^250#卡片已提交>\
+
 #IF
 #ACT
 #SAY
-\ \ \ \
-<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
-<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
-<       /AUTOCOLOR=0><>         <陆雪琪/@陆雪琪>       <激活程度/FCOLOR=254>:      <$STR(S$激活1)>\
-<> \
-<       /AUTOCOLOR=0><>         <碧瑶/@碧瑶>         <激活程度/FCOLOR=254>:      <$STR(S$激活2)>\
-<> \
-<       /AUTOCOLOR=0><>         <小白/@小白>         <激活程度/FCOLOR=254>:      <$STR(S$激活3)>\
-<> \
-<       /AUTOCOLOR=0><>         <林惊羽/@林惊羽>       <激活程度/FCOLOR=254>:      <$STR(S$激活4)>\
-<>                   <全部激活称号属性查看|250#每激活一个奖励永久HP+8000,攻击+400,^250#4个全部激活触发增加称号：今生再难遇卿随>          <下一页/@下一页6>\
+<><PlayImg:101:59:24:100:-20:-52:0:0>\
+<><Img:83:101:520:-100>\
+<><Img:8:101:760:-10|/@关闭对话框>\
+<><Img:89:101:330:340>\
+<><Img:92:101:100:351>\
+<><Img:91:101:470:338|^250#天下第一：^-^253#人物体力值+1200000^-^253#攻魔道+2288>\
+<$STR(S$激活状态)>\
+<><ImgEx:101:53:54:55:325:310|/@下一页4>\
+<><ImgEx:101:56:57:58:405:294|/@下一页6>\
+<$STR(S$激活1)>
+<$STR(S$激活2)>
+<$STR(S$激活3)>
+<$STR(S$激活4)>
+<$STR(S$激活5)>
 
 [@陆雪琪]
 #IF
 CHECK [328] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -984,16 +1116,14 @@ USEBONUSPOINT 6 + 8000
 GOTO @下一页5
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【陆雪琪】..
+MESSAGEBOX 友情提示:\您没有人物图卡【陆雪琪】..
 BREAK
-
-
 
 [@碧瑶]
 #IF
 CHECK [329] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -1007,16 +1137,14 @@ USEBONUSPOINT 6 + 8000
 GOTO @下一页5
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【碧瑶】..
+MESSAGEBOX 友情提示:\您没有人物图卡【碧瑶】..
 BREAK
-
-
 
 [@小白]
 #IF
 CHECK [330] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -1030,7 +1158,7 @@ USEBONUSPOINT 6 + 8000
 GOTO @下一页5
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【小白】..
+MESSAGEBOX 友情提示:\您没有人物图卡【小白】..
 BREAK
 
 
@@ -1038,9 +1166,8 @@ BREAK
 #IF
 CHECK [331] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
-
 
 #IF
 CHECKITEM 林惊羽 1
@@ -1053,7 +1180,7 @@ USEBONUSPOINT 6 + 8000
 GOTO @下一页5
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【林惊羽】..
+MESSAGEBOX 友情提示:\您没有人物图卡【林惊羽】..
 BREAK
 
 
@@ -1064,54 +1191,84 @@ CHECK [332] 1
 CHECK [333] 1
 CHECK [334] 1
 CHECK [335] 1
-NOT CHECKTITLE 述一段悲情
+NOT CHECKTITLE 宇宙★掌控者
 #ACT
-CONFERTITLE 述一段悲情
+CONFERTITLE 宇宙★掌控者
+
+#IF
+CHECKTITLE  宇宙★掌控者
+#ACT
+MOV S$激活状态 <><Img:27:101:530:270>
+#ELSEACT
+MOV S$激活状态 <><Img:26:101:530:270>
+
+#IF
+#ACT
+MOV S$激活1 <>\
 
 #IF
 CHECK [332] 0
 #ACT
-MOV S$激活1 <未激活/FCOLOR=56>
+MOV S$激活2 <><Img:320:102:120:54|^249#尚未激活^250#点击提交卡片/@张小凡>\
 #ELSEACT
-MOV S$激活1 <已经激活/FCOLOR=250>
+MOV S$激活2 <><PlayImg:102:321:9:150:120:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [333] 0
 #ACT
-MOV S$激活2 <未激活/FCOLOR=56>
+MOV S$激活3 <><Img:330:102:260:54|^249#尚未激活^250#点击提交卡片/@兽神>\
 #ELSEACT
-MOV S$激活2 <已经激活/FCOLOR=250>
+MOV S$激活3 <><PlayImg:102:331:9:150:260:54:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [334] 0
 #ACT
-MOV S$激活3 <未激活/FCOLOR=56>
+MOV S$激活4 <><Img:340:102:420:38|^249#尚未激活^250#点击提交卡片/@玲珑>\
 #ELSEACT
-MOV S$激活3 <已经激活/FCOLOR=250>
+MOV S$激活4 <><PlayImg:102:341:9:150:420:38:0:0|^250#卡片已提交>\
+
 #IF
 CHECK [335] 0
 #ACT
-MOV S$激活4 <未激活/FCOLOR=56>
+MOV S$激活5 <><Img:350:102:560:6|^249#尚未激活^250#点击提交卡片/@饕餮>\
 #ELSEACT
-MOV S$激活4 <已经激活/FCOLOR=250>
+MOV S$激活5 <><PlayImg:102:351:9:150:560:6:0:0|^250#卡片已提交>\
+
 #IF
 #ACT
 #SAY
-\ \ \ \
-<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
-<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
-<       /AUTOCOLOR=0><>         <张小凡/@张小凡>       <激活程度/FCOLOR=254>:      <$STR(S$激活1)>\
-<> \
-<       /AUTOCOLOR=0><>         <兽神/@兽神>         <激活程度/FCOLOR=254>:      <$STR(S$激活2)>\
-<> \
-<       /AUTOCOLOR=0><>         <玲珑/@玲珑>         <激活程度/FCOLOR=254>:      <$STR(S$激活3)>\
-<> \
-<       /AUTOCOLOR=0><>         <饕餮/@饕餮>         <激活程度/FCOLOR=254>:      <$STR(S$激活4)>\
-<>                   <全部激活称号属性查看|250#每激活一个奖励永久HP+10000,攻击+500,^250#4个全部激活触发增加称号：述一段悲情>          <下一页/@下一页7>\
+<><PlayImg:101:59:24:100:-20:-52:0:0>\
+<><Img:83:101:520:-100>\
+<><Img:8:101:760:-10|/@关闭对话框>\
+<><Img:90:101:330:340>\
+<><Img:92:101:100:351>\
+<><Img:91:101:470:338|^250#无敌真寂寞：^-^253#人物体力值+1500000^-^253#攻魔道+2888>\
+<$STR(S$激活状态)>\
+<><ImgEx:101:53:54:55:325:310|/@下一页5>\
+<><ImgEx:101:56:57:58:405:294|/@main>\
+<$STR(S$激活1)>
+<$STR(S$激活2)>
+<$STR(S$激活3)>
+<$STR(S$激活4)>
+<$STR(S$激活5)>
+
+;\ \ \ \
+;<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+;<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
+;<       /AUTOCOLOR=0><>         <张小凡/@张小凡>       <激活程度/FCOLOR=254>:      <$STR(S$激活1)>\
+;<> \
+;<       /AUTOCOLOR=0><>         <兽神/@兽神>         <激活程度/FCOLOR=254>:      <$STR(S$激活2)>\
+;<> \
+;<       /AUTOCOLOR=0><>         <玲珑/@玲珑>         <激活程度/FCOLOR=254>:      <$STR(S$激活3)>\
+;<> \
+;<       /AUTOCOLOR=0><>         <饕餮/@饕餮>         <激活程度/FCOLOR=254>:      <$STR(S$激活4)>\
+;<>                   <全部激活称号属性查看|250#每激活一个奖励永久HP+10000,攻击+500,^250#4个全部激活触发增加称号：宇宙★掌控者>          <下一页/@下一页7>\
 
 [@张小凡]
 #IF
 CHECK [332] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -1125,7 +1282,7 @@ USEBONUSPOINT 6 + 10000
 GOTO @下一页6
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【张小凡】..
+MESSAGEBOX 友情提示:\您没有人物图卡【张小凡】..
 BREAK
 
 
@@ -1134,7 +1291,7 @@ BREAK
 #IF
 CHECK [333] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 
@@ -1149,7 +1306,7 @@ USEBONUSPOINT 6 + 10000
 GOTO @下一页6
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【兽神】..
+MESSAGEBOX 友情提示:\您没有人物图卡【兽神】..
 BREAK
 
 
@@ -1157,7 +1314,7 @@ BREAK
 #IF
 CHECK [334] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 #IF
@@ -1171,7 +1328,7 @@ USEBONUSPOINT 6 + 10000
 GOTO @下一页6
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【玲珑】..
+MESSAGEBOX 友情提示:\您没有人物图卡【玲珑】..
 BREAK
 
 
@@ -1181,7 +1338,7 @@ BREAK
 #IF
 CHECK [335] 1
 #ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
+MESSAGEBOX 友情提示:\提交失败，图卡已经提交过！
 BREAK
 
 
@@ -1196,298 +1353,13 @@ USEBONUSPOINT 6 + 10000
 GOTO @下一页6
 BREAK
 #ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【饕餮】..
+MESSAGEBOX 友情提示:\您没有人物图卡【饕餮】..
 BREAK
 
-
-[@下一页7]
-#IF
-CHECK [336] 1
-CHECK [337] 1
-CHECK [338] 1
-CHECK [339] 1
-NOT CHECKTITLE 至高★主宰
-#ACT
-CONFERTITLE 至高★主宰
-
-#IF
-CHECK [336] 0
-#ACT
-MOV S$激活1 <未激活/FCOLOR=56>
-#ELSEACT
-MOV S$激活1 <已经激活/FCOLOR=250>
-#IF
-CHECK [337] 0
-#ACT
-MOV S$激活2 <未激活/FCOLOR=56>
-#ELSEACT
-MOV S$激活2 <已经激活/FCOLOR=250>
-#IF
-CHECK [338] 0
-#ACT
-MOV S$激活3 <未激活/FCOLOR=56>
-#ELSEACT
-MOV S$激活3 <已经激活/FCOLOR=250>
-#IF
-CHECK [339] 0
-#ACT
-MOV S$激活4 <未激活/FCOLOR=56>
-#ELSEACT
-MOV S$激活4 <已经激活/FCOLOR=250>
+[@关闭对话框]
 #IF
 #ACT
-#SAY
-\ \ \ \
-<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
-<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
-<       /AUTOCOLOR=0><>         <光明★法则/@光明★法则>         <激活程度/FCOLOR=254>:      <$STR(S$激活1)>\
-<> \
-<       /AUTOCOLOR=0><>         <黑暗★法则/@黑暗★法则>         <激活程度/FCOLOR=254>:      <$STR(S$激活2)>\
-<> \
-<       /AUTOCOLOR=0><>         <生命★法则/@生命★法则>         <激活程度/FCOLOR=254>:      <$STR(S$激活3)>\
-<> \
-<       /AUTOCOLOR=0><>         <时空★法则/@时空★法则>         <激活程度/FCOLOR=254>:      <$STR(S$激活4)>\
-<>                   <全部激活称号属性查看|250#每激活一个奖励永久HP+20000,攻击+1000,^250#4个全部激活触发增加称号：至高★主宰>          <下一页/@下一页8>\
-
-[@光明★法则]
-#IF
-CHECK [336] 1
-#ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
-BREAK
-
-
-#IF
-CHECKITEM 光明★法则 1
-CHECK [336] 0
-#ACT
-TAKE 光明★法则 1
-SET [336] 1
-USEBONUSPOINT 1 + 2000
-USEBONUSPOINT 6 + 20000
-GOTO @下一页7
-BREAK
-#ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【光明★法则】..
-BREAK
-
-
-[@黑暗★法则]
-#IF
-CHECK [337] 1
-#ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
-BREAK
-
-
-#IF
-CHECKITEM 黑暗★法则 1
-CHECK [337] 0
-#ACT
-TAKE 黑暗★法则 1
-SET [337] 1
-USEBONUSPOINT 1 + 2000
-USEBONUSPOINT 6 + 20000
-GOTO @下一页7
-BREAK
-#ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【黑暗★法则】..
-BREAK
-
-
-[@生命★法则]
-#IF
-CHECK [338] 1
-#ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
-BREAK
-
-
-#IF
-CHECKITEM 生命★法则 1
-CHECK [338] 0
-#ACT
-TAKE 生命★法则 1
-SET [338] 1
-USEBONUSPOINT 1 + 2000
-USEBONUSPOINT 6 + 20000
-GOTO @下一页7
-BREAK
-#ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【生命★法则】..
-BREAK
-
-
-
-[@时空★法则]
-#IF
-CHECK [339] 1
-#ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
-BREAK
-
-
-#IF
-CHECKITEM 时空★法则 1
-CHECK [339] 0
-#ACT
-TAKE 时空★法则 1
-SET [339] 1
-USEBONUSPOINT 1 + 2000
-USEBONUSPOINT 6 + 20000
-GOTO @下一页7
-BREAK
-#ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【时空★法则】..
-BREAK
-
-
-
-
-
-
-
-[@下一页8]
-#IF
-CHECK [340] 1
-CHECK [341] 1
-CHECK [342] 1
-CHECK [343] 1
-NOT CHECKTITLE 宇宙★掌控者
-#ACT
-CONFERTITLE 宇宙★掌控者
-
-#IF
-CHECK [340] 0
-#ACT
-MOV S$激活1 <未激活/FCOLOR=56>
-#ELSEACT
-MOV S$激活1 <已经激活/FCOLOR=250>
-#IF
-CHECK [341] 0
-#ACT
-MOV S$激活2 <未激活/FCOLOR=56>
-#ELSEACT
-MOV S$激活2 <已经激活/FCOLOR=250>
-#IF
-CHECK [342] 0
-#ACT
-MOV S$激活3 <未激活/FCOLOR=56>
-#ELSEACT
-MOV S$激活3 <已经激活/FCOLOR=250>
-#IF
-CHECK [343] 0
-#ACT
-MOV S$激活4 <未激活/FCOLOR=56>
-#ELSEACT
-MOV S$激活4 <已经激活/FCOLOR=250>
-#IF
-#ACT
-#SAY
-\ \ \ \
-<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
-<       /AUTOCOLOR=0><--------------------------------------------------------------------/SCOLOR=12>\
-<       /AUTOCOLOR=0><>         <林★雷/@林★雷>         <激活程度/FCOLOR=254>:      <$STR(S$激活1)>\
-<> \
-<       /AUTOCOLOR=0><>         <罗★峰/@罗★峰>         <激活程度/FCOLOR=254>:      <$STR(S$激活2)>\
-<> \
-<       /AUTOCOLOR=0><>         <秦★羽/@秦★羽>         <激活程度/FCOLOR=254>:      <$STR(S$激活3)>\
-<> \
-<       /AUTOCOLOR=0><>         <雪★鹰/@雪★鹰>         <激活程度/FCOLOR=254>:      <$STR(S$激活4)>\
-<>                   <全部激活称号属性查看|250#每激活一个奖励永久HP+40000,攻击+2000,^250#4个全部激活触发增加称号：宇宙★掌控者>          <首页/@main>\
-
-[@林★雷]
-#IF
-CHECK [340] 1
-#ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
-BREAK
-
-
-#IF
-CHECKITEM 林★雷 1
-CHECK [340] 0
-#ACT
-TAKE 林★雷 1
-SET [340] 1
-USEBONUSPOINT 1 + 4000
-USEBONUSPOINT 6 + 40000
-GOTO @下一页8
-BREAK
-#ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【林★雷】..
-BREAK
-
-
-
-[@罗★峰]
-#IF
-CHECK [341] 1
-#ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
-BREAK
-
-#IF
-CHECKITEM 罗★峰 1
-CHECK [341] 0
-#ACT
-TAKE 罗★峰 1
-SET [341] 1
-USEBONUSPOINT 1 + 4000
-USEBONUSPOINT 6 + 40000
-GOTO @下一页8
-BREAK
-#ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【罗★峰】..
-BREAK
-
-
-
-[@秦★羽]
-#IF
-CHECK [342] 1
-#ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
-BREAK
-
-#IF
-CHECKITEM 秦★羽 1
-CHECK [342] 0
-#ACT
-TAKE 秦★羽 1
-SET [342] 1
-USEBONUSPOINT 1 + 4000
-USEBONUSPOINT 6 + 40000
-GOTO @下一页8
-BREAK
-#ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【秦★羽】..
-BREAK
-
-
-
-[@雪★鹰]
-#IF
-CHECK [343] 1
-#ACT
-MESSAGEBOX 友情提示:\已经使用过！任务图勋章！
-BREAK
-
-#IF
-CHECKITEM 雪★鹰 1
-CHECK [343] 0
-#ACT
-TAKE 雪★鹰 1
-SET [343] 1
-USEBONUSPOINT 1 + 4000
-USEBONUSPOINT 6 + 40000
-GOTO @下一页8
-BREAK
-#ELSEACT
-MESSAGEBOX 友情提示:\您没有人物图录【雪★鹰】..
-BREAK
-
-
+close
 
 
 

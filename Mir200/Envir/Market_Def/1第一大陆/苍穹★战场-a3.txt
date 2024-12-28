@@ -1,21 +1,49 @@
 [@main]
 #IF
+CHECKLEVELEX > 0
 #ACT
-OPENMERCHANTBIGDLG 74 136 0 0 0 10 1 488 8
+OPENMERCHANTBIGDLG 101 23 0 0 0 0 0
 #SAY
-<PlayImg:69:1158:20:150:-20:-16:0>\
-<> \
-<> \
-<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
-\  \
-<       /AUTOCOLOR=0>〖<地图名称/AUTOCOLOR=243>〗：<苍穹★战场/AUTOCOLOR=243>\
-<       /AUTOCOLOR=0>〖<怪物爆率/AUTOCOLOR=253>〗：<材料，首饰，武器，衣服，元宝/AUTOCOLOR=253>\
-<       /AUTOCOLOR=0>〖<进入条件/AUTOCOLOR=254>〗：<100级级玩家免费进入/AUTOCOLOR=254>\
-<       /AUTOCOLOR=0>〖<温馨提示/AUTOCOLOR=250>〗：<此地图不可使用随机类道具，实力不足勇士请勿挑战/AUTOCOLOR=250>\
-<       /AUTOCOLOR=0>〖<危险指数/AUTOCOLOR=249>〗：<PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>\
-\ \ \
-<         /AUTOCOLOR=0>　     <点击进入地图/@轮回战场>                         <关闭×/@EXIT>\
+<><Img:8:101:530:30|/@关闭对话框>\
+<> \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+<                        /AUTOCOLOR=0><100级玩家免费进入/AUTOCOLOR=254>     <点击进入地图/@轮回战场>\
 
+<>\ \
+<>  　                       <亚特兰蒂斯副本/SCOLOR=254>\ \ 
+<>   <少侠如果你有[海盗通缉卷]那么我可以将送你进入亚特兰蒂斯副本一探究竟/SCOLOR=250>\ \
+<>            <亚特兰蒂斯副本爆率+200%超高大量装备等你来夺！！！/SCOLOR=70>  \ \
+<>   <本副本乃是个人副本！无需担心他人抢怪,刷新本大陆章节怪物！/SCOLOR=70><刷新10只倍BOSS/SCOLOR=71> \ \
+<>            <地图规则:副本时间30分钟死亡或者出图地图消失/SCOLOR=70>  \  \
+<>                            <进入亚特兰蒂斯副本|249#需要海盗通缉卷/@索马里>      \
+<TEXT:购买卷轴|249#土豪玩家如果不愿意浪费时间请直接用1000大米购买卷轴即可:380:-15{FCOLOR=254}/@购买卷>
+
+
+
+
+
+
+;#IF
+;#ACT
+;OPENMERCHANTBIGDLG 74 136 0 0 0 10 1 488 8
+;#SAY
+;<PlayImg:69:1158:20:150:-20:-16:0>\
+;<> \
+;<> \
+;<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+;\  \
+;<       /AUTOCOLOR=0>〖<地图名称/AUTOCOLOR=243>〗：<苍穹★战场/AUTOCOLOR=243>\
+;<       /AUTOCOLOR=0>〖<怪物爆率/AUTOCOLOR=253>〗：<材料，首饰，武器，衣服，元宝/AUTOCOLOR=253>\
+;<       /AUTOCOLOR=0>〖<进入条件/AUTOCOLOR=254>〗：<100级玩家免费进入/AUTOCOLOR=254>\
+;<       /AUTOCOLOR=0>〖<温馨提示/AUTOCOLOR=250>〗：<此地图不可使用随机类道具，实力不足勇士请勿挑战/AUTOCOLOR=250>\
+;<       /AUTOCOLOR=0>〖<危险指数/AUTOCOLOR=249>〗：<PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>\
+;\ \ \
+;<         /AUTOCOLOR=0>　     <点击进入地图/@轮回战场>                         <关闭×/@EXIT>\
+
+
+[@关闭对话框]
+#IF
+#ACT
+close
 [@轮回战场]
 #IF
 CHECKLEVELEX > 99

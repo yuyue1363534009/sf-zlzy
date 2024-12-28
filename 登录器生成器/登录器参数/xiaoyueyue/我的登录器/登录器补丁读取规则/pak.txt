@@ -401,3 +401,4 @@ E:\热血传奇\zl666\Data\装备光柱特效20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\装备光柱2特效20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\称号特效20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\NPC界面20241120.pak|xiaoyue
+E:\热血传奇\zl666\Data\图鉴特效20241120.pak|xiaoyue
