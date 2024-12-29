@@ -214,8 +214,10 @@ CHECKRENEWLEVEL = 15
 #ACT
 MOV S$当前轮回 15重轮回（圆满）
 MOV S$货币种类 元宝
-MOV N$转生等级 150
-MOV N$元宝数量 20000000
+;MOV N$转生等级 150
+;MOV N$元宝数量 20000000
+MOV N$转生等级 0
+MOV N$元宝数量 0
 MOV N$所降等级 0
 MOV S$奖励属性 神力倍数+30%
 MOV N$属性数值 0
