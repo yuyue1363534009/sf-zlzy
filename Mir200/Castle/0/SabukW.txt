@@ -2,7 +2,7 @@
 CastleName=É³³Ç
 ChangeDate=2024/12/14 9:40:03
 WarDate=2024/12/14 9:40:03
-IncomeToday=2024/12/28 0:00:03
+IncomeToday=2024/12/29 0:00:00
 TotalGold=500
 TodayIncome=500
 OwnGuild=
