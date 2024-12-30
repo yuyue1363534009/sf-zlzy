@@ -56,7 +56,7 @@ CHECKGAMEGOLD > 9999
 INC U2 1
 GAMEGOLD - 10000
 CONFERTITLE 初学★子弟 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{初学★子弟|250:0:1}.
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1} {>|151:0:1}成为了{初学★子弟|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -81,7 +81,7 @@ INC U2 1
 GAMEGOLD - 30000
 DEPRIVETITLE 初学★子弟
 CONFERTITLE 初窥★武学 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{初窥★武学|250:0:1}.
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1} {>|151:0:1}成为了{初窥★武学|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -106,7 +106,7 @@ INC U2 1
 GAMEGOLD - 50000
 DEPRIVETITLE 初窥★武学
 CONFERTITLE 天资★过人 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{天资★过人|250:0:1}.
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1} {>|151:0:1}成为了{天资★过人|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -131,7 +131,7 @@ INC U2 1
 GAMEGOLD - 70000
 DEPRIVETITLE 天资★过人
 CONFERTITLE 锋芒★毕露 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{锋芒★毕露|250:0:1}.
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1} {>|151:0:1}成为了{锋芒★毕露|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -156,7 +156,7 @@ INC U2 1
 GAMEGOLD - 100000
 DEPRIVETITLE 锋芒★毕露
 CONFERTITLE 涉足★江湖 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{涉足★江湖|250:0:1}.
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1} {>|151:0:1}成为了{涉足★江湖|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -181,7 +181,7 @@ INC U2 1
 GAMEGOLD - 150000
 DEPRIVETITLE 涉足★江湖
 CONFERTITLE 杀戮★武林 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{杀戮★武林|250:0:1}.
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1} {>|151:0:1}成为了{杀戮★武林|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -206,7 +206,7 @@ INC U2 1
 GAMEGOLD - 200000
 DEPRIVETITLE 杀戮★武林
 CONFERTITLE 名震★江湖 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{名震★江湖|250:0:1}.
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1} {>|151:0:1}成为了{名震★江湖|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -231,7 +231,7 @@ INC U2 1
 GAMEGOLD - 300000
 DEPRIVETITLE 名震★江湖
 CONFERTITLE 开山★立派 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{开山★立派|250:0:1}.
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1} {>|151:0:1}成为了{开山★立派|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -256,7 +256,7 @@ INC U2 1
 GAMEGOLD - 400000
 DEPRIVETITLE 开山★立派
 CONFERTITLE 武林★泰斗 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{武林★泰斗|250:0:1}.
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1} {>|151:0:1}成为了{武林★泰斗|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -281,7 +281,7 @@ INC U2 1
 GAMEGOLD - 500000
 DEPRIVETITLE 武林★泰斗
 CONFERTITLE 浩瀚★灭天 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{浩瀚★灭天|250:0:1}.
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1} {>|151:0:1}成为了{浩瀚★灭天|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK
 
@@ -306,6 +306,6 @@ INC U2 1
 GAMEGOLD - 700000
 DEPRIVETITLE 浩瀚★灭天
 CONFERTITLE 武神★天尊 1
-SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{武神★天尊|250:0:1}.
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1} {>|151:0:1}成为了{武神★天尊|250:0:1}.
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 BREAK

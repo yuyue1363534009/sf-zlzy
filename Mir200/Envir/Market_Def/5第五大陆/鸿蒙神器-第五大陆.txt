@@ -5,24 +5,24 @@ CHECKLEVELEX > 0
 GetDBItemFieldValue 乱『王』世※戟★★★★★ idx S$专属展示1
 OPENMERCHANTBIGDLG 101 571 0 4 0 -100 0
 #SAY
-<><PlayImg:101:556:15:150:0:0:0:0>\
-<                                                                                                                      /AUTOCOLOR=0><PlayImg:97:8:7:100:15:52:0:0>\
-<><Img:8:101:800:35|/@关闭对话框>\
-\ \ \ \ \ \ \ \ \
-<                                                              /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<PlayImg:101:556:15:150:0:0:0:0>\
+<PlayImg:97:8:7:100:249:21:0:0>\
+<Img:8:101:600:15|/@关闭对话框>\
+\ \ \
+<                                               /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
 <>\
-<                                                                    /AUTOCOLOR=0><ItemShow:<$STR(S$专属展示1)>:0:0:-10:1:0:1:50>\
-<                                                                    /AUTOCOLOR=0>        <乱『王』世※戟★★★★★/FCOLOR=251>\
+<                                                     /AUTOCOLOR=0><ItemShow:<$STR(S$专属展示1)>:0:0:-10:1:0:1:50>\
+<                                                     /AUTOCOLOR=0>        <乱『王』世※戟★★★★★/FCOLOR=251>\
 <>\
-<                                                                    /AUTOCOLOR=0><合成条件：/FCOLOR=250>  <乱『王』世※戟★★★*1+388W点逐鹿币合成.../FCOLOR=254>\
+<                                                     /AUTOCOLOR=0><合成条件：/FCOLOR=253>  <乱『王』世※戟★★★*1+388W点逐鹿币合成.../FCOLOR=253>\
 <>\
-<                                                                    /AUTOCOLOR=0><物品功能：/FCOLOR=250>  <爆率提高百分之两百.暴击和攻击伤害提升40%../FCOLOR=254>\
+<                                                     /AUTOCOLOR=0><物品功能：/FCOLOR=250>  <爆率提高百分之两百.暴击和攻击伤害提升40%../FCOLOR=254>\
 <>\
-<                                                                    /AUTOCOLOR=0><物品属性：/FCOLOR=250>  <全属性提升80%，刺杀威力提高30%../FCOLOR=254>\
+<                                                     /AUTOCOLOR=0><物品属性：/FCOLOR=250>  <全属性提升80%，刺杀威力提高30%../FCOLOR=254>\
 <>\
-<                                                                    /AUTOCOLOR=0><特殊属性：/FCOLOR=250>  <低于2.0E血.恢复3E血.CD180秒.10%几率切割怪物5888W血../FCOLOR=254>\
+<                                                     /AUTOCOLOR=0><特殊属性：/FCOLOR=250>  <低于2.0E血.恢复3E血.CD180秒.10%几率切割怪物5888W血../FCOLOR=254>\
 <>\
-<                                                       	                              /AUTOCOLOR=0>　     <点击合成神器/@002> \
+<                                                 	               /AUTOCOLOR=0>　     <点击合成神器/@002> \
 
 [@关闭对话框]
 #IF

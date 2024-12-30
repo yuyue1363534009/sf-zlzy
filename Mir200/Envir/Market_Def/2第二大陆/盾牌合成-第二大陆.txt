@@ -5,24 +5,24 @@ CHECKLEVELEX > 0
 GetDBItemFieldValue 《乱世逐鹿》「殺」卐盾 idx S$专属展示1
 OPENMERCHANTBIGDLG 101 283 0 4 0 -100 0
 #SAY
-<><PlayImg:101:268:15:150:0:0:0:0>\
-<                                                                   /AUTOCOLOR=0><PlayImg:97:8:7:100:15:52:0:0>\
-<><Img:8:101:800:35|/@关闭对话框>\
-\ \ \ \ \
-<                                                                                  /AUTOCOLOR=0><┅/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <∞盾牌合成∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<PlayImg:101:268:15:150:0:0:0:0>\
+<PlayImg:97:8:7:100:297:21:0:0>\
+<Img:8:101:600:25|/@关闭对话框>\
+\ \ \
+<                                                              /AUTOCOLOR=0><┅/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <∞盾牌合成∞/SCOLOR=253> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
 <>\
-<                                                                            /AUTOCOLOR=0>　　 <ItemShow:<$STR(S$专属展示1)>:0:0:-10:1:0:1:50>\
-<                                                                            /AUTOCOLOR=0>　           <《乱世逐鹿》「殺」卐盾/FCOLOR=70>\
+<                                                        /AUTOCOLOR=0>　　 <ItemShow:<$STR(S$专属展示1)>:0:0:-10:1:0:1:50>\
+<                                                        /AUTOCOLOR=0>　           <《乱世逐鹿》「殺」卐盾/FCOLOR=251>\
 <>\
-<                                                                            /AUTOCOLOR=0>　　 <散人合成：/FCOLOR=250> <〈赤心巡天〉Lv9ヾ盾 + 88W逐鹿币合成/FCOLOR=254>\
+<                                                        /AUTOCOLOR=0>　　 <合成条件：/FCOLOR=253> <〈赤心巡天〉Lv9ヾ盾 + 88W逐鹿币合成/FCOLOR=253>\
 <>\
-<                                                                            /AUTOCOLOR=0>　　 <官印属性：/FCOLOR=250> <全身12倍刀刀切割总和.附带20%几率鞭尸让任何怪物再爆一次../FCOLOR=254>\
+<                                                        /AUTOCOLOR=0>　　 <官印属性：/FCOLOR=250> <全身12倍刀刀切割总和.附带20%几率鞭尸让任何怪物再爆一次../FCOLOR=254>\
 <>\
-<                                                                            /AUTOCOLOR=0>　　 <特殊属性：/FCOLOR=250> <1.3倍真实神力.附带1.2倍全身暴率叠加...打装备必须品.../FCOLOR=254>\
+<                                                        /AUTOCOLOR=0>　　 <特殊属性：/FCOLOR=250> <1.3倍真实神力.附带1.2倍全身暴率叠加...打装备必须品.../FCOLOR=254>\
 <>\
-<                                                                            /AUTOCOLOR=0>　　 <超级属性：/FCOLOR=250> <附带10%几率秒杀任何怪物2%血量...方便玩家打BOSS..../FCOLOR=254>\  \
+<                                                        /AUTOCOLOR=0>　　 <超级属性：/FCOLOR=250> <附带10%几率秒杀任何怪物2%血量...方便玩家打BOSS..../FCOLOR=254>\  \
 <>\
-<                                                                            /AUTOCOLOR=0>　     <点击合成神器/@001>                         <关闭×/@EXIT>\
+<                                                        /AUTOCOLOR=0>　     <点击合成神器/@001>\
 
 
 [@关闭对话框]

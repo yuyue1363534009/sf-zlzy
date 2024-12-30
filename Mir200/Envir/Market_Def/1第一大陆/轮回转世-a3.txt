@@ -3,7 +3,7 @@
 #IF
 CHECKRENEWLEVEL = 15
 #ACT
-MOV S$激活状态 <><Img:38:101:700:420>
+MOV S$激活状态 <><Img:38:101:530:300>
 
 #IF
 CHECKRENEWLEVEL = 0
@@ -237,16 +237,16 @@ BREAK
 OPENMERCHANTBIGDLG 101 492 0 4 0 -100 0
 #SAY
 <><PlayImg:101:493:15:150:30:0:0:0>\
-<><Img:8:101:800:35|/@关闭对话框>\
+<><Img:8:101:700:35|/@关闭对话框>\
 <$STR(S$激活状态)>\
-\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-<                                                                /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <【修身炼体★转世轮回】/FCOLOR=251> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\ \
-<                                                                                 /AUTOCOLOR=0><当前轮回：/FCOLOR=251> {<$STR(S$当前轮回)>/FCOLOR=253}\
-<                                                                                 /AUTOCOLOR=0><当前属性：/FCOLOR=251> {<$STR(S$奖励属性)>/FCOLOR=253}\
-<                                                                                 /AUTOCOLOR=0><提升所需等级：/FCOLOR=250> {<$STR(N$转生等级)>级/FCOLOR=254}\
-<                                                                                 /AUTOCOLOR=0><提升所需<$STR(S$货币种类)>：/FCOLOR=250> {<$STR(N$元宝数量)>/FCOLOR=254}\
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+<                                        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <【修身炼体★转世轮回】/FCOLOR=251> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\ \
+<                                                            /AUTOCOLOR=0><当前轮回：/FCOLOR=251> {<$STR(S$当前轮回)>/FCOLOR=253}\
+<                                                            /AUTOCOLOR=0><当前属性：/FCOLOR=251> {<$STR(S$奖励属性)>/FCOLOR=253}\
+<                                                            /AUTOCOLOR=0><提升所需等级：/FCOLOR=250> {<$STR(N$转生等级)>级/FCOLOR=254}\
+<                                                            /AUTOCOLOR=0><提升所需<$STR(S$货币种类)>：/FCOLOR=250> {<$STR(N$元宝数量)>/FCOLOR=254}\
 <>\
-<                                                                                        /AUTOCOLOR=0><$STR(S$按钮分类)>\
+<                                                                /AUTOCOLOR=0><$STR(S$按钮分类)>\
 
 ;OPENMERCHANTBIGDLG 57 90 0 4 0 0 1 452 9
 ;#SAY

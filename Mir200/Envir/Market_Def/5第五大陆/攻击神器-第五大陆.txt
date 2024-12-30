@@ -5,26 +5,26 @@ CHECKLEVELEX > 0
 GetDBItemFieldValue 【未雨绸缪】我以我血荐轩辕★伞 idx S$专属展示1
 OPENMERCHANTBIGDLG 101 403 0 4 0 -100 0
 #SAY
-<><PlayImg:101:388:15:150:0:0:0:0>\
-<                                                                   /AUTOCOLOR=0><PlayImg:97:8:7:100:15:52:0:0>\
-<><Img:8:101:800:35|/@关闭对话框>\
-\ \ \ \ \
-<                                                                        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<PlayImg:101:388:15:150:0:0:0:0>\
+<PlayImg:97:8:7:100:255:-12:0:0>\
+<Img:8:101:600:-25|/@关闭对话框>\
+\
+<                                                /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
 <>\
-<                                                                                  /AUTOCOLOR=0>　　 <ItemShow:<$STR(S$专属展示1)>:0:0:-10:1:0:1:50>\
-<                                                                                  /AUTOCOLOR=0>　           <【未雨绸缪】我以我血荐轩辕★伞/FCOLOR=251>\
+<                                                      /AUTOCOLOR=0><ItemShow:<$STR(S$专属展示1)>:0:0:-10:1:0:1:50>\
+<                                                      /AUTOCOLOR=0>         <【未雨绸缪】我以我血荐轩辕★伞/FCOLOR=251>\
 <>\
-<                                                                              /AUTOCOLOR=0><禁器合成：/FCOLOR=250><〈天刀◆无疆〉Lv7ゞ伞+388W逐鹿币合成/FCOLOR=254>\
+<                                                      /AUTOCOLOR=0><合成条件：/FCOLOR=253><〈天刀◆无疆〉Lv7ゞ伞+388W逐鹿币合成/FCOLOR=253>\
 <>\
-<                                                                              /AUTOCOLOR=0><超级属性：/FCOLOR=250><攻击力增加150%,5%几率攻击敌人让敌人瞬间红名/FCOLOR=254>\
+<                                                      /AUTOCOLOR=0><超级属性：/FCOLOR=250><攻击力增加150%,5%几率攻击敌人让敌人瞬间红名/FCOLOR=254>\
 <>\
-<                                                                              /AUTOCOLOR=0><超级属性：/FCOLOR=250><攻击力增加150%,5%几率攻击敌人让敌人瞬间红名/FCOLOR=254>\
+<                                                      /AUTOCOLOR=0><超级属性：/FCOLOR=250><攻击力增加150%,5%几率攻击敌人让敌人瞬间红名/FCOLOR=254>\
 <>\
-<                                                                              /AUTOCOLOR=0><超级属性：/FCOLOR=250><攻击力增加150%,5%几率攻击敌人让敌人瞬间红名/FCOLOR=254>\
+<                                                      /AUTOCOLOR=0><超级属性：/FCOLOR=250><攻击力增加150%,5%几率攻击敌人让敌人瞬间红名/FCOLOR=254>\
 <>\
-<                                                                              /AUTOCOLOR=0><超级属性：/FCOLOR=250><攻击力增加150%,5%几率攻击敌人让敌人瞬间红名/FCOLOR=254>\
+<                                                      /AUTOCOLOR=0><超级属性：/FCOLOR=250><攻击力增加150%,5%几率攻击敌人让敌人瞬间红名/FCOLOR=254>\
 <>\
-<                                                                                                 /AUTOCOLOR=0>　     <禁器合成/@002>\
+<                                                                    /AUTOCOLOR=0>　     <禁器合成/@002>\
 
 [@关闭对话框]
 #IF

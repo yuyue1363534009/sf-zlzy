@@ -5,26 +5,26 @@ CHECKLEVELEX > 0
 GetDBItemFieldValue 乱『王』世※戟★ idx S$专属展示1
 OPENMERCHANTBIGDLG 101 331 0 4 0 -100 0
 #SAY
-<><PlayImg:101:332:15:150:0:0:0:0>\
-<><Img:8:101:800:50|/@关闭对话框>\
-\ \ \ \ \ \ \ \ \
-<                                                                                    /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·2025独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<PlayImg:101:332:15:150:0:0:0:0>\
+<Img:8:101:650:30|/@关闭对话框>\
+\ \ \ \ \
+<                                                      /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·2025独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
 <>\
-<                                                                                    /AUTOCOLOR=0><【·炉火★纯青·】/SCOLOR=254>  <需要10万逐鹿币/SCOLOR=250>  <属性:爆率+100% 刀刀切割58W/SCOLOR=70>   <称号提升/@称号提升2000>\
+<                                                      /AUTOCOLOR=0><【·炉火★纯青·】/SCOLOR=254> <需要10万逐鹿币/SCOLOR=250>  <属性:爆率+100% 刀刀切割58W/SCOLOR=70>   <称号提升/@称号提升2000>\
 <>\
-<                                                                                    /AUTOCOLOR=0><【·名扬★四海·】/SCOLOR=254>  <需要20万逐鹿币/SCOLOR=250>  <属性:爆率+130% 刀刀切割88W/SCOLOR=70>   <称号提升/@称号提升2001>\
+<                                                      /AUTOCOLOR=0><【·名扬★四海·】/SCOLOR=254> <需要20万逐鹿币/SCOLOR=250>  <属性:爆率+130% 刀刀切割88W/SCOLOR=70>   <称号提升/@称号提升2001>\
 <>\
-<                                                                                    /AUTOCOLOR=0><【·谁与★争锋·】/SCOLOR=254>  <需要30万逐鹿币/SCOLOR=250>  <属性:爆率+160% 刀刀切割188W/SCOLOR=70>  <称号提升/@称号提升2002>\
+<                                                      /AUTOCOLOR=0><【·谁与★争锋·】/SCOLOR=254> <需要30万逐鹿币/SCOLOR=250>  <属性:爆率+160% 刀刀切割188W/SCOLOR=70>  <称号提升/@称号提升2002>\
 <>\
-<                                                                                    /AUTOCOLOR=0><【·登峰★造极·】/SCOLOR=254>  <需要50万逐鹿币/SCOLOR=250>  <属性:爆率+200% 刀刀切割388W/SCOLOR=70>  <称号提升/@称号提升2003>\
+<                                                      /AUTOCOLOR=0><【·登峰★造极·】/SCOLOR=254> <需要50万逐鹿币/SCOLOR=250>  <属性:爆率+200% 刀刀切割388W/SCOLOR=70>  <称号提升/@称号提升2003>\
 <>\ \
-<                                                                                    /AUTOCOLOR=0><【·凤翔★九天·】/SCOLOR=254>  <需要100万逐鹿币/SCOLOR=250> <属性:爆率+250% 刀刀切割588W/SCOLOR=70>  <称号提升/@称号提升2004>\
+<                                                      /AUTOCOLOR=0><【·凤翔★九天·】/SCOLOR=254> <需要100万逐鹿币/SCOLOR=250> <属性:爆率+250% 刀刀切割588W/SCOLOR=70>  <称号提升/@称号提升2004>\
 <>\
-<                                                                                    /AUTOCOLOR=0><【·无人★能挡·】/SCOLOR=254>  <需要200万逐鹿币/SCOLOR=250> <属性:爆率+300% 刀刀切割888W/SCOLOR=70>  <称号提升/@称号提升2005>\
+<                                                      /AUTOCOLOR=0><【·无人★能挡·】/SCOLOR=254> <需要200万逐鹿币/SCOLOR=250> <属性:爆率+300% 刀刀切割888W/SCOLOR=70>  <称号提升/@称号提升2005>\
 <>\
-<                                                                                    /AUTOCOLOR=0><【·逐鹿★群雄·】/SCOLOR=254>  <需要300万逐鹿币/SCOLOR=250> <属性:爆率+400% 刀刀切割1288W/SCOLOR=70> <称号提升/@称号提升2006>\
+<                                                      /AUTOCOLOR=0><【·逐鹿★群雄·】/SCOLOR=254> <需要300万逐鹿币/SCOLOR=250> <属性:爆率+400% 刀刀切割1288W/SCOLOR=70> <称号提升/@称号提升2006>\
 <>\ \
-<                                                                                    /AUTOCOLOR=0><提示声明：需要把土城武神★天尊称号升满，在来升级以上超级称号！/SCOLOR=251>\
+<                                                      /AUTOCOLOR=0><提示声明：需要把土城武神★天尊称号，在来升级超级称号！/SCOLOR=251>\
 [@关闭对话框]
 #IF
 #ACT
@@ -44,12 +44,24 @@ close
 ;<            /AUTOCOLOR=0><·无人★能挡·/SCOLOR=253>  <需要200万逐鹿币/SCOLOR=250> <属性:爆率+300% 刀刀切割888W/SCOLOR=70>  <称号提升/@称号提升2005>\
 ;<            /AUTOCOLOR=0><·逐鹿★群雄·/SCOLOR=253>  <需要300万逐鹿币/SCOLOR=250> <属性:爆率+400% 刀刀切割1288W/SCOLOR=70> <称号提升/@称号提升2006>\
 ;<         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
-;<              /AUTOCOLOR=0><提示声明：需要把土城武神★天尊称号升满，在来升级以上超级称号！/SCOLOR=251>\
+;<              /AUTOCOLOR=0><提示声明：需要把土城武神★天尊称号，在来升级超级称号！/SCOLOR=251>\
 [@称号提升2000]
 #IF
 SMALL U2 11
 #ACT
-MESSAGEBOX 请先升满土城武神★天尊称号升满，在来升级以上超级称号！
+MESSAGEBOX 请先提升土城武神★天尊称号，在来升级超级称号！
+BREAK
+
+#OR
+CHECKTITLE ·炉火★纯青·
+CHECKTITLE ·名扬★四海·
+CHECKTITLE ·谁与★争锋·
+CHECKTITLE ·登峰★造极·
+CHECKTITLE ·凤翔★九天·
+CHECKTITLE ·无人★能挡·
+CHECKTITLE ·逐鹿★群雄·
+#ACT
+MESSAGEBOX 称号已提升，无法继续提升！
 BREAK
 
 #IF
@@ -67,7 +79,7 @@ GAMEGIRD - 100000
 DEPRIVETITLE 武神★天尊
 CONFERTITLE ·炉火★纯青· 1
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMSG 6 已成功升级，·炉火★纯青·称号...！
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1}{>|151:0:1}成为了超级称号{·炉火★纯青·|250:0:1}.
 BREAK
 
 
@@ -77,7 +89,18 @@ BREAK
 #IF
 SMALL U2 12
 #ACT
-MESSAGEBOX 请先升满傲视★群雄称号升满，在来升级以上超级称号！
+MESSAGEBOX 请先提升·炉火★纯青·称号，在来升级超级称号！
+BREAK
+
+#OR
+CHECKTITLE ·名扬★四海·
+CHECKTITLE ·谁与★争锋·
+CHECKTITLE ·登峰★造极·
+CHECKTITLE ·凤翔★九天·
+CHECKTITLE ·无人★能挡·
+CHECKTITLE ·逐鹿★群雄·
+#ACT
+MESSAGEBOX 称号已提升，无法继续提升！
 BREAK
 
 #IF
@@ -95,7 +118,7 @@ GAMEGIRD - 200000
 DEPRIVETITLE ·炉火★纯青·
 CONFERTITLE ·名扬★四海· 1
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMSG 6 已成功升级，·名扬★四海·称号...！
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1}{>|151:0:1}成为了超级称号{·名扬★四海·|250:0:1}.
 BREAK
 
 
@@ -104,13 +127,23 @@ BREAK
 #IF
 SMALL U2 13
 #ACT
-MESSAGEBOX 请先升满最强★称号称号升满，在来升级以上超级称号！
+MESSAGEBOX 请先提升·名扬★四海·称号，在来升级超级称号！
 BREAK
 
 #IF
 CHECKGAMEGIRD < 300000
 #ACT
 MESSAGEBOX 锻造失败:原因如下\\　　　　1.您的神晶不足！
+BREAK
+
+#OR
+CHECKTITLE ·谁与★争锋·
+CHECKTITLE ·登峰★造极·
+CHECKTITLE ·凤翔★九天·
+CHECKTITLE ·无人★能挡·
+CHECKTITLE ·逐鹿★群雄·
+#ACT
+MESSAGEBOX 称号已提升，无法继续提升！
 BREAK
 
 #IF
@@ -122,7 +155,7 @@ GAMEGIRD - 300000
 DEPRIVETITLE ·名扬★四海·
 CONFERTITLE ·谁与★争锋· 1
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMSG 6 已成功升级，·谁与★争锋·称号...！
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1}{>|151:0:1}成为了超级称号{·谁与★争锋·|250:0:1}.
 BREAK
 
 
@@ -132,7 +165,16 @@ BREAK
 #IF
 SMALL U2 14
 #ACT
-MESSAGEBOX 请先升满举世★无双称号升满，在来升级以上超级称号！
+MESSAGEBOX 请先提升·谁与★争锋·称号，在来升级超级称号！
+BREAK
+
+#OR
+CHECKTITLE ·登峰★造极·
+CHECKTITLE ·凤翔★九天·
+CHECKTITLE ·无人★能挡·
+CHECKTITLE ·逐鹿★群雄·
+#ACT
+MESSAGEBOX 称号已提升，无法继续提升！
 BREAK
 
 #IF
@@ -150,7 +192,7 @@ GAMEGIRD - 500000
 DEPRIVETITLE ·谁与★争锋·
 CONFERTITLE ·登峰★造极· 1
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMSG 6 已成功升级，·登峰★造极·称号...！
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1}{>|151:0:1}成为了超级称号{·登峰★造极·|250:0:1}.
 BREAK
 
 
@@ -160,7 +202,15 @@ BREAK
 #IF
 SMALL U2 15
 #ACT
-MESSAGEBOX 请先升满倾国★倾城称号升满，在来升级以上超级称号！
+MESSAGEBOX 请先提升·登峰★造极·称号，在来升级超级称号！
+BREAK
+
+#OR
+CHECKTITLE ·凤翔★九天·
+CHECKTITLE ·无人★能挡·
+CHECKTITLE ·逐鹿★群雄·
+#ACT
+MESSAGEBOX 称号已提升，无法继续提升！
 BREAK
 
 #IF
@@ -178,7 +228,7 @@ GAMEGIRD - 1000000
 DEPRIVETITLE ·登峰★造极·
 CONFERTITLE ·凤翔★九天· 1
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMSG 6 已成功升级，·凤翔★九天·称号...！
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1}{>|151:0:1}成为了超级称号{·凤翔★九天·|250:0:1}.
 BREAK
 
 
@@ -187,7 +237,14 @@ BREAK
 #IF
 SMALL U2 16
 #ACT
-MESSAGEBOX 请先升满无微★不至称号升满，在来升级以上超级称号！
+MESSAGEBOX 请先提升·凤翔★九天·称号，在来升级超级称号！
+BREAK
+
+#OR
+CHECKTITLE ·无人★能挡·
+CHECKTITLE ·逐鹿★群雄·
+#ACT
+MESSAGEBOX 称号已提升，无法继续提升！
 BREAK
 
 #IF
@@ -205,7 +262,7 @@ GAMEGIRD - 2000000
 DEPRIVETITLE ·凤翔★九天·
 CONFERTITLE ·无人★能挡· 1
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMSG 6 已成功升级，·无人★能挡·称号...！
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1}{>|151:0:1}成为了超级称号{·无人★能挡·|250:0:1}.
 BREAK
 
 
@@ -213,7 +270,13 @@ BREAK
 #IF
 SMALL U2 17
 #ACT
-MESSAGEBOX 请先升满天下★无敌称号升满，在来升级以上超级称号！
+MESSAGEBOX 请先提升·无人★能挡·称号，在来升级超级称号！
+BREAK
+
+#OR
+CHECKTITLE ·逐鹿★群雄·
+#ACT
+MESSAGEBOX 称号已提升，无法继续提升！
 BREAK
 
 #IF
@@ -231,7 +294,7 @@ GAMEGIRD - 3000000
 DEPRIVETITLE ·无人★能挡·
 CONFERTITLE ·逐鹿★群雄· 1
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMSG 6 已成功升级，·逐鹿★群雄·称号...！
+SENDMSG 0 {恭喜玩家<|151:0:1}{<$USERNAME>|228:0:1}{>|151:0:1}成为了超级称号{·逐鹿★群雄·|250:0:1}.
 BREAK
 
 

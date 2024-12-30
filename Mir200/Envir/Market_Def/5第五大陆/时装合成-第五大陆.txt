@@ -5,27 +5,27 @@ CHECKLEVELEX > 0
 GetDBItemFieldValue 《时装》天刀※无疆ゞ昊天 idx S$专属展示1
 OPENMERCHANTBIGDLG 101 362 0 4 0 -100 0
 #SAY
-<><PlayImg:101:362:15:150:0:0:0:0>\
-<><PlayImg:101:347:15:150:230:60:0:0>\
-<                                                                                                             /AUTOCOLOR=0><PlayImg:97:8:7:100:15:52:0:0>\
-<><Img:8:101:800:35|/@关闭对话框>\
-\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-<                                                     /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<PlayImg:101:362:15:150:0:0:0:0>\
+<PlayImg:101:347:15:150:170:30:0:0>\
+<PlayImg:97:8:7:100:147:53:0:0>\
+<Img:8:101:690:-30|/@关闭对话框>\
+\ \ \ \ \
+<                                 /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
 <>\
-<                                                        /AUTOCOLOR=0><ItemShow:<$STR(S$专属展示1)>:0:0:-10:1:0:1:50>\
-<                                                        /AUTOCOLOR=0>        <《时装》天刀※无疆ゞ昊天/FCOLOR=251>\
+<                                    /AUTOCOLOR=0><ItemShow:<$STR(S$专属展示1)>:0:0:-10:1:0:1:50>\
+<                                    /AUTOCOLOR=0>        <《时装》天刀※无疆ゞ昊天/FCOLOR=251>\
 <>\
-<                                                         /AUTOCOLOR=0><合成需求：/FCOLOR=253>  <《时装》赤心※巡天ゞ逍遥+荣耀★水晶*800/FCOLOR=253>\
+<                                     /AUTOCOLOR=0><合成条件：/FCOLOR=253>  <《时装》赤心※巡天ゞ逍遥+荣耀★水晶*800/FCOLOR=253>\
 <>\
-<                                                         /AUTOCOLOR=0><时装属性：/FCOLOR=250>  <忽视目标防御，HPMP提升:300%,几率秒杀对手5000W血量,复活属性,防爆/FCOLOR=254>\
+<                                     /AUTOCOLOR=0><时装属性：/FCOLOR=250>  <忽视目标防御，HPMP提升:300%,几率秒杀对手5000W血量,复活属性,防爆/FCOLOR=254>\
 <>\
-<                                                         /AUTOCOLOR=0><时装属性：/FCOLOR=250>  <忽视目标防御，HPMP提升:300%,几率秒杀对手5000W血量,复活属性,防爆/FCOLOR=254>\
+<                                     /AUTOCOLOR=0><时装属性：/FCOLOR=250>  <忽视目标防御，HPMP提升:300%,几率秒杀对手5000W血量,复活属性,防爆/FCOLOR=254>\
 <>\
-<                                                         /AUTOCOLOR=0><时装属性：/FCOLOR=250>  <忽视目标防御，HPMP提升:300%,几率秒杀对手5000W血量,复活属性,防爆/FCOLOR=254>\
+<                                     /AUTOCOLOR=0><时装属性：/FCOLOR=250>  <忽视目标防御，HPMP提升:300%,几率秒杀对手5000W血量,复活属性,防爆/FCOLOR=254>\
 <>\
-<                                                         /AUTOCOLOR=0><时装属性：/FCOLOR=250>  <忽视目标防御，HPMP提升:300%,几率秒杀对手5000W血量,复活属性,防爆/FCOLOR=254>\
+<                                     /AUTOCOLOR=0><时装属性：/FCOLOR=250>  <忽视目标防御，HPMP提升:300%,几率秒杀对手5000W血量,复活属性,防爆/FCOLOR=254>\
 <>\
-<                                                                            /AUTOCOLOR=0>　     <点击合成终极时装/@换13>             \
+<                                                     /AUTOCOLOR=0>　     <点击合成终极时装/@换13>             \
 
 [@关闭对话框]
 #IF
