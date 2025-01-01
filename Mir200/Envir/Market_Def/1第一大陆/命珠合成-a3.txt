@@ -10,7 +10,7 @@ GetDBItemFieldValue 〈紫电青霜〉Lv5ゞ魂珠 idx S$专属展示5
 GetDBItemFieldValue 〈君临天下〉Lv6ゞ魂珠 idx S$专属展示6
 GetDBItemFieldValue 〈九州憾天〉Lv7ゞ魂珠 idx S$专属展示7
 
-OPENMERCHANTBIGDLG 101 605 0 4 0 -270 1 584 2
+OPENMERCHANTBIGDLG 101 605 0 4 0 -270 1 568 2
 #SAY
 \ \ \ \ \ \
 <  ><ItemShow:<$STR(S$专属展示1)>:0:0:-27:1:0:1:50>   <〈魏武青虹〉Lv1ゞ魂珠/SCOLOR=254>       <10W元宝/SCOLOR=250>                                  <点击打造|253#特殊属性：^-^250#全身血量1.1倍/@001>\
