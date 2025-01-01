@@ -740,6 +740,13 @@ GAMEGIRD + 100000
 GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加100000个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
 BREAK
 ;==============500000逐鹿币=============
+[@StdModeFunc201]
+#IF
+#ACT
+GAMEGIRD + 200000
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加200000个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============500000逐鹿币=============
 [@StdModeFunc129]
 #IF
 #ACT
@@ -752,6 +759,13 @@ BREAK
 #ACT
 GAMEGIRD + 1000000
 GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加1000000个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
+BREAK
+;==============2000000逐鹿币=============
+[@StdModeFunc202]
+#IF
+#ACT
+GAMEGIRD + 2000000
+GuildNOTiceMsg 250 216 [系统提示]逐鹿币增加2000000个.您当前的逐鹿币为：<$GAMEGIRD>个 SELF
 BREAK
 ;==============5000000逐鹿币=============
 [@StdModeFunc131]

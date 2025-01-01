@@ -25,7 +25,7 @@ close
 ;OPENMERCHANTBIGDLG 74 485 0 0 0 10 1 488 8
 ;#SAY
 ;<> \ \
-;<        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+;<  /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
 ;<        --------------------------------------------------------------------/SCOLOR=12>\
 ;<        /AUTOCOLOR=0>   <180级-190级/@突破1>                  <条件：逐鹿币*30W/SCOLOR=250> \
 ;<        --------------------------------------------------------------------/SCOLOR=12>\
