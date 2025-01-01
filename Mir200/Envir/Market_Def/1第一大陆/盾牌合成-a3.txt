@@ -49,7 +49,7 @@ GetDBItemFieldValue 〈龍王無雙〉Lv7ヾ盾 idx S$专属展示6
 GetDBItemFieldValue 〈金絲龍鱗〉Lv8ヾ盾 idx S$专属展示7
 GetDBItemFieldValue 〈赤心巡天〉Lv9ヾ盾 idx S$专属展示8
 
-OPENMERCHANTBIGDLG 101 605 0 4 0 -270 1 568 2
+OPENMERCHANTBIGDLG 101 605 0 4 0 -100 1 568 2
 #SAY
 \ \ \ \ \ \
 <  ><ItemShow:<$STR(S$专属展示1)>:0:0:-27:1:0:1:50>   <〈魔神之隕〉Lv2ヾ盾/SCOLOR=254>       <〈神威亢天〉Lv1ヾ盾/SCOLOR=253> + <1万逐鹿币/SCOLOR=250>           <点击打造|253#特殊属性：^-^250#全身刀刀切割总值2.0倍/@003>\

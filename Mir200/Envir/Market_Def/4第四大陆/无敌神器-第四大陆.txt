@@ -5,7 +5,7 @@ CHECKLEVELEX > 0
 GetDBItemFieldValue 乱『王』世※戟★★★ idx S$专属展示1
 OPENMERCHANTBIGDLG 101 491 0 4 0 -100 0
 #SAY
-<PlayImg:101:476:15:150:-185:-100:0:0>\
+<PlayImg:101:476:15:150:-145:-70:0:0>\
 <PlayImg:97:8:7:100:100:5:0:0>\
 <Img:8:101:500:5|/@关闭对话框>\
 #SAY

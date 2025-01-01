@@ -11,7 +11,7 @@ GetDBItemFieldValue 《时装》龍血※戰神ゞ天闕 idx S$专属展示6
 GetDBItemFieldValue 《时装》刀劍※神皇ゞ莫邪 idx S$专属展示7
 GetDBItemFieldValue 《时装》真靈※九變ゞ奧義 idx S$专属展示8
 
-OPENMERCHANTBIGDLG 101 605 0 4 0 -270 1 568 2
+OPENMERCHANTBIGDLG 101 605 0 4 0 -100 1 568 2
 #SAY
 <><ImgEx:101:56:57:58:255:445|/@page2>\
 \ \ \ \ \

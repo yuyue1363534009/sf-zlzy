@@ -11,7 +11,7 @@ GetDBItemFieldValue 〈一手遮天〉Lv6ゞ章 idx S$专属展示6
 GetDBItemFieldValue 〈无敌盖世〉Lv7ゞ章 idx S$专属展示7
 GetDBItemFieldValue 〈雄霸天下〉Lv8ゞ章 idx S$专属展示8
 
-OPENMERCHANTBIGDLG 101 605 0 4 0 -270 1 568 2
+OPENMERCHANTBIGDLG 101 605 0 4 0 -100 1 568 2
 #SAY
 <><ImgEx:101:56:57:58:255:445|/@page2>\
 \ \ \ \ \
