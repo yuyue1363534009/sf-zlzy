@@ -1,32 +1,5 @@
 (@@InPutInteger @@InPutString @@useitemname @@OffLineMsg @@dealgold @storage @getback @ReclaimItem )
 
-;ESP开启自动挂机
-;[@ESPStartAutoPlayGame]
-;新GOM开启自动挂机
-[@StartAutoPlayGame]
-
-#IF
-CHECKLEVELEX > 184
-#ACT
-;ESP开启自动挂机
-;ESPStartAutoPlayGame
-;新GOM开启自动挂机
-;StartAutoPlayGame 100 60 1
-StartAutoPlayGame 1000 600 2
-SENDMSG 6 ....开始挂机，使用快捷键“~”停止挂机！
-#ELSEACT
-MESSAGEBOX 你的等级低于185级无法挂机！
-BREAK
-
-;ESP暂停自动挂机
-;[@ESPStopAutoPlayGame]
-;新GOM暂停自动挂机
-[@StopAutoPlayGame]
-#ACT
-SENDMSG 6 .....挂机结束，使用快捷键“~”开启自动挂机 
-
- 
-
 [@OnKillMob]
 #IF
 #ACT
@@ -170,6 +143,18 @@ BREAK
 #ACT
 #CALL [\自定义按钮\智能开箱.txt] @智能开箱
 BREAK
+
+[@ButtonClick98]
+#IF
+#ACT
+GOTO @StartAutoPlayGame
+
+[@ButtonClick99]
+#IF
+#ACT
+GOTO @StopAutoPlayGame
+ 
+
 [@Usercmd0]
 #OR
 CHECKMAPNAME ejmm
@@ -1328,34 +1313,13 @@ ChangeModeEx 16 65535
 #ACT
 ChangeModeEx 16 1
 
-[@GroupItemOn64]
-#IF
-#ACT
-ChangeModeEx 16 65535
-
-#IF
-EQUAL U45 0
-#ACT
-SETClientBuff 71 1 1199 -1 　 -60 60
-#ELSEACT
-SETClientBuff 71 1 1200 <$STR(U45)> 　 -60 60
-
-[@GroupItemOFF64]
-#IF
-#ACT
-ChangeModeEx 16 1
-CLOSEClientBuff 1
-
 [@Revival]
 #IF
 #ACT
+;重置复活时间
 MOV U45 <$REVIVALTIME>
-SETClientBuff 71 1 1200 <$STR(U45)> 　 -60 60
-
-[@CLOSEClientBuff1]
-#IF
-#ACT
-SETClientBuff 71 1 1199 -1  　 -60 60
+;解决复活延时5秒
+INC U45 5
 
 [@StartAutoPlayGame]
 #IF
@@ -1366,10 +1330,15 @@ BREAK
 #IF
 #ACT
 StartAutoPlayGame 1000 600 2
+DELBUTTON 98 0
+ADDBUTTON 101 99 793 794 795 20 200  0 -1 \254/【点击取消挂机】\开始或停止挂机：CTRL+ALT+X
 SENDMSG 6 开始挂机，使用快捷键“CTRL+ALT+X”停止挂机
 
 [@StopAutoPlayGame]
 #ACT
+StopAutoPlayGame
+DELBUTTON 99 0
+ADDBUTTON 101 98 790 791 792 20 200  0 -1 \254/【点击开始挂机】\开始或停止挂机：CTRL+ALT+X
 SENDMSG 6 挂机结束，使用快捷键“CTRL+ALT+X”开始挂机
 
 

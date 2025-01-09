@@ -178,31 +178,30 @@ SetOnTimer 21 10
 ;============================================================================
 
 [@OnTimer23]
+;元宝超过20亿不再增加
 #IF
 CHECKGAMEGOLD > 1999999999
 #ACT
 GAMEGOLD      = 2000000000
 
-#IF
-NOT CHECKITEMW 《时装》赤心※巡天ゞ逍遥
-#ACT
-MOV S$复活冷却显示 不可用
 
 #IF
-CHECKITEMW 《时装》赤心※巡天ゞ逍遥
+NOT CHECKITEMW 《时装》天刀※无疆ゞ昊天
+#ACT
+DELBUTTON 17 0
+
+#IF
+CHECKITEMW 《时装》天刀※无疆ゞ昊天
 LARGE U45 0
 #ACT
-DEC   U45 1
-MOV S$复活冷却显示 <$STR(U45)>秒
+DEC U45 1
+ADDBUTTON 101 17 783 783 783 370 40 0 250/<$STR(U45)>秒 254/【<$STR(U45)>秒后复活】
 
 #IF
-CHECKITEMW 《时装》赤心※巡天ゞ逍遥
+CHECKITEMW 《时装》天刀※无疆ゞ昊天
 EQUAL U45 0
 #ACT
-MOV S$复活冷却显示 可复活
-#IF
-#ACT
-;ADDBUTTON 66 17 830 830 830 0 475 0 　当前复活时间：<$STR(S$复活冷却显示)>
+ADDBUTTON 101 17 788 788 788 370 40 0 -1 254/【可复活】
 
 
 
