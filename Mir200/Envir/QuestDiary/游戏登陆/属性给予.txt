@@ -1,18 +1,20 @@
 [@人物属性]
 {
-#IF
-#ACT
-DELBUTTON 18 0
-DELBUTTON 19 0
-DELBUTTON 20 0
+;#IF
+;#ACT
+;DELBUTTON 18 0
+;DELBUTTON 19 0
+;DELBUTTON 20 0
 
 #IF
 #ACT
-MOV S$人物基础封号 〝┈━━逐鹿╰★╮中原═━━┈〞
+;MOV S$人物基础封号 〝┈━━逐鹿╰★╮中原═━━┈〞
+MOV S$人物基础封号 〝┈━=≡☆逐鹿中原☆≡=━┈〞
 
 #IF
 #ACT
-MOV S$人物斩杀封号 『斩杀∶(<$STR(U1)>)人』
+;MOV S$人物斩杀封号 『斩杀∶(<$STR(U1)>)人』
+MOV S$人物斩杀封号 ◥▉▇▆▅▃▂‖斩杀∶(<$STR(U1)>)人‖▂▃▅▆▇▉◤
 
 
 #IF
@@ -334,129 +336,129 @@ SETICON 2 98 360 38 10 6 0 150 0
 #IF
 CHECKRENEWLEVEL = 0
 #ACT
-MOV S$人物轮回显示 『转生：０级』
+MOV S$人物轮回显示 ≮→≌←☆★转生：０级★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 1
 #ACT
 MOV N$轮回倍数 1
-MOV S$人物轮回显示 『转生：一转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：一转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 2
 #ACT
 MOV N$轮回倍数 2
-MOV S$人物轮回显示 『转生：二转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：二转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 3
 #ACT
 MOV N$轮回倍数 3
-MOV S$人物轮回显示 『转生：三转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：三转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 4
 #ACT
 MOV N$轮回倍数 4
-MOV S$人物轮回显示 『转生：四转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：四转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 5
 #ACT
 MOV N$轮回倍数 5
-MOV S$人物轮回显示 『转生：五转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：五转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 6
 #ACT
 MOV N$轮回倍数 6
-MOV S$人物轮回显示 『转生：六转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：六转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 7
 #ACT
 MOV N$轮回倍数 7
-MOV S$人物轮回显示 『转生：七转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：七转轮回★☆→≌←≯
 
 
 #IF
 CHECKRENEWLEVEL = 8
 #ACT
 MOV N$轮回倍数 8
-MOV S$人物轮回显示 『转生：八转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：八转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 9
 #ACT
 MOV N$轮回倍数 9
-MOV S$人物轮回显示 『转生：九转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：九转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 10
 #ACT
 MOV N$轮回倍数 10
-MOV S$人物轮回显示 『转生：十转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：十转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 11
 #ACT
 MOV N$轮回倍数 12
-MOV S$人物轮回显示 『转生：11转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：11转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 12
 #ACT
 MOV N$轮回倍数 15
-MOV S$人物轮回显示 『转生：12转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：12转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 13
 #ACT
 MOV N$轮回倍数 20
-MOV S$人物轮回显示 『转生：13转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：13转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 14
 #ACT
 MOV N$轮回倍数 25
-MOV S$人物轮回显示 『转生：14转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：14转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 15
 #ACT
 MOV N$轮回倍数 30
-MOV S$人物轮回显示 『转生：15转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：15转轮回★☆→≌←≯
 
 
 #IF
 CHECKRENEWLEVEL = 16
 #ACT
 MOV N$轮回倍数 16
-MOV S$人物轮回显示 『转生：16转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：16转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 17
 #ACT
 MOV N$轮回倍数 16
-MOV S$人物轮回显示 『转生：17转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：17转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 18
 #ACT
 MOV N$轮回倍数 26
-MOV S$人物轮回显示 『转生：18转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：18转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 19
 #ACT
 MOV N$轮回倍数 28
-MOV S$人物轮回显示 『转生：19转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：19转轮回★☆→≌←≯
 
 #IF
 CHECKRENEWLEVEL = 20
 #ACT
 MOV N$轮回倍数 30
-MOV S$人物轮回显示 『转生：20转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：20转轮回★☆→≌←≯
 
 
 #IF
@@ -625,7 +627,7 @@ MUL N$总切割 N$切割倍数
 ;ADDBUTTON 74 20 171 171 171 0 450 0 　<$STR(N$总切割)>
 POWERRATE <$STR(N$总倍数)> 999999
 KILLMONBURSTRATE 20140220 20140221 <$STR(N$总爆率)> 20140223 20140224 20140225 20140226 65535 20140227 20140228
-SETRANKLEVELNAME %s\<$STR(S$人物基础封号)>\∞神力∶<$POWERRATE>倍攻击\<$STR(S$人物轮回显示)>\<$STR(S$人物斩杀封号)>\╰　　　　　　　　╯\
+SETRANKLEVELNAME %s\<$STR(S$人物基础封号)>\◣★◥□神力:<$POWERRATE>倍□◤☆◢\<$STR(S$人物轮回显示)>\<$STR(S$人物斩杀封号)>\
 
 #IF
 CHECK [10] 1

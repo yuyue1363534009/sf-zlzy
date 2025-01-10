@@ -2,11 +2,13 @@
 {
 #IF
 #ACT
-MOV S$人物基础封号 〝┈━━逐鹿╰★╮中原═━━┈〞
+;MOV S$人物基础封号 〝┈━━逐鹿╰★╮中原═━━┈〞
+MOV S$人物基础封号 〝┈━=≡☆逐鹿中原☆≡=━┈〞
 
 #IF
 #ACT
-MOV S$人物斩杀封号 『斩杀∶(<$STR(U1)>)人』
+;MOV S$人物斩杀封号 『斩杀∶(<$STR(U1)>)人』
+MOV S$人物斩杀封号 ◥▉▇▆▅▃▂‖斩杀∶(<$STR(U1)>)人‖▂▃▅▆▇▉◤
 
 
 #IF
@@ -35,92 +37,92 @@ SETICON 2 98 360 38 -3 6 0 150 0
 #IF
 CHECKRENEWLEVEL = 20
 #ACT
-MOV S$人物轮回显示 『转生：20转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：20转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 19
 #ACT
-MOV S$人物轮回显示 『转生：19转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：19转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 18
 #ACT
-MOV S$人物轮回显示 『转生：18转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：18转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 17
 #ACT
-MOV S$人物轮回显示 『转生：17转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：17转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 16
 #ACT
-MOV S$人物轮回显示 『转生：16转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：16转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 15
 #ACT
-MOV S$人物轮回显示 『转生：15转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：15转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 14
 #ACT
-MOV S$人物轮回显示 『转生：14转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：14转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 13
 #ACT
-MOV S$人物轮回显示 『转生：13转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：13转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 12
 #ACT
-MOV S$人物轮回显示 『转生：12转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：12转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 11
 #ACT
-MOV S$人物轮回显示 『转生：11转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：11转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 10
 #ACT
-MOV S$人物轮回显示 『转生：十转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：十转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 9
 #ACT
-MOV S$人物轮回显示 『转生：九转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：九转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 8
 #ACT
-MOV S$人物轮回显示 『转生：八转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：八转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 7
 #ACT
-MOV S$人物轮回显示 『转生：七转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：七转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 6
 #ACT
-MOV S$人物轮回显示 『转生：六转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：六转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 5
 #ACT
-MOV S$人物轮回显示 『转生：五转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：五转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 4
 #ACT
-MOV S$人物轮回显示 『转生：四转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：四转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 3
 #ACT
-MOV S$人物轮回显示 『转生：三转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：三转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 2
 #ACT
-MOV S$人物轮回显示 『转生：二转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：二转轮回★☆→≌←≯
 #IF
 CHECKRENEWLEVEL = 1
 #ACT
-MOV S$人物轮回显示 『转生：一转轮回』
+MOV S$人物轮回显示 ≮→≌←☆★转生：一转轮回★☆→≌←≯
 CHANGENAMECOLOR 250
 #IF
 CHECKRENEWLEVEL < 1
 #ACT
-MOV S$人物轮回显示 『转生：０级』
+MOV S$人物轮回显示 ≮→≌←☆★转生：０级★☆→≌←≯
 
 
 #IF
 CHECKLEVELEX > 0
 #ACT
-SETRANKLEVELNAME %s\<$STR(S$人物基础封号)>\∞神力∶<$POWERRATE>倍攻击\<$STR(S$人物轮回显示)>\<$STR(S$人物斩杀封号)>\╰　　　　　　　　╯
+SETRANKLEVELNAME %s\<$STR(S$人物基础封号)>\◣★◥□神力:<$POWERRATE>倍□◤☆◢\<$STR(S$人物轮回显示)>\<$STR(S$人物斩杀封号)>\
 }
