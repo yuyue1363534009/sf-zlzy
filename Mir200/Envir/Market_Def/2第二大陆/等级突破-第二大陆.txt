@@ -2,19 +2,20 @@
 #IF
 CHECKLEVELEX > 0
 #ACT
-OPENMERCHANTBIGDLG 101 435 0 4 0 -100 0
+OPENMERCHANTBIGDLG 101 163 0 4 0 -100 0
 #SAY
-<PlayImg:101:420:15:150:-275:-70:0:0>\
-<Img:8:101:400:30|/@关闭对话框>\
-\ \ \ \ \ \ \
-<      /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<PlayImg:101:153:10:150:-70:0:0:0>\
+<Img:8:101:590:-10|/@关闭对话框>\
+\
+<                                       /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<>\ \
+<                                            /AUTOCOLOR=0><150级-155级/SCOLOR=250>     <条件：逐鹿币*10000/SCOLOR=254>        <点击提升/@突破1>\
 <>\
-<           /AUTOCOLOR=0><150级-155级/SCOLOR=250>     <条件：逐鹿币*30W/SCOLOR=254>        <点击提升/@突破1>\
-<>\
-<           /AUTOCOLOR=0><155级-160级/SCOLOR=250>     <条件：逐鹿币*50W/SCOLOR=254>        <点击提升/@突破2>\
+<                                            /AUTOCOLOR=0><155级-160级/SCOLOR=250>     <条件：逐鹿币*20000/SCOLOR=254>        <点击提升/@突破2>\
 <>\
 <>\
-<        /AUTOCOLOR=0><提示声明：本服为长久服，所有装备全部靠爆出，充值纯属自愿！/SCOLOR=249>
+<                                         /AUTOCOLOR=0><提示声明：本服为长久服，所有装备全部靠爆出，充值纯属自愿！/SCOLOR=249>
+
 [@关闭对话框]
 #IF
 #ACT
