@@ -1,10 +1,9 @@
 [@main]
 #IF 
 #ACT
-OPENMERCHANTBIGDLG  7 286 0 0 0 0 0 0 0
+OPENMERCHANTBIGDLG 101 616 0 0 0 0 1 449 2
 #SAY
-<IMGEX:9:107:108:109:375:-10/@EXIT>\
- \ \
+\ \ \
 <>   <攻沙模式：/SCOLOR=249><新区开放第⒊天拿沙，老区天天拿沙！/SCOLOR=23>\  \
  \
 <>   <攻沙奖励：/SCOLOR=249><新区奖励：/SCOLOR=42><100W元宝>  <老区奖励：/SCOLOR=42><50万元宝>\  \
