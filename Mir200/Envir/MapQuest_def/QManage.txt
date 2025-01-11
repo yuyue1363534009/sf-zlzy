@@ -67,7 +67,7 @@ SetOnTimer 102 1
 SetOnTimer 103 1
 SetOnTimer 4 1
 SetOnTimer 11 1
-SetOnTimer 19 15
+;SetOnTimer 19 15
 SetOnTimer 100 10
 SetOnTimer 23 1
 
@@ -184,7 +184,7 @@ CHECKGAMEGOLD > 1999999999
 #ACT
 GAMEGOLD      = 2000000000
 
-
+;复活图标--------------------------------------------------------------------
 #IF
 NOT CHECKITEMW 《时装》天刀※无疆ゞ昊天
 #ACT
@@ -195,14 +195,226 @@ CHECKITEMW 《时装》天刀※无疆ゞ昊天
 LARGE U45 0
 #ACT
 DEC U45 1
-ADDBUTTON 101 17 783 783 783 370 40 0 250/<$STR(U45)>秒 254/【<$STR(U45)>秒后复活】
+ADDBUTTON 101 17 783 783 783 370 40 0 250/<$STR(U45)>秒 254/【时装复活BUFF】\<$STR(U45)>秒后原地满血复活
 
 #IF
 CHECKITEMW 《时装》天刀※无疆ゞ昊天
 EQUAL U45 0
 #ACT
-ADDBUTTON 101 17 788 788 788 370 40 0 -1 254/【可复活】
+ADDBUTTON 101 17 788 788 788 370 40 0 -1 254/【时装复活BUFF】\原地满血复活
 
+
+;恢复血量+图标--------------------------------------------------------------------
+;盾牌15秒恢复血量后，U47恢复15。检测穿戴盾牌并且U47大于0时，U47每秒减1。
+#IF
+NOT CHECKITEMW 〈魔神之隕〉Lv2ヾ盾
+NOT CHECKITEMW 〈神雷天裁〉Lv3ヾ盾
+NOT CHECKITEMW 〈龍血戰神〉Lv4ヾ盾
+NOT CHECKITEMW 〈刀劍神皇〉Lv5ヾ盾
+NOT CHECKITEMW 〈真靈九變〉Lv6ヾ盾
+NOT CHECKITEMW 〈龍王無雙〉Lv7ヾ盾
+NOT CHECKITEMW 〈金絲龍鱗〉Lv8ヾ盾
+NOT CHECKITEMW 〈赤心巡天〉Lv9ヾ盾
+NOT CHECKITEMW 《乱世逐鹿》「殺」卐盾
+NOT CHECKITEMW 【堅如磐石】埋骨何须桑梓地★盾
+#ACT
+DELBUTTON 18 0
+
+;------------------------------------------------------------------
+#IF
+CHECKITEMW 〈魔神之隕〉Lv2ヾ盾
+LARGE U47 0
+#ACT
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>秒 254/【盾牌血量恢复BUFF】\<$STR(U47)>秒后自动恢复<2%>生命值
+DEC U47 1
+#IF
+CHECKITEMW 〈神雷天裁〉Lv3ヾ盾
+LARGE U47 0
+#ACT
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>秒 254/【盾牌血量恢复BUFF】\<$STR(U47)>秒后自动恢复<4%>生命值
+DEC U47 1
+#IF
+CHECKITEMW 〈龍血戰神〉Lv4ヾ盾
+LARGE U47 0
+#ACT
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>秒 254/【盾牌血量恢复BUFF】\<$STR(U47)>秒后自动恢复<6%>生命值
+DEC U47 1
+#IF
+CHECKITEMW 〈刀劍神皇〉Lv5ヾ盾
+LARGE U47 0
+#ACT
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>秒 254/【盾牌血量恢复BUFF】\<$STR(U47)>秒后自动恢复<8%>生命值
+DEC U47 1
+#IF
+CHECKITEMW 〈真靈九變〉Lv6ヾ盾
+LARGE U47 0
+#ACT
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>秒 254/【盾牌血量恢复BUFF】\<$STR(U47)>秒后自动恢复<10%>生命值
+DEC U47 1
+#IF
+CHECKITEMW 〈龍王無雙〉Lv7ヾ盾
+LARGE U47 0
+#ACT
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>秒 254/【盾牌血量恢复BUFF】\<$STR(U47)>秒后自动恢复<12%>生命值
+DEC U47 1
+#IF
+CHECKITEMW 〈金絲龍鱗〉Lv8ヾ盾
+LARGE U47 0
+#ACT
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>秒 254/【盾牌血量恢复BUFF】\<$STR(U47)>秒后自动恢复<14%>生命值
+DEC U47 1
+#IF
+CHECKITEMW 〈赤心巡天〉Lv9ヾ盾
+LARGE U47 0
+#ACT
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>秒 254/【盾牌血量恢复BUFF】\<$STR(U47)>秒后自动恢复<16%>生命值
+DEC U47 1
+#IF
+CHECKITEMW 《乱世逐鹿》「殺」卐盾
+LARGE U47 0
+#ACT
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>秒 254/【盾牌血量恢复BUFF】\<$STR(U47)>秒后自动恢复<18%>生命值
+DEC U47 1
+#IF
+CHECKITEMW 【堅如磐石】埋骨何须桑梓地★盾
+LARGE U47 0
+#ACT
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>秒 254/【盾牌血量恢复BUFF】\<$STR(U47)>秒后自动恢复<20%>生命值
+DEC U47 1
+
+;------------------------------------------------------------------
+#IF
+CHECKITEMW 〈魔神之隕〉Lv2ヾ盾
+SMALL U47 1
+CheckHpPer < 100
+#ACT
+MOV U47 15
+ADDHPPER + 2
+SENDMSG 6 盾牌单件触发HP每15秒回血<2%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 〈神雷天裁〉Lv3ヾ盾
+SMALL U47 1
+CheckHpPer < 100
+#ACT
+MOV U47 15
+ADDHPPER + 4
+SENDMSG 6 盾牌单件触发HP每15秒回血<4%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 〈龍血戰神〉Lv4ヾ盾
+SMALL U47 1
+CheckHpPer < 100
+#ACT
+MOV U47 15
+ADDHPPER + 6
+SENDMSG 6 盾牌单件触发HP每15秒回血<6%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 〈刀劍神皇〉Lv5ヾ盾
+SMALL U47 1
+CheckHpPer < 100
+#ACT
+MOV U47 15
+ADDHPPER + 8
+SENDMSG 6 盾牌单件触发HP每15秒回血<8%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 〈真靈九變〉Lv6ヾ盾
+SMALL U47 1
+CheckHpPer < 100
+#ACT
+MOV U47 15
+ADDHPPER + 10
+SENDMSG 6 盾牌单件触发HP每15秒回血<10%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 〈龍王無雙〉Lv7ヾ盾
+SMALL U47 1
+CheckHpPer < 100
+#ACT
+MOV U47 15
+ADDHPPER + 12
+SENDMSG 6 盾牌单件触发HP每15秒回血<12%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 〈金絲龍鱗〉Lv8ヾ盾
+SMALL U47 1
+CheckHpPer < 100
+#ACT
+MOV U47 15
+ADDHPPER + 14
+SENDMSG 6 盾牌单件触发HP每15秒回血<14%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 〈赤心巡天〉Lv9ヾ盾
+SMALL U47 1
+CheckHpPer < 100
+#ACT
+MOV U47 15
+ADDHPPER + 16
+SENDMSG 6 盾牌单件触发HP每15秒回血<16%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 《乱世逐鹿》「殺」卐盾
+SMALL U47 1
+CheckHpPer < 100
+#ACT
+MOV U47 15
+ADDHPPER + 18
+SENDMSG 6 盾牌单件触发HP每15秒回血<18%>生命值！！！~~~~~~
+#IF
+CHECKITEMW 【堅如磐石】埋骨何须桑梓地★盾
+SMALL U47 1
+CheckHpPer < 100
+#ACT
+MOV U47 15
+ADDHPPER + 20
+SENDMSG 6 盾牌单件触发HP每15秒回血<20%>生命值！！！~~~~~~
+
+;------------------------------------------------------------------
+#IF
+CHECKITEMW 〈魔神之隕〉Lv2ヾ盾
+SMALL U47 1
+#ACT
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/【盾牌血量恢复BUFF】\立即恢复<2%>生命值
+#IF
+CHECKITEMW 〈神雷天裁〉Lv3ヾ盾
+SMALL U47 1
+#ACT
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/【盾牌血量恢复BUFF】\立即恢复<4%>生命值
+#IF
+CHECKITEMW 〈龍血戰神〉Lv4ヾ盾
+SMALL U47 1
+#ACT
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/【盾牌血量恢复BUFF】\立即恢复<6%>生命值
+#IF
+CHECKITEMW 〈刀劍神皇〉Lv5ヾ盾
+SMALL U47 1
+#ACT
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/【盾牌血量恢复BUFF】\立即恢复<8%>生命值
+#IF
+CHECKITEMW 〈真靈九變〉Lv6ヾ盾
+SMALL U47 1
+#ACT
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/【盾牌血量恢复BUFF】\立即恢复<10%>生命值
+#IF
+CHECKITEMW 〈龍王無雙〉Lv7ヾ盾
+SMALL U47 1
+#ACT
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/【盾牌血量恢复BUFF】\立即恢复<12%>生命值
+#IF
+CHECKITEMW 〈金絲龍鱗〉Lv8ヾ盾
+SMALL U47 1
+#ACT
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/【盾牌血量恢复BUFF】\立即恢复<14%>生命值
+#IF
+CHECKITEMW 〈赤心巡天〉Lv9ヾ盾
+SMALL U47 1
+#ACT
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/【盾牌血量恢复BUFF】\立即恢复<16%>生命值
+#IF
+CHECKITEMW 《乱世逐鹿》「殺」卐盾
+SMALL U47 1
+#ACT
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/【盾牌血量恢复BUFF】\立即恢复<18%>生命值
+#IF
+CHECKITEMW 【堅如磐石】埋骨何须桑梓地★盾
+SMALL U47 1
+#ACT
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/【盾牌血量恢复BUFF】\立即恢复<20%>生命值
 
 
 [@OnTimer4]
