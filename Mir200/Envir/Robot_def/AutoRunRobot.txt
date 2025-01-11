@@ -24,4 +24,4 @@
 #AutoRun NPC MIN 1 @活动计时
 
 ;假人上线
-#AutoRun NPC SEC 1 @假人上线
+;#AutoRun NPC SEC 1 @假人上线
