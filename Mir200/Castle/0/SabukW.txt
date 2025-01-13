@@ -1,11 +1,11 @@
 [Setup]
 CastleName=沙城
-ChangeDate=2024/12/14 9:40:03
-WarDate=2024/12/14 9:40:03
-IncomeToday=2025/1/2 0:00:03
+ChangeDate=2025/1/11 9:17:59
+WarDate=2025/1/11 9:00:08
+IncomeToday=2025/1/13 0:00:03
 TotalGold=500
 TodayIncome=500
-OwnGuild=
+OwnGuild=一生一世我爱你
 [Defense]
 CastleMapList=0151,0152,0153,0154,0155,0156,
 CastleMap=A3
