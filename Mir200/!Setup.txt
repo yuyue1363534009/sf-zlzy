@@ -176,8 +176,8 @@ MonthSpirit12=
 MonthSpirit13=
 MonthSpirit14=
 [Setup]
-ItemNumber=101798
-ItemNumberEx=1073742043
+ItemNumber=101918
+ItemNumberEx=1073742101
 ClientFile1=Mir.dat
 ClientFile2=mir.dat
 ClientFile3=mir.3
@@ -4925,6 +4925,9 @@ BagItemUpgradeX=0
 BagItemUpgradeY=0
 StateItemUpgradeX=0
 StateItemUpgradeY=0
+SlaveViewRange=5
+Skill82SearchViewRangeRunTick=300
+Skill48HitWaitTime=0
 [String]
 MonLevel=[Lv:%d]\%s
 [WebService]
