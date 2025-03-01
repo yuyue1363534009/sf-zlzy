@@ -176,8 +176,8 @@ MonthSpirit12=
 MonthSpirit13=
 MonthSpirit14=
 [Setup]
-ItemNumber=102860
-ItemNumberEx=1073742101
+ItemNumber=103808
+ItemNumberEx=1073742391
 ClientFile1=Mir.dat
 ClientFile2=mir.dat
 ClientFile3=mir.3
