@@ -15,8 +15,6 @@ E:\热血传奇\zl666\Data\QITASC3.pak|xiaoyue|0
 E:\热血传奇\zl666\Data\PangNiu.Pak|xiaoyue|0
 E:\热血传奇\zl666\Data\52Esp.Pak|gameofmir|0
 E:\热血传奇\zl666\Data\cqBtn.Pak|gameofmir|0
-E:\热血传奇\zl666\Data\DnItems4.pak|军哥版本库jungebbk.com|0
-E:\热血传奇\zl666\Data\DnItems5.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\ESP-B.Pak|gameofmir|0
 E:\热血传奇\zl666\Data\espcd.Pak|gameofmir|0
 E:\热血传奇\zl666\Data\EspSc1.Pak|gameofmir|0
@@ -27,8 +25,6 @@ E:\热血传奇\zl666\Data\Hum.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\hy666.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\hy999.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\Items.pak|军哥版本库jungebbk.com|0
-E:\热血传奇\zl666\Data\Items4.pak|军哥版本库jungebbk.com|0
-E:\热血传奇\zl666\Data\Items5.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\JieMian.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\Magic.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\MagIcon.pak|军哥版本库jungebbk.com|0
@@ -153,9 +149,6 @@ E:\热血传奇\zl666\Data\smTiles83.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\smTiles95.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\smTiles99.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\StateItem.pak|军哥版本库jungebbk.com|0
-E:\热血传奇\zl666\Data\StateItem2.pak|军哥版本库jungebbk.com|0
-E:\热血传奇\zl666\Data\StateItem3.pak|军哥版本库jungebbk.com|0
-E:\热血传奇\zl666\Data\StateItem4.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\Tiles102.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\Tiles123.pak|军哥版本库jungebbk.com|0
 E:\热血传奇\zl666\Data\Tiles124.pak|军哥版本库jungebbk.com|0
@@ -389,3 +382,5 @@ E:\热血传奇\zl666\Data\Items2.pak|xiaoyue
 E:\热血传奇\zl666\Data\Items3.pak|xiaoyue
 E:\热血传奇\zl666\Data\时装20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\生肖和材料20241120.pak|xiaoyue
+E:\热血传奇\zl666\Data\DnItems4.pak|xiaoyue
+E:\热血传奇\zl666\Data\Items4.pak|xiaoyue
