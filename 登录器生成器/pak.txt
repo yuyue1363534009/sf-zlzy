@@ -384,3 +384,4 @@ E:\热血传奇\zl666\Data\时装20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\生肖和材料20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\DnItems4.pak|xiaoyue
 E:\热血传奇\zl666\Data\Items4.pak|xiaoyue
+E:\热血传奇\zl666\Data\装备特效20241120.pak|xiaoyue
