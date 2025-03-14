@@ -49,6 +49,8 @@ ChangeBagCount = 126
 ;#ACT
 ;ESPOpenAutoPlayGame
 
+PLAYSOUND zl666\Wav\come.wav 1 0
+
 
 #IF
 CHECK [125] 1
