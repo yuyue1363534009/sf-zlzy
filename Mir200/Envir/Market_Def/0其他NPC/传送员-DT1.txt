@@ -2,15 +2,12 @@
 #IF
 #ACT
 CLOSEBigDialogBox
-OPENMERCHANTBIGDLG 74 190 0 0 0 10 0 0 0
 MOV s1 <$GAMEGOLD>个
 MOV s2 <$YEAR>-<$MONTH>-<$DAY>　<$HOUR>:<$MINUTE>:<$SECOND>分
 SETStringBlank <$STR(s1)> 15 1
 SETStringBlank <$STR(s2)> 22 1
 #SAY
-<IMGEX:73:2571:2572:2573:420:-50/@EXIT>\
-<┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
-< /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+<IMGEX:73:2571:2572:2573:420:-50/@EXIT>\ \
 <当前服务器时间:/SCOLOR=87>{<$STR(s2)>/SCOLOR=150}　<您进入游戏时间:/SCOLOR=87>{<$LOGINLONG>/SCOLOR=150}\
 <Img:159:7:-10:4>\
 　　　<城镇传送:/AUTOCOLOR=250>　<请选择您需要传送的地图/SCOLOR=161>　<[完全免费传送]/SCOLOR=249>\
