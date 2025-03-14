@@ -1145,15 +1145,17 @@ ADDHPPER + 100
 CHECKLEVELEX > 0
 #ACT
 INC U1 1
+;一杀
 #IF
 CHECK [375] 0
 #ACT
 SET   [375] 1
 MOV U49 60
-PLAYSOUND Wav\魅影1.wav 1 0
+PLAYSOUND zl666\Wav\Kill1.wav 1 0
 PLAYEFFECT 0 0 10 1 150 1
 #CALL [\游戏登陆\封号刷新.TXT] @封号new
 BREAK
+;二杀
 #IF
 CHECK [375] 1
 CHECK [376] 0
@@ -1161,9 +1163,10 @@ CHECK [376] 0
 SET   [376] 1
 MOV U49 60
 PLAYEFFECT 0 10 10 1 150 1
-PLAYSOUND Wav\魅影2.wav 1 0
+PLAYSOUND zl666\Wav\Kill2.wav 1 0
 #CALL [\游戏登陆\封号刷新.TXT] @封号new
 BREAK
+;三杀
 #IF
 CHECK [376] 1
 CHECK [377] 0
@@ -1171,19 +1174,21 @@ CHECK [377] 0
 SET   [377] 1
 MOV U49 60
 PLAYEFFECT 0 20 10 1 150 1
-PLAYSOUND Wav\魅影3.wav 1 0
+PLAYSOUND zl666\Wav\Kill3.wav 1 0
 #CALL [\游戏登陆\封号刷新.TXT] @封号new
 BREAK
+;四杀
 #IF
 CHECK [377] 1
 CHECK [378] 0
 #ACT
 SET   [378] 1
 MOV U49 60
-PLAYSOUND Wav\魅影4.wav 1 0
+PLAYSOUND zl666\Wav\Kill4.wav 1 0
 PLAYEFFECT 0 30 10 1 100 1
 #CALL [\游戏登陆\封号刷新.TXT] @封号new
 BREAK
+;五杀
 #IF
 CHECK [378] 1
 CHECK [379] 0
@@ -1191,9 +1196,10 @@ CHECK [379] 0
 SET   [379] 1
 MOV U49 60
 PLAYEFFECT 0 40 10 1 100 1
-PLAYSOUND Wav\魅影5.wav 1 0
+PLAYSOUND zl666\Wav\Kill5.wav 1 0
 #CALL [\游戏登陆\封号刷新.TXT] @封号new
 BREAK
+;六杀
 #IF
 CHECK [379] 1
 CHECK [380] 0
@@ -1201,9 +1207,10 @@ CHECK [380] 0
 SET   [380] 1
 MOV U49 60
 PLAYEFFECT 0 50 10 1 100 1
-PLAYSOUND Wav\魅影6.wav 1 0
+PLAYSOUND zl666\Wav\Kill暴走.wav 1 0
 #CALL [\游戏登陆\封号刷新.TXT] @封号new
 BREAK
+;七杀
 #IF
 CHECK [380] 1
 CHECK [381] 0
@@ -1211,9 +1218,10 @@ CHECK [381] 0
 SET   [381] 1
 MOV U49 60
 PLAYEFFECT 0 60 10 1 100 1
-PLAYSOUND Wav\魅影7.wav 1 0
+PLAYSOUND zl666\Wav\Kill大杀特杀.wav 1 0
 #CALL [\游戏登陆\封号刷新.TXT] @封号new
 BREAK
+;八杀
 #IF
 CHECK [381] 1
 CHECK [382] 0
@@ -1221,9 +1229,10 @@ CHECK [382] 0
 SET   [382] 1
 MOV U49 60
 PLAYEFFECT 0 70 10 1 100 1
-PLAYSOUND Wav\魅影8.wav 1 0
+PLAYSOUND zl666\Wav\Kill超神.wav 1 0
 #CALL [\游戏登陆\封号刷新.TXT] @封号new
 BREAK
+;九杀
 #IF
 CHECK [382] 1
 CHECK [383] 0
@@ -1231,9 +1240,10 @@ CHECK [383] 0
 SET   [383] 1
 MOV U49 60
 PLAYEFFECT 0 80 10 1 100 1
-PLAYSOUND Wav\魅影8.wav 1 0
+PLAYSOUND zl666\Wav\Kill无人能挡.wav 1 0
 #CALL [\游戏登陆\封号刷新.TXT] @封号new
 BREAK
+;十杀
 #IF
 CHECK [383] 1
 CHECK [384] 0
@@ -1241,9 +1251,10 @@ CHECK [384] 0
 SET   [384] 1
 MOV U49 60
 PLAYEFFECT 0 90 10 1 100 1
-PLAYSOUND Wav\魅影8.wav 1 0
+PLAYSOUND zl666\Wav\Kill主宰比赛.wav 1 0
 #CALL [\游戏登陆\封号刷新.TXT] @封号new
 BREAK
+;十一杀
 #IF
 CHECK [384] 1
 CHECK [385] 0
@@ -1251,9 +1262,10 @@ CHECK [385] 0
 SET   [385] 1
 MOV U49 60
 PLAYEFFECT 0 100 10 1 100 1
-PLAYSOUND Wav\魅影8.wav 1 0
+PLAYSOUND zl666\Wav\Kill主宰比赛.wav 1 0
 #CALL [\游戏登陆\封号刷新.TXT] @封号new
 BREAK
+;十二杀
 #IF
 CHECK [385] 1
 CHECK [386] 0
@@ -1261,15 +1273,16 @@ CHECK [386] 0
 SET   [386] 1
 MOV U49 60
 PLAYEFFECT 0 110 10 1 100 1
-PLAYSOUND Wav\魅影8.wav 1 0
+PLAYSOUND zl666\Wav\Kill超神.wav 1 0
 #CALL [\游戏登陆\封号刷新.TXT] @封号new
 BREAK
+;十三杀
 #IF
 CHECK [386] 1
 #ACT
 MOV U49 60
 PLAYEFFECT 0 110 10 1 100 1
-PLAYSOUND Wav\魅影8.wav 1 0
+PLAYSOUND zl666\Wav\Kill超神.wav 1 0
 #CALL [\游戏登陆\封号刷新.TXT] @封号new
 BREAK
 
