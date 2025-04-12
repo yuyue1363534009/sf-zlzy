@@ -183,3 +183,6 @@
 [2025/4/7 23:19:21] OnDeviceLost
 [2025/4/7 23:19:21] OnDeviceCreate
 [2025/4/7 23:28:06] OnDeviceDestroy
+[2025/4/11 23:44:00] OnDeviceLost
+[2025/4/11 23:44:00] OnDeviceCreate
+[2025/4/11 23:48:22] OnDeviceDestroy

@@ -30,11 +30,7 @@ E:\热血传奇\zl666\Data\MagIcon.pak|军哥版本库jungebbk.com
 E:\热血传奇\zl666\Data\magicre.pak|军哥版本库jungebbk.com
 E:\热血传奇\zl666\Data\mmap10.pak|军哥版本库jungebbk.com
 E:\热血传奇\zl666\Data\Npc4.pak|军哥版本库jungebbk.com
-E:\热血传奇\zl666\Data\Npc素材.pak|军哥版本库jungebbk.com
-E:\热血传奇\zl666\Data\npcyy.pak|xiaoyue
-E:\热血传奇\zl666\Data\npcyyds.pak|xiaoyue
-E:\热血传奇\zl666\Data\Npc10.Pak|BOSS版本库出品www.77boss.com
-E:\热血传奇\zl666\Data\Npc外.Pak|BOSS版本库出品www.77boss.com
+E:\热血传奇\zl666\Data\Npc10.Pak|xiaoyue
 E:\热血传奇\zl666\Data\Objects102.pak|军哥版本库jungebbk.com
 E:\热血传奇\zl666\Data\Objects103.pak|军哥版本库jungebbk.com
 E:\热血传奇\zl666\Data\Objects104.pak|军哥版本库jungebbk.com
