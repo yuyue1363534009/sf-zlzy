@@ -6,7 +6,7 @@ GetDBItemFieldValue 【堅如磐石】埋骨何须桑梓地★盾 idx S$专属展示1
 OPENMERCHANTBIGDLG 101 593 0 4 0 -100 0
 #SAY
 <PlayImg:101:572:21:150:0:0:0:0>\
-<PlayImg:97:8:7:100:375:68:0:0>\
+<PlayImg:97:40:8:100:375:68:0:0>\
 <Img:8:101:740:15|/@关闭对话框>\
 \ \ \ \ \ \
 <                                                                        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\

@@ -6,7 +6,7 @@ GetDBItemFieldValue 《乱世逐鹿》「殺」卐盾 idx S$专属展示1
 OPENMERCHANTBIGDLG 101 283 0 4 0 -100 0
 #SAY
 <PlayImg:101:268:15:150:0:0:0:0>\
-<PlayImg:97:8:7:100:297:21:0:0>\
+<PlayImg:97:40:8:100:297:21:0:0>\
 <Img:8:101:600:25|/@关闭对话框>\
 \ \ \
 <                                                              /AUTOCOLOR=0><┅/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <∞盾牌合成∞/SCOLOR=253> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
@@ -32,7 +32,7 @@ close
 
 ;OPENMERCHANTBIGDLG 74 535 1 4 0 0 1 537 8
 ;#SAY
-;<><PlayImg:97:8:7:100:15:5:0:0>\
+;<><PlayImg:97:40:8:100:15:5:0:0>\
 ;\ \ \
 ;<           /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
 ;<         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
