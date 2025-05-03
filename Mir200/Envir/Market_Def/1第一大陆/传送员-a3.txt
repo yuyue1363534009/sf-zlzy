@@ -15,7 +15,7 @@ SETStringBlank <$STR(s2)> 22 1
 　\
 　　　　<比 奇 城/@JIANAN>    <封魔神谷/@fmMOVe>    <毒蛇山谷/@FENGDI>  　<沙城区域/@sbkMOVe>\
 <Img:159:7:-10:4>\
-　　<您当前的元宝数量为:/SCOLOR=87>{<$STR(S1)>/SCOLOR=150}<您当前的逐鹿币为:/SCOLOR=87>{<$GAMEGIRD>点/SCOLOR=150}\
+　　<您当前的元宝数量为:/SCOLOR=87>{<$STR(S1)>/SCOLOR=150}<您当前的逐币为:/SCOLOR=87>{<$GAMEGIRD>点/SCOLOR=150}\
 <温馨提示:本服无任何管理人员,请玩家保管好自己的帐号请勿透露给他人/SCOLOR=70>
 
 

@@ -15,7 +15,7 @@ OPENMERCHANTBIGDLG 101 491 0 4 0 -100 0
 <                            /AUTOCOLOR=0><ItemShow:<$STR(S$专属展示1)>:0:0:-10:1:0:1:50>\
 <                            /AUTOCOLOR=0>        <乱『王』世※戟★★★/FCOLOR=251>\
 <>\
-<                            /AUTOCOLOR=0><合成条件：/FCOLOR=253>  <乱『王』世※戟★ *1+188万点逐鹿币合成.../FCOLOR=253>\
+<                            /AUTOCOLOR=0><合成条件：/FCOLOR=253>  <乱『王』世※戟★ *1+188万点逐币合成.../FCOLOR=253>\
 <>\
 <                            /AUTOCOLOR=0><物品功能：/FCOLOR=250>  <爆率提高百分之百.暴击和攻击伤害提升30%../FCOLOR=254>\
 <>\
@@ -35,7 +35,7 @@ BREAK
 #IF
 CHECKGAMEGIRD < 1880000
 #ACT
-MESSAGEBOX 你逐鹿币点不足188W...
+MESSAGEBOX 你逐币点不足188W...
 BREAK
 
 #IF

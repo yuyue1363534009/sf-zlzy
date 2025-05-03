@@ -27,7 +27,7 @@ OPENMERCHANTBIGDLG 101 0 0 4 0 -100 0
 <><Img:8:101:530:60|/@关闭对话框>\
 <> \ \ \ \ \ \ \ \ \
 <      /AUTOCOLOR=0><所谓识时务者为俊杰，但是有些时候实务解决不了问题，只能仗剑天涯，逆天改命，唯有狂爆在，天下任我行！/SCOLOR=161>\
-<     /AUTOCOLOR=0><花费10W逐鹿币开启！小退大退被怪物杀死保留效果！玩家杀死,杀人者将获得5W逐鹿币,被杀者失去狂爆之力效果！/SCOLOR=161>\
+<     /AUTOCOLOR=0><花费10W逐币开启！小退大退被怪物杀死保留效果！玩家杀死,杀人者将获得5W逐币,被杀者失去狂爆之力效果！/SCOLOR=161>\
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------------------/SCOLOR=0>\
 <                       /AUTOCOLOR=0><PlayImg:57:310:10:100:-3:-3:0><狂暴属性①：/SCOLOR=149><全身爆率提升100%/SCOLOR=254>       </AUTOCOLOR=0><PlayImg:57:310:10:100:-3:-3:0><狂暴属性④：/SCOLOR=149><人物体力提升10%/SCOLOR=254>\
 <                       /AUTOCOLOR=0><PlayImg:57:310:10:100:-3:-3:0><狂暴属性②：/SCOLOR=149><攻击伤害提升30%/SCOLOR=254>        </AUTOCOLOR=0><PlayImg:57:310:10:100:-3:-3:0><狂暴属性⑤：/SCOLOR=149><忽视目标防御提升5%/SCOLOR=254>\
@@ -49,7 +49,7 @@ BREAK
 CHECK [270] 0
 CHECKGAMEGIRD < 100000
 #ACT
-MESSAGEBOX [开启失败]:\　\　　　　　　您的逐鹿币不足“10W逐鹿币”个！
+MESSAGEBOX [开启失败]:\　\　　　　　　您的逐币不足“10W逐币”个！
 BREAK
 #IF
 CHECK [270] 0
@@ -60,7 +60,7 @@ GAMEGIRD - 100000
 CONFERTITLE 逐鹿※之力
 GOTO @狂爆模式_
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMOVEMSG 1 253 255 100 1 <土豪玩家/FCOLOR=250><【<$USERNAME>】/FCOLOR=251><开逐鹿※之力/FCOLOR=250><获得专属封号/FCOLOR=253><杀死他可获得/FCOLOR=254><50000逐鹿币的丰厚奖励！/FCOLOR=69>
+SENDMOVEMSG 1 253 255 100 1 <土豪玩家/FCOLOR=250><【<$USERNAME>】/FCOLOR=251><开逐鹿※之力/FCOLOR=250><获得专属封号/FCOLOR=253><杀死他可获得/FCOLOR=254><50000逐币的丰厚奖励！/FCOLOR=69>
 BREAK
 
 [@自动开启狂暴]
@@ -77,7 +77,7 @@ CHECK [270] 0
 CHECK [271] 0
 CHECKGAMEGIRD < 100000
 #ACT
-MESSAGEBOX [激活自动开启‘狂暴之力’失败]:\　\　　　　　　您的逐鹿币不足“10W逐鹿币”个！
+MESSAGEBOX [激活自动开启‘狂暴之力’失败]:\　\　　　　　　您的逐币不足“10W逐币”个！
 BREAK
 
 #IF
@@ -90,7 +90,7 @@ GAMEGIRD - 100000
 CONFERTITLE 逐鹿※之力
 GOTO @狂爆模式_
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMOVEMSG 1 253 255 100 1 <土豪玩家/FCOLOR=250><【<$USERNAME>】/FCOLOR=251><开启逐鹿之力/FCOLOR=250><获得专属封号/FCOLOR=253><杀死他可获得/FCOLOR=254><50000逐鹿币的丰厚奖励！/FCOLOR=69>
+SENDMOVEMSG 1 253 255 100 1 <土豪玩家/FCOLOR=250><【<$USERNAME>】/FCOLOR=251><开启逐鹿之力/FCOLOR=250><获得专属封号/FCOLOR=253><杀死他可获得/FCOLOR=254><50000逐币的丰厚奖励！/FCOLOR=69>
 MESSAGEBOX 提示：激活自动开启‘狂暴之力’成功！已为你开启‘狂暴之力’！
 BREAK
 

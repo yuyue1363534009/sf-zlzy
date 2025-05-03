@@ -283,7 +283,7 @@ MESSAGEBOX Äã»¹Ã»ÓÐ¸öÈËÉÌµê£¬ÊÇ·ñ´´½¨ÄãµÄ¸öÈËÉÌµê£¿\\µã»÷È·¶¨´´½¨¸öÈËÉÌµê¡£ @´´½
 µã»÷¿Í»§¶ËÖÐ'ÊÐ³¡'¾Í¿ÉÒÔ½øÈëµ½ÄãµÄµêÆÌÖÐ,Ò²¿ÉÒÔ²éÑ¯ÆäËûÓÃ»§µÄµêÆÌºÍÎïÆ·£¬\
 ¿ÉÒÔºÜ·½±ãµÄ°Ñ²Ö¿âÎïÆ·ºÍ³öÊÛµÄÎïÆ·Ïà»¥×ªÒÆ¡£\ \
 Íæ¼ÒÔÚ¸öÈËÉÌµê½»Ò×»õ±Ò¿ÉÑ¡Ôñ<¡¾Õ½Éñ±Ò¡¿/SCOLOR=250>\ 
-<¡¾Õ½Éñ±Ò¡¿ºÍ¡¾ÖðÂ¹±Ò¡¿/SCOLOR=254> ¶Ò»»±ÈÀýÎª <¡¾1:1¡¿/SCOLOR=254>\ \
+<¡¾Õ½Éñ±Ò¡¿ºÍ¡¾Öð±Ò¡¿/SCOLOR=254> ¶Ò»»±ÈÀýÎª <¡¾1:1¡¿/SCOLOR=254>\ \
 <ÎÒÒª¿ªµê(µã»÷ÊäÈëÄãÏ²»¶µÄµêÆÌÃû³Æ)/@@InputString1>\
 
 
@@ -643,131 +643,131 @@ BREAK
 ;============================================================================
 ;=================================×ê=Ê¯=´¥=·¢================================
 ;============================================================================
-;==============1ÖðÂ¹±Ò=============
+;==============1Öð±Ò=============
 [@StdModeFunc116]
 #IF
 #ACT
 GAMEGIRD + 1
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó1¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó1¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============5ÖðÂ¹±Ò=============
+;==============5Öð±Ò=============
 [@StdModeFunc117]
 #IF
 #ACT
 GAMEGIRD + 5
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó5¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó5¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============10ÖðÂ¹±Ò=============
+;==============10Öð±Ò=============
 [@StdModeFunc118]
 #IF
 #ACT
 GAMEGIRD + 10
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó10¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó10¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============20ÖðÂ¹±Ò=============
+;==============20Öð±Ò=============
 [@StdModeFunc119]
 #IF
 #ACT
 GAMEGIRD + 20
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó20¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó20¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============50ÖðÂ¹±Ò=============
+;==============50Öð±Ò=============
 [@StdModeFunc120]
 #IF
 #ACT
 GAMEGIRD + 50
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó50¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó50¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============100ÖðÂ¹±Ò=============
+;==============100Öð±Ò=============
 [@StdModeFunc121]
 #IF
 #ACT
 GAMEGIRD + 100
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó100¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó100¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============200ÖðÂ¹±Ò=============
+;==============200Öð±Ò=============
 [@StdModeFunc122]
 #IF
 #ACT
 GAMEGIRD + 200
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó200¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó200¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============500ÖðÂ¹±Ò=============
+;==============500Öð±Ò=============
 [@StdModeFunc123]
 #IF
 #ACT
 GAMEGIRD + 500
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó500¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó500¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============1000ÖðÂ¹±Ò=============
+;==============1000Öð±Ò=============
 [@StdModeFunc124]
 #IF
 #ACT
 GAMEGIRD + 1000
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó1000¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó1000¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============5000ÖðÂ¹±Ò=============
+;==============5000Öð±Ò=============
 [@StdModeFunc125]
 #IF
 #ACT
 GAMEGIRD + 5000
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó5000¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó5000¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============10000ÖðÂ¹±Ò=============
+;==============10000Öð±Ò=============
 [@StdModeFunc126]
 #IF
 #ACT
 GAMEGIRD + 10000
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó10000¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó10000¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============50000ÖðÂ¹±Ò=============
+;==============50000Öð±Ò=============
 [@StdModeFunc127]
 #IF
 #ACT
 GAMEGIRD + 50000
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó50000¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó50000¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============100000ÖðÂ¹±Ò=============
+;==============100000Öð±Ò=============
 [@StdModeFunc128]
 #IF
 #ACT
 GAMEGIRD + 100000
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó100000¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó100000¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============500000ÖðÂ¹±Ò=============
+;==============500000Öð±Ò=============
 [@StdModeFunc201]
 #IF
 #ACT
 GAMEGIRD + 200000
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó200000¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó200000¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============500000ÖðÂ¹±Ò=============
+;==============500000Öð±Ò=============
 [@StdModeFunc129]
 #IF
 #ACT
 GAMEGIRD + 500000
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó500000¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó500000¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============1000000ÖðÂ¹±Ò=============
+;==============1000000Öð±Ò=============
 [@StdModeFunc130]
 #IF
 #ACT
 GAMEGIRD + 1000000
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó1000000¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó1000000¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============2000000ÖðÂ¹±Ò=============
+;==============2000000Öð±Ò=============
 [@StdModeFunc202]
 #IF
 #ACT
 GAMEGIRD + 2000000
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó2000000¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó2000000¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
-;==============5000000ÖðÂ¹±Ò=============
+;==============5000000Öð±Ò=============
 [@StdModeFunc131]
 #IF
 #ACT
 GAMEGIRD + 5000000
-GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]ÖðÂ¹±ÒÔö¼Ó5000000¸ö.Äúµ±Ç°µÄÖðÂ¹±ÒÎª£º<$GAMEGIRD>¸ö SELF
+GuildNOTiceMsg 250 216 [ÏµÍ³ÌáÊ¾]Öð±ÒÔö¼Ó5000000¸ö.Äúµ±Ç°µÄÖð±ÒÎª£º<$GAMEGIRD>¸ö SELF
 BREAK
 ;==============1Ôª³äÖµ¾í=============
 [@StdModeFunc151]
@@ -1026,6 +1026,7 @@ GuildNOTiceMsg 151 0 ¹§Ï²¹§Ï²£¬¡°%S¡±³É¹¦ÐÞÁ¶ÉÏ³Ë¼¼ÄÜ£ºÊ©¶¾Êõ
 GuildNOTiceMsg 151 0 ¹§Ï²¹§Ï²£¬¡°%S¡±³É¹¦ÐÞÁ¶ÉÏ³Ë¼¼ÄÜ£ºÊ©¶¾Êõ
 
 ;----------------------------×°±¸Åå´÷¼ø¶¨----------------------------------
+;ÎäÆ÷
 [@TAKEon1]
 #IF
 CHECKLuckPoint > 9
@@ -1034,8 +1035,7 @@ CHECKjob warrior
 SENDMSG 0 Íæ¼Ò¡¾%s¡¿È«ÉíÐÒÔË+10µÄ´¥·¢ÈËÎï×î¼Ñ×´Ì¬,¸÷Î»Ð¡ÐÄ´ËÈËÎïÎ£ÏÕ. 
 [@TAKEOFF1]
 
-
-
+;Ñ«ÕÂ
 [@TAKEON2]
 #IF
 #ACT
@@ -1046,7 +1046,7 @@ SENDMSG 0 Íæ¼Ò¡¾%s¡¿È«ÉíÐÒÔË+10µÄ´¥·¢ÈËÎï×î¼Ñ×´Ì¬,¸÷Î»Ð¡ÐÄ´ËÈËÎïÎ£ÏÕ.
 #ACT
 #CALL [\ÓÎÏ·µÇÂ½\ÊôÐÔ¸øÓè.TXT] @ÈËÎïÊôÐÔ
 
-
+;ÏîÁ´
 [@TAKEON3]
 #IF
 CHECKLuckPoint > 9
@@ -1054,17 +1054,21 @@ CHECKLuckPoint > 9
 SENDMSG 0 Íæ¼Ò¡¾%s¡¿È«ÉíÐÒÔË+10µÄ´¥·¢ÈËÎï×î¼Ñ×´Ì¬,¸÷Î»Ð¡ÐÄ´ËÈËÎïÎ£ÏÕ. 
 BREAK
 
+;Ñª·û
 [@TAKEOff5]
 
 [@TAKEOn5]
 #ACT
 HCALL <$USERNAME> @·Ç·¨Ñª·û
 
+;ÊÖïí
 [@TAKEOn6]
 #CALL [\×°±¸ÎÄ¼þ\·ÖÀà¼ì²â.txt] @ÊÖïí·ÖÀà
+;½äÖ¸
 [@TAKEOn8]
 #CALL [\×°±¸ÎÄ¼þ\·ÖÀà¼ì²â.txt] @½äÖ¸·ÖÀà
 
+;¶ÜÅÆ
 [@TAKEON16]
 #IF
 NOT EQUAL <$SHIELD>
@@ -1085,9 +1089,10 @@ SENDMSG 6 Ã»¹¥ËÙ~~~~~~~~~~~~~~~~~~~~
 #ACT
 #CALL [\ÓÎÏ·µÇÂ½\ÊôÐÔ¸øÓè.TXT] @ÈËÎïÊôÐÔ
 
-[@TAKEON40]
+;Ê±×°êª
+[@TAKEON19]
 #CALL [\ÓÎÏ·µÇÂ½\ÊôÐÔ¸øÓè.TXT] @ÈËÎïÊôÐÔ
-[@TAKEOFF40]
+[@TAKEOFF19]
 #CALL [\ÓÎÏ·µÇÂ½\ÊôÐÔ¸øÓè.TXT] @ÈËÎïÊôÐÔ
 
 ;===========================================================================================
@@ -1101,9 +1106,9 @@ DEPRIVETITLE ÖðÂ¹¡ùÖ®Á¦
 SETICON 1 -1
 SET   [270] 0
 <$KILLER>.GAMEGIRD + 50000
-GuildNOTiceMsg 116 0 [ÏµÍ³]¡°{<$KILLER>|21:0:1}¡±³É¹¦»÷É±Ð¯´øÖðÂ¹Ö®Á¦µÄ¡°{<$USERNAME>|146:0:1}¡±»ñµÃ50000ÖðÂ¹±Ò¡°{5|242:0:1}¡± 
-GuildNOTiceMsg 116 0 [ÏµÍ³]¡°{<$KILLER>|21:0:1}¡±³É¹¦»÷É±Ð¯´øÖðÂ¹Ö®Á¦µÄ¡°{<$USERNAME>|146:0:1}¡±»ñµÃ50000ÖðÂ¹±Ò¡°{5|242:0:1}¡±
-GuildNOTiceMsg 116 0 [ÏµÍ³]¡°{<$KILLER>|21:0:1}¡±³É¹¦»÷É±Ð¯´øÖðÂ¹Ö®Á¦µÄ¡°{<$USERNAME>|146:0:1}¡±»ñµÃ50000ÖðÂ¹±Ò¡°{5|242:0:1}¡± 
+GuildNOTiceMsg 116 0 [ÏµÍ³]¡°{<$KILLER>|21:0:1}¡±³É¹¦»÷É±Ð¯´øÖðÂ¹Ö®Á¦µÄ¡°{<$USERNAME>|146:0:1}¡±»ñµÃ50000Öð±Ò¡°{5|242:0:1}¡± 
+GuildNOTiceMsg 116 0 [ÏµÍ³]¡°{<$KILLER>|21:0:1}¡±³É¹¦»÷É±Ð¯´øÖðÂ¹Ö®Á¦µÄ¡°{<$USERNAME>|146:0:1}¡±»ñµÃ50000Öð±Ò¡°{5|242:0:1}¡±
+GuildNOTiceMsg 116 0 [ÏµÍ³]¡°{<$KILLER>|21:0:1}¡±³É¹¦»÷É±Ð¯´øÖðÂ¹Ö®Á¦µÄ¡°{<$USERNAME>|146:0:1}¡±»ñµÃ50000Öð±Ò¡°{5|242:0:1}¡± 
 
 #IF
 CHECK [270] 0
@@ -1120,7 +1125,7 @@ CHECKGAMEGIRD > 99999
 SET [270] 1
 GAMEGIRD - 100000
 CONFERTITLE ÖðÂ¹¡ùÖ®Á¦
-SENDMOVEMSG 1 253 255 100 1 <ÍÁºÀÍæ¼Ò/FCOLOR=250><¡¾<$USERNAME>¡¿/FCOLOR=251><¿ªÆôÖðÂ¹Ö®Á¦/FCOLOR=250><»ñµÃ×¨Êô·âºÅ/FCOLOR=253><É±ËÀËû¿É»ñµÃ/FCOLOR=254><50000ÖðÂ¹±ÒµÄ·áºñ½±Àø£¡/FCOLOR=69>
+SENDMOVEMSG 1 253 255 100 1 <ÍÁºÀÍæ¼Ò/FCOLOR=250><¡¾<$USERNAME>¡¿/FCOLOR=251><¿ªÆôÖðÂ¹Ö®Á¦/FCOLOR=250><»ñµÃ×¨Êô·âºÅ/FCOLOR=253><É±ËÀËû¿É»ñµÃ/FCOLOR=254><50000Öð±ÒµÄ·áºñ½±Àø£¡/FCOLOR=69>
 
 #IF
 #ACT
@@ -1287,16 +1292,17 @@ MESSAGEBOX \\¹Ò»úÊ§°Ü£¬ÐèÒª185¼¶²ÅÄÜÊ¹ÓÃ¸Ã¹¦ÄÜ!!
 BREAK
 #IF
 #ACT
-StartAutoPlayGame 1000 600 2
 DELBUTTON 98 0
 ADDBUTTON 101 99 793 794 795 20 200  0 -1 \254/¡¾µã»÷È¡Ïû¹Ò»ú¡¿\¿ªÊ¼»òÍ£Ö¹¹Ò»ú£ºCTRL+ALT+X
+;StartAutoPlayGame 1000 600 2
+StartAutoPlayGame 100 60 1
 SENDMSG 6 ¿ªÊ¼¹Ò»ú£¬Ê¹ÓÃ¿ì½Ý¼ü¡°CTRL+ALT+X¡±Í£Ö¹¹Ò»ú
 
 [@StopAutoPlayGame]
 #ACT
-StopAutoPlayGame
 DELBUTTON 99 0
 ADDBUTTON 101 98 790 791 792 20 200  0 -1 \254/¡¾µã»÷¿ªÊ¼¹Ò»ú¡¿\¿ªÊ¼»òÍ£Ö¹¹Ò»ú£ºCTRL+ALT+X
+StopAutoPlayGame
 SENDMSG 6 ¹Ò»ú½áÊø£¬Ê¹ÓÃ¿ì½Ý¼ü¡°CTRL+ALT+X¡±¿ªÊ¼¹Ò»ú
 
 

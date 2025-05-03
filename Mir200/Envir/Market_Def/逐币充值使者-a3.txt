@@ -1,0 +1,58 @@
+[@main]
+#IF
+CHECKLEVELEX > 0
+#ACT
+OPENMERCHANTBIGDLG 74 501 0 0 0 10 1 410 0
+#SAY
+<> \
+<■·/SCOLOR=254><□·/SCOLOR=243><■·/SCOLOR=250><□·/SCOLOR=249><■·/SCOLOR=253>  <★/SCOLOR=151>  <逐鹿中原/SCOLOR=250>·<神器之王/SCOLOR=242>  <★/SCOLOR=243>  <·■/SCOLOR=254><·□/SCOLOR=243><·■/SCOLOR=250><·□/SCOLOR=249><·■/SCOLOR=253>\
+<----------------------------------------------------------------/SCOLOR=12>\
+< /AUTOCOLOR=0>   <①本服神晶兑换比例为1比10000，即1人民币兑换10000逐币 /AUTOCOLOR=253>\
+< /AUTOCOLOR=0>   <②本服神晶兑换比例为1比10000，即1人民币兑换10000逐币  /AUTOCOLOR=254>\
+<----------------------------------------------------------------/SCOLOR=12>\
+< /AUTOCOLOR=0>                         <逐币领取/@领取>              \
+<----------------------------------------------------------------/SCOLOR=12>\
+< /AUTOCOLOR=0> <充值线路1/@通道一>    <充值线路2/@通道二>    <充值线路3/@通道三>    <充值线路4/@通道四>    <充值线路5/@通道五>\ \
+<----------------------------------------------------------------/SCOLOR=12>\
+< /AUTOCOLOR=0> 游戏无法充值，请到登陆器右边的<“在线充值入口”/AUTOCOLOR=250>或<“官方网站”/AUTOCOLOR=250>进行充值。\ \
+< /AUTOCOLOR=0> <温心提示:充值前请一定要反复核对好分区的名称是否正确!/AUTOCOLOR=249>\
+
+[@领取]
+;#CALL [\76pay充值逐币\逐币充值\逐币充值.txt] @领取逐币充值
+;#CALL [\76pay充值逐币\附加赠送\灵符\灵符.txt] @领取灵符
+
+[@通道一]
+#IF
+#ACT
+OpenWebSite http://cqzfpay.com/game/choose/5C47E9EF53A5AE4F2C68CBAAEC53A57D
+break
+
+[@通道二]
+#IF
+#ACT
+OpenWebSite http://sdjfurj.top:39886/game/choose/5C47E9EF53A5AE4F2C68CBAAEC53A57D
+break
+
+[@通道三]
+#IF
+#ACT
+OpenWebSite http://ghsjue.top:39886/game/choose/5C47E9EF53A5AE4F2C68CBAAEC53A57D
+break
+
+[@通道四]
+#IF
+#ACT
+OpenWebSite http://kdasld.top:39886/game/choose/5C47E9EF53A5AE4F2C68CBAAEC53A57D
+break
+
+[@通道五]
+#IF
+#ACT
+OpenWebSite http://nisdad.top:39886/game/choose/5C47E9EF53A5AE4F2C68CBAAEC53A57D
+break
+
+[@通道六]
+#IF
+#ACT
+OpenWebSite http://cqzfpay.com/game/choose/5C47E9EF53A5AE4F2C68CBAAEC53A57D
+break

@@ -16,7 +16,7 @@ EQUAL G11 90
 #ACT
 MOV G11 0
 GMEXECUTE 开始提问 @逐鹿中原装备弹窗
-MonGenEx WLMZHD 20 22 逐鹿★福利：装备BOSS 1 1 0 249
+MonGenEx WLMZHD 20 22 ●●远古巨龙★新区装备·BOSS 1 1 0 249
 SENDMOVEMSG 0 251 249 300 2 福利装备活动开始了，必爆大量高级装备BOSS已刷新！！！
 SENDMOVEMSG 0 251 249 330 2 福利装备活动开始了，必爆大量高级装备BOSS已刷新！！！
 SENDMOVEMSG 0 251 249 360 2 福利装备活动开始了，必爆大量高级装备BOSS已刷新！！！
@@ -27,7 +27,7 @@ EQUAL G12 180
 #ACT
 MOV G12 0
 GMEXECUTE 开始提问 @逐鹿中原材料弹窗
-MonGenEx HHZBHD 20 22 逐鹿★福利：材料BOSS 1 1 0 249
+MonGenEx HHZBHD 20 22 ●●焱煌骏翼★新区材料·BOSS 1 1 0 249
 SENDMOVEMSG 0 251 249 300 2 材料证明活动开始了，必爆大量高级材料BOSS已刷新！！！
 SENDMOVEMSG 0 251 249 330 2 材料证明活动开始了，必爆大量高级材料BOSS已刷新！！！
 SENDMOVEMSG 0 251 249 360 2 材料证明活动开始了，必爆大量高级材料BOSS已刷新！！！
