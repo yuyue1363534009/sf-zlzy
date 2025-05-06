@@ -438,20 +438,25 @@ BREAK
 [@逐鹿中原材料弹窗]
 #IF
 #ACT
-OPENMERCHANTBIGDLG 101 608 0 0 0 0 1 449 2
+OPENMERCHANTBIGDLG 101 1076 0 4 0 -100 1 449 2
 #SAY
-;<PlayImg:69:1158:20:150:-20:-16:0>\
 <> \
 <> \
-<  /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
-\  \
-</AUTOCOLOR=0>〖<活动说明/AUTOCOLOR=243>〗：<每3小时开启一次/AUTOCOLOR=254>\
-</AUTOCOLOR=0>〖<怪物说明/AUTOCOLOR=253>〗：<刷新1只逐鹿★材料BOSS/AUTOCOLOR=249>\
-</AUTOCOLOR=0>〖<爆率说明/AUTOCOLOR=254>〗：<全服所有材料和货币/AUTOCOLOR=249>\
-</AUTOCOLOR=0>〖<地图说明/AUTOCOLOR=250>〗：<爆率全开！毫无保留！/AUTOCOLOR=249>\
-</AUTOCOLOR=0>〖<危险指数/AUTOCOLOR=249>〗：<PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>\
-\ \ \
-<     /AUTOCOLOR=0>　     <立即参加必爆材料活动/@杀年兽活动>              <关闭×/@EXIT>\
+<█████████████████████████████████████/SCOLOR=251>\
+<█/SCOLOR=251>                                                                      <█/SCOLOR=251>\
+<█/SCOLOR=251> <┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅材料BOSS┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅/SCOLOR=251> <█/SCOLOR=251>\
+<█/SCOLOR=251>                                                                      <█/SCOLOR=251>\
+<█/SCOLOR=251>                  <活动说明：/SCOLOR=243><开区每2小时开启一次/SCOLOR=243>                       <█/SCOLOR=251>\
+<█/SCOLOR=251>                  <怪物说明：/SCOLOR=253><刷新1只材料BOSS/AUTOCOLOR=253>                           <█/SCOLOR=251>\
+<█/SCOLOR=251>                  <爆率说明：/SCOLOR=254><全服所有装备和道具/AUTOCOLOR=254>                        <█/SCOLOR=251>\
+<█/SCOLOR=251>                  <地图说明：/SCOLOR=250><爆率全开！毫无保留！/AUTOCOLOR=250>                      <█/SCOLOR=251>\
+<█/SCOLOR=251>                  <危险指数：/SCOLOR=249><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>                      <█/SCOLOR=251>\
+<█/SCOLOR=251>                                                                      <█/SCOLOR=251>\
+<█/SCOLOR=251>                                                                      <█/SCOLOR=251>\ 
+<█/SCOLOR=251>                  <点击进入活动/@杀年兽活动>              <关闭×/@EXIT>                    <█/SCOLOR=251>\
+<█/SCOLOR=251>                  <点击进入活动/@杀年兽活动>              <关闭×/@EXIT>                    <█/SCOLOR=251>\
+<█/SCOLOR=251>                                                                      <█/SCOLOR=251>\
+<█████████████████████████████████████/SCOLOR=251>\
 
 [@杀年兽活动]
 #IF
@@ -463,20 +468,25 @@ BREAK
 [@逐鹿中原装备弹窗]
 #IF
 #ACT
-OPENMERCHANTBIGDLG 101 608 0 0 0 0 1 449 2
+OPENMERCHANTBIGDLG 101 1076 0 4 0 -100 1 449 2
 #SAY
-;<PlayImg:69:1158:20:150:-20:-16:0>\
 <> \
 <> \
-<  /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
-\  \
-</AUTOCOLOR=0>〖<活动说明/AUTOCOLOR=243>〗：<每90分钟开启一次/AUTOCOLOR=254>\
-</AUTOCOLOR=0>〖<怪物说明/AUTOCOLOR=253>〗：<刷新1只逐鹿★装备BOSS/AUTOCOLOR=249>\
-</AUTOCOLOR=0>〖<爆率说明/AUTOCOLOR=254>〗：<全服所有装备和道具/AUTOCOLOR=249>\
-</AUTOCOLOR=0>〖<地图说明/AUTOCOLOR=250>〗：<爆率全开！毫无保留！/AUTOCOLOR=249>\
-</AUTOCOLOR=0>〖<危险指数/AUTOCOLOR=249>〗：<PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>\
-\ \ \
-<     /AUTOCOLOR=0>　     <立即参加必爆装备活动/@杀年兽活动1>              <关闭×/@EXIT>\
+<█████████████████████████████████████/SCOLOR=251>\
+<█/SCOLOR=251>                                                                      <█/SCOLOR=251>\
+<█/SCOLOR=251> <┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅装备BOSS┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅/SCOLOR=251> <█/SCOLOR=251>\
+<█/SCOLOR=251>                                                                      <█/SCOLOR=251>\
+<█/SCOLOR=251>                  <活动说明：/SCOLOR=243><开区每1小时开启一次/SCOLOR=243>                       <█/SCOLOR=251>\
+<█/SCOLOR=251>                  <怪物说明：/SCOLOR=253><刷新1只装备BOSS/AUTOCOLOR=253>                           <█/SCOLOR=251>\
+<█/SCOLOR=251>                  <爆率说明：/SCOLOR=254><全服所有装备和道具/AUTOCOLOR=254>                        <█/SCOLOR=251>\
+<█/SCOLOR=251>                  <地图说明：/SCOLOR=250><爆率全开！毫无保留！/AUTOCOLOR=250>                      <█/SCOLOR=251>\
+<█/SCOLOR=251>                  <危险指数：/SCOLOR=249><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>                      <█/SCOLOR=251>\
+<█/SCOLOR=251>                                                                      <█/SCOLOR=251>\
+<█/SCOLOR=251>                                                                      <█/SCOLOR=251>\ 
+<█/SCOLOR=251>                  <点击进入活动/@杀年兽活动1>              <关闭×/@EXIT>                    <█/SCOLOR=251>\
+<█/SCOLOR=251>                  <点击进入活动/@杀年兽活动1>              <关闭×/@EXIT>                    <█/SCOLOR=251>\
+<█/SCOLOR=251>                                                                      <█/SCOLOR=251>\
+<█████████████████████████████████████/SCOLOR=251>\
 
 [@杀年兽活动1]
 #IF
