@@ -13,9 +13,9 @@ OPENMERCHANTBIGDLG 101 163 0 4 0 -100 0
 <>\
 <                                            /AUTOCOLOR=0><190级-200级/SCOLOR=250>     <条件：逐币*50W/SCOLOR=254>        <点击提升/@突破2>\
 <>\
-<                                            /AUTOCOLOR=0><200级-210级/SCOLOR=250>     <条件：逐币*70W/SCOLOR=254>        <点击提升/@突破3>\
+<                                            /AUTOCOLOR=0><200级-210级/SCOLOR=250>     <条件：逐币*100W/SCOLOR=254>       <点击提升/@突破3>\
 <>\
-<                                            /AUTOCOLOR=0><210级-220级/SCOLOR=250>     <条件：逐币*100W/SCOLOR=254>       <点击提升/@突破4>\
+<                                            /AUTOCOLOR=0><210级-220级/SCOLOR=250>     <条件：逐币*200W/SCOLOR=254>       <点击提升/@突破4>\
 <>\
 <                                         /AUTOCOLOR=0><提示声明：本服为长久服，所有装备全部靠爆出，充值纯属自愿！/SCOLOR=249>
 
@@ -57,9 +57,9 @@ MESSAGEBOX \　\　　　突破失败！材料不足或者你已经超过200级咯！
 #IF
 CHECKLEVELEX > 199
 CHECKLEVELEX < 210
-CHECKGAMEGIRD > 699999
+CHECKGAMEGIRD > 999999
 #ACT
-GAMEGIRD - 700000
+GAMEGIRD - 1000000
 CHANGELEVEL + 1
 #ELSEACT 
 MESSAGEBOX \　\　　　突破失败！材料不足或者你已经超过210级咯！
@@ -69,9 +69,9 @@ MESSAGEBOX \　\　　　突破失败！材料不足或者你已经超过210级咯！
 #IF
 CHECKLEVELEX > 209
 CHECKLEVELEX < 220
-CHECKGAMEGIRD > 999999
+CHECKGAMEGIRD > 1999999
 #ACT
-GAMEGIRD - 1000000
+GAMEGIRD - 2000000
 CHANGELEVEL + 1
 #ELSEACT 
 MESSAGEBOX \　\　　　突破失败！材料不足或者你已经超过220级咯！
