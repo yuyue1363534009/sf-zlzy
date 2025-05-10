@@ -440,7 +440,7 @@ SetOffTimer 103
 MOVR P8 320 336
 MOVR P7 326 342
 MAPMOVE a3 <$STR(P8)> <$STR(P7)>
-;离线低于150级自动泡点
+;离线低于150级自动泡点，M2中150级经验值设置最高，防止离线自动升级超过150级
 #IF
 CHECKLEVELEX > 149
 #ACT
