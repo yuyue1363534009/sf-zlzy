@@ -1,0 +1,240 @@
+HGE D3D9 Started..
+
+HGE version: 1.80
+Memory: 4194303K total, 3069888K free
+
+D3D Driver: d3d10warp.dll
+Description: Microsoft Basic Render Driver
+Version: 6.3.9600.19176
+Can't find appropriate full screen video mode 0
+Mode: 1024 x 768 x X8R8G8B8
+
+MaxTextureWidth: 16384
+MaxTextureHeight: 16384
+MaxPrimitiveCount: 8388607
+MaxVertexIndex: 16777215
+Cache 3072 4096 4096
+Init done.
+
+
+Finishing..
+The End.
+HGE D3D9 Started..
+
+HGE version: 1.80
+Memory: 4194303K total, 3175224K free
+
+D3D Driver: d3d10warp.dll
+Description: Microsoft Basic Render Driver
+Version: 6.3.9600.19176
+Can't find appropriate full screen video mode 0
+Mode: 1024 x 768 x X8R8G8B8
+
+MaxTextureWidth: 16384
+MaxTextureHeight: 16384
+MaxPrimitiveCount: 8388607
+MaxVertexIndex: 16777215
+Cache 3072 4096 4096
+Init done.
+
+
+Finishing..
+The End.
+HGE D3D9 Started..
+
+HGE version: 1.80
+Memory: 4194303K total, 3169088K free
+
+D3D Driver: d3d10warp.dll
+Description: Microsoft Basic Render Driver
+Version: 6.3.9600.19176
+Can't find appropriate full screen video mode 0
+Mode: 1024 x 768 x X8R8G8B8
+
+MaxTextureWidth: 16384
+MaxTextureHeight: 16384
+MaxPrimitiveCount: 8388607
+MaxVertexIndex: 16777215
+Cache 3072 4096 4096
+Init done.
+
+HGE D3D9 Started..
+
+HGE version: 1.80
+Memory: 4194303K total, 3169508K free
+
+D3D Driver: d3d10warp.dll
+Description: Microsoft Basic Render Driver
+Version: 6.3.9600.19176
+Can't find appropriate full screen video mode 0
+Mode: 1024 x 768 x X8R8G8B8
+
+MaxTextureWidth: 16384
+MaxTextureHeight: 16384
+MaxPrimitiveCount: 8388607
+MaxVertexIndex: 16777215
+Cache 3072 4096 4096
+Init done.
+
+
+Finishing..
+The End.
+HGE D3D9 Started..
+
+HGE version: 1.80
+Memory: 4194303K total, 3078280K free
+
+D3D Driver: d3d10warp.dll
+Description: Microsoft Basic Render Driver
+Version: 6.3.9600.19176
+Can't find appropriate full screen video mode 0
+Mode: 1024 x 768 x X8R8G8B8
+
+MaxTextureWidth: 16384
+MaxTextureHeight: 16384
+MaxPrimitiveCount: 8388607
+MaxVertexIndex: 16777215
+Cache 3072 4096 4096
+Init done.
+
+
+Finishing..
+The End.
+HGE D3D9 Started..
+
+HGE version: 1.80
+Memory: 4194303K total, 3060188K free
+
+D3D Driver: d3d10warp.dll
+Description: Microsoft Basic Render Driver
+Version: 6.3.9600.19176
+Can't find appropriate full screen video mode 0
+Mode: 1024 x 768 x X8R8G8B8
+
+MaxTextureWidth: 16384
+MaxTextureHeight: 16384
+MaxPrimitiveCount: 8388607
+MaxVertexIndex: 16777215
+Cache 3072 4096 4096
+Init done.
+
+
+Finishing..
+The End.
+HGE D3D9 Started..
+
+HGE version: 1.80
+Memory: 4194303K total, 3043196K free
+
+D3D Driver: d3d10warp.dll
+Description: Microsoft Basic Render Driver
+Version: 6.3.9600.19176
+Can't find appropriate full screen video mode 0
+Mode: 1024 x 768 x X8R8G8B8
+
+MaxTextureWidth: 16384
+MaxTextureHeight: 16384
+MaxPrimitiveCount: 8388607
+MaxVertexIndex: 16777215
+Cache 3072 4096 4096
+Init done.
+
+
+Finishing..
+The End.
+HGE D3D9 Started..
+
+HGE version: 1.80
+Memory: 4194303K total, 3052776K free
+
+D3D Driver: d3d10warp.dll
+Description: Microsoft Basic Render Driver
+Version: 6.3.9600.19176
+Can't find appropriate full screen video mode 0
+Mode: 1024 x 768 x X8R8G8B8
+
+MaxTextureWidth: 16384
+MaxTextureHeight: 16384
+MaxPrimitiveCount: 8388607
+MaxVertexIndex: 16777215
+Cache 3072 4096 4096
+Init done.
+
+
+Finishing..
+The End.
+HGE D3D9 Started..
+
+HGE version: 1.80
+Memory: 4194303K total, 3043956K free
+
+D3D Driver: d3d10warp.dll
+Description: Microsoft Basic Render Driver
+Version: 6.3.9600.19176
+Can't find appropriate full screen video mode 0
+Mode: 1024 x 768 x X8R8G8B8
+
+MaxTextureWidth: 16384
+MaxTextureHeight: 16384
+MaxPrimitiveCount: 8388607
+MaxVertexIndex: 16777215
+Cache 3072 4096 4096
+Init done.
+
+
+Finishing..
+The End.
+HGE D3D9 Started..
+
+HGE version: 1.80
+Memory: 4194303K total, 3050420K free
+
+D3D Driver: d3d10warp.dll
+Description: Microsoft Basic Render Driver
+Version: 6.3.9600.19176
+Can't find appropriate full screen video mode 0
+Mode: 1024 x 768 x X8R8G8B8
+
+MaxTextureWidth: 16384
+MaxTextureHeight: 16384
+MaxPrimitiveCount: 8388607
+MaxVertexIndex: 16777215
+Cache 3072 4096 4096
+Init done.
+
+
+Finishing..
+The End.
+HGE D3D9 Started..
+
+HGE version: 1.80
+Memory: 4194303K total, 2915412K free
+
+D3D Driver: d3d10warp.dll
+Description: Microsoft Basic Render Driver
+Version: 6.3.9600.19176
+Can't find appropriate full screen video mode 0
+Mode: 1024 x 768 x X8R8G8B8
+
+MaxTextureWidth: 16384
+MaxTextureHeight: 16384
+MaxPrimitiveCount: 8388607
+MaxVertexIndex: 16777215
+Cache 3072 4096 4096
+Init done.
+
+
+Finishing..
+The End.
+Mode: 1024 x 768 x X8R8G8B8
+
+MaxTextureWidth: 16384
+MaxTextureHeight: 16384
+MaxPrimitiveCount: 8388607
+MaxVertexIndex: 16777215
+Cache 3072 4096 4096
+Init done.
+
+
+Finishing..
+The End.
