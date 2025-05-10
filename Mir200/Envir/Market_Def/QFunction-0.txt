@@ -32,7 +32,12 @@ CHECKContainsText <$SERVERNAME> 10区
 [@OpenSndaItemBox]
 #ACT
 SETSndaItemBox 1 2 8888 4 5 6 7 8 6666 9 10
-SENDMSG 6 已开启
+SENDMSG 6 生肖已开启
+
+[@OpenSndaItemBox2]
+#ACT
+SETSndaItemBox 1 1
+SENDMSG 6 神器已开启
 
 [@ButtonClick11]
 #IF
