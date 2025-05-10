@@ -176,7 +176,7 @@ MonthSpirit12=
 MonthSpirit13=
 MonthSpirit14=
 [Setup]
-ItemNumber=172915
+ItemNumber=172958
 ItemNumberEx=1073742925
 ClientFile1=Mir.dat
 ClientFile2=mir.dat
@@ -4637,7 +4637,7 @@ SellCharMoneyTypes4=1
 SellCharMoneyTypes5=1
 SellCharCount=3
 SellCharTaxPercent=0
-AutoLoginOffLine=0
+AutoLoginOffLine=1
 AutoLoginSellChar=0
 OpenNewAttackFrame=0
 NewAttackFrameTimes_-30=170
