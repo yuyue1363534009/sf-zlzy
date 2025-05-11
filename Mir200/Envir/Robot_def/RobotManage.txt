@@ -10,30 +10,40 @@ GMEXECUTE 开始提问 @排行整理
 #ACT
 INC G11 1
 INC G12 1
+INC G13 1
 
 #IF
-EQUAL G11 90
+EQUAL G11 60
 #ACT
 MOV G11 0
 GMEXECUTE 开始提问 @逐鹿中原装备弹窗
 MonGenEx WLMZHD 20 22 ●●远古巨龙★新区装备·BOSS 1 1 0 249
-SENDMOVEMSG 0 251 249 300 2 福利装备活动开始了，必爆大量高级装备BOSS已刷新！！！
-SENDMOVEMSG 0 251 249 330 2 福利装备活动开始了，必爆大量高级装备BOSS已刷新！！！
-SENDMOVEMSG 0 251 249 360 2 福利装备活动开始了，必爆大量高级装备BOSS已刷新！！！
-SENDMOVEMSG 0 251 249 390 2 福利装备活动开始了，必爆大量高级装备BOSS已刷新！！！
+SENDMOVEMSG 0 251 249 300 2 福利装备BOSS活动开始了，必爆大量高级装备BOSS已刷新！！！
+SENDMOVEMSG 0 251 249 330 2 福利装备BOSS活动开始了，必爆大量高级装备BOSS已刷新！！！
+SENDMOVEMSG 0 251 249 360 2 福利装备BOSS活动开始了，必爆大量高级装备BOSS已刷新！！！
+SENDMOVEMSG 0 251 249 390 2 福利装备BOSS活动开始了，必爆大量高级装备BOSS已刷新！！！
 
 #IF
-EQUAL G12 180
+EQUAL G12 120
 #ACT
 MOV G12 0
 GMEXECUTE 开始提问 @逐鹿中原材料弹窗
 MonGenEx HHZBHD 20 22 ●●焱煌骏翼★新区材料·BOSS 1 1 0 249
-SENDMOVEMSG 0 251 249 300 2 材料证明活动开始了，必爆大量高级材料BOSS已刷新！！！
-SENDMOVEMSG 0 251 249 330 2 材料证明活动开始了，必爆大量高级材料BOSS已刷新！！！
-SENDMOVEMSG 0 251 249 360 2 材料证明活动开始了，必爆大量高级材料BOSS已刷新！！！
-SENDMOVEMSG 0 251 249 390 2 材料证明活动开始了，必爆大量高级材料BOSS已刷新！！！
+SENDMOVEMSG 0 251 249 300 2 福利材料BOSS活动开始了，必爆大量高级材料BOSS已刷新！！！
+SENDMOVEMSG 0 251 249 330 2 福利材料BOSS活动开始了，必爆大量高级材料BOSS已刷新！！！
+SENDMOVEMSG 0 251 249 360 2 福利材料BOSS活动开始了，必爆大量高级材料BOSS已刷新！！！
+SENDMOVEMSG 0 251 249 390 2 福利材料BOSS活动开始了，必爆大量高级材料BOSS已刷新！！！
 
-
+#IF
+EQUAL G13 10
+#ACT
+MOV G13 0
+GMEXECUTE 开始提问 @逐鹿中原激情BOSS活动弹窗
+MonGenEx 激情BOSS 45 40 ★★★必爆终极·激情BOSS★★★ 1 1 0 249
+SENDMOVEMSG 0 251 249 300 2 福利激情BOSS活动开始了，必爆终极剑甲和终极首饰，BOSS已刷新，各路英雄前去挑战吧！！！
+SENDMOVEMSG 0 251 249 330 2 福利激情BOSS活动开始了，必爆终极剑甲和终极首饰，BOSS已刷新，各路英雄前去挑战吧！！！
+SENDMOVEMSG 0 251 249 360 2 福利激情BOSS活动开始了，必爆终极剑甲和终极首饰，BOSS已刷新，各路英雄前去挑战吧！！！
+SENDMOVEMSG 0 251 249 390 2 福利激情BOSS活动开始了，必爆终极剑甲和终极首饰，BOSS已刷新，各路英雄前去挑战吧！！！
 
 
 
@@ -280,7 +290,42 @@ DELNpc ★≮【皇】冰风谷≯★\¨(打金)¨\┅┅┅┅┅┅
 DELNpc ★≮【佛】忘忧谷≯★\¨(打金)¨\┅┅┅┅┅┅
 DELNpc ★≮【仙】天际谷≯★\¨(打金)¨\┅┅┅┅┅┅
 DELNpc ★≮【神】飞龙谷≯★\¨(打金)¨\┅┅┅┅┅┅
-GMEXECUTE 开始提问 @全部杀死
+
+;GMEXECUTE 开始提问 @全部杀死
+
+;将怪物地图中的人全部移动到城里(人物死亡不掉物品,显示凶手信息为NPC)
+MoveMapPlay 等级050 a3 325 338
+MoveMapPlay 等级100 a3 325 338
+MoveMapPlay 等级110 a3 325 338
+MoveMapPlay 等级120 a3 325 338
+MoveMapPlay 等级130 a3 325 338
+MoveMapPlay 等级150 a3 325 338
+MoveMapPlay 等级152 a3 325 338
+MoveMapPlay 等级154 a3 325 338
+MoveMapPlay 等级156 a3 325 338
+MoveMapPlay 等级158 a3 325 338
+MoveMapPlay 等级160 a3 325 338
+MoveMapPlay 等级162 a3 325 338
+MoveMapPlay 等级164 a3 325 338
+MoveMapPlay 等级166 a3 325 338
+MoveMapPlay 等级168 a3 325 338
+MoveMapPlay 等级170 a3 325 338
+MoveMapPlay 等级172 a3 325 338
+MoveMapPlay 等级174 a3 325 338
+MoveMapPlay 等级176 a3 325 338
+MoveMapPlay 等级178 a3 325 338
+MoveMapPlay 等级180 a3 325 338
+MoveMapPlay 等级185 a3 325 338
+MoveMapPlay 等级190 a3 331 338
+MoveMapPlay 等级195 a3 331 338
+MoveMapPlay 等级200 a3 331 338
+MoveMapPlay 等级205 a3 331 338
+MoveMapPlay 等级210 a3 331 330
+MoveMapPlay 等级220 a3 324 330
+
+SENDMOVEMSG 1 253 255 350 2 <沙巴克/FCOLOR=250><攻城战：/FCOLOR=251><将在晚上/FCOLOR=253><8点开始/FCOLOR=254><(/FCOLOR=69><荣辱就在这一刻！杀！杀！杀！/FCOLOR=249><)/FCOLOR=69>！！
+SENDMOVEMSG 1 253 255 320 2 <沙巴克/FCOLOR=250><攻城战：/FCOLOR=251><将在晚上/FCOLOR=253><8点开始/FCOLOR=254><(/FCOLOR=69><荣辱就在这一刻！杀！杀！杀！/FCOLOR=249><)/FCOLOR=69>！！
+SENDMOVEMSG 1 253 255 290 2 <沙巴克/FCOLOR=250><攻城战：/FCOLOR=251><将在晚上/FCOLOR=253><8点开始/FCOLOR=254><(/FCOLOR=69><荣辱就在这一刻！杀！杀！杀！/FCOLOR=249><)/FCOLOR=69>！！
 ;------------------------------------------------------------------------------------------------------------------
 ;------------------------------------------------------------------------------------------------------------------
 

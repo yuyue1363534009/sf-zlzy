@@ -501,6 +501,35 @@ MAP WLMZHD
 SENDMSG 0 253 251 勇士{「<$USERNAME>」|254:0:1}参加了必爆装备活动，进入了{『<$MAPTITLE>』|250:0:1}！
 BREAK
 
+[@逐鹿中原激情BOSS活动弹窗]
+#IF
+#ACT
+OPENMERCHANTBIGDLG 101 1076 0 4 0 -100 1 449 2
+#SAY
+<> \
+<> \
+<█████████████████████████████████████/SCOLOR=249>\
+<█/SCOLOR=249>                                                                      <█/SCOLOR=249>\
+<█/SCOLOR=249> <┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅激情BOSS┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅/SCOLOR=251> <█/SCOLOR=249>\
+<█/SCOLOR=249>                                                                      <█/SCOLOR=249>\
+<█/SCOLOR=249>                  <活动说明：/SCOLOR=243><合区攻沙后22:10开启一次/SCOLOR=251>                   <█/SCOLOR=249>\
+<█/SCOLOR=249>                  <怪物说明：/SCOLOR=253><刷新1只激情BOSS/AUTOCOLOR=253>                           <█/SCOLOR=249>\
+<█/SCOLOR=249>                  <爆率说明：/SCOLOR=254><终极剑甲和终极首饰/AUTOCOLOR=254>                        <█/SCOLOR=249>\
+<█/SCOLOR=249>                  <地图说明：/SCOLOR=250><勇者居多！注意安全！/AUTOCOLOR=250>                      <█/SCOLOR=249>\
+<█/SCOLOR=249>                  <危险指数：/SCOLOR=249><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>                      <█/SCOLOR=249>\
+<█/SCOLOR=249>                                                                      <█/SCOLOR=249>\
+<█/SCOLOR=249>                                                                      <█/SCOLOR=249>\ 
+<█/SCOLOR=249>                  <点击进入活动/@杀激情BOSS活动>              <关闭×/@EXIT>                    <█/SCOLOR=249>\
+<█/SCOLOR=249>                  <点击进入活动/@杀激情BOSS活动>              <关闭×/@EXIT>                    <█/SCOLOR=249>\
+<█/SCOLOR=249>                                                                      <█/SCOLOR=249>\
+<█████████████████████████████████████/SCOLOR=249>\
+
+[@杀激情BOSS活动]
+#IF
+#ACT
+MAP 激情BOSS
+SENDMSG 0 253 251 勇士{「<$USERNAME>」|254:0:1}参加了激情BOSS活动，进入了{『<$MAPTITLE>』|250:0:1}！
+BREAK
 
 ;---------------------------------------------------------------------------------------------------------------------
 
