@@ -15,7 +15,7 @@
 #AutoRun NPC RUNONDAY 18:00 @攻沙喊话
 #AutoRun NPC RUNONDAY 19:50 @攻沙清理
 #AutoRun NPC RUNONDAY 22:10 @攻沙恢复
-;#AutoRun NPC RUNONDAY 22:00 @奖励开启
+#AutoRun NPC RUNONDAY 22:00 @奖励开启
 ;#AutoRun NPC RUNONDAY 23:00 @奖励关闭
 #AutoRun NPC RUNONDAY 23:59 @清理沙奖励
 
