@@ -18,7 +18,10 @@ OPENMERCHANTBIGDLG 101 1078 0 4 0 -100 1 449 2
 <IMGEX:101:1079:1081:1080:340:45|70#BOSS爆大量高等装备！！！/@222>\
 <IMGEX:101:1079:1081:1080:340:142|70#BOSS爆大量合成材料！！！/@333>\
 <IMGEX:101:1079:1081:1080:340:241|70#BOSS必爆终极装备！！！/@444>\
-\ \ \
+\ \ \ \ \ \ \ \ \ \ \ \
+<                                  ><╔┄┄┄┄┄┄┄╗/SCOLOR=0>   <╔┄┄┄┄┄┄┄╗/SCOLOR=0>\
+<                                  ><┆/SCOLOR=0><※传送①号点※/@4441><┆/SCOLOR=0>   <┆/SCOLOR=0><※传送②号点※/@4442><┆/SCOLOR=0>\
+<                                  ><╚┄┄┄┄┄┄┄╝/SCOLOR=0>   <╚┄┄┄┄┄┄┄╝/SCOLOR=0>\
 
 
 [@111]
@@ -36,7 +39,6 @@ SENDMSG 0 253 251 勇士{「<$USERNAME>」|254:0:1}参加了装备BOSS活动，进入了{『<$MA
 BREAK
 
 [@333]
-
 #IF
 #ACT
 MAP 必爆材料活动
@@ -44,9 +46,22 @@ SENDMSG 0 253 251 勇士{「<$USERNAME>」|254:0:1}参加了材料BOSS活动，进入了{『<$MA
 BREAK
 
 [@444]
-
 #IF
 #ACT
 MAP 激情BOSS
+SENDMSG 0 253 251 勇士{「<$USERNAME>」|254:0:1}参加了激情BOSS活动，进入了{『<$MAPTITLE>』|250:0:1}！
+BREAK
+
+[@4441]
+#IF
+#ACT
+mapmove 激情BOSS 27 60
+SENDMSG 0 253 251 勇士{「<$USERNAME>」|254:0:1}参加了激情BOSS活动，进入了{『<$MAPTITLE>』|250:0:1}！
+BREAK
+
+[@4442]
+#IF
+#ACT
+mapmove 激情BOSS 65 21
 SENDMSG 0 253 251 勇士{「<$USERNAME>」|254:0:1}参加了激情BOSS活动，进入了{『<$MAPTITLE>』|250:0:1}！
 BREAK
