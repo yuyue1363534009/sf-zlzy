@@ -6,54 +6,63 @@
 CHECKITEMW 天地合乃敢与君绝≮220.0倍≯斬 1
 CHECKITEMW 天地合乃敢与君绝≮220.0倍≯甲 1
 #ACT
+SETSuckDamage = 0 1000 100
 SETSuckDamage + 2000000000 900 100
 
 #IF
 CHECKITEMW 人生若只如初见≮210.0倍≯斬 1
 CHECKITEMW 人生若只如初见≮210.0倍≯甲 1
 #ACT
+SETSuckDamage = 0 1000 100
 SETSuckDamage + 2000000000 800 100
 
 #IF
 CHECKITEMW 何曾吹落北风中≮200.0倍≯斬 1
 CHECKITEMW 何曾吹落北风中≮200.0倍≯甲 1
 #ACT
+SETSuckDamage = 0 1000 100
 SETSuckDamage + 2000000000 700 100
 
 #IF
 CHECKITEMW 宁可枝头抱香死≮190.0倍≯斬 1
 CHECKITEMW 宁可枝头抱香死≮190.0倍≯甲 1
 #ACT
+SETSuckDamage = 0 1000 100
 SETSuckDamage + 2000000000 600 100
 
 #IF
 CHECKITEMW 为谁辛苦为谁甜≮180.0倍≯斬 1
 CHECKITEMW 为谁辛苦为谁甜≮180.0倍≯甲 1
 #ACT
+SETSuckDamage = 0 1000 100
 SETSuckDamage + 2000000000 500 100
 
 #IF
 CHECKITEMW 采得百花成蜜后≮170.0倍≯斬 1
 CHECKITEMW 采得百花成蜜后≮170.0倍≯甲 1
 #ACT
+SETSuckDamage = 0 1000 100
 SETSuckDamage + 2000000000 400 100
 
 #IF
 CHECKITEMW 劝君惜取少年时≮160.0倍≯斬 1
 CHECKITEMW 劝君惜取少年时≮160.0倍≯甲
 #ACT
+SETSuckDamage = 0 1000 100
 SETSuckDamage + 2000000000 300 100
 
 #IF
 CHECKITEMW 劝君莫惜金缕衣≮150.0倍≯斬 1
 CHECKITEMW 劝君莫惜金缕衣≮150.0倍≯甲 1
 #ACT
+SETSuckDamage = 0 1000 100
 SETSuckDamage + 2000000000 200 100
 
 #IF
 CHECKITEMW 江湖夜雨十年灯≮140.0倍≯斬 1
 CHECKITEMW 江湖夜雨十年灯≮140.0倍≯甲 1
 #ACT
+SETSuckDamage = 0 1000 100
 SETSuckDamage + 2000000000 100 100
 
 
