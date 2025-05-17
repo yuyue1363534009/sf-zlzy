@@ -1,0 +1,23 @@
+[@破复活和防破复活]
+{
+;通过设置攻击前设置一秒破复活实现装备防破复活功能
+;终极时装防止破复活:防止终极剑甲破复活
+#IF
+<$CURRRTARGETNAME>.CHECKITEMW 《时装》天刀※无疆ゞ昊天 1
+CHECKITEMW 天地合乃敢与君绝≮220.0倍≯斬 1
+CHECKITEMW 天地合乃敢与君绝≮220.0倍≯甲 1
+#ACT
+;sendmsg 6 本人有破复活，目标有防破复活，破复活失效
+BREAK
+
+;终极剑甲破复活
+#IF
+CHECKITEMW 天地合乃敢与君绝≮220.0倍≯斬 1
+CHECKITEMW 天地合乃敢与君绝≮220.0倍≯甲 1
+#ACT
+;sendmsg 6 本人有破复活，破复活生效
+ChangeModeEx 24 1
+BREAK
+
+
+}

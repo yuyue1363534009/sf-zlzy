@@ -6,15 +6,15 @@ OPENMERCHANTBIGDLG 101 607 0 0 0 0 1 449 2
 #SAY
 <> \
 <>\
-</AUTOCOLOR=0><PlayImg:57:310:10:100:-3:-3:0><获取方法:加入QQ群，查看QQ群兑换码即可.群管理公告内.公布礼包代码./FCOLOR=250>\
+</AUTOCOLOR=0><PlayImg:101:690:10:100:-3:-3:0><获取方法:加入QQ群，查看QQ群兑换码即可.群管理公告内.公布礼包代码./FCOLOR=250>\
 <>\
-</AUTOCOLOR=0><PlayImg:57:340:10:100:-3:-3:0><礼包包含：【施毒术】一本 /FCOLOR=251>\
+</AUTOCOLOR=0><PlayImg:101:690:10:100:-3:-3:0><礼包包含：【施毒术】一本 /FCOLOR=251>\
 <>\
-</AUTOCOLOR=0><PlayImg:57:350:10:100:-3:-3:0><礼包包含：〈离别之吻〉Lv1ゞ斧】一个/FCOLOR=253>\
+</AUTOCOLOR=0><PlayImg:101:650:10:100:-3:-3:0><礼包包含：〈离别之吻〉Lv1ゞ斧】一个/FCOLOR=253>\
 <>\
-</AUTOCOLOR=0><PlayImg:57:320:10:100:-3:-3:0><礼包包含：【〈神威亢天〉Lv1ヾ盾】一个/FCOLOR=249>  \
+</AUTOCOLOR=0><PlayImg:101:670:10:100:-3:-3:0><礼包包含：【〈神威亢天〉Lv1ヾ盾】一个/FCOLOR=249>  \
 <>\
-</AUTOCOLOR=0><PlayImg:57:300:10:100:-3:-3:0><QQ①群:75663764 QQ②群:75663764 QQ群兑换码:888888/FCOLOR=254>\
+</AUTOCOLOR=0><PlayImg:101:660:10:100:-3:-3:0><QQ①群:75663764 QQ②群:75663764 QQ群兑换码:888888/FCOLOR=254>\
 <>\
 <         /AUTOCOLOR=0>   <点击输入兑换码/@@InPutString20>　　　　　　　　\
 
