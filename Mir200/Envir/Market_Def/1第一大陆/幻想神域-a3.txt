@@ -14,9 +14,9 @@ OPENMERCHANTBIGDLG 101 608 0 0 0 0 1 449 2
 </AUTOCOLOR=0>〖<温馨提示/AUTOCOLOR=250>〗：<此地图不可使用随机类道具，实力不足勇士请勿挑战/AUTOCOLOR=250>\
 </AUTOCOLOR=0>〖<危险指数/AUTOCOLOR=249>〗：<PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>\
 \ \ \
-<     /AUTOCOLOR=0>　     <点击进入地图/@轮回战场>                         <关闭×/@EXIT>\
+<     /AUTOCOLOR=0>　     <点击进入地图/@等级地图>                         <关闭×/@EXIT>\
 
-[@轮回战场]
+[@等级地图]
 #IF
 CHECKLEVELEX > 149
 #ACT
