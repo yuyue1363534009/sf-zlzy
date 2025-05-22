@@ -55,7 +55,7 @@ NewopUI.Pak
 武器外特效.pak
 衣服内特效.pak
 衣服外特效.pak
-UI_P.pak
+ui1.pak
 UI_PTX.pak
 时装内观.pak
 XNTX.pak
