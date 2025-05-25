@@ -1,0 +1,303 @@
+(@@InPutString @@InPutInteger )
+[@main]
+#IF
+#ACT
+MOV N$顶榜最低 50000
+MOV N$顶榜最高 1000000
+GOTO @公益捐献显示页面
+BREAK
+
+[@公益捐献显示页面]
+#IF
+#ACT
+OPENMERCHANTBIGDLG 101 613 0 4 0 -100 1 568 2
+MOV S$玩家1 <$GLOBAL(富豪玩家1)>
+MOV S$玩家2 <$GLOBAL(富豪玩家2)>
+MOV S$玩家3 <$GLOBAL(富豪玩家3)>
+MOV S$数据1 <$GLOBAL(富豪数据1)>鹿币
+MOV S$数据2 <$GLOBAL(富豪数据2)>鹿币
+MOV S$数据3 <$GLOBAL(富豪数据3)>鹿币
+MOV S$备注
+SENDMSG 6 <$STR(S$玩家1)>
+
+#IF
+CHECKVAR GLOBAL 封顶人数 > 1
+#ACT
+MOV S$备注 254#当前并列第一人数：共[<$GLOBAL(封顶人数)>]位，感谢老板！^-
+MOV N$备注循环次数 0
+GOTO @备注循环读取
+
+#IF
+EQUAL S$玩家1
+#ACT
+MOV S$玩家1 虚位以待..
+#IF
+EQUAL S$玩家2
+#ACT
+MOV S$玩家2 虚位以待..
+#IF
+EQUAL S$玩家3
+#ACT
+MOV S$玩家3 虚位以待..
+
+#IF
+CHECKNAMELIST ..\QuestDiary\公益捐献\封顶玩家列表.txt
+#ACT
+MOV S$富豪捐献 <$STR(N$顶榜最高)>鹿币
+#ELSEACT
+MOV S$富豪捐献 <$HUMAN(富豪捐献)>鹿币
+
+#IF
+#ACT
+SETSTRINGBLANK S$玩家1 14 1
+SETSTRINGBLANK S$玩家2 14 1
+SETSTRINGBLANK S$玩家3 14 1
+SETSTRINGBLANK S$数据1 10 0
+SETSTRINGBLANK S$数据2 10 0
+SETSTRINGBLANK S$数据3 10 0
+#SAY
+\ \ \ \ \  
+<>      <第一富豪:/SCOLOR=254>:{<$STR(S$玩家1)>|<$STR(S$备注)>/SCOLOR=254}    <已累计捐献/SCOLOR=7>:{<$STR(S$数据1)>/SCOLOR=253}\
+<>      <第二富豪:/SCOLOR=254>:{<$STR(S$玩家2)>/SCOLOR=070}    <已累计捐献/SCOLOR=7>:{<$STR(S$数据2)>/SCOLOR=251}\
+<>      <第三富豪:/SCOLOR=254>:{<$STR(S$玩家3)>/SCOLOR=242}    <已累计捐献/SCOLOR=7>:{<$STR(S$数据3)>/SCOLOR=103}\
+<>      <爱心大使:/SCOLOR=254>:{所有捐献达到<$STR(N$顶榜最低)>鹿币且未上榜的玩家。/SCOLOR=229}\
+\     <┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈/SCOLOR=35>\
+\     <“第一富豪获得”称号/SCOLOR=253> <激活第一富豪：→→→→→→/SCOLOR=242><查看◆属性|254#最大生命+20%  增加暴击几率+15%  增加攻击伤害+30%  忽视目标防御+5%  爆率+300%^-^249#猎杀技能：★十步一杀★/SCOLOR=222>\
+\     <“第二富豪获得”称号/SCOLOR=253> <激活第二富豪：→→→→→→/SCOLOR=242><查看◆属性|254#最大生命+15%  增加暴击几率+10%  增加攻击伤害+20%  爆率+200%/SCOLOR=222>\
+\     <“第三富豪获得”称号/SCOLOR=253> <激活第三富豪：→→→→→→/SCOLOR=242><查看◆属性|254#最大生命+10%  增加暴击几率+7%  增加攻击伤害+10%  爆率+150%/SCOLOR=222>\
+\        
+\     <“爱心大使获得”称号/SCOLOR=253> <激活第三富豪：→→→→→→/SCOLOR=242><查看◆属性|254#最大生命+5%  增加暴击几率+5%  增加攻击伤害+5%  爆率+50%/SCOLOR=222>\
+\     <┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈/SCOLOR=35>\
+<>       <Hot~> <富豪捐献/SCOLOR=229>: <富豪捐献每次最低/SCOLOR=116>[{<$STR(N$顶榜最低)>鹿币/SCOLOR=254}]<，最高/SCOLOR=116>[{<$STR(N$顶榜最高)>鹿币/SCOLOR=254}]<封顶，/SCOLOR=116>\ \
+<>          <所有封顶玩家统一享受第一富豪属性。/SCOLOR=250>\ \
+\          【<富豪捐献/@@InputInteger88>】     【<领取十步一杀/@十步一杀>】 
+\                                                 <您当前已捐献/SCOLOR=70>:[{<$STR(S$富豪捐献)>/SCOLOR=254}]\\
+\     <┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈/SCOLOR=35>\
+;<>　　     <【/SCOLOR=249><捐献专属地图/@捐献地图><】/SCOLOR=249> 注：第一名玩家才可进入！   \ 
+\
+<>　　      <友情提示：鹿币好打，人人皆可顶榜！/SCOLOR=254> \
+<>　　      <友情提示：合区后将清空捐献，后区后重新捐献！/SCOLOR=249> \
+<>　　      <友情提示：非顶板捐献，捐献相同鹿币随机排行！/SCOLOR=249> \
+\     <┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈/SCOLOR=35>\
+<>　    {(您当前拥有<$GAMEGIRD>鹿币)/SCOLOR=250}       \
+; <友情提示：每天00:00清空请谨慎捐献./SCOLOR=70> 
+
+
+
+
+[@十步一杀]
+#if
+check [999] 1
+#act
+MESSAGEBOX 您已经领取过了。
+break
+
+
+#IF
+CHECKNAMELIST ..\QuestDiary\公益捐献\封顶玩家列表.txt
+#act
+set [999] 1
+ADDSKILL 十步一杀 3
+break
+#elseact
+MESSAGEBOX 我的亲哥，您还没有封棒哦！
+break
+
+
+
+[@备注循环读取]
+#IF
+SMALL N$备注循环次数 <$GLOBAL(封顶人数)>
+#ACT
+GETLISTSTRING ..\QuestDiary\公益捐献\封顶玩家列表.txt N$备注循环次数 S$玩家0
+MOV S$玩家 『<$STR(S$玩家0)>』
+SETSTRINGBLANK S$玩家 22 1
+INC S$备注 ^251#第一富豪：<$STR(S$玩家)>捐献：[<$STR(N$顶榜最高)>]鹿币
+INC N$备注循环次数 1
+GOTO @备注循环读取
+BREAK
+
+[@InputInteger88]
+#IF
+CHECKNAMELIST ..\QuestDiary\公益捐献\封顶玩家列表.txt
+#ACT
+MESSAGEBOX \提示：您已经封顶！
+BREAK
+
+#IF
+CHECKGAMEGIRD < <$STR(N88)>
+#ACT
+MESSAGEBOX \提示：鹿币不足“<$STR(N88)>”
+BREAK
+
+#IF
+LARGE N88 <$STR(N$顶榜最高)>
+#ACT
+MESSAGEBOX \提示：最多只能捐献<$STR(N$顶榜最高)>鹿币！
+BREAK
+
+#IF
+#ACT
+MOV N$剩余可捐 <$STR(N$顶榜最高)>
+DEC N$剩余可捐 <$HUMAN(富豪捐献)>
+SENDMSG 6 141富豪捐献鹿币为：<$HUMAN(富豪捐献)>
+SENDMSG 6 剩余可捐鹿币为：<$STR(N$剩余可捐)>
+
+#IF
+NOT SMALL N$剩余可捐 <$STR(N$顶榜最低)>
+SMALL N88 <$STR(N$顶榜最低)>
+#ACT
+MESSAGEBOX \提示：最低捐献<$STR(N$顶榜最低)>鹿币！
+BREAK
+
+#IF
+LARGE N88 N$剩余可捐
+#ACT
+MOV N88 <$STR(N$剩余可捐)>
+SENDMSG 6 N88剩余可捐：<$STR(N88)>
+
+#IF
+#ACT
+GAMEGIRD - <$STR(N88)>
+CALCVAR HUMAN 富豪捐献 + <$STR(N88)>
+SENDMSG 6 161富豪捐献鹿币为：<$HUMAN(富豪捐献)>
+SAVEVAR HUMAN 富豪捐献 ..\QuestDiary\公益捐献\公益捐献记录.txt
+
+#IF
+CHECKVAR HUMAN 富豪捐献 ? <$STR(N$顶榜最高)>
+#ACT
+CALCVAR HUMAN 富豪捐献 = 0
+SENDMSG 6 168富豪捐献鹿币为：<$HUMAN(富豪捐献)>
+SAVEVAR HUMAN 富豪捐献 ..\QuestDiary\公益捐献\公益捐献记录.txt
+ADDNAMELIST ..\QuestDiary\公益捐献\封顶玩家列表.txt
+SENDMSG 6 171封顶人数为：<$GLOBAL(封顶人数)>
+CALCVAR GLOBAL 封顶人数 + 1
+SAVEVAR GLOBAL 封顶人数 ..\QuestDiary\公益捐献\公益捐献记录.txt
+
+#IF
+#ACT
+MOV S$原来玩家1 <$GLOBAL(富豪玩家1)>
+MOV S$原来玩家2 <$GLOBAL(富豪玩家2)>
+MOV S$原来玩家3 <$GLOBAL(富豪玩家3)>
+SENDMSG 6 180富豪玩家1：<$GLOBAL(富豪玩家1)>
+SENDMSG 6 181富豪玩家2：<$GLOBAL(富豪玩家2)>
+SENDMSG 6 182富豪玩家3：<$GLOBAL(富豪玩家3)>
+SortVarToList 富豪捐献 ..\QuestDiary\公益捐献\公益捐献记录.txt ..\QuestDiary\公益捐献\公益捐献排名.txt 0 1
+
+#IF
+CHECKVAR GLOBAL 封顶人数 = 0
+#ACT
+GETLISTSTRING ..\QuestDiary\公益捐献\公益捐献排名.txt 0 <$GLOBAL(富豪玩家1)> <$GLOBAL(富豪数据1)>
+GETLISTSTRING ..\QuestDiary\公益捐献\公益捐献排名.txt 1 <$GLOBAL(富豪玩家2)> <$GLOBAL(富豪数据2)>
+GETLISTSTRING ..\QuestDiary\公益捐献\公益捐献排名.txt 2 <$GLOBAL(富豪玩家3)> <$GLOBAL(富豪数据3)>
+SAVEVAR GLOBAL 富豪玩家1 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪玩家2 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪玩家3 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪数据1 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪数据2 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪数据3 ..\QuestDiary\公益捐献\公益捐献记录.txt
+GOTO @顶榜提示
+GOTO @公益捐献显示页面
+BREAK
+
+#IF
+CHECKVAR GLOBAL 封顶人数 = 1
+#ACT
+GETLISTSTRING ..\QuestDiary\公益捐献\封顶玩家列表.txt 0 S$封顶玩家
+CALCVAR GLOBAL 富豪玩家1 = <$STR(S$封顶玩家)>
+CALCVAR GLOBAL 富豪数据1 = <$STR(N$顶榜最高)>
+GETLISTSTRING ..\QuestDiary\公益捐献\公益捐献排名.txt 0 <$GLOBAL(富豪玩家2)> <$GLOBAL(富豪数据2)>
+GETLISTSTRING ..\QuestDiary\公益捐献\公益捐献排名.txt 1 <$GLOBAL(富豪玩家3)> <$GLOBAL(富豪数据3)>
+SAVEVAR GLOBAL 富豪玩家1 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪玩家2 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪玩家3 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪数据1 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪数据2 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪数据3 ..\QuestDiary\公益捐献\公益捐献记录.txt
+GOTO @顶榜提示
+GOTO @公益捐献显示页面
+BREAK
+
+#IF
+#ACT
+CALCVAR GLOBAL 富豪玩家1 = 并列第一[查看]
+CALCVAR GLOBAL 富豪数据1 = <$STR(N$顶榜最高)>
+GETLISTSTRING ..\QuestDiary\公益捐献\公益捐献排名.txt 0 <$GLOBAL(富豪玩家2)> <$GLOBAL(富豪数据2)>
+GETLISTSTRING ..\QuestDiary\公益捐献\公益捐献排名.txt 1 <$GLOBAL(富豪玩家3)> <$GLOBAL(富豪数据3)>
+SAVEVAR GLOBAL 富豪玩家1 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪玩家2 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪玩家3 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪数据1 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪数据2 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SAVEVAR GLOBAL 富豪数据3 ..\QuestDiary\公益捐献\公益捐献记录.txt
+GOTO @顶榜提示
+GOTO @公益捐献显示页面
+BREAK
+
+[@顶榜提示]
+#IF
+CHECKVAR GLOBAL 富豪数据1 = 0
+#ACT
+CALCVAR GLOBAL 富豪玩家1 =
+SAVEVAR GLOBAL 富豪玩家1 ..\QuestDiary\公益捐献\公益捐献记录.txt
+
+#IF
+CHECKVAR GLOBAL 富豪数据2 = 0
+#ACT
+CALCVAR GLOBAL 富豪玩家2 =
+SAVEVAR GLOBAL 富豪玩家2 ..\QuestDiary\公益捐献\公益捐献记录.txt
+
+#IF
+CHECKVAR GLOBAL 富豪数据3 = 0
+#ACT
+CALCVAR GLOBAL 富豪玩家3 =
+SAVEVAR GLOBAL 富豪玩家3 ..\QuestDiary\公益捐献\公益捐献记录.txt
+
+#IF
+#ACT
+GMEXECUTE 开始提问 @富豪排行变更
+
+#OR
+CHECKVAR GLOBAL 富豪玩家1 = <$USERNAME>
+CHECKNAMELIST ..\QuestDiary\公益捐献\封顶玩家列表.txt
+#ACT
+SENDCENTERMSG 253 0 [号外]:》恭喜玩家「<$USERNAME>」获得【富豪捐献】[排行榜第一名]，获得专属属性加成！ 1 10
+GUILDNOTICEMSG 251 249 {[号外]:》|158:0:1}恭喜玩家「{<$USERNAME>|250:0:1}」获得【{富豪捐献|255:0:1}】[{排行榜第一名|254:0:1}]，{获得专属属性加成|210:0:1}！
+BREAK
+
+
+#IF
+CHECKVAR GLOBAL 富豪玩家2 = <$USERNAME>
+#ACT
+SENDCENTERMSG 251 0 [号外]:》恭喜玩家「<$USERNAME>」获得【富豪捐献】[排行榜第二名]，获得专属属性加成！ 1 7
+GUILDNOTICEMSG 251 249 {[号外]:》|158:0:1}恭喜玩家「{<$USERNAME>|250:0:1}」获得【{富豪捐献|255:0:1}】[{排行榜第二名|254:0:1}]，{获得专属属性加成|210:0:1}！
+BREAK
+
+
+#IF
+CHECKVAR GLOBAL 富豪玩家3 = <$USERNAME>
+#ACT
+SENDCENTERMSG 250 0 [号外]:》恭喜玩家「<$USERNAME>」获得【富豪捐献】[排行榜第三名]，获得专属属性加成！ 1 5
+GUILDNOTICEMSG 251 249 {[号外]:》|158:0:1}恭喜玩家「{<$USERNAME>|250:0:1}」获得【{富豪捐献|255:0:1}】[{排行榜第三名|254:0:1}]，{获得专属属性加成|210:0:1}！
+BREAK
+
+
+
+
+[@捐献地图]
+#if
+CHECKUNDERWAR 沙城
+#act
+messagebox 攻城期间禁止下地图！
+break
+
+#OR
+CHECKTITLE 第一富豪
+#ACT
+mapmove 捐献地图
+SENDMSG 0 253 251 富豪{「<$USERNAME>」|254:0:1}闯入了{『第一富豪专属地图』|250:0:1}开始传奇之旅!
+SENDMSG 0 253 251 富豪{「<$USERNAME>」|254:0:1}闯入了{『第一富豪专属地图』|250:0:1}开始传奇之旅!
+BREAK
+#ELSEACT
+messagebox 你不是第一富豪,不能进入！！！
+BREAK

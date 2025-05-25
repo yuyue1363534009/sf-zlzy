@@ -31,15 +31,15 @@ OPENMERCHANTBIGDLG 101 0 0 4 0 -100 0
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------------------/SCOLOR=0>\
 <                       /AUTOCOLOR=0><PlayImg:101:690:10:100:-3:-3:0><狂暴属性①：/SCOLOR=149><全身爆率提升100%/SCOLOR=254>       </AUTOCOLOR=0><PlayImg:101:690:10:100:-3:-3:0><狂暴属性④：/SCOLOR=149><人物体力提升10%/SCOLOR=254>\
 <                       /AUTOCOLOR=0><PlayImg:101:690:10:100:-3:-3:0><狂暴属性②：/SCOLOR=149><攻击伤害提升30%/SCOLOR=254>        </AUTOCOLOR=0><PlayImg:101:690:10:100:-3:-3:0><狂暴属性⑤：/SCOLOR=149><忽视目标防御提升5%/SCOLOR=254>\
-<                       /AUTOCOLOR=0><PlayImg:101:690:10:100:-3:-3:0><狂暴属性③：/SCOLOR=149><暴击几率提升10％/SCOLOR=254>       </AUTOCOLOR=0><PlayImg:101:690:10:100:-3:-3:0><狂暴属性⑥：/SCOLOR=149><攻魔道+1888/SCOLOR=254>\
+<                       /AUTOCOLOR=0><PlayImg:101:690:10:100:-3:-3:0><狂暴属性③：/SCOLOR=149><暴击几率提升10％/SCOLOR=254>       </AUTOCOLOR=0><PlayImg:101:690:10:100:-3:-3:0><狂暴属性⑥：/SCOLOR=149><攻魔道+888/SCOLOR=254>\
 <       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------------------/SCOLOR=0>\
-<       /AUTOCOLOR=0><>                        <开启【狂爆之力】/@开启逐鹿※之力>             <$STR(S$狂爆是否自动开启)> <自动开启‘狂暴之力’/SCOLOR=151>
+<       /AUTOCOLOR=0><>                        <开启【狂爆之力】/@开启狂暴※之力>             <$STR(S$狂爆是否自动开启)> <自动开启‘狂暴之力’/SCOLOR=151>
 [@关闭对话框]
 #IF
 #ACT
 close
 
-[@开启逐鹿※之力]
+[@开启狂暴※之力]
 #IF
 CHECK [270] 1
 #ACT
@@ -57,10 +57,10 @@ CHECKGAMEGIRD > 99999
 #ACT
 SET [270] 1
 GAMEGIRD - 100000
-CONFERTITLE 逐鹿※之力
+CONFERTITLE 狂暴※之力
 GOTO @狂爆模式_
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
-SENDMOVEMSG 1 253 255 100 1 <土豪玩家/FCOLOR=250><【<$USERNAME>】/FCOLOR=251><开逐鹿※之力/FCOLOR=250><获得专属封号/FCOLOR=253><杀死他可获得/FCOLOR=254><50000逐币的丰厚奖励！/FCOLOR=69>
+SENDMOVEMSG 1 253 255 100 1 <土豪玩家/FCOLOR=250><【<$USERNAME>】/FCOLOR=251><开狂暴※之力/FCOLOR=250><获得专属封号/FCOLOR=253><杀死他可获得/FCOLOR=254><50000逐币的丰厚奖励！/FCOLOR=69>
 BREAK
 
 [@自动开启狂暴]
@@ -87,7 +87,7 @@ CHECK [270] 0
 SET [271] 1
 SET [270] 1
 GAMEGIRD - 100000
-CONFERTITLE 逐鹿※之力
+CONFERTITLE 狂暴※之力
 GOTO @狂爆模式_
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 SENDMOVEMSG 1 253 255 100 1 <土豪玩家/FCOLOR=250><【<$USERNAME>】/FCOLOR=251><开启逐鹿之力/FCOLOR=250><获得专属封号/FCOLOR=253><杀死他可获得/FCOLOR=254><50000逐币的丰厚奖励！/FCOLOR=69>

@@ -1,4 +1,25 @@
+[@每日清理]
+#IF
+#ACT
+ClearNameList ..\QuestDiary\公益捐献\封顶玩家列表.txt
+ClearNameList ..\QuestDiary\公益捐献\公益捐献记录.txt
+ClearNameList ..\QuestDiary\公益捐献\公益捐献排名.txt
+LoadVar Global 封顶人数 ..\QuestDiary\公益捐献\公益捐献记录.txt
+LoadVar Global 富豪玩家1 ..\QuestDiary\公益捐献\公益捐献记录.txt
+LoadVar Global 富豪玩家2 ..\QuestDiary\公益捐献\公益捐献记录.txt
+LoadVar Global 富豪玩家3 ..\QuestDiary\公益捐献\公益捐献记录.txt
+LoadVar Global 富豪数据1 ..\QuestDiary\公益捐献\公益捐献记录.txt
+LoadVar Global 富豪数据2 ..\QuestDiary\公益捐献\公益捐献记录.txt
+LoadVar Global 富豪数据3 ..\QuestDiary\公益捐献\公益捐献记录.txt
 
+SendCenterMsg 251 249 温馨提示:北京时间00:00,富豪捐献已清理 1 30
+SendCenterMsg 251 249 温馨提示:北京时间00:00,富豪捐献已清理 1 30
+SendCenterMsg 251 249 温馨提示:北京时间00:00,富豪捐献已清理 1 30
+
+GuildNoticeMsg 251 248 本区【富豪捐献】排名已清除！
+GuildNoticeMsg 251 248 本区【富豪捐献】排名已清除！
+GMEXECUTE 开始提问 @清除爵位排名
+BREAK 
 
 [@排行刷新]
 #IF

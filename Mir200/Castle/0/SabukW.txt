@@ -2,7 +2,7 @@
 CastleName=沙城
 ChangeDate=2025/1/11 9:17:59
 WarDate=2025/1/11 9:00:08
-IncomeToday=2025/5/25 0:00:06
+IncomeToday=2025/5/26 0:00:00
 TotalGold=500
 TodayIncome=500
 OwnGuild=一生一世我爱你

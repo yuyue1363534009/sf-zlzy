@@ -485,10 +485,10 @@ CHANGELEVEL = 220
 ;----------------------------------------------------------------------------------------------------------
 [@PlayDie]
 #IF
-CHECKTITLE   逐鹿※之力
+CHECKTITLE   狂暴※之力
 CHECKCURRTARGETRACE = 0
 #ACT
-DEPRIVETITLE 逐鹿※之力
+DEPRIVETITLE 狂暴※之力
 SETICON 1 -1
 SET   [270] 0
 <$KILLER>.GAMEGIRD + 50000
@@ -510,7 +510,7 @@ CHECKGAMEGIRD > 99999
 #ACT
 SET [270] 1
 GAMEGIRD - 100000
-CONFERTITLE 逐鹿※之力
+CONFERTITLE 狂暴※之力
 SENDMOVEMSG 1 253 255 100 1 <土豪玩家/FCOLOR=250><【<$USERNAME>】/FCOLOR=251><开启逐鹿之力/FCOLOR=250><获得专属封号/FCOLOR=253><杀死他可获得/FCOLOR=254><50000逐币的丰厚奖励！/FCOLOR=69>
 
 #IF
@@ -1361,12 +1361,10 @@ DELSKILL 护体神盾
 #IF
 #ACT
 ADDSKILL 魔法盾 3
-ADDSKILL 十步一杀 3
 [@GroupItemOFF11]
 #IF
 #ACT
 DELSKILL 魔法盾
-DELSKILL 十步一杀
 
 ;-------------------------------------斧头套装属性-------------------------------------
 [@GroupItemOn651]

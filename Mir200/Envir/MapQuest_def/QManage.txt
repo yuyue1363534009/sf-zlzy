@@ -17,6 +17,45 @@ NOT EQUAL A2 <$SERVERNAME>
 MOV   A1 一合
 MOV   A2 <$SERVERNAME>
 
+
+;-------------------------------------公益捐献变量初始化---------------------------------------------------------
+#IF
+#ACT
+VAR Integer GLOBAL 封顶人数
+VAR String GLOBAL 富豪玩家1
+VAR String GLOBAL 富豪玩家2
+VAR String GLOBAL 富豪玩家3
+VAR Integer GLOBAL 富豪数据1
+VAR Integer GLOBAL 富豪数据2
+VAR Integer GLOBAL 富豪数据3
+
+#IF
+EQUAL A11
+#ACT
+MOV A11 <$YEAR>-<$MONTH>-<$DAY>
+ClearNameList ..\QuestDiary\公益捐献\封顶玩家列表.txt
+ClearNameList ..\QuestDiary\公益捐献\公益捐献记录.txt
+ClearNameList ..\QuestDiary\公益捐献\公益捐献排名.txt
+
+
+#IF
+#ACT
+ClearNameList ..\QuestDiary\公益捐献\封顶玩家列表.txt
+ClearNameList ..\QuestDiary\公益捐献\公益捐献记录.txt
+ClearNameList ..\QuestDiary\公益捐献\公益捐献排名.txt
+
+#IF
+#ACT
+LoadVar Global 封顶人数 ..\QuestDiary\公益捐献\公益捐献记录.txt
+LoadVar Global 富豪玩家1 ..\QuestDiary\公益捐献\公益捐献记录.txt
+LoadVar Global 富豪玩家2 ..\QuestDiary\公益捐献\公益捐献记录.txt
+LoadVar Global 富豪玩家3 ..\QuestDiary\公益捐献\公益捐献记录.txt
+LoadVar Global 富豪数据1 ..\QuestDiary\公益捐献\公益捐献记录.txt
+LoadVar Global 富豪数据2 ..\QuestDiary\公益捐献\公益捐献记录.txt
+LoadVar Global 富豪数据3 ..\QuestDiary\公益捐献\公益捐献记录.txt
+
+
+;----------------------------------------------------------------------------------------------
 #IF
 #ACT
 MOV G81 120
@@ -36,6 +75,14 @@ BREAK
 ISDUMMY
 #ACT
 #CALL [\高级假人\假人脚本.txt] @假人脚本
+
+;-------------------------------------公益捐献初始化---------------------------------------------------------
+#IF
+#ACT
+Var Integer Human 富豪捐献
+LoadVar Human 富豪捐献 ..\QuestDiary\公益捐献\公益捐献记录.txt
+SENDMSG 6 公益捐献鹿币为：<$HUMAN(富豪捐献)>
+GOTO @富豪排行变更
 
 #IF
 CHECKLEVELEX > 0
@@ -555,7 +602,7 @@ CHECK [124] 0
 BREAK
 #IF
 NOT ISONMAP 3
-CHECKTITLE 逐鹿※之力
+CHECKTITLE 狂暴※之力
 CHECK [124] 1
 #ACT
 #CALL [\装备回收\装备回收.txt] @回收
@@ -731,6 +778,87 @@ CHECKITEM 100000元宝 1
 TAKE      100000元宝 1
 GAMEGOLD + 100000
 GuildNOTiceMsg 255 216 系统自动帮你吃元宝卷：元宝增加[100000]个，总额[<$GAMEGOLD>]个...  SELF
+
+
+
+[@富豪排行变更]
+#IF
+ISDUMMY
+#ACT
+BREAK
+
+#OR
+CHECKVAR GLOBAL 富豪玩家1 = <$USERNAME>
+CHECKNAMELIST ..\QuestDiary\公益捐献\封顶玩家列表.txt
+#ACT
+CONFERTITLE 第一富豪
+DEPRIVETITLE 第二富豪
+DEPRIVETITLE 第三富豪
+DEPRIVETITLE 爱心大使
+GOTO @刷新爵位排名
+BREAK
+
+#IF
+CHECKVAR GLOBAL 富豪玩家2 = <$USERNAME>
+#ACT
+CONFERTITLE 第二富豪
+DEPRIVETITLE 第一富豪
+DEPRIVETITLE 第三富豪
+DEPRIVETITLE 爱心大使
+GOTO @刷新爵位排名
+;MESSAGEBOX 通知：\　\您的捐献称号已被抢走了！\　\您现在的称号为【第二富豪】
+BREAK
+
+#IF
+CHECKVAR GLOBAL 富豪玩家3 = <$USERNAME>
+#ACT
+CONFERTITLE 第三富豪
+DEPRIVETITLE 第一富豪
+DEPRIVETITLE 第二富豪
+DEPRIVETITLE 爱心大使
+GOTO @刷新爵位排名
+;MESSAGEBOX 通知：\　\您的捐献称号已被抢走了！\　\您现在的称号为【第三富豪】
+BREAK
+
+#IF
+CHECKVAR HUMAN 富豪捐献 > 0
+#ACT
+CONFERTITLE 爱心大使
+DEPRIVETITLE 第一富豪
+DEPRIVETITLE 第二富豪
+DEPRIVETITLE 第三富豪
+GOTO @刷新爵位排名
+;MESSAGEBOX 通知：\　\您的捐献称号已被抢走了！\　\您现在的称号为【爱心大使】
+BREAK
+
+#IF
+#ACT
+DEPRIVETITLE 爱心大使
+DEPRIVETITLE 第一富豪
+DEPRIVETITLE 第二富豪
+DEPRIVETITLE 第三富豪
+GOTO @刷新爵位排名
+BREAK
+
+[@刷新爵位排名]
+#IF
+CHECKLEVELEX > 0
+#ACT
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+
+
+[@清除爵位排名]
+#IF
+NOT ISDUMMY
+#ACT
+CALCVAR HUMAN 富豪捐献 = 0
+DEPRIVETITLE 爱心大使
+DEPRIVETITLE 第一富豪
+DEPRIVETITLE 第二富豪
+DEPRIVETITLE 第三富豪
+GOTO @刷新爵位排名
+BREAK
+
 
 [@全部杀死]
 #IF
