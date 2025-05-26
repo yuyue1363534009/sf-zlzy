@@ -16,6 +16,31 @@ MOV S$人物斩杀封号 ◥▉▇▆▅▃▂‖斩杀∶(<$STR(U1)>)人‖▂▃▅▆▇▉◤
 
 
 #IF
+EQUAL U50 1
+#ACT
+SENDMSG 6 当前魂骨为1级
+#IF
+EQUAL U50 2
+#ACT
+SENDMSG 6 当前魂骨为2级
+#IF
+EQUAL U50 3
+#ACT
+SENDMSG 6 当前魂骨为3级
+#IF
+EQUAL U50 4
+#ACT
+SENDMSG 6 当前魂骨为4级
+#IF
+EQUAL U50 5
+#ACT
+SENDMSG 6 当前魂骨为5级
+#IF
+EQUAL U50 6
+#ACT
+SENDMSG 6 当前魂骨为6级
+
+#IF
 #ACT
 MOV N$切割倍数 100
 MOV N$赞助切割 0
