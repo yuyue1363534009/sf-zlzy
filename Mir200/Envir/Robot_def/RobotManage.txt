@@ -346,6 +346,206 @@ SENDMOVEMSG 1 253 255 290 2 <沙巴克/FCOLOR=250><攻城战：/FCOLOR=251><将在晚上/FC
 ;------------------------------------------------------------------------------------------------------------------
 
 
+
+[@擂台倒计时]
+#IF
+EQUAL A509
+#ACT
+MOV A509 等待摆擂
+
+#IF
+EQUAL A509 等待摆擂
+#ACT
+MOV A711 擂台状态:等待摆擂\①号擂台
+BREAK
+
+#IF
+CheckRangeHumCount lei 33 39 4 = 0
+#ACT
+MOV A509 等待摆擂
+MOV A507
+MOV A508
+MOV G509
+MOV G506
+MOV A710
+
+#IF
+EQUAL A509 等待挑战
+LARGE G509 0
+#ACT
+DEC G509 1
+MOV A711 擂台状态:等待挑战\①号擂台\剩余时间：<$STR(G509)>
+<$STR(A507)>.SendCenterMsg 251 0 请等待挑战者降临！！！<$STR(G509)>秒后如果没有人挑战将被送出擂台 0 1 
+
+#IF
+EQUAL A509 等待挑战
+EQUAL G509 0
+<$STR(A507)>.CheckHumInRange lei 33 39 4
+#ACT
+MOV A711 擂台状态:等待挑战\①号擂台\剩余时间：<$STR(G509)>
+MOV A509 等待摆擂
+<$STR(A507)>.mapmove lei 39 33
+<$STR(A507)>.GAMEGIRD + <$STR(G506)>
+sendmsg 0 一号擂台玩家《<$STR(A507)>》30秒内无人挑战，系统将他送出擂台并返还鹿币！
+MESSAGEBOX 30秒内无人挑战，系统将您送出擂台并返还鹿币！
+MOV A507
+MOV A508
+MOV A710
+MOV G506
+
+#IF
+EQUAL A509 正在战斗
+LARGE G509 0
+#ACT
+DEC G509 1
+MOV A711 擂台状态:正在战斗\①号擂台\剩余时间：<$STR(G509)>
+<$STR(A508)>.SendCenterMsg 251 0 正在战斗，剩余时间<$STR(G509)>秒，双方任何一方离线或者离开地图自动判输 0 1 
+<$STR(A507)>.SendCenterMsg 251 0 正在战斗，剩余时间<$STR(G509)>秒，双方任何一方离线或者离开地图自动判输 0 1 
+
+#IF
+EQUAL A509 正在战斗
+EQUAL G509 0
+#ACT
+MOV A711 擂台状态:正在战斗\①号擂台\剩余时间：<$STR(G509)>
+<$STR(A507)>.mapmove lei 39 33
+<$STR(A507)>.GAMEGIRD + <$STR(G506)>
+<$STR(A508)>.mapmove lei 39 33
+<$STR(A508)>.GAMEGIRD + <$STR(G506)>
+sendmsg 0 一号擂台双方鏖战120秒后，战成平局，系统将送出擂台并返还鹿币！
+<$STR(A507)>.MESSAGEBOX 你与对手战成平局，系统将您送出擂台并返还<$STR(G506)>鹿币！
+<$STR(A508)>.MESSAGEBOX 你与对手战成平局，系统将您送出擂台并返还<$STR(G506)>鹿币！
+MOV A509 等待摆擂
+MOV A507
+MOV A508
+MOV G509
+MOV G506
+MOV A710
+
+#IF
+EQUAL A509 正在结算
+LARGE G509 0
+#ACT
+DEC G509 1
+MOV A711 擂台状态:正在结算\①号擂台\剩余时间：<$STR(G509)>
+<$STR(A710)>.SendCenterMsg 253 0 正在结算，剩余时间<$STR(G509)>秒，请不要离开擂台！ 0 1 
+
+#IF
+EQUAL A509 正在结算
+EQUAL G509 0
+#ACT
+MOV A711 擂台状态:正在结算\①号擂台\剩余时间：<$STR(G509)>
+MOV A509 等待摆擂
+<$STR(A710)>.mapmove lei 39 33
+MUL I96 <$STR(G506)> 2
+<$STR(A710)>.GAMEGIRD + <$STR(I96)>
+<$STR(A710)>.MESSAGEBOX 恭喜您获得最终胜利，得到<$STR(I96)>鹿币！
+sendmsg 0 一号擂台结算完毕！玩家[<$STR(A710)>]获得最终胜利，得到<$STR(I96)>鹿币！
+MOV A507
+MOV A508
+MOV A710
+MOV G506
+
+
+[@二号擂台倒计时]
+#IF
+EQUAL A609
+#ACT
+MOV A609 等待摆擂
+
+#IF
+EQUAL A609 等待摆擂
+#ACT
+MOV A811 擂台状态:等待摆擂\②号擂台
+BREAK
+
+#IF
+CheckRangeHumCount lei 46 39 4 = 0
+#ACT
+MOV A609 等待摆擂
+MOV A607
+MOV A608
+MOV G609
+MOV G606
+MOV A810
+
+#IF
+EQUAL A609 等待挑战
+LARGE G609 0
+#ACT
+DEC G609 1
+MOV A811 擂台状态:等待挑战\②号擂台\剩余时间：<$STR(G609)>
+<$STR(A607)>.SendCenterMsg 251 0 请等待挑战者降临！！！<$STR(G609)>秒后如果没有人挑战将被送出擂台 0 1 
+
+#IF
+EQUAL A609 等待挑战
+EQUAL G609 0
+<$STR(A607)>.CheckHumInRange lei 46 39 4
+#ACT
+MOV A811 擂台状态:等待挑战\②号擂台\剩余时间：<$STR(G609)>
+MOV A609 等待摆擂
+<$STR(A607)>.mapmove lei 39 33
+<$STR(A607)>.GAMEGIRD + <$STR(G606)>
+sendmsg 0 二号擂台玩家《<$STR(A607)>》30秒内无人挑战，系统将他送出擂台并返还鹿币！
+MESSAGEBOX 30秒内无人挑战，系统将您送出擂台并返还鹿币！
+MOV A607
+MOV A608
+MOV G606
+MOV A810
+
+#IF
+EQUAL A609 正在战斗
+LARGE G609 0
+#ACT
+DEC G609 1
+MOV A811 擂台状态:正在战斗\②号擂台\剩余时间：<$STR(G609)>
+<$STR(A608)>.SendCenterMsg 251 0 正在战斗，剩余时间<$STR(G609)>秒，双方任何一方离线或者离开地图自动判输 0 1 
+<$STR(A607)>.SendCenterMsg 251 0 正在战斗，剩余时间<$STR(G609)>秒，双方任何一方离线或者离开地图自动判输 0 1 
+
+#IF
+EQUAL A609 正在战斗
+EQUAL G609 0
+#ACT
+MOV A811 擂台状态:正在战斗\②号擂台\剩余时间：<$STR(G609)>
+<$STR(A607)>.mapmove lei 39 33
+<$STR(A607)>.GAMEGIRD + <$STR(G606)>
+<$STR(A608)>.mapmove lei 39 33
+<$STR(A608)>.GAMEGIRD + <$STR(G606)>
+<$STR(A607)>.MESSAGEBOX 你与对手战成平局，系统将您送出擂台并返还<$STR(G606)>鹿币！
+<$STR(A608)>.MESSAGEBOX 你与对手战成平局，系统将您送出擂台并返还<$STR(G606)>鹿币！
+sendmsg 0 二号擂台双方鏖战120秒后，战成平局，系统将送出擂台并返还鹿币！
+MOV A609 等待摆擂
+MOV A607
+MOV A608
+MOV G609
+MOV G606
+MOV A810
+
+#IF
+EQUAL A609 正在结算
+LARGE G609 0
+#ACT
+DEC G609 1
+MOV A811 擂台状态:正在结算\②号擂台\剩余时间：<$STR(G609)>
+<$STR(A810)>.SendCenterMsg 253 0 正在结算，剩余时间<$STR(G609)>秒，请不要离开擂台！ 0 1 
+
+#IF
+EQUAL A609 正在结算
+EQUAL G609 0
+#ACT
+MOV A811 擂台状态:正在结算\②号擂台\剩余时间：<$STR(G609)>
+MOV A609 等待摆擂
+<$STR(A810)>.mapmove lei 39 33
+MUL I97 <$STR(G606)> 2
+<$STR(A810)>.GAMEGIRD + <$STR(I97)>
+sendmsg 0 二号擂台结算完毕！玩家[<$STR(A810)>]获得最终胜利，得到<$STR(I97)>鹿币！
+<$STR(A810)>.MESSAGEBOX 恭喜您获得最终胜利，得到<$STR(I97)>鹿币！
+MOV A607
+MOV A608
+MOV A810
+MOV G606
+
+
+
 [@假人上线]
 #IF
 CHECKDUMMYCOUNT < 30

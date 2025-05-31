@@ -24,5 +24,8 @@
 
 #AutoRun NPC MIN 1 @活动计时
 
+#AutoRun NPC SEC 1 @擂台倒计时
+#AutoRun NPC SEC 1 @二号擂台倒计时
+
 ;假人上线
 ;#AutoRun NPC SEC 1 @假人上线

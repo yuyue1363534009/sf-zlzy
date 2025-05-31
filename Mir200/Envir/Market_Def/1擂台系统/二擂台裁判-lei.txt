@@ -1,0 +1,177 @@
+[@main]
+#IF
+EQUAL A607
+#ACT
+MOV S$二号擂台显示1 暂无玩家
+#ELSEACT 
+MOV S$二号擂台显示1 <$STR(A607)>
+
+#IF
+EQUAL A608
+#ACT
+MOV S$二号擂台显示2 暂无玩家
+#ELSEACT 
+MOV S$二号擂台显示2 <$STR(A608)>
+
+
+#if
+CheckHumInRange lei 33 39 4
+#ACT
+MESSAGEBOX 你正在一号擂台挑战，别乱点！
+BREAK
+#elsesay
+<> \ \ \
+<      擂主名字:/FCOLOR=254><$STR(S$二号擂台显示1)> \              
+<      打擂玩家:/FCOLOR=251><$STR(S$二号擂台显示2)>  \
+<      鹿币 赌注:/FCOLOR=250><$STR(G606)><(胜利者获得双倍赌注的鹿币奖励)/FCOLOR=250>\
+<      当前状态:/FCOLOR=31><$STR(A609)><      剩余时间:/FCOLOR=242><$STR(G609)>秒\  \                                               
+\      <刷新{FCOLOR=251}/@main>        <开设擂台{FCOLOR=251}/@@InPutInteger102(请输入10W-1000W之间的鹿币数量)>       <我要挑战{FCOLOR=251}/@3>        <点击回城{FCOLOR=251}/@5>\        
+\ 
+< 规则⒈>：< 擂台需要鹿币在10万-1000万之间！死亡有几率掉落身上装备！/FCOLOR=254> \ 
+< 规则⒉>：< 双方比武过程中.任何一方大退或小退.视为失败！！/FCOLOR=254>\ 
+< 规则⒊>：< 每次打完擂台之后，有10秒钟时间可以拾取装备！！/FCOLOR=254> \ 
+< 注意⒋>：< 摆雷后，未有挑战者，大退小退扣取赌注。时间到自动结束，不扣取赌注！！/FCOLOR=254> \ 
+
+
+[@InPutInteger102]
+#IF
+CheckRangeHumCount lei 46 39 4 = 2
+#ACT
+MESSAGEBOX 已经有2人在战斗了！
+BREAK
+
+#OR
+EQUAL A507 <$USERNAME>
+EQUAL A508 <$USERNAME>
+EQUAL A607 <$USERNAME>
+EQUAL A608 <$USERNAME>
+#ACT
+MESSAGEBOX 你正在参赛中，请不要乱点！
+BREAK
+
+#IF
+EQUAL A609 等待挑战
+#ACT
+MESSAGEBOX 已经有人摆擂了！你可以挑战他！
+BREAK
+
+#IF
+EQUAL A609 正在战斗
+#ACT
+MESSAGEBOX 已经有人在战斗了！请等待下一轮！
+BREAK
+
+#IF
+EQUAL A609 正在结算
+#ACT
+MESSAGEBOX 本轮比赛正在结算！请等待下一轮！
+BREAK
+
+#if
+small N102 100000
+#act
+messagebox 最少100000鹿币!
+break
+
+
+#IF
+LARGE N102 10000000
+#act
+CLOSE
+messagebox 操作失败！服务器只运行输入[10W-1000W]鹿币的数值！
+BREAK
+
+#OR
+CHECKGAMEGIRD > <$STR(N102)>
+CHECKGAMEGIRD = <$STR(N102)>
+#act
+GAMEGIRD - <$STR(N102)>
+mov G606 <$STR(N102)>
+mapmove lei 46 39 2
+mov A607 <$USERNAME>
+MOV A609 等待挑战
+MOV G609 30
+SETONTIMER 151 1
+sendmsg 0 擂主:玩家[<$username>]已经开设擂台，赌注为:[<$STR(G606)>]鹿币，大家快去挑战他！大战开启，要观战的速度前往！
+SENDMOVEMSG 0 151 249 100 1 玩家[<$username>]已经开设擂台，赌注为:[<$STR(G606)>]鹿币，大家快去挑战他！大战开启，要观战的速度前往！
+#elseact
+messagebox 对不起，你没有足够的鹿币
+
+
+[@3]
+#IF
+CheckRangeHumCount lei 46 39 4 = 2
+#ACT
+MESSAGEBOX 已经有2人在战斗了！
+BREAK
+
+#OR
+EQUAL A507 <$USERNAME>
+EQUAL A508 <$USERNAME>
+EQUAL A607 <$USERNAME>
+EQUAL A608 <$USERNAME>
+#ACT
+MESSAGEBOX 你正在参赛中，请不要乱点！
+BREAK
+
+#IF
+EQUAL A609 等待摆擂
+#ACT
+MESSAGEBOX 还没有人摆擂！你可以先摆擂等待别人挑战！
+BREAK
+
+#IF
+EQUAL A609 正在战斗
+#ACT
+MESSAGEBOX 已经有人在战斗了！请等待下一轮！
+BREAK
+
+#IF
+EQUAL A609 正在结算
+#ACT
+MESSAGEBOX 本轮比赛正在结算！请等待下一轮！
+BREAK
+
+
+#OR
+CHECKGAMEGIRD > <$STR(G606)>
+CHECKGAMEGIRD = <$STR(G606)>
+#act
+<$STR(A607)>.mapmove lei 43 36
+<$STR(A607)>.ADDHPPER = 100
+<$STR(A607)>.ADDMPPER = 100
+<$STR(A607)>.GMexecute 给你TestStatus 0 0 
+<$STR(A607)>.GMexecute 给你TestStatus 1 0
+GMexecute 给你TestStatus 0 0 
+GMexecute 给你TestStatus 1 0
+ADDHPPER = 100
+ADDMPPER = 100
+mapmove lei 49 42
+GAMEGIRD - <$STR(G606)>
+mov A608 <$USERNAME>
+mov G609 120
+MOV A609 正在战斗
+SETONTIMER 151 1
+GuildNoticeMsg 251 249 （*）[擂台]：玩家“<$STR(A608)>”开始挑战“<$STR(A607)>”...大战一触即发，大家都去围观吧...
+GuildNoticeMsg 251 249 （*）[擂台]：玩家“<$STR(A608)>”开始挑战“<$STR(A607)>”...大战一触即发，大家都去围观吧...
+GuildNoticeMsg 251 249 （*）[擂台]：玩家“<$STR(A608)>”开始挑战“<$STR(A607)>”...大战一触即发，大家都去围观吧...
+#ELSEACT
+MESSAGEBOX 鹿币不够
+
+
+[@5]
+#if
+not equal A607 <$username>
+not equal A608 <$username>
+#act
+MOVR P2 126 136
+MOVR P3 144 154
+MAPMOVE a3 <$STR(P2)> <$STR(P3)>
+break
+
+#if
+LARGE G609 0
+#act
+messagebox 你正在擂台中，无法回城，请等待！
+break
+

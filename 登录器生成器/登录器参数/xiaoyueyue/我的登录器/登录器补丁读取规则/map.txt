@@ -806,3 +806,4 @@ E:\热血传奇\zl666\Map\矿区7.map
 E:\热血传奇\zl666\Map\矿区8.map
 E:\热血传奇\zl666\Map\雪原村落.map
 E:\热血传奇\zl666\Map\龙之谷.map
+E:\热血传奇\zl666\Map\lei.map

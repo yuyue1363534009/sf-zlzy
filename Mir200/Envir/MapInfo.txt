@@ -79,6 +79,7 @@
 [必爆材料活动|g015 必爆材料活动] NORECONNECT(N0159) NORECALL NODEARRECALL NOGUILDRECALL NOMasterRECALL NOMasterRECALL ONKILLMON NOALLOWUSEITEMS(随机传送石) NOTALLOWUSEMAGIC(召唤宝宝)
 [天降祥福|EM000 天降祥福] NORECONNECT(N0159) NORECALL NODEARRECALL NOGUILDRECALL NOMasterRECALL NOMasterRECALL ONKILLMON NOALLOWUSEITEMS(随机传送石) NOTALLOWUSEMAGIC(召唤宝宝)
 
+[lei 比武擂台] Fight2 DARK NORECALL NODEARRECALL NOGUILDRECALL NOMasterRECALL NORECONNECT(N0159) NoRandomMove NOPOSITIONMOVE NOTALLOWUSEITEMS(回城卷|盟重传送石|比奇传送石|随机传送石|冰雪回城石|随机传送卷|地牢逃脱卷|风雷召唤令) NOTALLOWUSEMAGIC(瞬息移动|十步一杀|瞬间移动|野蛮冲撞|神出鬼没|擒龙手|天神下凡|召唤宝宝)
 
 ;------------------------------------------------------------------------------------------------------------------------------------------
 [0 比奇省]   ALLOWUSEMYSHOP HITMON(@Atact) NOTALLOWUSEMAGIC(大挪移|乾坤大挪移|召唤宝宝) HITMON(@杀怪物时触发) HITMON(@MUZHUANG)  ONKILLMON

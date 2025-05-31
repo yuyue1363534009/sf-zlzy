@@ -476,6 +476,52 @@ CREATEMYSHOP <$STR(S1)>
 ;-------------------------------------人物大退触发---------------------------------------------------------
 ;----------------------------------------------------------------------------------------------------------
 [@PlayOffLine]
+;>>>>>>>>>>>>>>>>>>>>擂台脚本开始
+#IF
+EQUAL A509 正在战斗
+EQUAL A507 <$USERNAME>
+EQUAL A710
+#ACT
+MOV A710 <$STR(A508)>
+MOV A509 正在结算
+MOV G509 10
+GuildNoticeMsg 251 249 （*）[一号擂台]：由于<$USERNAME>离开擂台，玩家“<$STR(A710)>”取得了最终的胜利，请等待10秒后系统自动结算...
+SETOFFTIMER 151
+
+#IF
+EQUAL A509 正在战斗
+EQUAL A508 <$USERNAME>
+EQUAL A710
+#ACT
+MOV A710 <$STR(A507)>
+MOV A509 正在结算
+MOV G509 10
+GuildNoticeMsg 251 249 （*）[一号擂台]：由于<$USERNAME>离开擂台，“<$STR(A710)>”取得了最终的胜利，请等待10秒后系统自动结算...
+SETOFFTIMER 151
+
+#IF
+EQUAL A609 正在战斗
+EQUAL A607 <$USERNAME>
+EQUAL A810
+#ACT
+MOV A810 <$STR(A608)>
+MOV A609 正在结算
+MOV G609 10
+GuildNoticeMsg 251 249 （*）[二号擂台]：由于<$USERNAME>离开擂台，玩家“<$STR(A810)>”取得了最终的胜利，请等待10秒后系统自动结算...
+SETOFFTIMER 151
+
+#IF
+EQUAL A609 正在战斗
+EQUAL A608 <$USERNAME>
+EQUAL A810
+#ACT
+MOV A810 <$STR(A607)>
+MOV A609 正在结算
+MOV G609 10
+GuildNoticeMsg 251 249 （*）[二号擂台]：由于<$USERNAME>离开擂台，“<$STR(A810)>”取得了最终的胜利，请等待10秒后系统自动结算...
+SETOFFTIMER 151
+;>>>>>>>>>>>>>>>>>>>>擂台脚本结束
+
 #IF
 CHECKhum a3 200
 #ACT
@@ -487,6 +533,56 @@ MOVR P7 326 342
 MAPMOVE a3 <$STR(P8)> <$STR(P7)>
 ;离线挂机
 OFFLINEPLAY 65535 0
+
+;----------------------------------------------------------------------------------------------------------
+;-------------------------------------人物小退触发---------------------------------------------------------
+;----------------------------------------------------------------------------------------------------------
+[@PlayReconnection]
+#IF
+EQUAL A509 正在战斗
+EQUAL A507 <$USERNAME>
+EQUAL A710
+#ACT
+MOV A710 <$STR(A508)>
+MOV A509 正在结算
+MOV G509 10
+GuildNoticeMsg 251 249 （*）[一号擂台]：由于<$USERNAME>离开擂台，玩家“<$STR(A710)>”取得了最终的胜利，请等待10秒后系统自动结算...
+SETOFFTIMER 151
+
+#IF
+EQUAL A509 正在战斗
+EQUAL A508 <$USERNAME>
+EQUAL A710
+#ACT
+MOV A710 <$STR(A507)>
+MOV A509 正在结算
+MOV G509 10
+GuildNoticeMsg 251 249 （*）[一号擂台]：由于<$USERNAME>离开擂台，“<$STR(A710)>”取得了最终的胜利，请等待10秒后系统自动结算...
+SETOFFTIMER 151
+
+#IF
+EQUAL A609 正在战斗
+EQUAL A607 <$USERNAME>
+EQUAL A810
+#ACT
+MOV A810 <$STR(A608)>
+MOV A609 正在结算
+MOV G609 10
+GuildNoticeMsg 251 249 （*）[二号擂台]：由于<$USERNAME>离开擂台，玩家“<$STR(A810)>”取得了最终的胜利，请等待10秒后系统自动结算...
+SETOFFTIMER 151
+
+#IF
+EQUAL A609 正在战斗
+EQUAL A608 <$USERNAME>
+EQUAL A810
+#ACT
+MOV A810 <$STR(A607)>
+MOV A609 正在结算
+MOV G609 10
+GuildNoticeMsg 251 249 （*）[二号擂台]：由于<$USERNAME>离开擂台，“<$STR(A810)>”取得了最终的胜利，请等待10秒后系统自动结算...
+SETOFFTIMER 151
+;>>>>>>>>>>>>>>>>>>>>擂台脚本结束
+
 
 ;--------------------------------------------------------------------------------------------------------
 ;----------------------------------------------↓升级触发↓----------------------------------------------
@@ -534,18 +630,232 @@ SENDMOVEMSG 1 253 255 100 1 <土豪玩家/FCOLOR=250><【<$USERNAME>】/FCOLOR=251><开
 #ACT
 #CALL [\游戏登陆\属性给予.TXT] @人物属性
 
+#if
+CheckHumInRange lei 33 39 4
+#ACT
+GOTO @一号擂台死亡触发
+BREAK
+
+#if
+CheckHumInRange lei 46 39 4
+#ACT
+GOTO @二号擂台死亡触发
+BREAK
+
 #IF
 #ACT
 ;MESSAGEBOX 是否想回城复活？ @回城复活 @EXIT
-SHOWPROGRESSBARDLG 2 @回城复活 正在复活,进度%d%... 0
+;SHOWPROGRESSBARDLG 2 @回城复活 正在复活,进度%d%... 0
+GOTO @回城复活
 BREAK
 
+
+
+;----------------------------------------------------------------------------------------------------------
+;-------------------------------------进度条复活---------------------------------------------------------
+;----------------------------------------------------------------------------------------------------------
 [@回城复活]
+#IF
+#Say
+<>\<>\<>\　\
+　\
+　　   ┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┓　\
+　　   ┊<▓▓▓▓□□□□□□□□□□□□□□□□/FCOLOR=254>┊　\
+　　   ┗┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┛　\
+　\
+　　　　　　<系统正在复活您.........20%/FCOLOR=250>　\
+#ACT
+DELAYGOTO 500 @sm40
+break
+
+[@sm40]
+#IF
+#Say
+<>\<>\<>\　\
+　\
+　　   ┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┓　\
+　　   ┊<▓▓▓▓▓▓▓▓□□□□□□□□□□□□/FCOLOR=254>┊　\
+　　   ┗┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┛　\
+　\
+　　　　　　<系统正在复活您.........40%/FCOLOR=250>　\
+#ACT
+DELAYGOTO 500 @sm60
+break
+
+[@sm60]
+#IF
+#Say
+<>\<>\<>\　\
+　\
+　　   ┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┓　\
+　　   ┊<▓▓▓▓▓▓▓▓▓▓▓▓□□□□□□□□/FCOLOR=254>┊　\
+　　   ┗┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┛　\
+　\
+　　　　　　<系统正在复活您.........60%/FCOLOR=250>　\
+#ACT
+DELAYGOTO 500 @sm80
+break
+
+[@sm80]
+#IF
+#Say
+<>\<>\<>\　\
+　\
+　　   ┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┓　\
+　　   ┊<▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓□□□□/FCOLOR=254>┊　\
+　　   ┗┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┛　\
+　\
+　　　　　　<系统正在复活您.........80%/FCOLOR=250>　\
+#ACT
+DELAYGOTO 500 @sm100
+break
+
+[@sm100]
+#IF
+#Say
+<>\<>\<>\　\
+　\
+　　   ┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┓　\
+　　   ┊<▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓/FCOLOR=254>┊　\
+　　   ┗┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┛　\
+　\
+　　　　　　<系统正在复活您.........100%/FCOLOR=250>　\
+#ACT
+DELAYGOTO 500 @smjin
+break
+
+[@smjin]
 #IF
 #ACT
 MAPMOVE a3 330 330
 REALIVE
-ADDHPPER + 100
+SENDMSG 0 玩家{[<$USERNAME>]|250:0:1}18年后又是一条好汉{〖大吼一声〗|95:0:1},{〖刚才杀我那个小兔崽子给我等着〗|254:0:1}
+ADDHPPER = 100
+ADDMPPER = 100
+CLOSE
+break
+
+
+;----------------------------------------------------------------------------------------------------------
+;-------------------------------------擂台脚本死亡触发---------------------------------------------------------
+;----------------------------------------------------------------------------------------------------------
+[@一号擂台死亡触发]
+#IF
+Equal A507 <$USERNAME>
+#ACT
+MOV A710 <$STR(A508)>
+INC G510 1
+
+#IF
+Equal A508 <$USERNAME>
+#ACT
+MOV A710 <$STR(A507)>
+INC G510 1
+
+#IF
+LARGE G510 1
+#ACT
+MOV G510 0
+<$STR(A507)>.mapmove lei 30 36
+<$STR(A507)>.REALIVE
+<$STR(A507)>.ADDHPPER = 100
+<$STR(A507)>.ADDMPPER = 100
+<$STR(A507)>.GMexecute 给你TestStatus 0 0 
+<$STR(A507)>.GMexecute 给你TestStatus 1 0
+<$STR(A508)>.REALIVE
+<$STR(A508)>.GMexecute 给你TestStatus 0 0 
+<$STR(A508)>.GMexecute 给你TestStatus 1 0
+<$STR(A508)>.ADDHPPER = 100
+<$STR(A508)>.ADDMPPER = 100
+<$STR(A508)>.mapmove lei 36 42
+<$STR(A507)>.ChangeModeEx 1 5
+<$STR(A508)>.ChangeModeEx 1 5
+<$STR(A507)>.ChangeModeEx 10 5
+<$STR(A508)>.ChangeModeEx 10 5
+<$STR(A507)>.SETONTIMER 151 1
+<$STR(A508)>.SETONTIMER 151 1
+<$STR(A507)>.MESSAGEBOX 同时死亡，重赛一场！原地无敌5秒后开启！\\请做好战斗准备
+<$STR(A508)>.MESSAGEBOX 同时死亡，重赛一场！原地无敌5秒后开启！\\请做好战斗准备
+MOV A509 正在战斗
+MOV A710
+MOV G509 120
+GuildNoticeMsg 251 249 （*）[一号擂台重赛]：玩家“<$STR(A508)>”和“<$STR(A507)>”同时死亡...系统判定再战一次，真是激烈...
+GuildNoticeMsg 251 249 （*）[一号擂台重赛]：玩家“<$STR(A508)>”和“<$STR(A507)>”同时死亡...系统判定再战一次，真是激烈...
+GuildNoticeMsg 251 249 （*）[一号擂台重赛]：玩家“<$STR(A508)>”和“<$STR(A507)>”同时死亡...系统判定再战一次，真是激烈...
+BREAK
+#ELSEACT
+DELAYGOTO 1000 @一号擂台结算
+
+
+[@二号擂台死亡触发]
+#IF
+Equal A607 <$USERNAME>
+#ACT
+MOV A810 <$STR(A608)>
+INC G610 1
+
+#IF
+Equal A608 <$USERNAME>
+#ACT
+MOV A810 <$STR(A607)>
+INC G610 1
+
+#IF
+LARGE G610 1
+#ACT
+MOV G610 0
+<$STR(A607)>.mapmove lei 43 36
+<$STR(A607)>.REALIVE
+<$STR(A607)>.ADDHPPER = 100
+<$STR(A607)>.ADDMPPER = 100
+<$STR(A607)>.GMexecute 给你TestStatus 0 0 
+<$STR(A607)>.GMexecute 给你TestStatus 1 0
+<$STR(A608)>.REALIVE
+<$STR(A608)>.GMexecute 给你TestStatus 0 0 
+<$STR(A608)>.GMexecute 给你TestStatus 1 0
+<$STR(A608)>.ADDHPPER = 100
+<$STR(A608)>.ADDMPPER = 100
+<$STR(A608)>.mapmove lei 49 42
+<$STR(A607)>.ChangeModeEx 1 5
+<$STR(A608)>.ChangeModeEx 1 5
+<$STR(A607)>.ChangeModeEx 10 5
+<$STR(A608)>.ChangeModeEx 10 5
+<$STR(A607)>.MESSAGEBOX 同时死亡，重赛一场！原地无敌5秒后开启！\\请做好战斗准备
+<$STR(A608)>.MESSAGEBOX 同时死亡，重赛一场！原地无敌5秒后开启！\\请做好战斗准备
+<$STR(A607)>.SETONTIMER 151 1
+<$STR(A608)>.SETONTIMER 151 1
+MOV A810
+MOV A609 正在战斗
+MOV G609 120
+GuildNoticeMsg 251 249 （*）[二号擂台重赛]：玩家“<$STR(A608)>”和“<$STR(A607)>”同时死亡...系统判定再战一次，真是激烈...
+GuildNoticeMsg 251 249 （*）[二号擂台重赛]：玩家“<$STR(A608)>”和“<$STR(A607)>”同时死亡...系统判定再战一次，真是激烈...
+GuildNoticeMsg 251 249 （*）[二号擂台重赛]：玩家“<$STR(A608)>”和“<$STR(A607)>”同时死亡...系统判定再战一次，真是激烈...
+BREAK
+#ELSEACT
+DELAYGOTO 1000 @二号擂台结算
+
+
+[@一号擂台结算]
+#IF
+EQUAL G510 1
+#ACT
+MOV G510 0
+MOV A509 正在结算
+MOV G509 10
+GuildNoticeMsg 251 249 （*）[一号擂台]：恭喜玩家“<$STR(A710)>”取得了最终的胜利，请等待10秒后系统自动结算...
+GOTO @回城复活
+BREAK
+
+[@二号擂台结算]
+#IF
+EQUAL G610 1
+#ACT
+MOV G610 0
+MOV A609 正在结算
+MOV G609 10
+GuildNoticeMsg 251 249 （*）[二号擂台]：恭喜玩家“<$STR(A810)>”取得了最终的胜利，请等待10秒后系统自动结算...
+GOTO @回城复活
+BREAK
 
 ;----------------------------------------------------------------------------------------------------------
 ;-------------------------------------双击使用项链祝福油触发---------------------------------------------------------
