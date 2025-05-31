@@ -1,58 +1,58 @@
 (@@SENDMSG @storage @getback @getnextpage @getPreviouspage @@offlinemsg @@InPutString @@InPutInteger)
 
 ;----------------------------------------------------------------------------------------------------------
-;-------------------------------------M2å¯åŠ¨åŽè§¦å‘è§¦å‘---------------------------------------------------------
+;-------------------------------------M2Æô¶¯ºó´¥·¢´¥·¢---------------------------------------------------------
 ;----------------------------------------------------------------------------------------------------------
 [@Startup]
 #IF
 EQUAL A1 
 #ACT
-MOV   A1 æ–°åŒº
+MOV   A1 ÐÂÇø
 MOV   A2 <$SERVERNAME>
 
 #IF
-EQUAL A1 æ–°åŒº
+EQUAL A1 ÐÂÇø
 NOT EQUAL A2 <$SERVERNAME>
 #ACT
-MOV   A1 ä¸€åˆ
+MOV   A1 Ò»ºÏ
 MOV   A2 <$SERVERNAME>
 
 
-;-------------------------------------å…¬ç›ŠæçŒ®å˜é‡åˆå§‹åŒ–---------------------------------------------------------
+;-------------------------------------¹«Òæ¾èÏ×±äÁ¿³õÊ¼»¯---------------------------------------------------------
 #IF
 #ACT
-VAR Integer GLOBAL å°é¡¶äººæ•°
-VAR String GLOBAL å¯Œè±ªçŽ©å®¶1
-VAR String GLOBAL å¯Œè±ªçŽ©å®¶2
-VAR String GLOBAL å¯Œè±ªçŽ©å®¶3
-VAR Integer GLOBAL å¯Œè±ªæ•°æ®1
-VAR Integer GLOBAL å¯Œè±ªæ•°æ®2
-VAR Integer GLOBAL å¯Œè±ªæ•°æ®3
+VAR Integer GLOBAL ·â¶¥ÈËÊý
+VAR String GLOBAL ¸»ºÀÍæ¼Ò1
+VAR String GLOBAL ¸»ºÀÍæ¼Ò2
+VAR String GLOBAL ¸»ºÀÍæ¼Ò3
+VAR Integer GLOBAL ¸»ºÀÊý¾Ý1
+VAR Integer GLOBAL ¸»ºÀÊý¾Ý2
+VAR Integer GLOBAL ¸»ºÀÊý¾Ý3
 
 #IF
 EQUAL A11
 #ACT
 MOV A11 <$YEAR>-<$MONTH>-<$DAY>
-ClearNameList ..\QuestDiary\å…¬ç›ŠæçŒ®\å°é¡¶çŽ©å®¶åˆ—è¡¨.txt
-ClearNameList ..\QuestDiary\å…¬ç›ŠæçŒ®\å…¬ç›ŠæçŒ®è®°å½•.txt
-ClearNameList ..\QuestDiary\å…¬ç›ŠæçŒ®\å…¬ç›ŠæçŒ®æŽ’å.txt
+ClearNameList ..\QuestDiary\¹«Òæ¾èÏ×\·â¶¥Íæ¼ÒÁÐ±í.txt
+ClearNameList ..\QuestDiary\¹«Òæ¾èÏ×\¹«Òæ¾èÏ×¼ÇÂ¼.txt
+ClearNameList ..\QuestDiary\¹«Òæ¾èÏ×\¹«Òæ¾èÏ×ÅÅÃû.txt
 
 
 #IF
 #ACT
-ClearNameList ..\QuestDiary\å…¬ç›ŠæçŒ®\å°é¡¶çŽ©å®¶åˆ—è¡¨.txt
-ClearNameList ..\QuestDiary\å…¬ç›ŠæçŒ®\å…¬ç›ŠæçŒ®è®°å½•.txt
-ClearNameList ..\QuestDiary\å…¬ç›ŠæçŒ®\å…¬ç›ŠæçŒ®æŽ’å.txt
+ClearNameList ..\QuestDiary\¹«Òæ¾èÏ×\·â¶¥Íæ¼ÒÁÐ±í.txt
+ClearNameList ..\QuestDiary\¹«Òæ¾èÏ×\¹«Òæ¾èÏ×¼ÇÂ¼.txt
+ClearNameList ..\QuestDiary\¹«Òæ¾èÏ×\¹«Òæ¾èÏ×ÅÅÃû.txt
 
 #IF
 #ACT
-LoadVar Global å°é¡¶äººæ•° ..\QuestDiary\å…¬ç›ŠæçŒ®\å…¬ç›ŠæçŒ®è®°å½•.txt
-LoadVar Global å¯Œè±ªçŽ©å®¶1 ..\QuestDiary\å…¬ç›ŠæçŒ®\å…¬ç›ŠæçŒ®è®°å½•.txt
-LoadVar Global å¯Œè±ªçŽ©å®¶2 ..\QuestDiary\å…¬ç›ŠæçŒ®\å…¬ç›ŠæçŒ®è®°å½•.txt
-LoadVar Global å¯Œè±ªçŽ©å®¶3 ..\QuestDiary\å…¬ç›ŠæçŒ®\å…¬ç›ŠæçŒ®è®°å½•.txt
-LoadVar Global å¯Œè±ªæ•°æ®1 ..\QuestDiary\å…¬ç›ŠæçŒ®\å…¬ç›ŠæçŒ®è®°å½•.txt
-LoadVar Global å¯Œè±ªæ•°æ®2 ..\QuestDiary\å…¬ç›ŠæçŒ®\å…¬ç›ŠæçŒ®è®°å½•.txt
-LoadVar Global å¯Œè±ªæ•°æ®3 ..\QuestDiary\å…¬ç›ŠæçŒ®\å…¬ç›ŠæçŒ®è®°å½•.txt
+LoadVar Global ·â¶¥ÈËÊý ..\QuestDiary\¹«Òæ¾èÏ×\¹«Òæ¾èÏ×¼ÇÂ¼.txt
+LoadVar Global ¸»ºÀÍæ¼Ò1 ..\QuestDiary\¹«Òæ¾èÏ×\¹«Òæ¾èÏ×¼ÇÂ¼.txt
+LoadVar Global ¸»ºÀÍæ¼Ò2 ..\QuestDiary\¹«Òæ¾èÏ×\¹«Òæ¾èÏ×¼ÇÂ¼.txt
+LoadVar Global ¸»ºÀÍæ¼Ò3 ..\QuestDiary\¹«Òæ¾èÏ×\¹«Òæ¾èÏ×¼ÇÂ¼.txt
+LoadVar Global ¸»ºÀÊý¾Ý1 ..\QuestDiary\¹«Òæ¾èÏ×\¹«Òæ¾èÏ×¼ÇÂ¼.txt
+LoadVar Global ¸»ºÀÊý¾Ý2 ..\QuestDiary\¹«Òæ¾èÏ×\¹«Òæ¾èÏ×¼ÇÂ¼.txt
+LoadVar Global ¸»ºÀÊý¾Ý3 ..\QuestDiary\¹«Òæ¾èÏ×\¹«Òæ¾èÏ×¼ÇÂ¼.txt
 
 
 ;----------------------------------------------------------------------------------------------
@@ -63,35 +63,35 @@ MOV G82 300
 MOV G83 480
 MOV G84 720
 MOV G85 1440
-CLEARNAMELIST ..\QuestDiary\å¯†ä¿è„šæœ¬\æœºå™¨ç .txt
-CLEARNAMELIST ..\QuestDiary\è£…å¤‡é¦–çˆ†\é¦–çˆ†æ•°æ®.txt
+CLEARNAMELIST ..\QuestDiary\ÃÜ±£½Å±¾\»úÆ÷Âë.txt
+CLEARNAMELIST ..\QuestDiary\×°±¸Ê×±¬\Ê×±¬Êý¾Ý.txt
 BREAK
 
 ;----------------------------------------------------------------------------------------------------------
-;-------------------------------------äººç‰©ç™»é™†è§¦å‘---------------------------------------------------------
+;-------------------------------------ÈËÎïµÇÂ½´¥·¢---------------------------------------------------------
 ;----------------------------------------------------------------------------------------------------------
 [@Login]
 #IF
 ISDUMMY
 #ACT
-#CALL [\é«˜çº§å‡äºº\å‡äººè„šæœ¬.txt] @å‡äººè„šæœ¬
+#CALL [\¸ß¼¶¼ÙÈË\¼ÙÈË½Å±¾.txt] @¼ÙÈË½Å±¾
 
-;-------------------------------------å…¬ç›ŠæçŒ®åˆå§‹åŒ–---------------------------------------------------------
+;-------------------------------------¹«Òæ¾èÏ×³õÊ¼»¯---------------------------------------------------------
 #IF
 #ACT
-Var Integer Human å¯Œè±ªæçŒ®
-LoadVar Human å¯Œè±ªæçŒ® ..\QuestDiary\å…¬ç›ŠæçŒ®\å…¬ç›ŠæçŒ®è®°å½•.txt
-SENDMSG 6 å…¬ç›ŠæçŒ®é¹¿å¸ä¸ºï¼š<$HUMAN(å¯Œè±ªæçŒ®)>
-GOTO @å¯Œè±ªæŽ’è¡Œå˜æ›´
+Var Integer Human ¸»ºÀ¾èÏ×
+LoadVar Human ¸»ºÀ¾èÏ× ..\QuestDiary\¹«Òæ¾èÏ×\¹«Òæ¾èÏ×¼ÇÂ¼.txt
+SENDMSG 6 ¹«Òæ¾èÏ×Â¹±ÒÎª£º<$HUMAN(¸»ºÀ¾èÏ×)>
+GOTO @¸»ºÀÅÅÐÐ±ä¸ü
 
 #IF
 CHECKLEVELEX > 0
 #ACT
 HAIRSTYLE 0
-;æ–°GOMå¼€å¯å¤§èƒŒåŒ…
+;ÐÂGOM¿ªÆô´ó±³°ü
 ChangeBagCount = 126
 
-;ESPæ¿€æ´»è‡ªåŠ¨æˆ˜æ–—æ˜¾ç¤º
+;ESP¼¤»î×Ô¶¯Õ½¶·ÏÔÊ¾
 ;#IF
 ;#ACT
 ;ESPOpenAutoPlayGame
@@ -102,13 +102,13 @@ PLAYSOUND zl666\Wav\come.wav 1 0
 #IF
 CHECK [125] 1
 #ACT
-;ESPå¼€å¯ä¸€é”®æ‹¾å–å¼€å§‹
+;ESP¿ªÆôÒ»¼üÊ°È¡¿ªÊ¼
 ;StartElf 1
 ;STARTPICKUP
-;ESPå¼€å¯ä¸€é”®æ‹¾å–ç»“æŸ
-;æ–°GOMå¼€å¯ä¸€é”®æ‹¾å–å¼€å§‹
+;ESP¿ªÆôÒ»¼üÊ°È¡½áÊø
+;ÐÂGOM¿ªÆôÒ»¼üÊ°È¡¿ªÊ¼
 StartPickUp
-;æ–°GOMå¼€å¯ä¸€é”®æ‹¾å–ç»“æŸ
+;ÐÂGOM¿ªÆôÒ»¼üÊ°È¡½áÊø
 
 #IF
 #ACT
@@ -122,10 +122,10 @@ SetOnTimer 103 1
 
 #IF
 #ACT
-#CALL [\æ¸¸æˆç™»é™†\äººç‰©å›¾å½•.txt] @äººç‰©å›¾å½•
-#CALL [\æ¸¸æˆç™»é™†\ç™»é™†è„šæœ¬.txt] @ç™»é™†è®¾ç½®
-#CALL [\æ¸¸æˆç™»é™†\å±žæ€§ç»™äºˆ.TXT] @äººç‰©å±žæ€§
-#CALL [\æ¸¸æˆç™»é™†\æŒ‰é’®æ£€æµ‹.txt] @å¼€å§‹æŒ‰é’®A
+#CALL [\ÓÎÏ·µÇÂ½\ÈËÎïÍ¼Â¼.txt] @ÈËÎïÍ¼Â¼
+#CALL [\ÓÎÏ·µÇÂ½\µÇÂ½½Å±¾.txt] @µÇÂ½ÉèÖÃ
+#CALL [\ÓÎÏ·µÇÂ½\ÊôÐÔ¸øÓè.TXT] @ÈËÎïÊôÐÔ
+#CALL [\ÓÎÏ·µÇÂ½\°´Å¥¼ì²â.txt] @¿ªÊ¼°´Å¥A
 
 PLAYMAGICBALLEFFECT 6 1010 12 150 -1 0 1 0 -60 -100
 PLAYMAGICBALLEFFECT 6 1022 12 150 -1 1 1 0 -60 -100
@@ -134,7 +134,7 @@ SETSTORAGEOPEN 20130801 20130802 20130803 20130804 2 20130806 20130807 20130808 
 SETSTORAGEOPEN 20130801 20130802 20130803 20130804 3 20130806 20130807 20130808 1 20130810
 SETSTORAGEOPEN 20130801 20130802 20130803 20130804 4 20130806 20130807 20130808 1 20130810
 SETSTORAGEOPEN 20130801 20130802 20130803 20130804 5 20130806 20130807 20130808 1 20130810
-GOTO @éžæ³•è¡€ç¬¦
+GOTO @·Ç·¨Ñª·û
 
 #IF
 NOT EQUAL <$SHIELD>
@@ -148,330 +148,330 @@ CHANGELEVEL  = 220
 CHECKLEVELEX > 149
 #ACT
 GMEXECUTE ReleaseShutup self 
-SENDMSG 7 ä½ ç­‰çº§å·²è¾¾åˆ°150çº§ï¼Œç³»ç»Ÿå·²è‡ªåŠ¨å¸®ä½ è§£é™¤ç¦è¨€ï¼
+SENDMSG 7 ÄãµÈ¼¶ÒÑ´ïµ½150¼¶£¬ÏµÍ³ÒÑ×Ô¶¯°ïÄã½â³ý½ûÑÔ£¡
 
 ;----------------------------------------------------------------------------------------------------------
-;-------------------------------------ç›¾ç‰Œæ¯15ç§’å›žè¡€å®šæ—¶å™¨ï¼šå·²åºŸå¼ƒ---------------------------------------------------------
+;-------------------------------------¶ÜÅÆÃ¿15Ãë»ØÑª¶¨Ê±Æ÷£ºÒÑ·ÏÆú---------------------------------------------------------
 ;----------------------------------------------------------------------------------------------------------
 [@OnTimer19]
 #IF
-CHECKITEMW ã€ˆé­”ç¥žä¹‹éš•ã€‰Lv2ãƒ¾ç›¾
+CHECKITEMW ¡´Ä§ÉñÖ®ëE¡µLv2©d¶Ü
 #ACT
 ADDHPPER + 2
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<2%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<2%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€ˆç¥žé›·å¤©è£ã€‰Lv3ãƒ¾ç›¾
+CHECKITEMW ¡´ÉñÀ×Ìì²Ã¡µLv3©d¶Ü
 #ACT
 ADDHPPER + 4
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<4%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<4%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€ˆé¾è¡€æˆ°ç¥žã€‰Lv4ãƒ¾ç›¾
+CHECKITEMW ¡´ýˆÑª‘ðÉñ¡µLv4©d¶Ü
 #ACT
 ADDHPPER + 6
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<6%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<6%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€ˆåˆ€åŠç¥žçš‡ã€‰Lv5ãƒ¾ç›¾
+CHECKITEMW ¡´µ¶„¦Éñ»Ê¡µLv5©d¶Ü
 #ACT
 ADDHPPER + 8
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<8%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<8%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€ˆçœŸéˆä¹è®Šã€‰Lv6ãƒ¾ç›¾
+CHECKITEMW ¡´Õæì`¾Å×ƒ¡µLv6©d¶Ü
 #ACT
 ADDHPPER + 10
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<10%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<10%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€ˆé¾çŽ‹ç„¡é›™ã€‰Lv7ãƒ¾ç›¾
+CHECKITEMW ¡´ýˆÍõŸoëp¡µLv7©d¶Ü
 #ACT
 ADDHPPER + 12
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<12%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<12%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€ˆé‡‘çµ²é¾é±—ã€‰Lv8ãƒ¾ç›¾
+CHECKITEMW ¡´½ð½zýˆ÷[¡µLv8©d¶Ü
 #ACT
 ADDHPPER + 14
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<14%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<14%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€ˆèµ¤å¿ƒå·¡å¤©ã€‰Lv9ãƒ¾ç›¾
+CHECKITEMW ¡´³àÐÄÑ²Ìì¡µLv9©d¶Ü
 #ACT
 ADDHPPER + 16
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<16%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<16%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€Šä¹±ä¸–é€é¹¿ã€‹ã€Œæ®ºã€åç›¾
+CHECKITEMW ¡¶ÂÒÊÀÖðÂ¹¡·¡¸š¢¡¹…e¶Ü
 #ACT
 ADDHPPER + 18
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<18%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<18%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€å …å¦‚ç£çŸ³ã€‘åŸ‹éª¨ä½•é¡»æ¡‘æ¢“åœ°â˜…ç›¾
+CHECKITEMW ¡¾ˆÔÈçÅÍÊ¯¡¿Âñ¹ÇºÎÐëÉ£è÷µØ¡ï¶Ü
 #ACT
 ADDHPPER + 20
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<20%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<20%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 
 
-[@éžæ³•è¡€ç¬¦]
+[@·Ç·¨Ñª·û]
 #IF
 CHECKITEMTYPE 5 51
 CHECKBAGSIZE 1
 #ACT
 TAKEOffItem 5
-MESSAGEBOX ç©¿æˆ´ä½ç½®é”™è¯¯
+MESSAGEBOX ´©´÷Î»ÖÃ´íÎó
 BREAK
 #IF
 CHECKITEMTYPE 5 25
 CHECKBAGSIZE 1
 #ACT
 TAKEOffItem 5
-MESSAGEBOX ç©¿æˆ´ä½ç½®é”™è¯¯
+MESSAGEBOX ´©´÷Î»ÖÃ´íÎó
 BREAK
 #OR
 CHECKITEMTYPE 5 25
 CHECKITEMTYPE 5 51
 #ACT
-MESSAGEBOX è¯·å°½å¿«è„±ä¸‹ä½ çš„<$ARMRING_L>ï¼Œå¦åˆ™å°†æŽ‰çº¿
+MESSAGEBOX Çë¾¡¿ìÍÑÏÂÄãµÄ<$ARMRING_L>£¬·ñÔò½«µôÏß
 SetOnTimer 21 10
 
 ;----------------------------------------------------------------------------------------------------------
-;-------------------------------------æ¯1ç§’è§¦å‘é­”ä¹¦å¤æ´»å›¾æ ‡+ç›¾ç‰Œå›žè¡€å›¾æ ‡+ç›¾ç‰Œå›žè¡€å®šæ—¶å™¨---------------------------------------------------------
+;-------------------------------------Ã¿1Ãë´¥·¢Ä§Êé¸´»îÍ¼±ê+¶ÜÅÆ»ØÑªÍ¼±ê+¶ÜÅÆ»ØÑª¶¨Ê±Æ÷---------------------------------------------------------
 ;----------------------------------------------------------------------------------------------------------
 [@OnTimer23]
-;å…ƒå®è¶…è¿‡20äº¿ä¸å†å¢žåŠ 
+;Ôª±¦³¬¹ý20ÒÚ²»ÔÙÔö¼Ó
 #IF
 CHECKGAMEGOLD > 1999999999
 #ACT
 GAMEGOLD      = 2000000000
 
-;å¤æ´»å›¾æ ‡--------------------------------------------------------------------
+;¸´»îÍ¼±ê--------------------------------------------------------------------
 #IF
-NOT CHECKITEMW ã€è²æ±æ“Šè¥¿ã€‘ä½•é¡»é©¬é©è£¹å°¸è¿˜â˜…ä¹¦
+NOT CHECKITEMW ¡¾Â•–|“ôÎ÷¡¿ºÎÐëÂí¸ï¹üÊ¬»¹¡ïÊé
 #ACT
 DELBUTTON 17 0
 
 #IF
-CHECKITEMW ã€è²æ±æ“Šè¥¿ã€‘ä½•é¡»é©¬é©è£¹å°¸è¿˜â˜…ä¹¦
+CHECKITEMW ¡¾Â•–|“ôÎ÷¡¿ºÎÐëÂí¸ï¹üÊ¬»¹¡ïÊé
 LARGE U45 0
 #ACT
 DEC U45 1
-ADDBUTTON 101 17 783 783 783 370 40 0 250/<$STR(U45)>ç§’ 254/ã€é­”ä¹¦å¤æ´»BUFFã€‘\<$STR(U45)>ç§’åŽåŽŸåœ°æ»¡è¡€å¤æ´»
+ADDBUTTON 101 17 783 783 783 370 40 0 250/<$STR(U45)>Ãë 254/¡¾Ä§Êé¸´»îBUFF¡¿\<$STR(U45)>ÃëºóÔ­µØÂúÑª¸´»î
 
 #IF
-CHECKITEMW ã€è²æ±æ“Šè¥¿ã€‘ä½•é¡»é©¬é©è£¹å°¸è¿˜â˜…ä¹¦
+CHECKITEMW ¡¾Â•–|“ôÎ÷¡¿ºÎÐëÂí¸ï¹üÊ¬»¹¡ïÊé
 EQUAL U45 0
 #ACT
-ADDBUTTON 101 17 788 788 788 370 40 0 -1 254/ã€é­”ä¹¦å¤æ´»BUFFã€‘\åŽŸåœ°æ»¡è¡€å¤æ´»
+ADDBUTTON 101 17 788 788 788 370 40 0 -1 254/¡¾Ä§Êé¸´»îBUFF¡¿\Ô­µØÂúÑª¸´»î
 
 
-;æ¢å¤è¡€é‡+å›¾æ ‡--------------------------------------------------------------------
-;ç›¾ç‰Œ15ç§’æ¢å¤è¡€é‡åŽï¼ŒU47æ¢å¤15ã€‚æ£€æµ‹ç©¿æˆ´ç›¾ç‰Œå¹¶ä¸”U47å¤§äºŽ0æ—¶ï¼ŒU47æ¯ç§’å‡1ã€‚
+;»Ö¸´ÑªÁ¿+Í¼±ê--------------------------------------------------------------------
+;¶ÜÅÆ15Ãë»Ö¸´ÑªÁ¿ºó£¬U47»Ö¸´15¡£¼ì²â´©´÷¶ÜÅÆ²¢ÇÒU47´óÓÚ0Ê±£¬U47Ã¿Ãë¼õ1¡£
 #IF
-NOT CHECKITEMW ã€ˆé­”ç¥žä¹‹éš•ã€‰Lv2ãƒ¾ç›¾
-NOT CHECKITEMW ã€ˆç¥žé›·å¤©è£ã€‰Lv3ãƒ¾ç›¾
-NOT CHECKITEMW ã€ˆé¾è¡€æˆ°ç¥žã€‰Lv4ãƒ¾ç›¾
-NOT CHECKITEMW ã€ˆåˆ€åŠç¥žçš‡ã€‰Lv5ãƒ¾ç›¾
-NOT CHECKITEMW ã€ˆçœŸéˆä¹è®Šã€‰Lv6ãƒ¾ç›¾
-NOT CHECKITEMW ã€ˆé¾çŽ‹ç„¡é›™ã€‰Lv7ãƒ¾ç›¾
-NOT CHECKITEMW ã€ˆé‡‘çµ²é¾é±—ã€‰Lv8ãƒ¾ç›¾
-NOT CHECKITEMW ã€ˆèµ¤å¿ƒå·¡å¤©ã€‰Lv9ãƒ¾ç›¾
-NOT CHECKITEMW ã€Šä¹±ä¸–é€é¹¿ã€‹ã€Œæ®ºã€åç›¾
-NOT CHECKITEMW ã€å …å¦‚ç£çŸ³ã€‘åŸ‹éª¨ä½•é¡»æ¡‘æ¢“åœ°â˜…ç›¾
+NOT CHECKITEMW ¡´Ä§ÉñÖ®ëE¡µLv2©d¶Ü
+NOT CHECKITEMW ¡´ÉñÀ×Ìì²Ã¡µLv3©d¶Ü
+NOT CHECKITEMW ¡´ýˆÑª‘ðÉñ¡µLv4©d¶Ü
+NOT CHECKITEMW ¡´µ¶„¦Éñ»Ê¡µLv5©d¶Ü
+NOT CHECKITEMW ¡´Õæì`¾Å×ƒ¡µLv6©d¶Ü
+NOT CHECKITEMW ¡´ýˆÍõŸoëp¡µLv7©d¶Ü
+NOT CHECKITEMW ¡´½ð½zýˆ÷[¡µLv8©d¶Ü
+NOT CHECKITEMW ¡´³àÐÄÑ²Ìì¡µLv9©d¶Ü
+NOT CHECKITEMW ¡¶ÂÒÊÀÖðÂ¹¡·¡¸š¢¡¹…e¶Ü
+NOT CHECKITEMW ¡¾ˆÔÈçÅÍÊ¯¡¿Âñ¹ÇºÎÐëÉ£è÷µØ¡ï¶Ü
 #ACT
 DELBUTTON 18 0
 
 ;------------------------------------------------------------------
 #IF
-CHECKITEMW ã€ˆé­”ç¥žä¹‹éš•ã€‰Lv2ãƒ¾ç›¾
+CHECKITEMW ¡´Ä§ÉñÖ®ëE¡µLv2©d¶Ü
 LARGE U47 0
 #ACT
-ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>ç§’ 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\<$STR(U47)>ç§’åŽè‡ªåŠ¨æ¢å¤<2%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>Ãë 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\<$STR(U47)>Ãëºó×Ô¶¯»Ö¸´<2%>ÉúÃüÖµ
 DEC U47 1
 #IF
-CHECKITEMW ã€ˆç¥žé›·å¤©è£ã€‰Lv3ãƒ¾ç›¾
+CHECKITEMW ¡´ÉñÀ×Ìì²Ã¡µLv3©d¶Ü
 LARGE U47 0
 #ACT
-ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>ç§’ 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\<$STR(U47)>ç§’åŽè‡ªåŠ¨æ¢å¤<4%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>Ãë 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\<$STR(U47)>Ãëºó×Ô¶¯»Ö¸´<4%>ÉúÃüÖµ
 DEC U47 1
 #IF
-CHECKITEMW ã€ˆé¾è¡€æˆ°ç¥žã€‰Lv4ãƒ¾ç›¾
+CHECKITEMW ¡´ýˆÑª‘ðÉñ¡µLv4©d¶Ü
 LARGE U47 0
 #ACT
-ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>ç§’ 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\<$STR(U47)>ç§’åŽè‡ªåŠ¨æ¢å¤<6%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>Ãë 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\<$STR(U47)>Ãëºó×Ô¶¯»Ö¸´<6%>ÉúÃüÖµ
 DEC U47 1
 #IF
-CHECKITEMW ã€ˆåˆ€åŠç¥žçš‡ã€‰Lv5ãƒ¾ç›¾
+CHECKITEMW ¡´µ¶„¦Éñ»Ê¡µLv5©d¶Ü
 LARGE U47 0
 #ACT
-ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>ç§’ 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\<$STR(U47)>ç§’åŽè‡ªåŠ¨æ¢å¤<8%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>Ãë 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\<$STR(U47)>Ãëºó×Ô¶¯»Ö¸´<8%>ÉúÃüÖµ
 DEC U47 1
 #IF
-CHECKITEMW ã€ˆçœŸéˆä¹è®Šã€‰Lv6ãƒ¾ç›¾
+CHECKITEMW ¡´Õæì`¾Å×ƒ¡µLv6©d¶Ü
 LARGE U47 0
 #ACT
-ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>ç§’ 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\<$STR(U47)>ç§’åŽè‡ªåŠ¨æ¢å¤<10%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>Ãë 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\<$STR(U47)>Ãëºó×Ô¶¯»Ö¸´<10%>ÉúÃüÖµ
 DEC U47 1
 #IF
-CHECKITEMW ã€ˆé¾çŽ‹ç„¡é›™ã€‰Lv7ãƒ¾ç›¾
+CHECKITEMW ¡´ýˆÍõŸoëp¡µLv7©d¶Ü
 LARGE U47 0
 #ACT
-ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>ç§’ 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\<$STR(U47)>ç§’åŽè‡ªåŠ¨æ¢å¤<12%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>Ãë 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\<$STR(U47)>Ãëºó×Ô¶¯»Ö¸´<12%>ÉúÃüÖµ
 DEC U47 1
 #IF
-CHECKITEMW ã€ˆé‡‘çµ²é¾é±—ã€‰Lv8ãƒ¾ç›¾
+CHECKITEMW ¡´½ð½zýˆ÷[¡µLv8©d¶Ü
 LARGE U47 0
 #ACT
-ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>ç§’ 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\<$STR(U47)>ç§’åŽè‡ªåŠ¨æ¢å¤<14%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>Ãë 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\<$STR(U47)>Ãëºó×Ô¶¯»Ö¸´<14%>ÉúÃüÖµ
 DEC U47 1
 #IF
-CHECKITEMW ã€ˆèµ¤å¿ƒå·¡å¤©ã€‰Lv9ãƒ¾ç›¾
+CHECKITEMW ¡´³àÐÄÑ²Ìì¡µLv9©d¶Ü
 LARGE U47 0
 #ACT
-ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>ç§’ 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\<$STR(U47)>ç§’åŽè‡ªåŠ¨æ¢å¤<16%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>Ãë 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\<$STR(U47)>Ãëºó×Ô¶¯»Ö¸´<16%>ÉúÃüÖµ
 DEC U47 1
 #IF
-CHECKITEMW ã€Šä¹±ä¸–é€é¹¿ã€‹ã€Œæ®ºã€åç›¾
+CHECKITEMW ¡¶ÂÒÊÀÖðÂ¹¡·¡¸š¢¡¹…e¶Ü
 LARGE U47 0
 #ACT
-ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>ç§’ 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\<$STR(U47)>ç§’åŽè‡ªåŠ¨æ¢å¤<18%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>Ãë 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\<$STR(U47)>Ãëºó×Ô¶¯»Ö¸´<18%>ÉúÃüÖµ
 DEC U47 1
 #IF
-CHECKITEMW ã€å …å¦‚ç£çŸ³ã€‘åŸ‹éª¨ä½•é¡»æ¡‘æ¢“åœ°â˜…ç›¾
+CHECKITEMW ¡¾ˆÔÈçÅÍÊ¯¡¿Âñ¹ÇºÎÐëÉ£è÷µØ¡ï¶Ü
 LARGE U47 0
 #ACT
-ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>ç§’ 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\<$STR(U47)>ç§’åŽè‡ªåŠ¨æ¢å¤<20%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 782 782 782 420 40 0 254/<$STR(U47)>Ãë 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\<$STR(U47)>Ãëºó×Ô¶¯»Ö¸´<20%>ÉúÃüÖµ
 DEC U47 1
 
 ;------------------------------------------------------------------
 #IF
-CHECKITEMW ã€ˆé­”ç¥žä¹‹éš•ã€‰Lv2ãƒ¾ç›¾
+CHECKITEMW ¡´Ä§ÉñÖ®ëE¡µLv2©d¶Ü
 SMALL U47 1
 CheckHpPer < 100
 #ACT
 MOV U47 15
 ADDHPPER + 2
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<2%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<2%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€ˆç¥žé›·å¤©è£ã€‰Lv3ãƒ¾ç›¾
+CHECKITEMW ¡´ÉñÀ×Ìì²Ã¡µLv3©d¶Ü
 SMALL U47 1
 CheckHpPer < 100
 #ACT
 MOV U47 15
 ADDHPPER + 4
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<4%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<4%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€ˆé¾è¡€æˆ°ç¥žã€‰Lv4ãƒ¾ç›¾
+CHECKITEMW ¡´ýˆÑª‘ðÉñ¡µLv4©d¶Ü
 SMALL U47 1
 CheckHpPer < 100
 #ACT
 MOV U47 15
 ADDHPPER + 6
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<6%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<6%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€ˆåˆ€åŠç¥žçš‡ã€‰Lv5ãƒ¾ç›¾
+CHECKITEMW ¡´µ¶„¦Éñ»Ê¡µLv5©d¶Ü
 SMALL U47 1
 CheckHpPer < 100
 #ACT
 MOV U47 15
 ADDHPPER + 8
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<8%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<8%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€ˆçœŸéˆä¹è®Šã€‰Lv6ãƒ¾ç›¾
+CHECKITEMW ¡´Õæì`¾Å×ƒ¡µLv6©d¶Ü
 SMALL U47 1
 CheckHpPer < 100
 #ACT
 MOV U47 15
 ADDHPPER + 10
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<10%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<10%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€ˆé¾çŽ‹ç„¡é›™ã€‰Lv7ãƒ¾ç›¾
+CHECKITEMW ¡´ýˆÍõŸoëp¡µLv7©d¶Ü
 SMALL U47 1
 CheckHpPer < 100
 #ACT
 MOV U47 15
 ADDHPPER + 12
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<12%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<12%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€ˆé‡‘çµ²é¾é±—ã€‰Lv8ãƒ¾ç›¾
+CHECKITEMW ¡´½ð½zýˆ÷[¡µLv8©d¶Ü
 SMALL U47 1
 CheckHpPer < 100
 #ACT
 MOV U47 15
 ADDHPPER + 14
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<14%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<14%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€ˆèµ¤å¿ƒå·¡å¤©ã€‰Lv9ãƒ¾ç›¾
+CHECKITEMW ¡´³àÐÄÑ²Ìì¡µLv9©d¶Ü
 SMALL U47 1
 CheckHpPer < 100
 #ACT
 MOV U47 15
 ADDHPPER + 16
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<16%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<16%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€Šä¹±ä¸–é€é¹¿ã€‹ã€Œæ®ºã€åç›¾
+CHECKITEMW ¡¶ÂÒÊÀÖðÂ¹¡·¡¸š¢¡¹…e¶Ü
 SMALL U47 1
 CheckHpPer < 100
 #ACT
 MOV U47 15
 ADDHPPER + 18
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<18%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<18%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 #IF
-CHECKITEMW ã€å …å¦‚ç£çŸ³ã€‘åŸ‹éª¨ä½•é¡»æ¡‘æ¢“åœ°â˜…ç›¾
+CHECKITEMW ¡¾ˆÔÈçÅÍÊ¯¡¿Âñ¹ÇºÎÐëÉ£è÷µØ¡ï¶Ü
 SMALL U47 1
 CheckHpPer < 100
 #ACT
 MOV U47 15
 ADDHPPER + 20
-SENDMSG 6 ç›¾ç‰Œå•ä»¶è§¦å‘HPæ¯15ç§’å›žè¡€<20%>ç”Ÿå‘½å€¼ï¼ï¼ï¼~~~~~~
+SENDMSG 6 ¶ÜÅÆµ¥¼þ´¥·¢HPÃ¿15Ãë»ØÑª<20%>ÉúÃüÖµ£¡£¡£¡~~~~~~
 
 ;------------------------------------------------------------------
 #IF
-CHECKITEMW ã€ˆé­”ç¥žä¹‹éš•ã€‰Lv2ãƒ¾ç›¾
+CHECKITEMW ¡´Ä§ÉñÖ®ëE¡µLv2©d¶Ü
 SMALL U47 1
 #ACT
-ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\ç«‹å³æ¢å¤<2%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\Á¢¼´»Ö¸´<2%>ÉúÃüÖµ
 #IF
-CHECKITEMW ã€ˆç¥žé›·å¤©è£ã€‰Lv3ãƒ¾ç›¾
+CHECKITEMW ¡´ÉñÀ×Ìì²Ã¡µLv3©d¶Ü
 SMALL U47 1
 #ACT
-ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\ç«‹å³æ¢å¤<4%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\Á¢¼´»Ö¸´<4%>ÉúÃüÖµ
 #IF
-CHECKITEMW ã€ˆé¾è¡€æˆ°ç¥žã€‰Lv4ãƒ¾ç›¾
+CHECKITEMW ¡´ýˆÑª‘ðÉñ¡µLv4©d¶Ü
 SMALL U47 1
 #ACT
-ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\ç«‹å³æ¢å¤<6%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\Á¢¼´»Ö¸´<6%>ÉúÃüÖµ
 #IF
-CHECKITEMW ã€ˆåˆ€åŠç¥žçš‡ã€‰Lv5ãƒ¾ç›¾
+CHECKITEMW ¡´µ¶„¦Éñ»Ê¡µLv5©d¶Ü
 SMALL U47 1
 #ACT
-ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\ç«‹å³æ¢å¤<8%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\Á¢¼´»Ö¸´<8%>ÉúÃüÖµ
 #IF
-CHECKITEMW ã€ˆçœŸéˆä¹è®Šã€‰Lv6ãƒ¾ç›¾
+CHECKITEMW ¡´Õæì`¾Å×ƒ¡µLv6©d¶Ü
 SMALL U47 1
 #ACT
-ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\ç«‹å³æ¢å¤<10%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\Á¢¼´»Ö¸´<10%>ÉúÃüÖµ
 #IF
-CHECKITEMW ã€ˆé¾çŽ‹ç„¡é›™ã€‰Lv7ãƒ¾ç›¾
+CHECKITEMW ¡´ýˆÍõŸoëp¡µLv7©d¶Ü
 SMALL U47 1
 #ACT
-ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\ç«‹å³æ¢å¤<12%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\Á¢¼´»Ö¸´<12%>ÉúÃüÖµ
 #IF
-CHECKITEMW ã€ˆé‡‘çµ²é¾é±—ã€‰Lv8ãƒ¾ç›¾
+CHECKITEMW ¡´½ð½zýˆ÷[¡µLv8©d¶Ü
 SMALL U47 1
 #ACT
-ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\ç«‹å³æ¢å¤<14%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\Á¢¼´»Ö¸´<14%>ÉúÃüÖµ
 #IF
-CHECKITEMW ã€ˆèµ¤å¿ƒå·¡å¤©ã€‰Lv9ãƒ¾ç›¾
+CHECKITEMW ¡´³àÐÄÑ²Ìì¡µLv9©d¶Ü
 SMALL U47 1
 #ACT
-ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\ç«‹å³æ¢å¤<16%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\Á¢¼´»Ö¸´<16%>ÉúÃüÖµ
 #IF
-CHECKITEMW ã€Šä¹±ä¸–é€é¹¿ã€‹ã€Œæ®ºã€åç›¾
+CHECKITEMW ¡¶ÂÒÊÀÖðÂ¹¡·¡¸š¢¡¹…e¶Ü
 SMALL U47 1
 #ACT
-ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\ç«‹å³æ¢å¤<18%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\Á¢¼´»Ö¸´<18%>ÉúÃüÖµ
 #IF
-CHECKITEMW ã€å …å¦‚ç£çŸ³ã€‘åŸ‹éª¨ä½•é¡»æ¡‘æ¢“åœ°â˜…ç›¾
+CHECKITEMW ¡¾ˆÔÈçÅÍÊ¯¡¿Âñ¹ÇºÎÐëÉ£è÷µØ¡ï¶Ü
 SMALL U47 1
 #ACT
-ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/ã€ç›¾ç‰Œè¡€é‡æ¢å¤BUFFã€‘\ç«‹å³æ¢å¤<20%>ç”Ÿå‘½å€¼
+ADDBUTTON 101 18 787 787 787 420 40 0 -1 254/¡¾¶ÜÅÆÑªÁ¿»Ö¸´BUFF¡¿\Á¢¼´»Ö¸´<20%>ÉúÃüÖµ
 
 ;----------------------------------------------------------------------------------------------------------
-;-------------------------------------æ¯1ç§’è§¦å‘150çº§åŠä»¥ä¸‹ç­‰çº§è‡ªåŠ¨æ¶¨ç»éªŒå®šæ—¶å™¨---------------------------------------------------------
+;-------------------------------------Ã¿1Ãë´¥·¢150¼¶¼°ÒÔÏÂµÈ¼¶×Ô¶¯ÕÇ¾­Ñé¶¨Ê±Æ÷---------------------------------------------------------
 ;----------------------------------------------------------------------------------------------------------
 [@OnTimer4]
 #IF
@@ -486,96 +486,96 @@ CHECKLEVELEX < 150
 CHANGEEXP + 500000
 BREAK
 
-;==============================æ´»=åŠ¨=å¼¹=çª—===================================
+;==============================»î=¶¯=µ¯=´°===================================
 
-[@é€é¹¿ä¸­åŽŸææ–™å¼¹çª—]
+[@ÖðÂ¹ÖÐÔ­²ÄÁÏµ¯´°]
 #IF
 #ACT
 OPENMERCHANTBIGDLG 101 1076 0 4 0 -100 1 449 2
 #SAY
 <> \
 <> \
-<â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                                                                      <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251> <â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…ææ–™BOSSâ”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…/SCOLOR=251> <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                                                                      <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                  <æ´»åŠ¨è¯´æ˜Žï¼š/SCOLOR=243><å¼€åŒºæ¯2å°æ—¶å¼€å¯ä¸€æ¬¡/SCOLOR=243>                       <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                  <æ€ªç‰©è¯´æ˜Žï¼š/SCOLOR=253><åˆ·æ–°1åªææ–™BOSS/AUTOCOLOR=253>                           <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                  <çˆ†çŽ‡è¯´æ˜Žï¼š/SCOLOR=254><å…¨æœæ‰€æœ‰è£…å¤‡å’Œé“å…·/AUTOCOLOR=254>                        <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                  <åœ°å›¾è¯´æ˜Žï¼š/SCOLOR=250><çˆ†çŽ‡å…¨å¼€ï¼æ¯«æ— ä¿ç•™ï¼/AUTOCOLOR=250>                      <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                  <å±é™©æŒ‡æ•°ï¼š/SCOLOR=249><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>                      <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                                                                      <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                                                                      <â–ˆ/SCOLOR=251>\ 
-<â–ˆ/SCOLOR=251>                  <ç‚¹å‡»è¿›å…¥æ´»åŠ¨/@æ€å¹´å…½æ´»åŠ¨>              <å…³é—­Ã—/@EXIT>                    <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                  <ç‚¹å‡»è¿›å…¥æ´»åŠ¨/@æ€å¹´å…½æ´»åŠ¨>              <å…³é—­Ã—/@EXIT>                    <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                                                                      <â–ˆ/SCOLOR=251>\
-<â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ/SCOLOR=251>\
+<¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                                                                      <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251> <©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©²ÄÁÏBOSS©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©/SCOLOR=251> <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                                                                      <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                  <»î¶¯ËµÃ÷£º/SCOLOR=243><¿ªÇøÃ¿2Ð¡Ê±¿ªÆôÒ»´Î/SCOLOR=243>                       <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                  <¹ÖÎïËµÃ÷£º/SCOLOR=253><Ë¢ÐÂ1Ö»²ÄÁÏBOSS/AUTOCOLOR=253>                           <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                  <±¬ÂÊËµÃ÷£º/SCOLOR=254><È«·þËùÓÐ×°±¸ºÍµÀ¾ß/AUTOCOLOR=254>                        <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                  <µØÍ¼ËµÃ÷£º/SCOLOR=250><±¬ÂÊÈ«¿ª£¡ºÁÎÞ±£Áô£¡/AUTOCOLOR=250>                      <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                  <Î£ÏÕÖ¸Êý£º/SCOLOR=249><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>                      <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                                                                      <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                                                                      <¨€/SCOLOR=251>\ 
+<¨€/SCOLOR=251>                  <µã»÷½øÈë»î¶¯/@É±ÄêÊÞ»î¶¯>              <¹Ø±Õ¡Á/@EXIT>                    <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                  <µã»÷½øÈë»î¶¯/@É±ÄêÊÞ»î¶¯>              <¹Ø±Õ¡Á/@EXIT>                    <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                                                                      <¨€/SCOLOR=251>\
+<¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€/SCOLOR=251>\
 
-[@æ€å¹´å…½æ´»åŠ¨]
+[@É±ÄêÊÞ»î¶¯]
 #IF
 #ACT
 MAP HGJHD
-SENDMSG 0 253 251 å‹‡å£«{ã€Œ<$USERNAME>ã€|254:0:1}å‚åŠ äº†å¿…çˆ†ææ–™æ´»åŠ¨ï¼Œè¿›å…¥äº†{ã€Ž<$MAPTITLE>ã€|250:0:1}ï¼
+SENDMSG 0 253 251 ÓÂÊ¿{¡¸<$USERNAME>¡¹|254:0:1}²Î¼ÓÁË±Ø±¬²ÄÁÏ»î¶¯£¬½øÈëÁË{¡º<$MAPTITLE>¡»|250:0:1}£¡
 BREAK
 
-[@é€é¹¿ä¸­åŽŸè£…å¤‡å¼¹çª—]
+[@ÖðÂ¹ÖÐÔ­×°±¸µ¯´°]
 #IF
 #ACT
 OPENMERCHANTBIGDLG 101 1076 0 4 0 -100 1 449 2
 #SAY
 <> \
 <> \
-<â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                                                                      <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251> <â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…è£…å¤‡BOSSâ”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…/SCOLOR=251> <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                                                                      <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                  <æ´»åŠ¨è¯´æ˜Žï¼š/SCOLOR=243><å¼€åŒºæ¯1å°æ—¶å¼€å¯ä¸€æ¬¡/SCOLOR=243>                       <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                  <æ€ªç‰©è¯´æ˜Žï¼š/SCOLOR=253><åˆ·æ–°1åªè£…å¤‡BOSS/AUTOCOLOR=253>                           <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                  <çˆ†çŽ‡è¯´æ˜Žï¼š/SCOLOR=254><å…¨æœæ‰€æœ‰è£…å¤‡å’Œé“å…·/AUTOCOLOR=254>                        <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                  <åœ°å›¾è¯´æ˜Žï¼š/SCOLOR=250><çˆ†çŽ‡å…¨å¼€ï¼æ¯«æ— ä¿ç•™ï¼/AUTOCOLOR=250>                      <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                  <å±é™©æŒ‡æ•°ï¼š/SCOLOR=249><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>                      <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                                                                      <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                                                                      <â–ˆ/SCOLOR=251>\ 
-<â–ˆ/SCOLOR=251>                  <ç‚¹å‡»è¿›å…¥æ´»åŠ¨/@æ€å¹´å…½æ´»åŠ¨1>              <å…³é—­Ã—/@EXIT>                    <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                  <ç‚¹å‡»è¿›å…¥æ´»åŠ¨/@æ€å¹´å…½æ´»åŠ¨1>              <å…³é—­Ã—/@EXIT>                    <â–ˆ/SCOLOR=251>\
-<â–ˆ/SCOLOR=251>                                                                      <â–ˆ/SCOLOR=251>\
-<â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ/SCOLOR=251>\
+<¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                                                                      <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251> <©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©×°±¸BOSS©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©/SCOLOR=251> <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                                                                      <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                  <»î¶¯ËµÃ÷£º/SCOLOR=243><¿ªÇøÃ¿1Ð¡Ê±¿ªÆôÒ»´Î/SCOLOR=243>                       <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                  <¹ÖÎïËµÃ÷£º/SCOLOR=253><Ë¢ÐÂ1Ö»×°±¸BOSS/AUTOCOLOR=253>                           <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                  <±¬ÂÊËµÃ÷£º/SCOLOR=254><È«·þËùÓÐ×°±¸ºÍµÀ¾ß/AUTOCOLOR=254>                        <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                  <µØÍ¼ËµÃ÷£º/SCOLOR=250><±¬ÂÊÈ«¿ª£¡ºÁÎÞ±£Áô£¡/AUTOCOLOR=250>                      <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                  <Î£ÏÕÖ¸Êý£º/SCOLOR=249><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>                      <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                                                                      <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                                                                      <¨€/SCOLOR=251>\ 
+<¨€/SCOLOR=251>                  <µã»÷½øÈë»î¶¯/@É±ÄêÊÞ»î¶¯1>              <¹Ø±Õ¡Á/@EXIT>                    <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                  <µã»÷½øÈë»î¶¯/@É±ÄêÊÞ»î¶¯1>              <¹Ø±Õ¡Á/@EXIT>                    <¨€/SCOLOR=251>\
+<¨€/SCOLOR=251>                                                                      <¨€/SCOLOR=251>\
+<¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€/SCOLOR=251>\
 
-[@æ€å¹´å…½æ´»åŠ¨1]
+[@É±ÄêÊÞ»î¶¯1]
 #IF
 #ACT
-MAP å¿…çˆ†è£…å¤‡æ´»åŠ¨
-SENDMSG 0 253 251 å‹‡å£«{ã€Œ<$USERNAME>ã€|254:0:1}å‚åŠ äº†å¿…çˆ†è£…å¤‡æ´»åŠ¨ï¼Œè¿›å…¥äº†{ã€Ž<$MAPTITLE>ã€|250:0:1}ï¼
+MAP ±Ø±¬×°±¸»î¶¯
+SENDMSG 0 253 251 ÓÂÊ¿{¡¸<$USERNAME>¡¹|254:0:1}²Î¼ÓÁË±Ø±¬×°±¸»î¶¯£¬½øÈëÁË{¡º<$MAPTITLE>¡»|250:0:1}£¡
 BREAK
 
-[@é€é¹¿ä¸­åŽŸæ¿€æƒ…BOSSæ´»åŠ¨å¼¹çª—]
+[@ÖðÂ¹ÖÐÔ­¼¤ÇéBOSS»î¶¯µ¯´°]
 #IF
 #ACT
 OPENMERCHANTBIGDLG 101 1076 0 4 0 -100 1 449 2
 #SAY
 <> \
 <> \
-<â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ/SCOLOR=249>\
-<â–ˆ/SCOLOR=249>                                                                      <â–ˆ/SCOLOR=249>\
-<â–ˆ/SCOLOR=249> <â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…æ¿€æƒ…BOSSâ”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…â”…/SCOLOR=251> <â–ˆ/SCOLOR=249>\
-<â–ˆ/SCOLOR=249>                                                                      <â–ˆ/SCOLOR=249>\
-<â–ˆ/SCOLOR=249>                  <æ´»åŠ¨è¯´æ˜Žï¼š/SCOLOR=243><åˆåŒºæ”»æ²™åŽ22:10å¼€å¯ä¸€æ¬¡/SCOLOR=251>                   <â–ˆ/SCOLOR=249>\
-<â–ˆ/SCOLOR=249>                  <æ€ªç‰©è¯´æ˜Žï¼š/SCOLOR=253><åˆ·æ–°1åªæ¿€æƒ…BOSS/AUTOCOLOR=253>                           <â–ˆ/SCOLOR=249>\
-<â–ˆ/SCOLOR=249>                  <çˆ†çŽ‡è¯´æ˜Žï¼š/SCOLOR=254><ç»ˆæžå‰‘ç”²å’Œç»ˆæžé¦–é¥°/AUTOCOLOR=254>                        <â–ˆ/SCOLOR=249>\
-<â–ˆ/SCOLOR=249>                  <åœ°å›¾è¯´æ˜Žï¼š/SCOLOR=250><å‹‡è€…å±…å¤šï¼æ³¨æ„å®‰å…¨ï¼/AUTOCOLOR=250>                      <â–ˆ/SCOLOR=249>\
-<â–ˆ/SCOLOR=249>                  <å±é™©æŒ‡æ•°ï¼š/SCOLOR=249><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>                      <â–ˆ/SCOLOR=249>\
-<â–ˆ/SCOLOR=249>                                                                      <â–ˆ/SCOLOR=249>\
-<â–ˆ/SCOLOR=249>                                                                      <â–ˆ/SCOLOR=249>\ 
-<â–ˆ/SCOLOR=249>                  <ç‚¹å‡»è¿›å…¥æ´»åŠ¨/@æ€æ¿€æƒ…BOSSæ´»åŠ¨>              <å…³é—­Ã—/@EXIT>                    <â–ˆ/SCOLOR=249>\
-<â–ˆ/SCOLOR=249>                  <ç‚¹å‡»è¿›å…¥æ´»åŠ¨/@æ€æ¿€æƒ…BOSSæ´»åŠ¨>              <å…³é—­Ã—/@EXIT>                    <â–ˆ/SCOLOR=249>\
-<â–ˆ/SCOLOR=249>                                                                      <â–ˆ/SCOLOR=249>\
-<â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ/SCOLOR=249>\
+<¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€/SCOLOR=249>\
+<¨€/SCOLOR=249>                                                                      <¨€/SCOLOR=249>\
+<¨€/SCOLOR=249> <©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©¼¤ÇéBOSS©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©/SCOLOR=251> <¨€/SCOLOR=249>\
+<¨€/SCOLOR=249>                                                                      <¨€/SCOLOR=249>\
+<¨€/SCOLOR=249>                  <»î¶¯ËµÃ÷£º/SCOLOR=243><ºÏÇø¹¥É³ºó22:10¿ªÆôÒ»´Î/SCOLOR=251>                   <¨€/SCOLOR=249>\
+<¨€/SCOLOR=249>                  <¹ÖÎïËµÃ÷£º/SCOLOR=253><Ë¢ÐÂ1Ö»¼¤ÇéBOSS/AUTOCOLOR=253>                           <¨€/SCOLOR=249>\
+<¨€/SCOLOR=249>                  <±¬ÂÊËµÃ÷£º/SCOLOR=254><ÖÕ¼«½£¼×ºÍÖÕ¼«Ê×ÊÎ/AUTOCOLOR=254>                        <¨€/SCOLOR=249>\
+<¨€/SCOLOR=249>                  <µØÍ¼ËµÃ÷£º/SCOLOR=250><ÓÂÕß¾Ó¶à£¡×¢Òâ°²È«£¡/AUTOCOLOR=250>                      <¨€/SCOLOR=249>\
+<¨€/SCOLOR=249>                  <Î£ÏÕÖ¸Êý£º/SCOLOR=249><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>                      <¨€/SCOLOR=249>\
+<¨€/SCOLOR=249>                                                                      <¨€/SCOLOR=249>\
+<¨€/SCOLOR=249>                                                                      <¨€/SCOLOR=249>\ 
+<¨€/SCOLOR=249>                  <µã»÷½øÈë»î¶¯/@É±¼¤ÇéBOSS»î¶¯>              <¹Ø±Õ¡Á/@EXIT>                    <¨€/SCOLOR=249>\
+<¨€/SCOLOR=249>                  <µã»÷½øÈë»î¶¯/@É±¼¤ÇéBOSS»î¶¯>              <¹Ø±Õ¡Á/@EXIT>                    <¨€/SCOLOR=249>\
+<¨€/SCOLOR=249>                                                                      <¨€/SCOLOR=249>\
+<¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€/SCOLOR=249>\
 
-[@æ€æ¿€æƒ…BOSSæ´»åŠ¨]
+[@É±¼¤ÇéBOSS»î¶¯]
 #IF
 #ACT
-MAP æ¿€æƒ…BOSS
-SENDMSG 0 253 251 å‹‡å£«{ã€Œ<$USERNAME>ã€|254:0:1}å‚åŠ äº†æ¿€æƒ…BOSSæ´»åŠ¨ï¼Œè¿›å…¥äº†{ã€Ž<$MAPTITLE>ã€|250:0:1}ï¼
+MAP ¼¤ÇéBOSS
+SENDMSG 0 253 251 ÓÂÊ¿{¡¸<$USERNAME>¡¹|254:0:1}²Î¼ÓÁË¼¤ÇéBOSS»î¶¯£¬½øÈëÁË{¡º<$MAPTITLE>¡»|250:0:1}£¡
 BREAK
 
 ;---------------------------------------------------------------------------------------------------------------------
@@ -593,7 +593,7 @@ GOTONow <$STR(P8)> <$STR(P9)>
 BREAK
 
 ;----------------------------------------------------------------------------------------------------------
-;-------------------------------------æ¯1ç§’è§¦å‘å¼€å¯è£…å¤‡å›žæ”¶å®šæ—¶å™¨---------------------------------------------------------
+;-------------------------------------Ã¿1Ãë´¥·¢¿ªÆô×°±¸»ØÊÕ¶¨Ê±Æ÷---------------------------------------------------------
 ;----------------------------------------------------------------------------------------------------------
 [@OnTimer102]
 #IF
@@ -602,105 +602,105 @@ CHECK [124] 0
 BREAK
 #IF
 NOT ISONMAP 3
-CHECKTITLE ç‹‚æš´â€»ä¹‹åŠ›
+CHECKTITLE ¿ñ±©¡ùÖ®Á¦
 CHECK [124] 1
 #ACT
-#CALL [\è£…å¤‡å›žæ”¶\è£…å¤‡å›žæ”¶.txt] @å›žæ”¶
+#CALL [\×°±¸»ØÊÕ\×°±¸»ØÊÕ.txt] @»ØÊÕ
 BREAK
 
 ;----------------------------------------------------------------------------------------------------------
-;-------------------------------------æ¯10ç§’æ£€æµ‹è£…å¤‡è…•å’ŒæŒ‡æ˜¯å¦å¸¦é”™ä½ç½®å®šæ—¶å™¨---------------------------------------------------------
+;-------------------------------------Ã¿10Ãë¼ì²â×°±¸ÍóºÍÖ¸ÊÇ·ñ´ø´íÎ»ÖÃ¶¨Ê±Æ÷---------------------------------------------------------
 ;----------------------------------------------------------------------------------------------------------
 [@OnTimer100]
 #OR
-EQUAL <$ARMRING_R> çš“æœˆâ—†ä¸æ­»ä¸ç­ã®è…•
-EQUAL <$ARMRING_R> æ‘˜æ˜Ÿâ—†é¬¼çŽ‹èš€æ—¥ã®è…•
-EQUAL <$ARMRING_R> æ˜Ÿç—•â—†ä¹é˜´å‹¾é­‚ã®è…•
-EQUAL <$ARMRING_R> æµ®ç”Ÿâ—†äº”è™Žæ–­é­‚ã®è…•
-EQUAL <$ARMRING_R> é¾™é¸£â—†åˆ‘å¤©ä¹‹é€†ã®è…•
-EQUAL <$ARMRING_R> æµ©æ°”â—†é›·åŠ¨å…«è’ã®è…•
-EQUAL <$ARMRING_R> é£žé¾™â—†åæ–¹è¯›é­”ã®è…•
-EQUAL <$ARMRING_R> å€šå¤©â—†æ¯å¤©ç­åœ°ã®è…•
-EQUAL <$ARMRING_R> è¯¸å¤©â—†æˆ‘æ¬²å°å¤©ã®è…•
-EQUAL <$ARMRING_R> å±±æœ‰æœ¨å…®æœ¨æœ‰æžâ‰®1.0å€â‰¯è…•
-EQUAL <$ARMRING_R> å¿ƒæ‚¦å›å…®å›ä¸çŸ¥â‰®2.0å€â‰¯è…•
-EQUAL <$ARMRING_R> æ›¾ç»æ²§æµ·éš¾ä¸ºæ°´â‰®3.0å€â‰¯è…•
-EQUAL <$ARMRING_R> é™¤å´å·«å±±ä¸æ˜¯äº‘â‰®4.0å€â‰¯è…•
-EQUAL <$ARMRING_R> çŽ²ç‘éª°å­å®‰çº¢è±†â‰®5.0å€â‰¯è…•
-EQUAL <$ARMRING_R> å…¥éª¨ç›¸æ€çŸ¥ä¸çŸ¥â‰®10.0å€â‰¯è…•
-EQUAL <$ARMRING_R> ä¸¤æƒ…è‹¥æ˜¯ä¹…é•¿æ—¶â‰®20.0å€â‰¯è…•
-EQUAL <$ARMRING_R> åˆå²‚åœ¨æœæœæš®æš®â‰®30.0å€â‰¯è…•
-EQUAL <$ARMRING_R> èº«æ— å½©å‡¤åŒé£žç¿¼â‰®40.0å€â‰¯è…•
-EQUAL <$ARMRING_R> å¿ƒæœ‰çµçŠ€ä¸€ç‚¹é€šâ‰®50.0å€â‰¯è…•
-EQUAL <$ARMRING_R> æ„¿å¾—æ­¤èº«é•¿æŠ¥å›½â‰®60.0å€â‰¯è…•
-EQUAL <$ARMRING_R> ä½•é¡»ç”Ÿå…¥çŽ‰é—¨å…³â‰®70.0å€â‰¯è…•
-EQUAL <$ARMRING_R> å±±å›žè·¯è½¬ä¸è§å›â‰®80.0å€â‰¯è…•
-EQUAL <$ARMRING_R> é›ªä¸Šç©ºç•™é©¬è¡Œå¤„â‰®90.0å€â‰¯è…•
-EQUAL <$ARMRING_R> ä¾¯é—¨ä¸€å…¥æ·±å¦‚æµ·â‰®100.0å€â‰¯è…•
-EQUAL <$ARMRING_R> ä»Žæ­¤è§éƒŽæ˜¯è·¯äººâ‰®110.0å€â‰¯è…•
-EQUAL <$ARMRING_R> èŽ«è¨€è´«è´±å³å¯æ¬ºâ‰®120.0å€â‰¯è…•
-EQUAL <$ARMRING_R> æ¡ƒæŽæ˜¥é£Žä¸€æ¯é…’â‰®130.0å€â‰¯è…•
-EQUAL <$ARMRING_R> æ±Ÿæ¹–å¤œé›¨åå¹´ç¯â‰®140.0å€â‰¯è…•
-EQUAL <$ARMRING_R> åŠå›èŽ«æƒœé‡‘ç¼•è¡£â‰®150.0å€â‰¯è…•
-EQUAL <$ARMRING_R> åŠå›æƒœå–å°‘å¹´æ—¶â‰®160.0å€â‰¯è…•
-EQUAL <$ARMRING_R> é‡‡å¾—ç™¾èŠ±æˆèœœåŽâ‰®170.0å€â‰¯è…•
-EQUAL <$ARMRING_R> ä¸ºè°è¾›è‹¦ä¸ºè°ç”œâ‰®180.0å€â‰¯è…•
-EQUAL <$ARMRING_R> å®å¯æžå¤´æŠ±é¦™æ­»â‰®190.0å€â‰¯è…•
-EQUAL <$ARMRING_R> ä½•æ›¾å¹è½åŒ—é£Žä¸­â‰®200.0å€â‰¯è…•
-EQUAL <$ARMRING_R> äººç”Ÿè‹¥åªå¦‚åˆè§â‰®210.0å€â‰¯è…•
-EQUAL <$ARMRING_R> å¤©åœ°åˆä¹ƒæ•¢ä¸Žå›ç»â‰®220.0å€â‰¯è…•
+EQUAL <$ARMRING_R> ð©ÔÂ¡ô²»ËÀ²»Ãð¤ÎÍó
+EQUAL <$ARMRING_R> ÕªÐÇ¡ô¹íÍõÊ´ÈÕ¤ÎÍó
+EQUAL <$ARMRING_R> ÐÇºÛ¡ô¾ÅÒõ¹´»ê¤ÎÍó
+EQUAL <$ARMRING_R> ¸¡Éú¡ôÎå»¢¶Ï»ê¤ÎÍó
+EQUAL <$ARMRING_R> ÁúÃù¡ôÐÌÌìÖ®Äæ¤ÎÍó
+EQUAL <$ARMRING_R> ºÆÆø¡ôÀ×¶¯°Ë»Ä¤ÎÍó
+EQUAL <$ARMRING_R> ·ÉÁú¡ôÊ®·½ÖïÄ§¤ÎÍó
+EQUAL <$ARMRING_R> ÒÐÌì¡ô»ÙÌìÃðµØ¤ÎÍó
+EQUAL <$ARMRING_R> ÖîÌì¡ôÎÒÓû·âÌì¤ÎÍó
+EQUAL <$ARMRING_R> É½ÓÐÄ¾ÙâÄ¾ÓÐÖ¦¡Ú1.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ÐÄÔÃ¾ýÙâ¾ý²»Öª¡Ú2.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> Ôø¾­²×º£ÄÑÎªË®¡Ú3.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ³ýÈ´Î×É½²»ÊÇÔÆ¡Ú4.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> Ááçç÷»×Ó°²ºì¶¹¡Ú5.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> Èë¹ÇÏàË¼Öª²»Öª¡Ú10.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> Á½ÇéÈôÊÇ¾Ã³¤Ê±¡Ú20.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ÓÖÆñÔÚ³¯³¯ÄºÄº¡Ú30.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ÉíÎÞ²Ê·ïË«·ÉÒí¡Ú40.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ÐÄÓÐÁéÏ¬Ò»µãÍ¨¡Ú50.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> Ô¸µÃ´ËÉí³¤±¨¹ú¡Ú60.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ºÎÐëÉúÈëÓñÃÅ¹Ø¡Ú70.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> É½»ØÂ·×ª²»¼û¾ý¡Ú80.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> Ñ©ÉÏ¿ÕÁôÂíÐÐ´¦¡Ú90.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ºîÃÅÒ»ÈëÉîÈçº£¡Ú100.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ´Ó´ËÏôÀÉÊÇÂ·ÈË¡Ú110.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ÄªÑÔÆ¶¼ú¼´¿ÉÆÛ¡Ú120.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ÌÒÀî´º·çÒ»±­¾Æ¡Ú130.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ½­ºþÒ¹ÓêÊ®ÄêµÆ¡Ú140.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> È°¾ýÄªÏ§½ðÂÆÒÂ¡Ú150.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> È°¾ýÏ§È¡ÉÙÄêÊ±¡Ú160.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ²ÉµÃ°Ù»¨³ÉÃÛºó¡Ú170.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ÎªË­ÐÁ¿àÎªË­Ìð¡Ú180.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> Äþ¿ÉÖ¦Í·±§ÏãËÀ¡Ú190.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ºÎÔø´µÂä±±·çÖÐ¡Ú200.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ÈËÉúÈôÖ»Èç³õ¼û¡Ú210.0±¶¡ÛÍó
+EQUAL <$ARMRING_R> ÌìµØºÏÄË¸ÒÓë¾ý¾ø¡Ú220.0±¶¡ÛÍó
 #ACT
 KICK
-MESSAGEBOX \ã€€\ã€€ã€€ã€€ã€€ã€€å·¦æ‰‹ä½ç½®å¡æ‰‹é•¯ä¼šä¸€ç›´æŽ‰çº¿å“¦ï¼ï¼
+MESSAGEBOX \¡¡\¡¡¡¡¡¡¡¡¡¡×óÊÖÎ»ÖÃ¿¨ÊÖïí»áÒ»Ö±µôÏßÅ¶£¡£¡
 BREAK
 
 #OR
-EQUAL <$ARMRING_R> çš“æœˆâ—†ä¸æ­»ä¸ç­ã®æŒ‡
-EQUAL <$ARMRING_R> æ‘˜æ˜Ÿâ—†é¬¼çŽ‹èš€æ—¥ã®æŒ‡
-EQUAL <$ARMRING_R> æ˜Ÿç—•â—†ä¹é˜´å‹¾é­‚ã®æŒ‡
-EQUAL <$ARMRING_R> æµ®ç”Ÿâ—†äº”è™Žæ–­é­‚ã®æŒ‡
-EQUAL <$ARMRING_R> é¾™é¸£â—†åˆ‘å¤©ä¹‹é€†ã®æŒ‡
-EQUAL <$ARMRING_R> æµ©æ°”â—†é›·åŠ¨å…«è’ã®æŒ‡
-EQUAL <$ARMRING_R> é£žé¾™â—†åæ–¹è¯›é­”ã®æŒ‡
-EQUAL <$ARMRING_R> å€šå¤©â—†æ¯å¤©ç­åœ°ã®æŒ‡
-EQUAL <$ARMRING_R> è¯¸å¤©â—†æˆ‘æ¬²å°å¤©ã®æŒ‡
-EQUAL <$ARMRING_R> å±±æœ‰æœ¨å…®æœ¨æœ‰æžâ‰®1.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> å¿ƒæ‚¦å›å…®å›ä¸çŸ¥â‰®2.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> æ›¾ç»æ²§æµ·éš¾ä¸ºæ°´â‰®3.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> é™¤å´å·«å±±ä¸æ˜¯äº‘â‰®4.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> çŽ²ç‘éª°å­å®‰çº¢è±†â‰®5.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> å…¥éª¨ç›¸æ€çŸ¥ä¸çŸ¥â‰®10.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> ä¸¤æƒ…è‹¥æ˜¯ä¹…é•¿æ—¶â‰®20.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> åˆå²‚åœ¨æœæœæš®æš®â‰®30.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> èº«æ— å½©å‡¤åŒé£žç¿¼â‰®40.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> å¿ƒæœ‰çµçŠ€ä¸€ç‚¹é€šâ‰®50.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> æ„¿å¾—æ­¤èº«é•¿æŠ¥å›½â‰®60.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> ä½•é¡»ç”Ÿå…¥çŽ‰é—¨å…³â‰®70.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> å±±å›žè·¯è½¬ä¸è§å›â‰®80.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> é›ªä¸Šç©ºç•™é©¬è¡Œå¤„â‰®90.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> ä¾¯é—¨ä¸€å…¥æ·±å¦‚æµ·â‰®100.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> ä»Žæ­¤è§éƒŽæ˜¯è·¯äººâ‰®110.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> èŽ«è¨€è´«è´±å³å¯æ¬ºâ‰®120.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> æ¡ƒæŽæ˜¥é£Žä¸€æ¯é…’â‰®130.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> æ±Ÿæ¹–å¤œé›¨åå¹´ç¯â‰®140.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> åŠå›èŽ«æƒœé‡‘ç¼•è¡£â‰®150.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> åŠå›æƒœå–å°‘å¹´æ—¶â‰®160.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> é‡‡å¾—ç™¾èŠ±æˆèœœåŽâ‰®170.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> ä¸ºè°è¾›è‹¦ä¸ºè°ç”œâ‰®180.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> å®å¯æžå¤´æŠ±é¦™æ­»â‰®190.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> ä½•æ›¾å¹è½åŒ—é£Žä¸­â‰®200.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> äººç”Ÿè‹¥åªå¦‚åˆè§â‰®210.0å€â‰¯æŒ‡
-EQUAL <$ARMRING_R> å¤©åœ°åˆä¹ƒæ•¢ä¸Žå›ç»â‰®220.0å€â‰¯æŒ‡
+EQUAL <$ARMRING_R> ð©ÔÂ¡ô²»ËÀ²»Ãð¤ÎÖ¸
+EQUAL <$ARMRING_R> ÕªÐÇ¡ô¹íÍõÊ´ÈÕ¤ÎÖ¸
+EQUAL <$ARMRING_R> ÐÇºÛ¡ô¾ÅÒõ¹´»ê¤ÎÖ¸
+EQUAL <$ARMRING_R> ¸¡Éú¡ôÎå»¢¶Ï»ê¤ÎÖ¸
+EQUAL <$ARMRING_R> ÁúÃù¡ôÐÌÌìÖ®Äæ¤ÎÖ¸
+EQUAL <$ARMRING_R> ºÆÆø¡ôÀ×¶¯°Ë»Ä¤ÎÖ¸
+EQUAL <$ARMRING_R> ·ÉÁú¡ôÊ®·½ÖïÄ§¤ÎÖ¸
+EQUAL <$ARMRING_R> ÒÐÌì¡ô»ÙÌìÃðµØ¤ÎÖ¸
+EQUAL <$ARMRING_R> ÖîÌì¡ôÎÒÓû·âÌì¤ÎÖ¸
+EQUAL <$ARMRING_R> É½ÓÐÄ¾ÙâÄ¾ÓÐÖ¦¡Ú1.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ÐÄÔÃ¾ýÙâ¾ý²»Öª¡Ú2.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> Ôø¾­²×º£ÄÑÎªË®¡Ú3.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ³ýÈ´Î×É½²»ÊÇÔÆ¡Ú4.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> Ááçç÷»×Ó°²ºì¶¹¡Ú5.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> Èë¹ÇÏàË¼Öª²»Öª¡Ú10.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> Á½ÇéÈôÊÇ¾Ã³¤Ê±¡Ú20.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ÓÖÆñÔÚ³¯³¯ÄºÄº¡Ú30.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ÉíÎÞ²Ê·ïË«·ÉÒí¡Ú40.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ÐÄÓÐÁéÏ¬Ò»µãÍ¨¡Ú50.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> Ô¸µÃ´ËÉí³¤±¨¹ú¡Ú60.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ºÎÐëÉúÈëÓñÃÅ¹Ø¡Ú70.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> É½»ØÂ·×ª²»¼û¾ý¡Ú80.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> Ñ©ÉÏ¿ÕÁôÂíÐÐ´¦¡Ú90.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ºîÃÅÒ»ÈëÉîÈçº£¡Ú100.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ´Ó´ËÏôÀÉÊÇÂ·ÈË¡Ú110.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ÄªÑÔÆ¶¼ú¼´¿ÉÆÛ¡Ú120.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ÌÒÀî´º·çÒ»±­¾Æ¡Ú130.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ½­ºþÒ¹ÓêÊ®ÄêµÆ¡Ú140.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> È°¾ýÄªÏ§½ðÂÆÒÂ¡Ú150.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> È°¾ýÏ§È¡ÉÙÄêÊ±¡Ú160.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ²ÉµÃ°Ù»¨³ÉÃÛºó¡Ú170.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ÎªË­ÐÁ¿àÎªË­Ìð¡Ú180.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> Äþ¿ÉÖ¦Í·±§ÏãËÀ¡Ú190.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ºÎÔø´µÂä±±·çÖÐ¡Ú200.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ÈËÉúÈôÖ»Èç³õ¼û¡Ú210.0±¶¡ÛÖ¸
+EQUAL <$ARMRING_R> ÌìµØºÏÄË¸ÒÓë¾ý¾ø¡Ú220.0±¶¡ÛÖ¸
 #ACT
 KICK
-MESSAGEBOX \ã€€\ã€€ã€€ã€€ã€€ã€€å·¦æˆ’ä½ç½®å¡æˆ’æŒ‡ä¼šä¸€ç›´æŽ‰çº¿å“¦ï¼ï¼
+MESSAGEBOX \¡¡\¡¡¡¡¡¡¡¡¡¡×ó½äÎ»ÖÃ¿¨½äÖ¸»áÒ»Ö±µôÏßÅ¶£¡£¡
 BREAK
 
 
 
 
 ;----------------------------------------------------------------------------------------------------------
-;-------------------------------------æ¯1ç§’è‡ªåŠ¨åƒå…ƒå®å®šæ—¶å™¨---------------------------------------------------------
+;-------------------------------------Ã¿1Ãë×Ô¶¯³ÔÔª±¦¶¨Ê±Æ÷---------------------------------------------------------
 ;----------------------------------------------------------------------------------------------------------
 [@OnTimer103]
 #IF
@@ -710,238 +710,157 @@ BREAK
 
 
 #IF
-CHECKITEM 50å…ƒå® 1
+CHECKITEM 50Ôª±¦ 1
 #ACT
-TAKE      50å…ƒå® 1
+TAKE      50Ôª±¦ 1
 GAMEGOLD + 50
-GuildNOTiceMsg 255 216 ç³»ç»Ÿè‡ªåŠ¨å¸®ä½ åƒå…ƒå®å·ï¼šå…ƒå®å¢žåŠ [50]ä¸ªï¼Œæ€»é¢[<$GAMEGOLD>]ä¸ª...  SELF
+GuildNOTiceMsg 255 216 ÏµÍ³×Ô¶¯°ïÄã³ÔÔª±¦¾í£ºÔª±¦Ôö¼Ó[50]¸ö£¬×Ü¶î[<$GAMEGOLD>]¸ö...  SELF
 
 #IF
-CHECKITEM 100å…ƒå® 1
+CHECKITEM 100Ôª±¦ 1
 #ACT
-TAKE      100å…ƒå® 1
+TAKE      100Ôª±¦ 1
 GAMEGOLD + 100
-GuildNOTiceMsg 255 216 ç³»ç»Ÿè‡ªåŠ¨å¸®ä½ åƒå…ƒå®å·ï¼šå…ƒå®å¢žåŠ [100]ä¸ªï¼Œæ€»é¢[<$GAMEGOLD>]ä¸ª...  SELF
+GuildNOTiceMsg 255 216 ÏµÍ³×Ô¶¯°ïÄã³ÔÔª±¦¾í£ºÔª±¦Ôö¼Ó[100]¸ö£¬×Ü¶î[<$GAMEGOLD>]¸ö...  SELF
 
 #IF
-CHECKITEM 200å…ƒå® 1
+CHECKITEM 200Ôª±¦ 1
 #ACT
-TAKE      200å…ƒå® 1
+TAKE      200Ôª±¦ 1
 GAMEGOLD + 200
-GuildNOTiceMsg 255 216 ç³»ç»Ÿè‡ªåŠ¨å¸®ä½ åƒå…ƒå®å·ï¼šå…ƒå®å¢žåŠ [200]ä¸ªï¼Œæ€»é¢[<$GAMEGOLD>]ä¸ª...  SELF
+GuildNOTiceMsg 255 216 ÏµÍ³×Ô¶¯°ïÄã³ÔÔª±¦¾í£ºÔª±¦Ôö¼Ó[200]¸ö£¬×Ü¶î[<$GAMEGOLD>]¸ö...  SELF
 
 #IF
-CHECKITEM 500å…ƒå® 1
-
-
-[@å¯Œè±ªæŽ’è¡Œå˜æ›´]
-#IF
-ISDUMMY
+CHECKITEM 500Ôª±¦ 1
 #ACT
-BREAK
-
-#OR
-CHECKVAR GLOBAL å¯Œè±ªçŽ©å®¶1 = <$USERNAME>
-CHECKNAMELIST ..\QuestDiary\å…¬ç›ŠæçŒ®\å°é¡¶çŽ©å®¶åˆ—è¡¨.txt
-#ACT
-CONFERTITLE ç¬¬ä¸€å¯Œè±ª
-DEPRIVETITLE ç¬¬äºŒå¯Œè±ª
-DEPRIVETITLE ç¬¬ä¸‰å¯Œè±ª
-DEPRIVETITLE çˆ±å¿ƒå¤§ä½¿
-GOTO @åˆ·æ–°çˆµä½æŽ’å
-BREAK
-
-#IF
-CHECKVAR GLOBAL å¯Œè±ªçŽ©å®¶2 = <$USERNAME>
-#ACT
-CONFERTITLE ç¬¬äºŒå¯Œè±ª
-DEPRIVETITLE ç¬¬ä¸€å¯Œè±ª
-DEPRIVETITLE ç¬¬ä¸‰å¯Œè±ª
-DEPRIVETITLE çˆ±å¿ƒå¤§ä½¿
-GOTO @åˆ·æ–°çˆµä½æŽ’å
-;MESSAGEBOX é€šçŸ¥ï¼š\ã€€\æ‚¨çš„æçŒ®ç§°å·å·²è¢«æŠ¢èµ°äº†ï¼\ã€€\æ‚¨çŽ°åœ¨çš„ç§°å·ä¸ºã€ç¬¬äºŒå¯Œè±ªã€‘
-BREAK
-
-#IF
-CHECKVAR GLOBAL å¯Œè±ªçŽ©å®¶3 = <$USERNAME>
-#ACT
-CONFERTITLE ç¬¬ä¸‰å¯Œè±ª
-DEPRIVETITLE ç¬¬ä¸€å¯Œè±ª
-DEPRIVETITLE ç¬¬äºŒå¯Œè±ª
-DEPRIVETITLE çˆ±å¿ƒå¤§ä½¿
-GOTO @åˆ·æ–°çˆµä½æŽ’å
-;MESSAGEBOX é€šçŸ¥ï¼š\ã€€\æ‚¨çš„æçŒ®ç§°å·å·²è¢«æŠ¢èµ°äº†ï¼\ã€€\æ‚¨çŽ°åœ¨çš„ç§°å·ä¸ºã€ç¬¬ä¸‰å¯Œè±ªã€‘
-BREAK
-
-#IF
-CHECKVAR HUMAN å¯Œè±ªæçŒ® > 0
-#ACT
-CONFERTITLE çˆ±å¿ƒå¤§ä½¿
-DEPRIVETITLE ç¬¬ä¸€å¯Œè±ª
-DEPRIVETITLE ç¬¬äºŒå¯Œè±ª
-DEPRIVETITLE ç¬¬ä¸‰å¯Œè±ª
-GOTO @åˆ·æ–°çˆµä½æŽ’å
-;MESSAGEBOX é€šçŸ¥ï¼š\ã€€\æ‚¨çš„æçŒ®ç§°å·å·²è¢«æŠ¢èµ°äº†ï¼\ã€€\æ‚¨çŽ°åœ¨çš„ç§°å·ä¸ºã€çˆ±å¿ƒå¤§ä½¿ã€‘
-BREAK
-
-#IF
-#ACT
-DEPRIVETITLE çˆ±å¿ƒå¤§ä½¿
-DEPRIVETITLE ç¬¬ä¸€å¯Œè±ª
-DEPRIVETITLE ç¬¬äºŒå¯Œè±ª
-DEPRIVETITLE ç¬¬ä¸‰å¯Œè±ª
-GOTO @åˆ·æ–°çˆµä½æŽ’å
-BREAK
-
-[@åˆ·æ–°çˆµä½æŽ’å]
-#IF
-CHECKLEVELEX > 0
-#ACT
-#CALL [\æ¸¸æˆç™»é™†\å±žæ€§ç»™äºˆ.TXT] @äººç‰©å±žæ€§
-
-
-[@æ¸…é™¤çˆµä½æŽ’å]
-#IF
-NOT ISDUMMY
-#ACT
-CALCVAR HUMAN å¯Œè±ªæçŒ® = 0
-DEPRIVETITLE çˆ±å¿ƒå¤§ä½¿
-DEPRIVETITLE ç¬¬ä¸€å¯Œè±ª
-DEPRIVETITLE ç¬¬äºŒå¯Œè±ª
-DEPRIVETITLE ç¬¬ä¸‰å¯Œè±ª
-GOTO @åˆ·æ–°çˆµä½æŽ’å
-BREAK
-
-
-#ACT
-TAKE      500å…ƒå® 1
+TAKE      500Ôª±¦ 1
 GAMEGOLD + 500
-GuildNOTiceMsg 255 216 ç³»ç»Ÿè‡ªåŠ¨å¸®ä½ åƒå…ƒå®å·ï¼šå…ƒå®å¢žåŠ [500]ä¸ªï¼Œæ€»é¢[<$GAMEGOLD>]ä¸ª...  SELF
+GuildNOTiceMsg 255 216 ÏµÍ³×Ô¶¯°ïÄã³ÔÔª±¦¾í£ºÔª±¦Ôö¼Ó[500]¸ö£¬×Ü¶î[<$GAMEGOLD>]¸ö...  SELF
 
 #IF
-CHECKITEM 1000å…ƒå® 1
+CHECKITEM 1000Ôª±¦ 1
 #ACT
-TAKE      1000å…ƒå® 1
+TAKE      1000Ôª±¦ 1
 GAMEGOLD + 1000
-GuildNOTiceMsg 255 216 ç³»ç»Ÿè‡ªåŠ¨å¸®ä½ åƒå…ƒå®å·ï¼šå…ƒå®å¢žåŠ [1000]ä¸ªï¼Œæ€»é¢[<$GAMEGOLD>]ä¸ª...  SELF
+GuildNOTiceMsg 255 216 ÏµÍ³×Ô¶¯°ïÄã³ÔÔª±¦¾í£ºÔª±¦Ôö¼Ó[1000]¸ö£¬×Ü¶î[<$GAMEGOLD>]¸ö...  SELF
 
 #IF
-CHECKITEM 2000å…ƒå® 1
+CHECKITEM 2000Ôª±¦ 1
 #ACT
-TAKE      2000å…ƒå® 1
+TAKE      2000Ôª±¦ 1
 GAMEGOLD + 2000
-GuildNOTiceMsg 255 216 ç³»ç»Ÿè‡ªåŠ¨å¸®ä½ åƒå…ƒå®å·ï¼šå…ƒå®å¢žåŠ [2000]ä¸ªï¼Œæ€»é¢[<$GAMEGOLD>]ä¸ª...  SELF
+GuildNOTiceMsg 255 216 ÏµÍ³×Ô¶¯°ïÄã³ÔÔª±¦¾í£ºÔª±¦Ôö¼Ó[2000]¸ö£¬×Ü¶î[<$GAMEGOLD>]¸ö...  SELF
 
 #IF
-CHECKITEM 5000å…ƒå® 1
+CHECKITEM 5000Ôª±¦ 1
 #ACT
-TAKE      5000å…ƒå® 1
+TAKE      5000Ôª±¦ 1
 GAMEGOLD + 5000
-GuildNOTiceMsg 255 216 ç³»ç»Ÿè‡ªåŠ¨å¸®ä½ åƒå…ƒå®å·ï¼šå…ƒå®å¢žåŠ [5000]ä¸ªï¼Œæ€»é¢[<$GAMEGOLD>]ä¸ª...  SELF
+GuildNOTiceMsg 255 216 ÏµÍ³×Ô¶¯°ïÄã³ÔÔª±¦¾í£ºÔª±¦Ôö¼Ó[5000]¸ö£¬×Ü¶î[<$GAMEGOLD>]¸ö...  SELF
 
 #IF
-CHECKITEM 10000å…ƒå® 1
+CHECKITEM 10000Ôª±¦ 1
 #ACT
-TAKE      10000å…ƒå® 1
+TAKE      10000Ôª±¦ 1
 GAMEGOLD + 10000
-GuildNOTiceMsg 255 216 ç³»ç»Ÿè‡ªåŠ¨å¸®ä½ åƒå…ƒå®å·ï¼šå…ƒå®å¢žåŠ [10000]ä¸ªï¼Œæ€»é¢[<$GAMEGOLD>]ä¸ª...  SELF
+GuildNOTiceMsg 255 216 ÏµÍ³×Ô¶¯°ïÄã³ÔÔª±¦¾í£ºÔª±¦Ôö¼Ó[10000]¸ö£¬×Ü¶î[<$GAMEGOLD>]¸ö...  SELF
 
 #IF
-CHECKITEM 50000å…ƒå® 1
+CHECKITEM 50000Ôª±¦ 1
 #ACT
-TAKE      50000å…ƒå® 1
+TAKE      50000Ôª±¦ 1
 GAMEGOLD + 50000
-GuildNOTiceMsg 255 216 ç³»ç»Ÿè‡ªåŠ¨å¸®ä½ åƒå…ƒå®å·ï¼šå…ƒå®å¢žåŠ [50000]ä¸ªï¼Œæ€»é¢[<$GAMEGOLD>]ä¸ª...  SELF
+GuildNOTiceMsg 255 216 ÏµÍ³×Ô¶¯°ïÄã³ÔÔª±¦¾í£ºÔª±¦Ôö¼Ó[50000]¸ö£¬×Ü¶î[<$GAMEGOLD>]¸ö...  SELF
 
 #IF
-CHECKITEM 100000å…ƒå® 1
+CHECKITEM 100000Ôª±¦ 1
 #ACT
-TAKE      100000å…ƒå® 1
+TAKE      100000Ôª±¦ 1
 GAMEGOLD + 100000
-GuildNOTiceMsg 255 216 ç³»ç»Ÿè‡ªåŠ¨å¸®ä½ åƒå…ƒå®å·ï¼šå…ƒå®å¢žåŠ [100000]ä¸ªï¼Œæ€»é¢[<$GAMEGOLD>]ä¸ª...  SELF
+GuildNOTiceMsg 255 216 ÏµÍ³×Ô¶¯°ïÄã³ÔÔª±¦¾í£ºÔª±¦Ôö¼Ó[100000]¸ö£¬×Ü¶î[<$GAMEGOLD>]¸ö...  SELF
 
 
 
-[@å¯Œè±ªæŽ’è¡Œå˜æ›´]
+[@¸»ºÀÅÅÐÐ±ä¸ü]
 #IF
 ISDUMMY
 #ACT
 BREAK
 
 #OR
-CHECKVAR GLOBAL å¯Œè±ªçŽ©å®¶1 = <$USERNAME>
-CHECKNAMELIST ..\QuestDiary\å…¬ç›ŠæçŒ®\å°é¡¶çŽ©å®¶åˆ—è¡¨.txt
+CHECKVAR GLOBAL ¸»ºÀÍæ¼Ò1 = <$USERNAME>
+CHECKNAMELIST ..\QuestDiary\¹«Òæ¾èÏ×\·â¶¥Íæ¼ÒÁÐ±í.txt
 #ACT
-CONFERTITLE ç¬¬ä¸€å¯Œè±ª
-DEPRIVETITLE ç¬¬äºŒå¯Œè±ª
-DEPRIVETITLE ç¬¬ä¸‰å¯Œè±ª
-DEPRIVETITLE çˆ±å¿ƒå¤§ä½¿
-GOTO @åˆ·æ–°çˆµä½æŽ’å
+CONFERTITLE µÚÒ»¸»ºÀ
+DEPRIVETITLE µÚ¶þ¸»ºÀ
+DEPRIVETITLE µÚÈý¸»ºÀ
+DEPRIVETITLE °®ÐÄ´óÊ¹
+GOTO @Ë¢ÐÂ¾ôÎ»ÅÅÃû
 BREAK
 
 #IF
-CHECKVAR GLOBAL å¯Œè±ªçŽ©å®¶2 = <$USERNAME>
+CHECKVAR GLOBAL ¸»ºÀÍæ¼Ò2 = <$USERNAME>
 #ACT
-CONFERTITLE ç¬¬äºŒå¯Œè±ª
-DEPRIVETITLE ç¬¬ä¸€å¯Œè±ª
-DEPRIVETITLE ç¬¬ä¸‰å¯Œè±ª
-DEPRIVETITLE çˆ±å¿ƒå¤§ä½¿
-GOTO @åˆ·æ–°çˆµä½æŽ’å
-;MESSAGEBOX é€šçŸ¥ï¼š\ã€€\æ‚¨çš„æçŒ®ç§°å·å·²è¢«æŠ¢èµ°äº†ï¼\ã€€\æ‚¨çŽ°åœ¨çš„ç§°å·ä¸ºã€ç¬¬äºŒå¯Œè±ªã€‘
+CONFERTITLE µÚ¶þ¸»ºÀ
+DEPRIVETITLE µÚÒ»¸»ºÀ
+DEPRIVETITLE µÚÈý¸»ºÀ
+DEPRIVETITLE °®ÐÄ´óÊ¹
+GOTO @Ë¢ÐÂ¾ôÎ»ÅÅÃû
+;MESSAGEBOX Í¨Öª£º\¡¡\ÄúµÄ¾èÏ×³ÆºÅÒÑ±»ÇÀ×ßÁË£¡\¡¡\ÄúÏÖÔÚµÄ³ÆºÅÎª¡¾µÚ¶þ¸»ºÀ¡¿
 BREAK
 
 #IF
-CHECKVAR GLOBAL å¯Œè±ªçŽ©å®¶3 = <$USERNAME>
+CHECKVAR GLOBAL ¸»ºÀÍæ¼Ò3 = <$USERNAME>
 #ACT
-CONFERTITLE ç¬¬ä¸‰å¯Œè±ª
-DEPRIVETITLE ç¬¬ä¸€å¯Œè±ª
-DEPRIVETITLE ç¬¬äºŒå¯Œè±ª
-DEPRIVETITLE çˆ±å¿ƒå¤§ä½¿
-GOTO @åˆ·æ–°çˆµä½æŽ’å
-;MESSAGEBOX é€šçŸ¥ï¼š\ã€€\æ‚¨çš„æçŒ®ç§°å·å·²è¢«æŠ¢èµ°äº†ï¼\ã€€\æ‚¨çŽ°åœ¨çš„ç§°å·ä¸ºã€ç¬¬ä¸‰å¯Œè±ªã€‘
+CONFERTITLE µÚÈý¸»ºÀ
+DEPRIVETITLE µÚÒ»¸»ºÀ
+DEPRIVETITLE µÚ¶þ¸»ºÀ
+DEPRIVETITLE °®ÐÄ´óÊ¹
+GOTO @Ë¢ÐÂ¾ôÎ»ÅÅÃû
+;MESSAGEBOX Í¨Öª£º\¡¡\ÄúµÄ¾èÏ×³ÆºÅÒÑ±»ÇÀ×ßÁË£¡\¡¡\ÄúÏÖÔÚµÄ³ÆºÅÎª¡¾µÚÈý¸»ºÀ¡¿
 BREAK
 
 #IF
-CHECKVAR HUMAN å¯Œè±ªæçŒ® > 0
+CHECKVAR HUMAN ¸»ºÀ¾èÏ× > 0
 #ACT
-CONFERTITLE çˆ±å¿ƒå¤§ä½¿
-DEPRIVETITLE ç¬¬ä¸€å¯Œè±ª
-DEPRIVETITLE ç¬¬äºŒå¯Œè±ª
-DEPRIVETITLE ç¬¬ä¸‰å¯Œè±ª
-GOTO @åˆ·æ–°çˆµä½æŽ’å
-;MESSAGEBOX é€šçŸ¥ï¼š\ã€€\æ‚¨çš„æçŒ®ç§°å·å·²è¢«æŠ¢èµ°äº†ï¼\ã€€\æ‚¨çŽ°åœ¨çš„ç§°å·ä¸ºã€çˆ±å¿ƒå¤§ä½¿ã€‘
+CONFERTITLE °®ÐÄ´óÊ¹
+DEPRIVETITLE µÚÒ»¸»ºÀ
+DEPRIVETITLE µÚ¶þ¸»ºÀ
+DEPRIVETITLE µÚÈý¸»ºÀ
+GOTO @Ë¢ÐÂ¾ôÎ»ÅÅÃû
+;MESSAGEBOX Í¨Öª£º\¡¡\ÄúµÄ¾èÏ×³ÆºÅÒÑ±»ÇÀ×ßÁË£¡\¡¡\ÄúÏÖÔÚµÄ³ÆºÅÎª¡¾°®ÐÄ´óÊ¹¡¿
 BREAK
 
 #IF
 #ACT
-DEPRIVETITLE çˆ±å¿ƒå¤§ä½¿
-DEPRIVETITLE ç¬¬ä¸€å¯Œè±ª
-DEPRIVETITLE ç¬¬äºŒå¯Œè±ª
-DEPRIVETITLE ç¬¬ä¸‰å¯Œè±ª
-GOTO @åˆ·æ–°çˆµä½æŽ’å
+DEPRIVETITLE °®ÐÄ´óÊ¹
+DEPRIVETITLE µÚÒ»¸»ºÀ
+DEPRIVETITLE µÚ¶þ¸»ºÀ
+DEPRIVETITLE µÚÈý¸»ºÀ
+GOTO @Ë¢ÐÂ¾ôÎ»ÅÅÃû
 BREAK
 
-[@åˆ·æ–°çˆµä½æŽ’å]
+[@Ë¢ÐÂ¾ôÎ»ÅÅÃû]
 #IF
 CHECKLEVELEX > 0
 #ACT
-#CALL [\æ¸¸æˆç™»é™†\å±žæ€§ç»™äºˆ.TXT] @äººç‰©å±žæ€§
+#CALL [\ÓÎÏ·µÇÂ½\ÊôÐÔ¸øÓè.TXT] @ÈËÎïÊôÐÔ
 
 
-[@æ¸…é™¤çˆµä½æŽ’å]
+[@Çå³ý¾ôÎ»ÅÅÃû]
 #IF
 NOT ISDUMMY
 #ACT
-CALCVAR HUMAN å¯Œè±ªæçŒ® = 0
-DEPRIVETITLE çˆ±å¿ƒå¤§ä½¿
-DEPRIVETITLE ç¬¬ä¸€å¯Œè±ª
-DEPRIVETITLE ç¬¬äºŒå¯Œè±ª
-DEPRIVETITLE ç¬¬ä¸‰å¯Œè±ª
-GOTO @åˆ·æ–°çˆµä½æŽ’å
+CALCVAR HUMAN ¸»ºÀ¾èÏ× = 0
+DEPRIVETITLE °®ÐÄ´óÊ¹
+DEPRIVETITLE µÚÒ»¸»ºÀ
+DEPRIVETITLE µÚ¶þ¸»ºÀ
+DEPRIVETITLE µÚÈý¸»ºÀ
+GOTO @Ë¢ÐÂ¾ôÎ»ÅÅÃû
 BREAK
 
 
-[@å…¨éƒ¨æ€æ­»]
+[@È«²¿É±ËÀ]
 #IF
 #ACT
 KICK
