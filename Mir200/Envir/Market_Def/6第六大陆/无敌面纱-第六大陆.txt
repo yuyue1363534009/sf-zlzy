@@ -1,0 +1,83 @@
+[@main]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GetDBItemFieldValue 【無法無天】岂因祸福避趋之★笠 idx S$专属展示1
+OPENMERCHANTBIGDLG 101 523 0 4 0 -100 0
+#SAY
+<PlayImg:101:508:15:150:0:0:0:0>\
+<PlayImg:97:40:8:100:207:21:0:0>\
+<Img:8:101:600:10|/@关闭对话框>\
+\ \ \
+<                                           /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<>\
+<                                              /AUTOCOLOR=0><ItemShow:<$STR(S$专属展示1)>:0:0:-10:1:0:1:50>\
+<                                              /AUTOCOLOR=0>        <【無法無天】岂因祸福避趋之★笠/FCOLOR=251>\
+<>\
+<                                              /AUTOCOLOR=0><合成条件：/FCOLOR=253><〈鬼王蚀日〉Lv10ゞ斗笠*1+388W逐币合成.../FCOLOR=253>\
+<>\
+<                                              /AUTOCOLOR=0><物品功能：/FCOLOR=250><大幅度增加人物血量...PK必备物品../FCOLOR=254>\
+<>\
+<                                              /AUTOCOLOR=0><物品属性：/FCOLOR=250><5%几率打掉敌人任何回城物品.单条神器../FCOLOR=254>\
+<>\
+<                                              /AUTOCOLOR=0><特殊属性：/FCOLOR=250><附带技能:护体神盾..无敌牛逼神器..打架必备装备.../FCOLOR=254>\
+<>\
+<                                                           /AUTOCOLOR=0>　     <点击合成神器/@001> \
+
+;OPENMERCHANTBIGDLG 74 495 0 4 0 0 1 537 8
+;#SAY
+;\ \ \ \
+;<           /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+;<         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+;<                        /AUTOCOLOR=0>         <【無法無天】岂因祸福避趋之★笠/FCOLOR=251>\
+;<         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+;<                 /AUTOCOLOR=0><合成条件：/FCOLOR=250><〈鬼王蚀日〉Lv10ゞ斗笠*1+388W逐币合成.../FCOLOR=254>\
+;<         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+;<                 /AUTOCOLOR=0><物品功能：/FCOLOR=250><大幅度增加人物血量...PK必备物品../FCOLOR=254>\
+;<         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+;<                 /AUTOCOLOR=0><物品属性：/FCOLOR=250><5%几率打掉敌人任何回城物品.单条神器../FCOLOR=254>\
+;<         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+;<                 /AUTOCOLOR=0><特殊属性：/FCOLOR=250><附带技能:护体神盾..无敌牛逼神器..打架必备装备.../FCOLOR=254>\
+;<         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+;<    
+
+[@001]
+#IF
+CHECKBAGSIZE 1
+#ACT
+#ELSEACT
+MESSAGEBOX [提示]：背包至少拥有一个空位！
+BREAK
+#IF
+CHECKGAMEGIRD < 3880000
+#ACT
+MESSAGEBOX 你逐币不足388W...
+BREAK
+
+#IF
+CHECKITEM 〈鬼王蚀日〉Lv10ゞ斗笠 1
+#ACT
+#ELSEACT
+MESSAGEBOX 你身上缺少〈鬼王蚀日〉Lv10ゞ斗笠。无法合成！
+BREAK
+
+
+#IF
+CHECKGAMEGIRD ? 3880000
+CHECKITEM 〈鬼王蚀日〉Lv10ゞ斗笠 1
+#ACT
+GAMEGIRD - 3880000
+TAKE 〈鬼王蚀日〉Lv10ゞ斗笠 1
+GIVE 【無法無天】岂因祸福避趋之★笠 1
+SENDMSG 0 250 0 {※|254:0:0}恭喜{※|254:0:0}{【|249:0:0}{<$USERNAME>|251:0:0}{】|249:0:0}成功合成牛逼装备{【|249:0:0}{【無法無天】岂因祸福避趋之★笠|251:0:0}{】|249:0:0}~~
+GOTO @main
+BREAK
+
+[@关闭对话框]
+#IF
+#ACT
+close
+
+
+
+

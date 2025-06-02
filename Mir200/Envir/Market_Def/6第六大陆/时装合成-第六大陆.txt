@@ -1,0 +1,414 @@
+[@main]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GetDBItemFieldValue 《时装》天刀※无疆ゞ昊天 idx S$专属展示1
+OPENMERCHANTBIGDLG 101 362 0 4 0 -100 0
+#SAY
+<PlayImg:101:362:15:150:-20:-15:0:0>\
+<PlayImg:101:347:15:150:150:15:0:0>\
+<PlayImg:97:40:8:100:135:53:0:0>\
+<Img:8:101:690:-30|/@关闭对话框>\
+\ \ \ \ \
+<                               /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<>\
+<                                  /AUTOCOLOR=0><ItemShow:<$STR(S$专属展示1)>:0:0:-10:1:0:1:50>\
+<                                  /AUTOCOLOR=0>        <《时装》天刀※无疆ゞ昊天/FCOLOR=251>\
+<>\
+<                                   /AUTOCOLOR=0><合成条件：/FCOLOR=253>  <《时装》赤心※巡天ゞ逍遥+荣耀★水晶*800/FCOLOR=253>\
+<>\
+<                                   /AUTOCOLOR=0><时装属性：/FCOLOR=250>  <忽视目标防御，HPMP提升:300%,几率秒杀对手5000W血量,复活属性,防爆/FCOLOR=254>\
+<>\
+<                                   /AUTOCOLOR=0><时装属性：/FCOLOR=250>  <忽视目标防御，HPMP提升:300%,几率秒杀对手5000W血量,复活属性,防爆/FCOLOR=254>\
+<>\
+<                                   /AUTOCOLOR=0><时装属性：/FCOLOR=250>  <忽视目标防御，HPMP提升:300%,几率秒杀对手5000W血量,复活属性,防爆/FCOLOR=254>\
+<>\
+<                                   /AUTOCOLOR=0><时装属性：/FCOLOR=250>  <忽视目标防御，HPMP提升:300%,几率秒杀对手5000W血量,复活属性,防爆/FCOLOR=254>\
+<>\
+<                                                     /AUTOCOLOR=0>　     <点击合成终极时装/@换13>             \
+
+[@关闭对话框]
+#IF
+#ACT
+close
+
+;OPENMERCHANTBIGDLG 74 493 1 0 0 10 1 618 7
+;#SAY
+;\ \ \ \
+;<             /AUTOCOLOR=0><┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=250> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243>\
+;<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+;<       /AUTOCOLOR=0><合成/@换2>  <《时装》雷鳴※離火ゞ帝炎/SCOLOR=250>  <需要：《时装》鐘靈※毓秀ゞ紫電+荣耀★水晶*10/SCOLOR=254>   <查看附加属性|250#HPMP提升:10%几率秒杀对手10W血量/SCOLOR=253> \
+;<       /AUTOCOLOR=0><合成/@换3>  <《时装》天星※耀陽ゞ霸絕/SCOLOR=250>  <需要：《时装》雷鳴※離火ゞ帝炎+荣耀★水晶*20/SCOLOR=254>   <查看附加属性|250#HPMP提升:20%几率秒杀对手30W血量/SCOLOR=253>\
+;<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+;<       /AUTOCOLOR=0><合成/@换4>  <《时装》神威※亢天ゞ龍嘯/SCOLOR=250>  <需要：《时装》天星※耀陽ゞ霸絕+荣耀★水晶*30/SCOLOR=254>   <查看附加属性|250#HPMP提升:30%几率秒杀对手50W血量/SCOLOR=253>\
+;<       /AUTOCOLOR=0><合成/@换5>  <《时装》魔神※之隕ゞ聖渊/SCOLOR=250>  <需要：《时装》神威※亢天ゞ龍嘯+荣耀★水晶*40/SCOLOR=254>   <查看附加属性|250#HPMP提升:40%几率秒杀对手70W血量/SCOLOR=253>\
+;<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+;<       /AUTOCOLOR=0><合成/@换6>  <《时装》神雷※天裁ゞ涅槃/SCOLOR=250>  <需要：《时装》魔神※之隕ゞ聖渊+荣耀★水晶*50/SCOLOR=254>   <查看附加属性|250#HPMP提升:50%几率秒杀对手100W血量/SCOLOR=253>\
+;<       /AUTOCOLOR=0><合成/@换7>  <《时装》龍血※戰神ゞ天闕/SCOLOR=250>  <需要：《时装》神雷※天裁ゞ涅槃+荣耀★水晶*80/SCOLOR=254>   <查看附加属性|250#HPMP提升:60%几率秒杀对手200W血量/SCOLOR=253>\
+;<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+;<       /AUTOCOLOR=0><合成/@换8>  <《时装》刀劍※神皇ゞ莫邪/SCOLOR=250>  <需要：《时装》龍血※戰神ゞ天闕+荣耀★水晶*100/SCOLOR=254>  <查看附加属性|250#HPMP提升:70%几率秒杀对手300W血量/SCOLOR=253>\
+;<       /AUTOCOLOR=0><合成/@换9>  <《时装》真靈※九變ゞ奧義/SCOLOR=250>  <需要：《时装》刀劍※神皇ゞ莫邪+荣耀★水晶*200/SCOLOR=254>  <查看附加属性|250#HPMP提升:80%几率秒杀对手500W血量/SCOLOR=253>\
+;<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+;<       /AUTOCOLOR=0><合成/@换10>  <《时装》龍王※無雙ゞ終極/SCOLOR=250>  <需要：《时装》真靈※九變ゞ奧義+荣耀★水晶*300/SCOLOR=254>  <查看附加属性|250#HPMP提升:90%几率秒杀对手1000W血量/SCOLOR=253>\
+;<       /AUTOCOLOR=0><合成/@换11>  <《时装》金絲※龍鱗ゞ君王/SCOLOR=250>  <需要：《时装》龍王※無雙ゞ終極+荣耀★水晶*400/SCOLOR=254>  <查看附加属性|250#HPMP提升:100%几率秒杀对手2000W血量/SCOLOR=253>\
+;<       /AUTOCOLOR=0><合成/@换12>  <《时装》赤心※巡天ゞ逍遥/SCOLOR=250>  <需要：《时装》金絲※龍鱗ゞ君王+荣耀★水晶*500/SCOLOR=254>  <查看附加属性|250#HPMP提升:120%几率秒杀对手3000W血量/SCOLOR=253>\
+;<       /AUTOCOLOR=0><合成/@换13>  <《时装》天刀※无疆ゞ昊天/SCOLOR=250>  <需要：《时装》赤心※巡天ゞ逍遥+荣耀★水晶*800/SCOLOR=254>  <查看附加属性|250#HPMP提升:150%几率秒杀对手5000W血量,复活属性，防爆/SCOLOR=253>\
+;<       /AUTOCOLOR=0><--------------------------------------------------------------------------------------------/SCOLOR=12>\
+;<       /AUTOCOLOR=0><终极时装属性HPMP提升:150%,几率秒杀对手3000W血量,防冰冻,复活属性，防爆./SCOLOR=249>   \
+
+[@换2]
+#IF
+CHECKITEM 荣耀★水晶 10
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+#IF
+CHECKITEM 《时装》鐘靈※毓秀ゞ紫電 1
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+
+#IF
+CHECKITEM 荣耀★水晶 10
+CHECKITEM 《时装》鐘靈※毓秀ゞ紫電 1
+#ACT
+TAKE 荣耀★水晶 10
+TAKE 《时装》鐘靈※毓秀ゞ紫電 1
+GIVE 《时装》雷鳴※離火ゞ帝炎 1
+SENDMSG 0 恭喜玩家「<$USERNAME>」打造出时装「{《时装》雷鳴※離火ゞ帝炎|250:0:1}」
+GOTO @main
+BREAK
+
+
+
+[@换3]
+#IF
+CHECKITEM 荣耀★水晶 20
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+#IF
+CHECKITEM 《时装》雷鳴※離火ゞ帝炎 1
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+
+#IF
+CHECKITEM 荣耀★水晶 20
+CHECKITEM 《时装》雷鳴※離火ゞ帝炎 1
+#ACT
+TAKE 荣耀★水晶 20
+TAKE 《时装》雷鳴※離火ゞ帝炎 1
+GIVE 《时装》天星※耀陽ゞ霸絕 1
+SENDMSG 0 恭喜玩家「<$USERNAME>」打造出时装「{《时装》天星※耀陽ゞ霸絕|250:0:1}」
+GOTO @main
+BREAK
+
+
+
+
+[@换4]
+#IF
+CHECKITEM 荣耀★水晶 30
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+#IF
+CHECKITEM 《时装》天星※耀陽ゞ霸絕 1
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+
+#IF
+CHECKITEM 荣耀★水晶 30
+CHECKITEM 《时装》天星※耀陽ゞ霸絕 1
+#ACT
+TAKE 荣耀★水晶 30
+TAKE 《时装》天星※耀陽ゞ霸絕 1
+GIVE 《时装》神威※亢天ゞ龍嘯 1
+SENDMSG 0 恭喜玩家「<$USERNAME>」打造出时装「{《时装》神威※亢天ゞ龍嘯|250:0:1}」
+GOTO @main
+BREAK
+
+
+
+
+
+[@换5]
+#IF
+CHECKITEM 荣耀★水晶 40
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+#IF
+CHECKITEM 《时装》神威※亢天ゞ龍嘯 1
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+
+#IF
+CHECKITEM 荣耀★水晶 40
+CHECKITEM 《时装》神威※亢天ゞ龍嘯 1
+#ACT
+TAKE 荣耀★水晶 40
+TAKE 《时装》神威※亢天ゞ龍嘯 1
+GIVE 《时装》魔神※之隕ゞ聖渊 1
+SENDMSG 0 恭喜玩家「<$USERNAME>」打造出时装「{《时装》魔神※之隕ゞ聖渊|250:0:1}」
+GOTO @main
+BREAK
+
+
+
+[@换6]
+#IF
+CHECKITEM 荣耀★水晶 50
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+#IF
+CHECKITEM 《时装》魔神※之隕ゞ聖渊 1
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+
+#IF
+CHECKITEM 荣耀★水晶 50
+CHECKITEM 《时装》魔神※之隕ゞ聖渊 1
+#ACT
+TAKE 荣耀★水晶 50
+TAKE 《时装》魔神※之隕ゞ聖渊 1
+GIVE 《时装》神雷※天裁ゞ涅槃 1
+SENDMSG 0 恭喜玩家「<$USERNAME>」打造出时装「{《时装》神雷※天裁ゞ涅槃|250:0:1}」
+GOTO @main
+BREAK
+
+
+
+[@换7]
+#IF
+CHECKITEM 荣耀★水晶 80
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+#IF
+CHECKITEM 《时装》神雷※天裁ゞ涅槃 1
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+
+#IF
+CHECKITEM 荣耀★水晶 80
+CHECKITEM 《时装》神雷※天裁ゞ涅槃 1
+#ACT
+TAKE 荣耀★水晶 80
+TAKE 《时装》神雷※天裁ゞ涅槃 1
+GIVE 《时装》龍血※戰神ゞ天闕 1
+SENDMSG 0 恭喜玩家「<$USERNAME>」打造出时装「{《时装》龍血※戰神ゞ天闕|250:0:1}」
+GOTO @main
+BREAK
+
+
+
+
+[@换8]
+#IF
+CHECKITEM 荣耀★水晶 100
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+#IF
+CHECKITEM 《时装》龍血※戰神ゞ天闕 1
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+
+#IF
+CHECKITEM 荣耀★水晶 100
+CHECKITEM 《时装》龍血※戰神ゞ天闕 1
+#ACT
+TAKE 荣耀★水晶 100
+TAKE 《时装》龍血※戰神ゞ天闕 1
+GIVE 《时装》刀劍※神皇ゞ莫邪 1
+SENDMSG 0 恭喜玩家「<$USERNAME>」打造出时装「{《时装》刀劍※神皇ゞ莫邪|250:0:1}」
+GOTO @main
+BREAK
+
+
+
+
+[@换9]
+#IF
+CHECKITEM 荣耀★水晶 200
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+#IF
+CHECKITEM 《时装》刀劍※神皇ゞ莫邪 1
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+
+#IF
+CHECKITEM 荣耀★水晶 200
+CHECKITEM 《时装》刀劍※神皇ゞ莫邪 1
+#ACT
+TAKE 荣耀★水晶 200
+TAKE 《时装》刀劍※神皇ゞ莫邪 1
+GIVE 《时装》真靈※九變ゞ奧義 1
+SENDMSG 0 恭喜玩家「<$USERNAME>」打造出时装「{《时装》真靈※九變ゞ奧義|250:0:1}」
+GOTO @main
+BREAK
+
+
+
+
+
+[@换10]
+#IF
+CHECKITEM 荣耀★水晶 300
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+#IF
+CHECKITEM 《时装》真靈※九變ゞ奧義 1
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+
+#IF
+CHECKITEM 荣耀★水晶 300
+CHECKITEM 《时装》真靈※九變ゞ奧義 1
+#ACT
+TAKE 荣耀★水晶 300
+TAKE 《时装》真靈※九變ゞ奧義 1
+GIVE 《时装》龍王※無雙ゞ終極 1
+SENDMSG 0 恭喜玩家「<$USERNAME>」打造出时装「{《时装》龍王※無雙ゞ終極|250:0:1}」
+GOTO @main
+BREAK
+
+
+
+
+[@换11]
+#IF
+CHECKITEM 荣耀★水晶 400
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+#IF
+CHECKITEM 《时装》龍王※無雙ゞ終極 1
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+
+#IF
+CHECKITEM 荣耀★水晶 400
+CHECKITEM 《时装》龍王※無雙ゞ終極 1
+#ACT
+TAKE 荣耀★水晶 400
+TAKE 《时装》龍王※無雙ゞ終極 1
+GIVE 《时装》金絲※龍鱗ゞ君王 1
+SENDMSG 0 恭喜玩家「<$USERNAME>」打造出时装「{《时装》金絲※龍鱗ゞ君王|250:0:1}」
+GOTO @main
+BREAK
+
+
+
+
+[@换12]
+#IF
+CHECKITEM 荣耀★水晶 500
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+#IF
+CHECKITEM 《时装》金絲※龍鱗ゞ君王 1
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+
+#IF
+CHECKITEM 荣耀★水晶 500
+CHECKITEM 《时装》金絲※龍鱗ゞ君王 1
+#ACT
+TAKE 荣耀★水晶 500
+TAKE 《时装》金絲※龍鱗ゞ君王 1
+GIVE 《时装》赤心※巡天ゞ逍遥 1
+SENDMSG 0 恭喜玩家「<$USERNAME>」打造出时装「{《时装》赤心※巡天ゞ逍遥|250:0:1}」
+GOTO @main
+BREAK
+
+
+
+[@换13]
+#IF
+CHECKITEM 荣耀★水晶 800
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+#IF
+CHECKITEM 《时装》赤心※巡天ゞ逍遥 1
+#ACT
+#ELSEACT
+MESSAGEBOX 材料不够
+BREAK
+
+
+#IF
+CHECKITEM 荣耀★水晶 800
+CHECKITEM 《时装》赤心※巡天ゞ逍遥 1
+#ACT
+TAKE 荣耀★水晶 800
+TAKE 《时装》赤心※巡天ゞ逍遥 1
+GIVE 《时装》天刀※无疆ゞ昊天 1
+SENDMSG 0 恭喜玩家「<$USERNAME>」打造出时装「{《时装》天刀※无疆ゞ昊天|250:0:1}」
+GOTO @main
+BREAK
+
+

@@ -1,0 +1,397 @@
+[@main]
+#IF
+CHECKLEVELEX > 0
+#ACT
+OPENMERCHANTBIGDLG 101 314 0 4 0 -100 0
+#SAY
+<PlayImg:101:284:15:150:0:-20:0:0>\
+<PlayImg:101:299:15:150:600:-36:0:0>\
+<Img:8:101:650:-10|/@关闭对话框>\
+\ \
+<                           /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+<>\
+<                           /AUTOCOLOR=0>  <※初始★境※/SCOLOR=250>  <需 100W逐币 /SCOLOR=254>    <属性物减魔减+5%  /SCOLOR=253>       <点击提升/@称号提升2001>  \
+<>\
+<                           /AUTOCOLOR=0>  <※星辰★境※/SCOLOR=250>  <需 200W逐币 /SCOLOR=254>    <属性物减魔减+10% /SCOLOR=253>       <点击提升/@称号提升2002>  \
+<>\
+<                           /AUTOCOLOR=0>  <※超凡★境※/SCOLOR=250>  <需 300W逐币 /SCOLOR=254>    <属性物减魔减+15% /SCOLOR=253>       <点击提升/@称号提升2003>  \
+<>\
+<                           /AUTOCOLOR=0>  <※神灵★境※/SCOLOR=250>  <需 400W逐币 /SCOLOR=254>    <属性物减魔减+20% /SCOLOR=253>       <点击提升/@称号提升2004>  \
+<>\
+<                           /AUTOCOLOR=0>  <※界神★境※/SCOLOR=250>  <需 500W逐币 /SCOLOR=254>    <属性物减魔减+25% /SCOLOR=253>       <点击提升/@称号提升2005>  \
+<>\
+<                           /AUTOCOLOR=0>  <※真神★境※/SCOLOR=250>  <需 600W逐币 /SCOLOR=254>    <属性物减魔减+30% /SCOLOR=253>       <点击提升/@称号提升2006>  \
+<>\
+<                           /AUTOCOLOR=0>  <※虚空★境※/SCOLOR=250>  <需 700W逐币 /SCOLOR=254>    <属性物减魔减+35% /SCOLOR=253>       <点击提升/@称号提升2007>  \
+<>\
+<                           /AUTOCOLOR=0>  <※宇宙★境※/SCOLOR=250>  <需 800W逐币 /SCOLOR=254>    <属性物减魔减+40% /SCOLOR=253>       <点击提升/@称号提升2008>  \
+<>\
+<                           /AUTOCOLOR=0>  <※無雙★境※/SCOLOR=250>  <需 1000W逐币 /SCOLOR=254>   <属性物减魔减+45% /SCOLOR=253>       <点击提升/@称号提升2009>  \
+<>\
+<                           /AUTOCOLOR=0>  <※主宰★境※/SCOLOR=250>  <需 2000W逐币/SCOLOR=254>    <属性物减魔减+50% /SCOLOR=253>       <点击提升/@称号提升2010>  \
+ \
+
+[@关闭对话框]
+#IF
+#ACT
+close
+
+;OPENMERCHANTBIGDLG 74 491 0 4 0 0 1 537 8
+;#SAY
+;\ \ \ \
+;<           /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=253> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+;<         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+;<         /AUTOCOLOR=0>  <※初始★境※/SCOLOR=250>  <需 100W逐币 /SCOLOR=254>    <属性物减魔减+5%  /SCOLOR=253>       <点击提升/@称号提升2001>  \
+;<         /AUTOCOLOR=0>  <※星辰★境※/SCOLOR=250>  <需 200W逐币 /SCOLOR=254>    <属性物减魔减+10% /SCOLOR=253>       <点击提升/@称号提升2002>  \
+;<         /AUTOCOLOR=0>  <※超凡★境※/SCOLOR=250>  <需 300W逐币 /SCOLOR=254>    <属性物减魔减+15% /SCOLOR=253>       <点击提升/@称号提升2003>  \
+;<         /AUTOCOLOR=0>  <※神灵★境※/SCOLOR=250>  <需 400W逐币 /SCOLOR=254>    <属性物减魔减+20% /SCOLOR=253>       <点击提升/@称号提升2004>  \
+;<         /AUTOCOLOR=0>  <※界神★境※/SCOLOR=250>  <需 500W逐币 /SCOLOR=254>    <属性物减魔减+25% /SCOLOR=253>       <点击提升/@称号提升2005>  \
+;<         /AUTOCOLOR=0>  <※真神★境※/SCOLOR=250>  <需 600W逐币 /SCOLOR=254>    <属性物减魔减+30% /SCOLOR=253>       <点击提升/@称号提升2006>  \
+;<         /AUTOCOLOR=0>  <※虚空★境※/SCOLOR=250>  <需 700W逐币 /SCOLOR=254>    <属性物减魔减+35% /SCOLOR=253>       <点击提升/@称号提升2007>  \
+;<         /AUTOCOLOR=0>  <※宇宙★境※/SCOLOR=250>  <需 800W逐币 /SCOLOR=254>    <属性物减魔减+40% /SCOLOR=253>       <点击提升/@称号提升2008>  \
+;<         /AUTOCOLOR=0>  <※無雙★境※/SCOLOR=250>  <需 1000W逐币 /SCOLOR=254>   <属性物减魔减+45% /SCOLOR=253>       <点击提升/@称号提升2009>  \
+;<         /AUTOCOLOR=0>  <※主宰★境※/SCOLOR=250>  <需 2000W逐币/SCOLOR=254>    <属性物减魔减+50% /SCOLOR=253>       <点击提升/@称号提升2010>  \
+;<         /AUTOCOLOR=0><---------------------------------------------------------------------------/SCOLOR=12>\
+;<              /AUTOCOLOR=0><称号主宰★境，无敌减伤称号，属性物减魔减+50%>     \
+; \
+
+[@称号提升2001]
+#IF
+CHECKGAMEGIRD < 1000000
+#ACT
+MESSAGEBOX 你的逐币不足！
+BREAK
+
+#OR
+CHECKTITLE ※初始★境※
+CHECKTITLE ※星辰★境※
+CHECKTITLE ※超凡★境※
+CHECKTITLE ※神灵★境※
+CHECKTITLE ※界神★境※
+CHECKTITLE ※真神★境※
+CHECKTITLE ※虚空★境※
+CHECKTITLE ※宇宙★境※
+CHECKTITLE ※無雙★境※
+CHECKTITLE ※主宰★境※
+#ACT
+MESSAGEBOX 你已经领取过此称号了
+BREAK
+
+
+
+#IF
+NOT CHECKTITLE ※初始★境※
+CHECKGAMEGIRD > 999999
+#ACT
+GAMEGIRD - 1000000
+CONFERTITLE ※初始★境※ 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{※初始★境※|250:0:1}.
+BREAK
+
+
+
+[@称号提升2002]
+#IF
+CHECKGAMEGIRD < 2000000
+#ACT
+MESSAGEBOX 你的逐币不足！
+BREAK
+
+#OR
+CHECKTITLE ※星辰★境※
+CHECKTITLE ※超凡★境※
+CHECKTITLE ※神灵★境※
+CHECKTITLE ※界神★境※
+CHECKTITLE ※真神★境※
+CHECKTITLE ※虚空★境※
+CHECKTITLE ※宇宙★境※
+CHECKTITLE ※無雙★境※
+CHECKTITLE ※主宰★境※
+#ACT
+MESSAGEBOX 你已经领取过此称号了
+BREAK
+
+
+#IF
+CHECKTITLE ※初始★境※
+NOT CHECKTITLE ※星辰★境※
+CHECKGAMEGIRD > 1999999
+#ACT
+GAMEGIRD - 2000000
+DEPRIVETITLE ※初始★境※
+CONFERTITLE ※星辰★境※ 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{※星辰★境※|250:0:1}.
+BREAK
+#ELSEACT
+MESSAGEBOX [激活失败]:\　\　　　　　　请依次晋升称号！
+BREAK
+
+
+
+[@称号提升2003]
+#IF
+CHECKGAMEGIRD < 3000000
+#ACT
+MESSAGEBOX 你的逐币不足！
+BREAK
+
+#OR
+CHECKTITLE ※超凡★境※
+CHECKTITLE ※神灵★境※
+CHECKTITLE ※界神★境※
+CHECKTITLE ※真神★境※
+CHECKTITLE ※虚空★境※
+CHECKTITLE ※宇宙★境※
+CHECKTITLE ※無雙★境※
+CHECKTITLE ※主宰★境※
+#ACT
+MESSAGEBOX 你已经领取过此称号了
+BREAK
+
+
+#IF
+CHECKTITLE ※星辰★境※
+NOT CHECKTITLE ※超凡★境※
+CHECKGAMEGIRD > 2999999
+#ACT
+GAMEGIRD - 3000000
+DEPRIVETITLE ※星辰★境※
+CONFERTITLE ※超凡★境※ 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{※超凡★境※|250:0:1}.
+BREAK
+#ELSEACT
+MESSAGEBOX [激活失败]:\　\　　　　　　请依次晋升称号！
+BREAK
+
+
+
+[@称号提升2004]
+#IF
+CHECKGAMEGIRD < 4000000
+#ACT
+MESSAGEBOX 你的逐币不足！
+BREAK
+
+#OR
+CHECKTITLE ※神灵★境※
+CHECKTITLE ※界神★境※
+CHECKTITLE ※真神★境※
+CHECKTITLE ※虚空★境※
+CHECKTITLE ※宇宙★境※
+CHECKTITLE ※無雙★境※
+CHECKTITLE ※主宰★境※
+#ACT
+MESSAGEBOX 你已经领取过此称号了
+BREAK
+
+
+#IF
+CHECKTITLE ※超凡★境※
+NOT CHECKTITLE ※神灵★境※
+CHECKGAMEGIRD > 3999999
+#ACT
+GAMEGIRD - 4000000
+DEPRIVETITLE ※超凡★境※
+CONFERTITLE ※神灵★境※ 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{※神灵★境※|250:0:1}.
+BREAK
+#ELSEACT
+MESSAGEBOX [激活失败]:\　\　　　　　　请依次晋升称号！
+BREAK
+
+
+
+[@称号提升2005]
+#IF
+CHECKGAMEGIRD < 5000000
+#ACT
+MESSAGEBOX 你的逐币不足！
+BREAK
+
+#OR
+CHECKTITLE ※界神★境※
+CHECKTITLE ※真神★境※
+CHECKTITLE ※虚空★境※
+CHECKTITLE ※宇宙★境※
+CHECKTITLE ※無雙★境※
+CHECKTITLE ※主宰★境※
+#ACT
+MESSAGEBOX 你已经领取过此称号了
+BREAK
+
+#IF
+CHECKTITLE ※神灵★境※
+NOT CHECKTITLE ※界神★境※
+CHECKGAMEGIRD > 4999999
+#ACT
+GAMEGIRD - 5000000
+DEPRIVETITLE ※神灵★境※
+CONFERTITLE ※界神★境※ 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{※界神★境※|250:0:1}.
+BREAK
+#ELSEACT
+MESSAGEBOX [激活失败]:\　\　　　　　　请依次晋升称号！
+BREAK
+
+
+
+
+[@称号提升2006]
+#IF
+CHECKGAMEGIRD < 6000000
+#ACT
+MESSAGEBOX 你的逐币不足！
+BREAK
+
+#OR
+CHECKTITLE ※真神★境※
+CHECKTITLE ※虚空★境※
+CHECKTITLE ※宇宙★境※
+CHECKTITLE ※無雙★境※
+CHECKTITLE ※主宰★境※
+#ACT
+MESSAGEBOX 你已经领取过此称号了
+BREAK
+
+
+#IF
+CHECKTITLE ※界神★境※
+NOT CHECKTITLE ※真神★境※
+CHECKGAMEGIRD > 5999999
+#ACT
+GAMEGIRD - 6000000
+DEPRIVETITLE ※界神★境※
+CONFERTITLE ※真神★境※ 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{※真神★境※|250:0:1}.
+BREAK
+#ELSEACT
+MESSAGEBOX [激活失败]:\　\　　　　　　请依次晋升称号！
+BREAK
+
+
+
+[@称号提升2007]
+#IF
+CHECKGAMEGIRD < 7000000
+#ACT
+MESSAGEBOX 你的逐币不足！
+BREAK
+
+#OR
+CHECKTITLE ※虚空★境※
+CHECKTITLE ※宇宙★境※
+CHECKTITLE ※無雙★境※
+CHECKTITLE ※主宰★境※
+#ACT
+MESSAGEBOX 你已经领取过此称号了
+BREAK
+
+#IF
+CHECKTITLE ※真神★境※
+NOT CHECKTITLE ※虚空★境※
+CHECKGAMEGIRD > 6999999
+#ACT
+GAMEGIRD - 7000000
+DEPRIVETITLE ※真神★境※
+CONFERTITLE ※虚空★境※ 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{※虚空★境※|250:0:1}.
+BREAK
+#ELSEACT
+MESSAGEBOX [激活失败]:\　\　　　　　　请依次晋升称号！
+BREAK
+
+
+[@称号提升2008]
+#IF
+CHECKGAMEGIRD < 8000000
+#ACT
+MESSAGEBOX 你的逐币不足！
+BREAK
+
+#OR
+CHECKTITLE ※宇宙★境※
+CHECKTITLE ※無雙★境※
+CHECKTITLE ※主宰★境※
+#ACT
+MESSAGEBOX 你已经领取过此称号了
+BREAK
+
+
+#IF
+CHECKTITLE ※虚空★境※
+NOT CHECKTITLE ※宇宙★境※
+CHECKGAMEGIRD > 7999999
+#ACT
+GAMEGIRD - 8000000
+DEPRIVETITLE ※虚空★境※
+CONFERTITLE ※宇宙★境※ 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{※宇宙★境※|250:0:1}.
+BREAK
+#ELSEACT
+MESSAGEBOX [激活失败]:\　\　　　　　　请依次晋升称号！
+BREAK
+
+
+
+[@称号提升2009]
+#IF
+CHECKGAMEGIRD < 10000000
+#ACT
+MESSAGEBOX 你的逐币不足！
+BREAK
+
+#OR
+CHECKTITLE ※無雙★境※
+CHECKTITLE ※主宰★境※
+#ACT
+MESSAGEBOX 你已经领取过此称号了
+BREAK
+
+
+
+#IF
+CHECKTITLE ※宇宙★境※
+NOT CHECKTITLE ※無雙★境※
+CHECKGAMEGIRD > 9999999
+#ACT
+GAMEGIRD - 10000000
+DEPRIVETITLE ※宇宙★境※
+CONFERTITLE ※無雙★境※ 1
+DELAYGOTO 100 @更新自身称号
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{※無雙★境※|250:0:1}.
+BREAK
+#ELSEACT
+MESSAGEBOX [激活失败]:\　\　　　　　　请依次晋升称号！
+BREAK
+
+
+[@称号提升2010]
+#IF
+CHECKGAMEGIRD < 20000000
+#ACT
+MESSAGEBOX 你的逐币不足！
+BREAK
+
+#OR
+CHECKTITLE ※主宰★境※
+#ACT
+MESSAGEBOX 你已经领取过此称号了
+BREAK
+
+
+#IF
+CHECKTITLE ※無雙★境※
+NOT CHECKTITLE ※主宰★境※
+CHECKGAMEGIRD > 19999999
+#ACT
+GAMEGIRD - 20000000
+DEPRIVETITLE ※無雙★境※
+CONFERTITLE ※主宰★境※ 1
+SENDMSG 0 {恭喜玩家ぐ|151:0:1}：{<$USERNAME>|228:0:1}成为了{※主宰★境※|250:0:1}.
+BREAK
+#ELSEACT
+MESSAGEBOX [激活失败]:\　\　　　　　　请依次晋升称号！
+BREAK
+
+
+

@@ -1,0 +1,44 @@
+[@MAIN]
+#IF
+#ACT
+GetRandomText ..\QuestDiary\数据文件\地图NPC展示装备列表.txt S$随机专属名字1
+GetRandomText ..\QuestDiary\数据文件\地图NPC展示装备列表.txt S$随机专属名字2
+GetRandomText ..\QuestDiary\数据文件\地图NPC展示装备列表.txt S$随机专属名字3
+GetRandomText ..\QuestDiary\数据文件\地图NPC展示装备列表.txt S$随机专属名字4
+GetRandomText ..\QuestDiary\数据文件\地图NPC展示装备列表.txt S$随机专属名字5
+GetRandomText ..\QuestDiary\数据文件\地图NPC展示装备列表.txt S$随机专属名字6
+GetDBItemFieldValue <$STR(S$随机专属名字1)> idx S$专属展示1
+GetDBItemFieldValue <$STR(S$随机专属名字2)> idx S$专属展示2
+GetDBItemFieldValue <$STR(S$随机专属名字3)> idx S$专属展示3
+GetDBItemFieldValue <$STR(S$随机专属名字4)> idx S$专属展示4
+GetDBItemFieldValue <$STR(S$随机专属名字5)> idx S$专属展示5
+GetDBItemFieldValue <$STR(S$随机专属名字6)> idx S$专属展示6
+
+OPENMERCHANTBIGDLG 84 374 1 4 0 -80 1 616 4
+#SAY
+<>\<>\
+<><PlayImg:83:420:20:60:-20:-52:0:0>\
+<>\
+<><Img:397:84:160:255>\
+<><ImgEx:84:385:386:386:510:230|^250#深海秘镜：^-^7#上千件专属“Ｎ张未知大陆”等您探索^-^249#进入条件：200等级^-^249#温馨提示：最后一舞.终极之地！/@等级地图>\
+<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\<>\
+<PlayImg:97:24:8:100:88:-79:0:0><PlayImg:97:24:8:100:-67:-79:0:0><PlayImg:97:24:8:100:-220:-79:0:0><PlayImg:97:24:8:100:-375:-79:0:0><PlayImg:97:24:8:100:-528:-79:0:0><PlayImg:97:24:8:100:-682:-79:0:0>\
+<>                           <ItemShow:<$STR(S$专属展示1)>:0:0:-25:1:0:1:40> <ItemShow:<$STR(S$专属展示2)>:0:0:-25:1:0:1:40> <ItemShow:<$STR(S$专属展示3)>:0:0:-25:1:-25:1:40> <ItemShow:<$STR(S$专属展示4)>:0:0:-25:1:0:1:40> <ItemShow:<$STR(S$专属展示5)>:0:0:-25:1:0:1:40> <ItemShow:<$STR(S$专属展示6)>:0:0:-25:1:0:1:40><>\<>\
+<>                           <〖温馨提示〗/AUTOCOLOR=250>：<危险指数/AUTOCOLOR=249> <PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>\
+
+
+[@等级地图]
+#IF
+CHECKLEVELEX > 199
+#ACT
+MAPMOVE 第六大陆 60 59
+GuildNOTiceMsg 250 0 玩家{“<$USERNAME>”|150:0:1}闯入{“第六大陆”|254:0:1}...！！
+BREAK
+#ELSEACT
+MESSAGEBOX 等级不足.无法进入地图...
+BREAK
+
+
+
+
+
