@@ -1,0 +1,21 @@
+HGE D3D9 Started..
+
+HGE version: 1.80
+Memory: 4194303K total, 2726516K free
+
+D3D Driver: d3d10warp.dll
+Description: Microsoft Basic Render Driver
+Version: 6.3.9600.19176
+Can't find appropriate full screen video mode 0
+Mode: 1024 x 768 x X8R8G8B8
+
+MaxTextureWidth: 16384
+MaxTextureHeight: 16384
+MaxPrimitiveCount: 8388607
+MaxVertexIndex: 16777215
+Cache 3072 4096 4096
+Init done.
+
+
+Finishing..
+The End.

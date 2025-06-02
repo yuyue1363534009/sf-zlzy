@@ -1,0 +1,35 @@
+[@main]
+#IF
+#ACT
+OPENMERCHANTBIGDLG 101 608 0 0 0 0 1 449 2
+#SAY
+;<PlayImg:69:1158:20:150:-20:-16:0>\
+<> \
+<> \
+<  /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=70> <∞逐鹿中原·独家原创·神器之王∞/SCOLOR=254> <┅/SCOLOR=70> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\
+\  \
+</AUTOCOLOR=0>〖<地图名称/AUTOCOLOR=243>〗：<众神古墓/AUTOCOLOR=243>\
+</AUTOCOLOR=0>〖<怪物爆率/AUTOCOLOR=253>〗：<材料，首饰，武器，衣服，元宝/AUTOCOLOR=253>\
+</AUTOCOLOR=0>〖<进入条件/AUTOCOLOR=254>〗：<110级级玩家免费进入/AUTOCOLOR=254>\
+</AUTOCOLOR=0>〖<温馨提示/AUTOCOLOR=250>〗：<此地图不可使用随机类道具，实力不足勇士请勿挑战/AUTOCOLOR=250>\
+</AUTOCOLOR=0>〖<危险指数/AUTOCOLOR=249>〗：<PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>\
+\ \ \
+<     /AUTOCOLOR=0>　     <点击进入地图/@等级地图>                         <关闭×/@EXIT>\
+
+
+[@等级地图]
+#IF
+CHECKLEVELEX > 109
+#ACT
+MAP 等级110
+GuildNOTiceMsg 250 0 玩家{“<$USERNAME>”|150:0:1}闯入{“<$MAPTitle>”|254:0:1}...！！
+BREAK
+#ELSEACT
+MESSAGEBOX 等级不足.无法进入地图...
+BREAK
+
+
+
+
+
+
