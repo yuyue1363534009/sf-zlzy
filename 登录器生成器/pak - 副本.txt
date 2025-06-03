@@ -366,3 +366,9 @@ E:\热血传奇\zl666\Data\Mon404.pak|xiaoyue
 E:\热血传奇\zl666\Data\Mon405.pak|xiaoyue
 E:\热血传奇\zl666\Data\Mon406.pak|xiaoyue
 E:\热血传奇\zl666\Data\Mon500.pak|xiaoyue
+E:\热血传奇\zl666\Data\特殊神器20241120.pak|xiaoyue
+E:\热血传奇\zl666\Data\人物释放特效20241120.pak|xiaoyue
+E:\热血传奇\zl666\Data\魂骨20241120.pak|xiaoyue
+E:\热血传奇\zl666\Data\炫酷文字20241120.pak|xiaoyue
+E:\热血传奇\zl666\Data\Objects101.pak|xiaoyue
+E:\热血传奇\zl666\Data\Tiles101.pak|xiaoyue
