@@ -3,7 +3,7 @@
 #IF
 CHECKRENEWLEVEL = 15
 #ACT
-MOV S$激活状态 <><Img:38:101:530:300>
+MOV S$转世轮回激活状态 <><Img:38:101:530:300>
 
 #IF
 CHECKRENEWLEVEL = 0
@@ -238,7 +238,7 @@ OPENMERCHANTBIGDLG 101 492 0 4 0 -100 0
 #SAY
 <><PlayImg:101:493:15:150:30:0:0:0>\
 <><Img:8:101:700:35|/@关闭对话框>\
-<$STR(S$激活状态)>\
+<$STR(S$转世轮回激活状态)>\
 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
 <                                        /AUTOCOLOR=0><┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250> <【修身炼体★转世转生】/FCOLOR=251> <┅/SCOLOR=250> <┅/SCOLOR=249> <┅/SCOLOR=243> <┅/SCOLOR=254> <┅/SCOLOR=253> <┅/SCOLOR=250>\ \
 <                                                            /AUTOCOLOR=0><当前转生：/FCOLOR=251> {<$STR(S$当前转生)>/FCOLOR=253}\
