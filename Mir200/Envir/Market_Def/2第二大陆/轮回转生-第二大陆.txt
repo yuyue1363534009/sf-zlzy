@@ -1,0 +1,378 @@
+[@main]
+#IF
+CHECKRENEWLEVEL = 30
+#ACT
+MOV S$三十转激活状态 <><Img:38:101:420:370>
+
+#IF
+CHECKRENEWLEVEL < 20
+#ACT
+OPENMERCHANTBIGDLG 101 617 0 4 0 -100 1 568 2
+#SAY
+;０１２３４５６７８９
+<$STR(S$三十转激活状态)>\
+\ \ \
+　　　　　　　　　　　　　<２０２５年新版单职业-逐鹿中原·散人逆袭之作/AUTOCOLOR=151,215,146,180,191,229>\ \
+<> <十一重转生：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><高级转生证明*5/SCOLOR=243>　　　 　<转生奖励：/SCOLOR=253><1.20倍攻击/SCOLOR=146>　　　<十一重转生/@转生1>\  \
+<> <十二重转生：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><高级转生证明*10/SCOLOR=243>　　　　<转生奖励：/SCOLOR=253><1.30倍攻击/SCOLOR=146>　　　<十二重转生/@转生2>\  \
+<> <十三重转生：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><高级转生证明*15/SCOLOR=243>　　　　<转生奖励：/SCOLOR=253><1.40倍攻击/SCOLOR=146>　　　<十三重转生/@转生3>\  \
+<> <十四重转生：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><高级转生证明*20/SCOLOR=243>　　　　<转生奖励：/SCOLOR=253><1.50倍攻击/SCOLOR=146>　　　<十四重转生/@转生4>\  \
+<> <十五重转生：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><高级转生证明*25/SCOLOR=243>　　　　<转生奖励：/SCOLOR=253><1.60倍攻击/SCOLOR=146>　　　<十五重转生/@转生5>\  \
+<> <十六重转生：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><高级转生证明*30/SCOLOR=243>　　　　<转生奖励：/SCOLOR=253><1.70倍攻击/SCOLOR=146>　　　<十六重转生/@转生6>\  \
+<> <十七重转生：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><高级转生证明*35/SCOLOR=243>　　　　<转生奖励：/SCOLOR=253><1.80倍攻击/SCOLOR=146>　　　<十七重转生/@转生7>\  \
+<> <十八重转生：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><高级转生证明*40/SCOLOR=243>　　　　<转生奖励：/SCOLOR=253><1.90倍攻击/SCOLOR=146>　　　<十八重转生/@转生8>\  \
+<> <十九重转生：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><高级转生证明*45/SCOLOR=243>　　　　<转生奖励：/SCOLOR=253><2.00倍攻击/SCOLOR=146>　　　<十九重转生/@转生9>\  \
+<> <二十重转生：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><高级转生证明*50/SCOLOR=243>　　　　<转生奖励：/SCOLOR=253><2.10倍攻击/SCOLOR=146>　　　<二十重转生/@转生10>\  \
+ \ \ \ \ \
+　　　　<当前转生:/SCOLOR=249><$RELEVEL><转/SCOLOR=146>　　<友情提醒:所有转生材料游戏全部爆出,20转以后请去神之大陆/AUTOCOLOR=151,215,146,180,191,229>　\　\
+
+#IF
+CHECKRENEWLEVEL > 19
+#ACT
+OPENMERCHANTBIGDLG 101 617 0 4 0 -100 1 568 2
+#SAY
+\ \ \
+
+　　　　　　　　　　　　　<２０２５年新版单职业-逐鹿中原·散人逆袭之作/AUTOCOLOR=151,215,146,180,191,229>\ \
+<> <二十一重转生：/SCOLOR=46>　　<所需材料：/SCOLOR=70><史诗转生证明*5+无名火*10/SCOLOR=243> 　 <转生奖励：/SCOLOR=253><2.20倍攻击/SCOLOR=146>　　<二十一重转生/@2转生1>\  \
+<> <二十二重转生：/SCOLOR=46>　　<所需材料：/SCOLOR=70><史诗转生证明*10+无名火*20/SCOLOR=243>　 <转生奖励：/SCOLOR=253><2.30倍攻击/SCOLOR=146>　　<二十二重转生/@2转生2>\  \
+<> <二十三重转生：/SCOLOR=46>　　<所需材料：/SCOLOR=70><史诗转生证明*15+无名火*30/SCOLOR=243>　 <转生奖励：/SCOLOR=253><2.40倍攻击/SCOLOR=146>　　<二十三重转生/@2转生3>\  \
+<> <二十四重转生：/SCOLOR=46>　　<所需材料：/SCOLOR=70><史诗转生证明*20+无名火*40/SCOLOR=243>　 <转生奖励：/SCOLOR=253><2.50倍攻击/SCOLOR=146>　　<二十四重转生/@2转生4>\  \
+<> <二十五重转生：/SCOLOR=46>　　<所需材料：/SCOLOR=70><史诗转生证明*25+无名火*50/SCOLOR=243>　 <转生奖励：/SCOLOR=253><2.60倍攻击/SCOLOR=146>　　<二十五重转生/@2转生5>\  \
+<> <二十六重转生：/SCOLOR=46>　　<所需材料：/SCOLOR=70><史诗转生证明*30+无名火*60/SCOLOR=243>　 <转生奖励：/SCOLOR=253><2.70倍攻击/SCOLOR=146>　　<二十六重转生/@2转生6>\  \
+<> <二十七重转生：/SCOLOR=46>　　<所需材料：/SCOLOR=70><史诗转生证明*35+无名火*70/SCOLOR=243>　 <转生奖励：/SCOLOR=253><2.80倍攻击/SCOLOR=146>　　<二十七重转生/@2转生7>\  \
+<> <二十八重转生：/SCOLOR=46>　　<所需材料：/SCOLOR=70><史诗转生证明*40+无名火*80/SCOLOR=243>　 <转生奖励：/SCOLOR=253><2.90倍攻击/SCOLOR=146>　　<二十八重转生/@2转生8>\  \
+<> <二十九重转生：/SCOLOR=46>　　<所需材料：/SCOLOR=70><史诗转生证明*45+无名火*90/SCOLOR=243>　 <转生奖励：/SCOLOR=253><3.00倍攻击/SCOLOR=146>　　<二十九重转生/@2转生9>\  \
+<> <三十重转生：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><史诗转生证明*50+无名火*100/SCOLOR=243>　<转生奖励：/SCOLOR=253><3.10倍攻击/SCOLOR=146>　　<三十重转生/@2转生10>\  \
+ \ \ \ \ \
+　　　　<当前转生:/SCOLOR=249><$RELEVEL><转/SCOLOR=146>　　<友情提醒:所有转生材料游戏全部爆出,30转以后请去九重天/AUTOCOLOR=151,215,146,180,191,229>　\　\
+　　　\
+
+
+
+
+[@转生1]
+#if
+CHECKRENEWLEVEL = 10
+checkitem 高级转生证明 5
+#act
+take      高级转生证明 5
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[高级转生证明*5]|154:0:1}成功打通{[转生十一重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@转生2]
+#if
+CHECKRENEWLEVEL = 11
+checkitem 高级转生证明 10
+#act
+take      高级转生证明 10
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[高级转生证明*10]|154:0:1}成功打通{[转生十二重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+
+[@转生3]
+#if
+CHECKRENEWLEVEL = 12
+checkitem 高级转生证明 15
+#act
+take      高级转生证明 15
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[高级转生证明*15]|154:0:1}成功打通{[转生十三重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@转生4]
+#if
+CHECKRENEWLEVEL = 13
+checkitem 高级转生证明 20
+#act
+take      高级转生证明 20
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[高级转生证明*20]|154:0:1}成功打通{[转生十四重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@转生5]
+#if
+CHECKRENEWLEVEL = 14
+checkitem 高级转生证明 25
+#act
+take      高级转生证明 25
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[高级转生证明*25]|154:0:1}成功打通{[转生十五重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@转生6]
+#if
+CHECKRENEWLEVEL = 15
+checkitem 高级转生证明 30
+#act
+take      高级转生证明 30
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[高级转生证明*30]|154:0:1}成功打通{[转生十六重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@转生7]
+#if
+CHECKRENEWLEVEL = 16
+checkitem 高级转生证明 35
+#act
+take      高级转生证明 35
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[高级转生证明*35]|154:0:1}成功打通{[转生十七重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@转生8]
+#if
+CHECKRENEWLEVEL = 17
+checkitem 高级转生证明 40
+#act
+take      高级转生证明 40
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[高级转生证明*40]|154:0:1}成功打通{[转生十八重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@转生9]
+#if
+CHECKRENEWLEVEL = 18
+checkitem 高级转生证明 45
+#act
+take      高级转生证明 45
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[高级转生证明*45]|154:0:1}成功打通{[转生十九重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@转生10]
+#if
+CHECKRENEWLEVEL = 19
+checkitem 高级转生证明 50
+#act
+take      高级转生证明 50
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[高级转生证明*50]|154:0:1}成功打通{[转生二十重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+
+
+
+
+
+[@2转生1]
+#if
+CHECKRENEWLEVEL = 20
+checkitem 史诗转生证明 5
+checkitem 无名火 10
+#act
+take      史诗转生证明 5
+take 无名火 10
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[史诗转生证明*5]|154:0:1}成功打通{[转生二十一重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@2转生2]
+#if
+CHECKRENEWLEVEL = 21
+checkitem 史诗转生证明 10
+checkitem 无名火 20
+#act
+take      史诗转生证明 10
+take 无名火 20
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[史诗转生证明*10]|154:0:1}成功打通{[转生二十二重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+
+[@2转生3]
+#if
+CHECKRENEWLEVEL = 22
+checkitem 史诗转生证明 15
+checkitem 无名火 30
+#act
+take      史诗转生证明 15
+take 无名火 30
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[史诗转生证明*15]|154:0:1}成功打通{[转生二十三重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@2转生4]
+#if
+CHECKRENEWLEVEL = 23
+checkitem 史诗转生证明 20
+checkitem 无名火 40
+#act
+take      史诗转生证明 20
+take 无名火 40
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[史诗转生证明*20]|154:0:1}成功打通{[转生二十四重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@2转生5]
+#if
+CHECKRENEWLEVEL = 24
+checkitem 史诗转生证明 25
+checkitem 无名火 50
+#act
+take      史诗转生证明 25
+take 无名火 50
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[史诗转生证明*25]|154:0:1}成功打通{[转生二十五重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@2转生6]
+#if
+CHECKRENEWLEVEL = 25
+checkitem 史诗转生证明 30
+checkitem 无名火 60
+#act
+take      史诗转生证明 30
+take 无名火 60
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[史诗转生证明*30]|154:0:1}成功打通{[转生二十六重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@2转生7]
+#if
+CHECKRENEWLEVEL = 26
+checkitem 史诗转生证明 35
+checkitem 无名火 70
+#act
+take      史诗转生证明 35
+take 无名火 70
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[史诗转生证明*35]|154:0:1}成功打通{[转生二十七重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@2转生8]
+#if
+CHECKRENEWLEVEL = 27
+checkitem 史诗转生证明 40
+checkitem 无名火 80
+#act
+take      史诗转生证明 40
+take 无名火 80
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[史诗转生证明*40]|154:0:1}成功打通{[转生二十八重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@2转生9]
+#if
+CHECKRENEWLEVEL = 28
+checkitem 史诗转生证明 45
+checkitem 无名火 90
+#act
+take      史诗转生证明 45
+take 无名火 90
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[史诗转生证明*45]|154:0:1}成功打通{[转生二十九重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
+
+
+[@2转生10]
+#if
+CHECKRENEWLEVEL = 29
+checkitem 史诗转生证明 50
+checkitem 无名火 100
+#act
+take      史诗转生证明 50
+take 无名火 100
+RENEWLEVEL 1 0 0
+#CALL [\游戏登陆\封号刷新.txt] @封号new
+#CALL [\游戏登陆\属性给予.TXT] @人物属性
+SendMsg 0 {至尊转生ぐ|151:0:1}：恭喜{「%s」|146:0:1}使用{[史诗转生证明*50]|154:0:1}成功打通{[转生三十重]|250:0:1}！！
+#elseact
+messagebox \　\　　　所需材料不足,无法完成转生!
+break
