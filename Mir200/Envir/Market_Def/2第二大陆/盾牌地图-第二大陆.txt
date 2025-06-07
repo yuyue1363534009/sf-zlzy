@@ -14,15 +14,15 @@ OPENMERCHANTBIGDLG 101 608 0 0 0 0 1 449 2
 </AUTOCOLOR=0>〖<温馨提示/AUTOCOLOR=250>〗：<此地图不可使用随机类道具，实力不足勇士请勿挑战/AUTOCOLOR=250>\
 </AUTOCOLOR=0>〖<危险指数/AUTOCOLOR=249>〗：<PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0><PlayImg:51:540:5:100:-3:-3:0>\
 \ \ \
-<     /AUTOCOLOR=0>　     <点击进入地图/@称号地图>                         <关闭×/@EXIT>\
+<     /AUTOCOLOR=0>　     <点击进入地图/@盾牌地图>                         <关闭×/@EXIT>\
 
 
-[@称号地图]
+[@盾牌地图]
 #OR
 CHECKITEMW 《乱世逐鹿》「殺」卐盾 1
 CHECKITEMW 【堅如磐石】埋骨何须桑梓地★盾 1
 #ACT
-MAP 盾牌地图
+MAP 盾牌-乱世天下
 GuildNOTiceMsg 250 0 玩家{“<$USERNAME>”|150:0:1}闯入{“<$MAPTitle>”|254:0:1}...！！
 BREAK
 #ELSEACT

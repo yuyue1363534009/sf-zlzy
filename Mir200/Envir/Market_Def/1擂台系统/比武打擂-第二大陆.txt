@@ -1,0 +1,5 @@
+[@main]
+#ACT
+mapmove lei 39 32
+GuildNoticeMsg 254 0 最新情况【%s】进入了≤比武擂台≥,各位群雄,不服来战,事关生死荣耀！
+BREAK
