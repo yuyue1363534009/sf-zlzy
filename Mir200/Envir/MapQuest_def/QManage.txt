@@ -77,10 +77,10 @@ ISDUMMY
 #CALL [\高级假人\假人脚本.txt] @假人脚本
 
 #IF
-CHECKLEVELEX = 141
+CHECKLEVELEX = 220
 #ACT
-ChangeModeEx 3 65535 210000000
-ChangeModeEx 4 65535 105000000
+ChangeModeEx 3 65535 209984476
+ChangeModeEx 4 65535 999999219
 
 ;-------------------------------------公益捐献初始化---------------------------------------------------------
 #IF
