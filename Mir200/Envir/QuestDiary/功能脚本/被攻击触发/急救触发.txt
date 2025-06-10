@@ -22,14 +22,14 @@ AddMpPer + 20
 <$CURRRTARGETNAME>.SENDCENTERMSG 253 0   「提示」:玩家:「<$CURRRTARGETNAME>」的[神器].[Lv4神器二]触发急救BUFF，恢复20%血量！！！ 4 6
 BREAK
 
-#IF
-random 20
-CHECKITEMW Lv5神器二 1
-CheckHpPer < 30
-#ACT
-AddHpPer + 30
-AddMpPer + 30
-<$CURRRTARGETNAME>.SENDCENTERMSG 253 0   「提示」:玩家:「<$CURRRTARGETNAME>」的[神器].[Lv5神器二]触发急救BUFF，恢复30%血量！！！ 4 6
-BREAK
+;#IF
+;random 20
+;CHECKITEMW Lv5神器二 1
+;CheckHpPer < 30
+;#ACT
+;AddHpPer + 30
+;AddMpPer + 30
+;<$CURRRTARGETNAME>.SENDCENTERMSG 253 0   「提示」:玩家:「<$CURRRTARGETNAME>」的[神器].[Lv5神器二]触发急救BUFF，恢复30%血量！！！ 4 6
+;BREAK
 
 }

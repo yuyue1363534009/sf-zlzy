@@ -1,10 +1,10 @@
 [@伤害吸收]
 {
 ;衣服单间触发伤害吸收
-#IF
-CHECKITEMW 天地合乃敢与君绝≮220.0倍≯甲 1
-#ACT
-SETSuckDamage + 2000000000 500 100
+;#IF
+;CHECKITEMW 天地合乃敢与君绝≮220.0倍≯甲 1
+;#ACT
+;SETSuckDamage + 2000000000 500 100
 
 #IF
 CHECKITEMW 人生若只如初见≮210.0倍≯甲 1
