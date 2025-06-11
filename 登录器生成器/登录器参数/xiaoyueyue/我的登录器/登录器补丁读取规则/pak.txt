@@ -401,8 +401,12 @@ E:\热血传奇\zl666\Data\Tiles203.pak|xiaoyue
 E:\热血传奇\zl666\Data\Tiles204.pak|xiaoyue
 E:\热血传奇\zl666\Data\Mon150.pak|xiaoyue
 E:\热血传奇\zl666\Data\Mon151.pak|xiaoyue
-E:\热血传奇\zl666\Data\Mon501.pak|xiaoyue
-E:\热血传奇\zl666\Data\Mon502.pak|xiaoyue
+E:\热血传奇\zl666\Data\Mon152.pak|xiaoyue
+E:\热血传奇\zl666\Data\Mon153.pak|xiaoyue
+E:\热血传奇\zl666\Data\Mon154.pak|xiaoyue
+E:\热血传奇\zl666\Data\Mon155.pak|xiaoyue
+E:\热血传奇\zl666\Data\Mon498.pak|xiaoyue
+E:\热血传奇\zl666\Data\Mon499.pak|xiaoyue
 E:\热血传奇\zl666\Data\NPC非人物20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\NPC人物20241120.pak|xiaoyue
 E:\热血传奇\zl666\Data\Objects220.Pak|xiaoyue
