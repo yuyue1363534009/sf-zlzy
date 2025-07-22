@@ -1,5 +1,14 @@
 [@main]
 #IF
+CheckItemAddValue 1 0 > 1
+#ACT
+GETITEMADDVALUE 1 0 <$STR(M10)>
+#SAY
+你的盔甲附加了<$STR(M10)>点防御属性. 
+
+
+
+#IF
 CHECKLEVELEX > 0
 #ACT
 OPENMERCHANTBIGDLG 101 607 0 0 0 0 1 449 2

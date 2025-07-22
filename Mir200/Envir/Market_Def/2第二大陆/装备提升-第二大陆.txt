@@ -1,0 +1,40 @@
+[@main]
+#IF
+#ACT
+OPENMERCHANTBIGDLG 101 617 0 4 0 -100 1 568 2
+#SAY
+\ \ \
+　　　　　　　　　　　　　<２０２５年新版单职业-逐鹿中原·散人逆袭之作/AUTOCOLOR=151,215,146,180,191,229>\ \
+<> <装备提升：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><高级转生证明*5/SCOLOR=243>　　　 　<转生奖励：/SCOLOR=253><1.20倍攻击/SCOLOR=146>　　　<装备提升查看/@装备提升查看> \
+<> <装备提升：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><高级转生证明*5/SCOLOR=243>　　　 　<转生奖励：/SCOLOR=253><1.20倍攻击/SCOLOR=146>　　　<装备提升/@装备提升> \ \ \ \
+
+
+
+
+<> <装备镶嵌：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><高级转生证明*10/SCOLOR=243>　　　　<转生奖励：/SCOLOR=253><1.30倍攻击/SCOLOR=146>　　　<装备镶嵌/@装备镶嵌> \ \ \ \
+<> <装备升星：/SCOLOR=46>　　　<所需材料：/SCOLOR=70><高级转生证明*15/SCOLOR=243>　　　　<转生奖励：/SCOLOR=253><1.40倍攻击/SCOLOR=146>　　　<装备升星/@装备升星>
+ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+　　　　<当前转生:/SCOLOR=249><$RELEVEL><转/SCOLOR=146>　　<友情提醒:所有转生材料游戏全部爆出,20转以后请去神之大陆/AUTOCOLOR=151,215,146,180,191,229>　\　\
+
+
+[@装备提升查看]
+#IF
+CheckItemAddValue 1 0 > 1
+#ACT
+GETITEMADDVALUE 1 0 <$STR(M10)>
+#SAY
+<> \
+<> \
+你的武器附加了<$STR(M10)>点攻击属性. 
+
+[@装备提升]
+#IF
+;CheckItemAddValue 1 0 = 0
+#ACT
+CHANGEITEMADDVALUE 1 0 + 100
+GETITEMADDVALUE 1 0 <$STR(M10)>
+#SAY
+<> \
+<> \
+你的武器附加了<$STR(M10)>点攻击属性. 
+
